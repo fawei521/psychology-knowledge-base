@@ -25,6 +25,7 @@
 | 改写 30 张概念卡片为完整 frontmatter | 已完成 | 已统一元数据，英文概念名文件名 |
 | 初始化 git 仓库并提交 | 已完成 | 本地 first commit 已就绪 |
 | 上传 GitHub 仓库 | 已完成 | 已推送至 `https://github.com/fawei521/psychology-knowledge-base` |
+| 编写 CLAUDE.md v0.1 | 已完成 | 最小稳定规则，定义目录、命名、frontmatter、AI 流程 |
 | 升级导入脚本为增量同步 | 待开始 | 避免每次全量重建数据库 |
 | 安装配置 sqlite-vec 语义检索 | 待开始 | 实现按语义查找相关概念 |
 | 设计 observations 模板与流程 | 待开始 | 用于记录个人经验与社会热点 |
