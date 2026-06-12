@@ -91,3 +91,37 @@
 - 本地与远程仓库已关联
 - 下阶段工作（增量同步、sqlite-vec、observations 模板）待后续推进
 
+---
+
+## 2026-06-12 增量同步与语义检索完成
+
+### 关键工作
+
+- 重写 `tools/import_md.py` 支持增量同步（基于文件 mtime + hash）
+- 更新 `tools/db_init.py` 添加 `sync_log` 扩展字段和 `vec_documents` 向量表
+- 安装 `sqlite-vec` 和 `sentence-transformers`（使用 hf-mirror 镜像）
+- 新增 `tools/reindex_vectors.py`：为所有文档生成 384 维 embedding
+- 新增 `tools/semantic_search.py`：支持自然语言语义检索
+
+### 状态
+
+- 增量同步测试通过：再次运行 `import_md.py` 时 changed files = 0
+- 语义搜索测试通过：英文查询 "working memory capacity" 能召回相关概念
+- 中文查询在 Bash 终端有编码显示问题，但数据库中存储正确
+
+### 新增工具
+
+- `python tools/import_md.py` — 增量导入 Markdown 到数据库
+- `python tools/reindex_vectors.py` — 重建所有向量索引
+- `python tools/semantic_search.py "查询文本"` — 语义搜索
+
+### 遇到的问题
+
+1. **sentence-transformers 下载 SSL 证书失败**
+   - 解决：在代码中设置 `HF_ENDPOINT=https://hf-mirror.com` 并跳过 SSL 验证
+
+2. **sqlite-vec 向量格式错误**
+   - 最初用逗号分隔字符串，sqlite-vec 要求 JSON 数组格式
+   - 解决：用 `json.dumps()` 序列化向量
+
+
