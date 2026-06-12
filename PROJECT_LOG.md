@@ -124,4 +124,29 @@
    - 最初用逗号分隔字符串，sqlite-vec 要求 JSON 数组格式
    - 解决：用 `json.dumps()` 序列化向量
 
+---
+
+## 2026-06-12 Observations 模板与流程完成
+
+### 关键工作
+
+- 新增 `05-observations/_template-observation.md` 模板文件
+- 新增示例：`obs-personal-experience-2026-06-05-kaoyan-insomnia-anxiety.md`
+- 更新 `CLAUDE.md` v0.1：
+  - 添加 observations 正文结构建议
+  - 明确测试策略：不写正式测试套件，关键功能手动验证
+- 测试：新 observation 成功导入数据库并参与语义搜索
+
+### 测试策略决策
+
+- 当前阶段不写正式测试文件
+- 原因：系统仍在快速迭代，测试维护成本高于收益
+- 做法：关键功能改完后手动跑一遍验证
+- 未来出 bug 时，再针对具体 bug 补回归检查
+
+### 状态
+
+- 概念骨架、增量同步、语义检索、observations 模板均已就绪
+- 知识库基本运转流程已打通
+
 
