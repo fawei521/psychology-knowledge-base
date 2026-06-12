@@ -1,0 +1,32 @@
+---
+concept: "attachment_theory"
+domain: "developmental psychology / relationships"
+tags: ["attachment", "relationships", "intimacy", "development"]
+source_papers: ["summary-personality-analysis-framework-2026"]
+relations:
+  - target: "card-big-five-personality"
+    type: "correlates-with"
+  - target: "card-anxiety-attachment"
+    type: "is-a"
+---
+
+# Attachment Theory
+
+## 定义
+
+A theory describing how early caregiver relationships create internal working models that shape adult intimacy patterns.
+
+## 适用条件
+
+- Explains relationship behavior under stress, separation, and conflict.
+- Useful in romantic, parent-child, and therapeutic relationships.
+
+## 反例/争议
+
+- Adult attachment can change through experience.
+- Categorical types oversimplify continuous variation.
+
+## 关联概念
+
+- [[card-big-five-personality]]
+- [[card-anxiety-attachment]]
