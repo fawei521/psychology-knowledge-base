@@ -28,7 +28,8 @@
 | 编写 CLAUDE.md v0.1 | 已完成 | 最小稳定规则，定义目录、命名、frontmatter、AI 流程 |
 | 升级导入脚本为增量同步 | 已完成 | 只处理新增/修改/删除的文件 |
 | 安装配置 sqlite-vec 语义检索 | 已完成 | 使用 all-MiniLM-L6-v2 模型，384 维向量 |
-| 设计 observations 模板与流程 | 待开始 | 用于记录个人经验与社会热点 |
+| 设计 observations 模板与流程 | 已完成 | 模板 + 示例 + 导入测试 + 语义搜索验证 |
+| 扩展 CLAUDE.md 规则 | 已完成 | 添加 observations 结构和测试策略 |
 
 ## 最近关键决策
 
