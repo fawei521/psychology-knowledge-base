@@ -2,7 +2,7 @@
 concept: humanistic_personality
 concept_cn: 人本主义人格
 domain: general_psychology
-tags: ['personality', 'humanistic', 'rogers', 'maslow', 'self_actualization', 'unconditional_positive_regard']
+tags: [personality, humanistic, rogers, maslow, self_actualization, unconditional_positive_regard, 学科/人格心理学, 学科/临床与咨询, 学科/普通心理学]
 ---
 
 # 人本主义人格 / Humanistic Personality

@@ -2,7 +2,7 @@
 concept: interpersonal_attraction
 concept_cn: 人际吸引
 domain: social_psychology
-tags: ['interpersonal_attraction', 'proximity', 'similarity', 'physical_attractiveness', 'reciprocal_liking']
+tags: [interpersonal_attraction, proximity, similarity, physical_attractiveness, reciprocal_liking, 学科/社会心理学, 学科/临床与咨询]
 ---
 
 # 人际吸引 / Interpersonal Attraction

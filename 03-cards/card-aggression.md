@@ -2,7 +2,7 @@
 concept: aggression
 concept_cn: 攻击行为
 domain: social_psychology
-tags: ['aggression', 'frustration_aggression_hypothesis', 'social_learning', 'media_violence', 'gam']
+tags: [aggression, frustration_aggression_hypothesis, social_learning, media_violence, gam, 学科/社会心理学, 学科/学习心理学]
 ---
 
 # 攻击行为 / Aggression

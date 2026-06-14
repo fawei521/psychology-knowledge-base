@@ -2,7 +2,7 @@
 concept: intelligence_theories
 concept_cn: 智力理论
 domain: general_psychology
-tags: ['intelligence', 'fluid_intelligence', 'crystallized_intelligence', 'multiple_intelligences', 'triarchic_theory', 'pass_model']
+tags: [intelligence, fluid_intelligence, crystallized_intelligence, multiple_intelligences, triarchic_theory, pass_model, 学科/普通心理学]
 ---
 
 # 智力理论 / Intelligence Theories

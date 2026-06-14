@@ -2,7 +2,7 @@
 concept: social_cognitive_theory
 concept_cn: 社会认知理论
 domain: general_psychology
-tags: ['personality', 'bandura', 'self_efficacy', 'observational_learning', 'reciprocal_determinism']
+tags: [personality, bandura, self_efficacy, observational_learning, reciprocal_determinism, 学科/社会心理学, 学科/普通心理学, 学科/人格心理学, 学科/学习心理学]
 ---
 
 # 社会认知理论 / Social Cognitive Theory

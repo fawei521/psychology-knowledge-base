@@ -2,7 +2,7 @@
 concept: stress_and_coping
 concept_cn: 应激与应对
 domain: general_psychology
-tags: ['stress', 'coping', 'lazarus', 'resilience', 'primary_appraisal', 'secondary_appraisal']
+tags: [stress, coping, lazarus, resilience, primary_appraisal, secondary_appraisal, 学科/情绪与动机, 学科/普通心理学]
 ---
 
 # 应激与应对 / Stress And Coping

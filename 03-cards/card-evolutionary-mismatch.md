@@ -1,7 +1,7 @@
 ---
 concept: "evolutionary_mismatch"
 domain: "evolutionary psychology"
-tags: ["evolution", "adaptation", "modern_environment", "instinct"]
+tags: [evolution, adaptation, modern_environment, instinct, 学科/基础与进化]
 source_papers: ["summary-evolutionary-psychology-framework-2026"]
 relations:
   - target: "card-fundamental-motives"

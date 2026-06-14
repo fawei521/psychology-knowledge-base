@@ -2,7 +2,7 @@
 concept: motivation_theories
 concept_cn: 动机理论
 domain: general_psychology
-tags: ['motivation', 'maslow', 'hierarchy_of_needs', 'drive_theory', 'incentive_theory', 'self_efficacy']
+tags: [motivation, maslow, hierarchy_of_needs, drive_theory, incentive_theory, self_efficacy, 学科/情绪与动机, 学科/普通心理学]
 ---
 
 # 动机理论 / Motivation Theories

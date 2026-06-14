@@ -2,7 +2,7 @@
 concept: working_memory
 concept_cn: 工作记忆
 domain: general_psychology
-tags: ['memory', 'working_memory', 'phonological_loop', 'visuospatial_sketchpad', 'central_executive']
+tags: [memory, working_memory, phonological_loop, visuospatial_sketchpad, central_executive, 学科/普通心理学, 学科/生理心理学]
 ---
 
 # 工作记忆 / Working Memory

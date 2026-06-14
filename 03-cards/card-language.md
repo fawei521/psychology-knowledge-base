@@ -2,7 +2,7 @@
 concept: language
 concept_cn: 语言
 domain: general_psychology
-tags: ['language', 'brocas_area', 'wernickes_area', 'language_acquisition', 'critical_period', 'lad']
+tags: [language, brocas_area, wernickes_area, language_acquisition, critical_period, lad, 学科/普通心理学]
 ---
 
 # 语言 / Language

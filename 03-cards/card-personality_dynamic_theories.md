@@ -2,7 +2,7 @@
 concept: personality_dynamic_theories
 concept_cn: 人格动力理论
 domain: general_psychology
-tags: ['personality', 'psychoanalysis', 'freud', 'defense_mechanisms', 'jung', 'collective_unconscious']
+tags: [personality, psychoanalysis, freud, defense_mechanisms, jung, collective_unconscious, 学科/人格心理学, 学科/普通心理学]
 ---
 
 # 人格动力理论 / Personality Dynamic Theories

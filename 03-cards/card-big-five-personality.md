@@ -1,7 +1,7 @@
 ---
 concept: "big_five_personality"
 domain: "personality psychology"
-tags: ["personality", "traits", "assessment", "OCEAN"]
+tags: [personality, traits, assessment, OCEAN, 学科/人格心理学]
 source_papers: ["summary-personality-analysis-framework-2026"]
 relations:
   - target: "card-personality-assessment"

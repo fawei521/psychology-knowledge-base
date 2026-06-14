@@ -150,3 +150,141 @@
 - 知识库基本运转流程已打通
 
 
+---
+
+## 2026-06-14 目录重构、分类手册整合、自动标签系统
+
+### 完成事项
+
+1. **分类手册整合**
+   - 将"社会事件心理认知分类手册"精简版写入 `04-index/event-classification.md`
+   - 包含 8 类型总览表、决策树、混合事件规则、理论速查、逐类型判断提示
+   - 用途：参考工具，非每次加事件的硬性要求
+
+2. **目录架构调整**
+   - `03-cards/` 下新建 13 个学科子目录（含 `.gitkeep`），作为学科首页导航入口
+   - 概念卡片仍平铺在 `03-cards/`，通过 `#学科/xxx` 标签实现跨学科归属
+   - 删除 `06-event-cards/`，事件文件统一归入 `05-observations/` 三个子目录：
+     - `current-events/` — 社会热点事件
+     - `personal-experiences/` — 个人经历
+     - `typical-cases/` — 典型案例深度分析
+
+3. **标签替代子目录**
+   - 决策：用 Obsidian 嵌套标签（`#学科/普通心理学`、`#事件类型/威胁-防御`）替代子目录分类
+   - 优势：一张卡片可打多学科标签，解决跨学科理论归属问题（如 Bandura 同时属于社会/学习/人格/普通心理学）
+   - 一张卡片可打多事件类型标签（如彩礼事件同时是 认同-团结 + 威胁-防御）
+
+4. **自动标签脚本 `tools/auto_tag.py`**
+   - 概念卡片：根据 `domain` 字段关键词匹配，自动补全 `#学科/xxx` 标签
+   - 事件文件：扫描 `current-events/` + `typical-cases/`，匹配 YAML + 正文前 800 字，≥2 关键词命中才确认
+   - 默认 dry-run 模式，需 `--apply` 才实际写入
+   - 处理三种 frontmatter 情况：已有 tags / 有 YAML 无 tags / 无 YAML
+
+5. **标签写入结果**
+   - 41 张概念卡片全部写入 `#学科/xxx` 标签
+   - 4 个事件文件写入 `#事件类型/xxx` 标签：
+     - 碳水脸事件 → 认同-团结 + 权力-支配
+     - 碳水脸分析报告 v1.2 → 同上
+     - 明星塌房群体极化 → 认同-团结
+     - 彩礼事件分析 v1.1 → 认同-团结 + 威胁-防御
+
+### 踩坑与教训
+
+| # | 问题 | 教训 | 类型 |
+|---|---|---|---|
+| 1 | 初版事件标签匹配全文，分析文本讨论所有类型，每个事件被标 6-8 种 | **匹配范围必须限缩**：只扫 YAML 字段 + body 前 800 字 | 普遍 |
+| 2 | `patch_tags` 只处理"已有 tags 行"的情况，彩礼事件无 YAML frontmatter 且体内有 YAML 代码块，正则匹配出错 | **文本处理要覆盖三种情况**：有 tags / 有 YAML 无 tags / 无 YAML | 普遍 |
+| 3 | auto_tag.py 头部注释写 `06-event-cards/`，但目录已删除、代码已改为 `typical-cases/` | **改代码时同步更新注释**，否则文档是谎言 | 普遍 |
+| 4 | 分析报告 v1.2 附录仍引用 `06-event-cards/` 路径 | **删目录后 grep 残留引用**，不能只删目录本身 | 项目 |
+| 5 | 大规模改 41 张卡片标签前没有 git commit | **批量修改前先打 commit**，方便回滚 | 普遍 |
+| 6 | Windows Git Bash 终端中文乱码，只能靠 Read 工具逐文件验证 | **中文项目在 Windows 下验证按文件内容而非终端输出** | 项目 |
+
+### 当前架构总览
+
+```
+psychology-knowledge-base/
+├── 03-cards/                  ← 概念卡片（平铺，用标签分类）
+│   ├── 10-普通心理学/...      ← 13 个学科子目录（首页导航，各含 .gitkeep）
+│   └── card-*.md              ← 41 张概念卡片（#学科/xxx 标签）
+├── 04-index/
+│   ├── concept-map.md
+│   ├── tag-index.md
+│   └── event-classification.md ← 社会事件分类手册（8 类型）
+├── 05-observations/
+│   ├── current-events/        ← 社会热点 + 分析报告
+│   ├── personal-experiences/  ← 个人经历
+│   └── typical-cases/         ← 典型案例深度分析
+├── tools/
+│   ├── auto_tag.py            ← 自动标签（新卡/新事件用的核心工具）
+│   ├── import_md.py           ← 增量导入数据库
+│   ├── semantic_search.py     ← 语义检索
+│   └── ...
+└── PROJECT_LOG.md             ← 本文件
+```
+
+### 日常使用流程
+
+```
+加新概念卡片 → 写 domain 字段        → python tools/auto_tag.py --apply → 学科标签自动补
+加新社会事件 → 写 YAML + 正文描述    → python tools/auto_tag.py --apply → 事件类型自动补
+找某学科卡片 → Obsidian 标签面板点 #学科/社会心理学
+找某类型事件 → Obsidian 标签面板点 #事件类型/不公-愤怒
+```
+
+### 待处理
+
+- 13 个学科子目录写入首页导航卡片
+- 5 张占位符卡片（彩礼事件卡片 11-15）填充内容
+- Zotero 文献条目 + concept card 的 `citekeys` 字段
+- 脚本：自动生成 `04-index/tag-index.md` 和 `04-index/concept-map.md`
+- 分析报告 v1.2 附录路径引用更新
+
+---
+
+## 2026-06-15 Claude Code 启动链优化 + 技术规范拆分
+
+### 完成事项
+
+1. **MEMORY.md 加载策略分级**
+   - 拆分为「启动时自动加载」（5 个）和「触发式」（3 个）
+   - `user-profile.md`、`lessons-learned.md`、`workspace-setup.md` 改为触发式
+   - 新增 `claude-code-startup-workflow.md` 记录完整 6 层加载链
+
+2. **CLAUDE.md 重写为项目总纲**
+   - 只保留项目是什么、核心原则、目录一览、读取规则表、日常流程
+   - 技术规范全部移到 `04-index/spec-*.md`
+   - 读取规则表：用户任务 → 精确文件，不再需要 AI 自己判断读哪节
+
+3. **技术规范从单文件拆分为 6 个独立文件**
+   - 根目录 `index.md` 删除
+   - `04-index/spec-card.md` — 概念卡片规范
+   - `04-index/spec-observation.md` — 观察记录规范
+   - `04-index/spec-archive.md` — 归档与同步规范
+   - `04-index/spec-tools.md` — 工具脚本规范
+   - `04-index/spec-index.md` — 索引维护规范
+   - `04-index/spec-maintenance.md` — 维护机制（更新追溯表 + 检查清单 + 月度审查）
+   - 优势：按任务精确触发，不再在一大张文件里找小节
+
+4. **心理学专家模式入口重构**
+   - `psychology-expert-mode/index.md` 拆清层次：基础模式触发 → 行为约定 → 按需规范 → 子模式
+   - 子模式（跨学科研究搭档）明确标注嵌套在专家模式之下
+   - `meta/psychology-expert-mode.md` 不再自动加载 `index.md`，改为按任务触发 `spec-*.md`
+
+5. **启动树形图更新**
+   - `claude-startup-tree.html`：2 次重写，修复 JS 语法错误、深色模式配色、BOM 编码
+   - 树数据更新为新加载结构：触发式文件标记为紫色、子模式嵌套展示
+   - 新增缩放/平移/双击重置交互
+
+### 踩坑与教训
+
+| # | 问题 | 教训 | 类型 |
+|---|---|---|---|
+| 1 | 树形图 HTML 在 Windows 下打开空白（3 次 debug） | SVG 需 `width:100vw;height:100vh` CSS；JS 避免重复声明；Windows 需要 UTF-8 BOM | 项目 |
+| 2 | CLAUDE.md 加了"一屏以内"硬约束 | 用户反馈：可用性第一，不用硬凑一屏 | 普遍 |
+| 3 | 拆分后 Obsidian workspace.json 残留旧 `index.md` 引用 | 删文件后检查 IDE 缓存文件 | 项目 |
+
+### 待处理
+
+- 概念关系图和思维导图（用户说"不急，等我指令"）
+- `04-index/` 下的 HTML 思维导图文件后续整理
+

@@ -2,7 +2,7 @@
 concept: attention
 concept_cn: 注意
 domain: general_psychology
-tags: ['attention', 'selective_attention', 'divided_attention', 'filter_model']
+tags: [attention, selective_attention, divided_attention, filter_model, 学科/普通心理学]
 ---
 
 # 注意 / Attention

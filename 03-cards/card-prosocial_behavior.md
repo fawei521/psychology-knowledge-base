@@ -2,7 +2,7 @@
 concept: prosocial_behavior
 concept_cn: 亲社会行为
 domain: social_psychology
-tags: ['prosocial_behavior', 'altruism', 'bystander_effect', 'diffusion_of_responsibility', 'reciprocity_norm']
+tags: [prosocial_behavior, altruism, bystander_effect, diffusion_of_responsibility, reciprocity_norm, 学科/社会心理学]
 ---
 
 # 亲社会行为 / Prosocial Behavior

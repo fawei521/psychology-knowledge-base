@@ -2,7 +2,7 @@
 concept: obedience
 concept_cn: 服从
 domain: social_psychology
-tags: ['obedience', 'milgram', 'authority']
+tags: [obedience, milgram, authority, 学科/社会心理学]
 ---
 
 # 服从 / Obedience

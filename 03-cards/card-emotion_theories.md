@@ -2,7 +2,7 @@
 concept: emotion_theories
 concept_cn: 情绪理论
 domain: general_psychology
-tags: ['emotion', 'james_lange_theory', 'cannon_bard_theory', 'schachter_singer_theory', 'lazarus', 'cognitive_appraisal']
+tags: [emotion, james_lange_theory, cannon_bard_theory, schachter_singer_theory, lazarus, cognitive_appraisal, 学科/情绪与动机, 学科/普通心理学]
 ---
 
 # 情绪理论 / Emotion Theories

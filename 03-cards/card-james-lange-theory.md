@@ -1,7 +1,7 @@
 ---
 concept: "james_lange_theory"
 domain: "emotion psychology"
-tags: ["emotion", "physiology", "theory"]
+tags: [emotion, physiology, theory, 学科/情绪与动机]
 source_papers: ["summary-emotion-analysis-framework-2026"]
 relations:
   - target: "card-schachter-singer-theory"

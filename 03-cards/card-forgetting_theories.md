@@ -2,7 +2,7 @@
 concept: forgetting_theories
 concept_cn: 遗忘理论
 domain: general_psychology
-tags: ['memory', 'forgetting', 'decay', 'interference', 'repression', 'retrieval_failure']
+tags: [memory, forgetting, decay, interference, repression, retrieval_failure, 学科/普通心理学]
 ---
 
 # 遗忘理论 / Forgetting Theories

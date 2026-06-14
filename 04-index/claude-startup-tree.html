@@ -1,0 +1,316 @@
+﻿﻿﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Claude Code 启动 · 树形加载链</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html, body { width:100%; height:100%; overflow:hidden; background:#0d1117; }
+  body { font-family:'PingFang SC','Microsoft YaHei','Segoe UI',sans-serif; user-select:none; color:#c9d1d9; }
+
+  #s { position:fixed; top:0; left:0; width:100vw; height:100vh; display:block; }
+
+  #toolbar {
+    position:fixed; top:16px; right:16px; z-index:100;
+    display:flex; flex-direction:column; gap:8px;
+  }
+  #toolbar button {
+    width:40px; height:40px; border-radius:10px;
+    border:1px solid #30363d; background:#161b22;
+    color:#c9d1d9; font-size:20px; cursor:pointer;
+    display:flex; align-items:center; justify-content:center;
+  }
+  #toolbar button:hover { background:#21262d; border-color:#58a6ff; }
+
+  #legend {
+    position:fixed; bottom:20px; left:20px; z-index:100;
+    display:flex; flex-wrap:wrap; gap:14px; font-size:12px;
+  }
+  .lg { display:flex; align-items:center; gap:6px; }
+  .lg-dot { width:12px; height:12px; border-radius:3px; flex-shrink:0; }
+
+  #hint {
+    position:fixed; bottom:20px; right:20px; z-index:100;
+    font-size:12px; color:#8b949e;
+  }
+</style>
+</head>
+<body>
+
+<div id="toolbar">
+  <button id="zo" title="放大">＋</button>
+  <button id="zi" title="缩小">－</button>
+  <button id="zr" title="重置">↺</button>
+</div>
+
+<div id="legend">
+  <div class="lg"><span class="lg-dot" style="background:#f78166"></span>启动前就绪</div>
+  <div class="lg"><span class="lg-dot" style="background:#58a6ff"></span>启动时自动加载</div>
+  <div class="lg"><span class="lg-dot" style="background:#d29922"></span>进入项目目录时</div>
+  <div class="lg"><span class="lg-dot" style="background:#bc8cff"></span>用户说指令时</div>
+  <div class="lg"><span class="lg-dot" style="background:#3fb950"></span>/ 开头或 AI 判断</div>
+</div>
+<div id="hint">滚轮缩放 · 拖拽平移 · 双击重置</div>
+
+<svg id="s"></svg>
+
+<script>
+(function(){
+  'use strict';
+
+  var NODE_W = 260, NODE_H = 52;
+  var V_GAP = 20, H_GAP = 20;
+  var nextId = 0;
+
+  function T(label, when, style, children) {
+    this.id = nextId++;
+    this.label = label;
+    this.when = when || '';
+    this.style = style || 'pre';
+    this.children = children || [];
+    this.x = 0; this.y = 0;
+    this._w = 0;
+  }
+
+  var S = {
+    pre:     { bg:'#1a0e08', stroke:'#5c2e1a', title:'#f78166', when:'#da7a52' },
+    auto:    { bg:'#0a1628', stroke:'#1a3a6b', title:'#58a6ff', when:'#6ba0e0' },
+    detect:  { bg:'#1a1400', stroke:'#5c4500', title:'#d29922', when:'#c9942a' },
+    trigger: { bg:'#160a1e', stroke:'#451a6b', title:'#bc8cff', when:'#a78bfa' },
+    skill:   { bg:'#0a1a10', stroke:'#1a4d1a', title:'#3fb950', when:'#4da85e' },
+    root:    { bg:'#161b22', stroke:'#6366f1', title:'#f0f6fc', when:'#94a3b8' }
+  };
+
+  // ============ 树数据 ============
+  var tree = new T('Claude Code 会话启动', '', 'root', [
+    new T('环境 · 启动前就绪', 'Claude Code 进程启动前已就绪', 'pre', [
+      new T('Windows 11 Pro + Git Bash (MSYS)', '操作系统及 Shell 环境', 'pre'),
+      new T('工作目录', '取决于你在哪个目录启动', 'pre', [
+        new T('C:\\Users\\乏味', '默认用户主目录', 'pre'),
+        new T('E:\\psychology-knowledge-base', '知识库项目目录', 'pre')
+      ]),
+      new T('MCP 服务器连接 (4个)', '进程启动时自动建立连接', 'pre', [
+        new T('context7 — 实时文档查询', '查框架/库的最新文档', 'pre'),
+        new T('fetch — 网页抓取', '抓取 URL 内容', 'pre'),
+        new T('memory — 知识图谱', '实体+关系+观察 持久化', 'pre'),
+        new T('sequential-thinking — 深度思考', '复杂问题分步推理', 'pre')
+      ])
+    ]),
+
+    new T('自建档案 · 启动时加载', 'MEMORY.md 索引 → 只自动加载必要的，其余触发式', 'auto', [
+      new T('① MEMORY.md — 记忆总索引', '启动后第一个读取，始终自动加载', 'auto'),
+      new T('③ installed-skills.md', '技能清单 · 始终自动加载', 'auto'),
+      new T('⑥ projects-index.md', '项目列表 · 只读索引，不展开详情', 'auto'),
+      new T('⑦ psychology-expert-mode/index.md', '模式入口 · 只读触发指令，不展开详情', 'auto'),
+      new T('⑧ memory-system-guide.md', '双轨记忆系统说明 · 始终自动加载', 'auto'),
+      new T('── 以下触发式（不自动加载）──', '', 'trigger', []),
+      new T('② user-profile.md', '用户提到身份/偏好时按需读取', 'trigger'),
+      new T('④ lessons-learned.md', '涉及编码/脚本工作时按需读取', 'trigger'),
+      new T('⑤ workspace-setup.md', '涉及磁盘/配置迁移时按需读取', 'trigger')
+    ]),
+
+    new T('项目目录检测', '检测当前工作目录下是否有项目文件', 'detect', [
+      new T('CLAUDE.md — 项目总纲', '进入目录自动读取：项目是什么/核心原则/目录一览/读取规则/日常流程', 'detect'),
+      new T('04-index/spec-*.md — 技术规范（触发式）', '按任务触发：spec-card / spec-observation / spec-archive / spec-tools / spec-index / spec-maintenance', 'trigger'),
+      new T('如果无 CLAUDE.md', '跳过项目规则，AI 按通用模式工作', 'detect')
+    ]),
+
+    new T('模式切换 · 用户说指令时', '说出特定触发句才会加载', 'trigger', [
+      new T('"开启心理学专家模式"', '自动加载 meta/psychology-expert-mode.md（行为约定）', 'trigger', [
+        new T('meta/psychology-expert-mode.md', '模式行为约定：触发条件/AI身份/语言/教材/Skills使用', 'trigger'),
+        new T('工作时按任务读 04-index/spec-*.md', '写卡片→spec-card / 写观察→spec-observation / 归档→spec-archive / 跑脚本→spec-tools / 索引→spec-index', 'trigger'),
+        new T('按需: concept-map.md / tag-index.md', '概念关系图 + 标签索引', 'trigger'),
+        new T('按需: 03-cards/card-*.md', '概念卡片 · 检索时按需读取', 'trigger'),
+        new T('🔬 子模式: "开启跨学科研究搭档模式"', '在专家模式基础上，额外加载事件分析协作工作流', 'trigger', [
+          new T('常驻: constitution.md', '三条铁律（不编造/不讨好/不放弃追问）+ 协议切换', 'trigger'),
+          new T('按需: rules/ (load_rule.py)', 'stage-a~d / role / output / commands / traps · 按阶段精确加载', 'trigger')
+        ])
+      ])
+    ]),
+
+    new T('项目详情 · 提到具体项目时', 'projects-index 中的项目按需加载', 'trigger', [
+      new T('kaoyan-companion — 考研陪伴应用', '用户提到考研陪伴时读取', 'trigger'),
+      new T('psychology-miniapp — 心理学小程序', '用户提到小程序时读取', 'trigger'),
+      new T('psychology-resources — 心理学资源', '用户提到资源时读取', 'trigger'),
+      new T('psychology-kb — 心理学知识库', '用户提到知识库时读取（当前项目）', 'trigger'),
+      new T('weread-exporter — 微信读书导出', '用户提到读书导出时读取', 'trigger')
+    ]),
+
+    new T('技能系统 · / 开头 或 AI 判断', '用户主动调用 或 AI 判断任务匹配', 'skill', [
+      new T('开发 (7个)', 'find-skills / skill-creator / learn-codebase / make-plan / do / smart-explore / pathfinder', 'skill'),
+      new T('前端/设计 (3个)', 'frontend-design / web-design-guidelines / design-is', 'skill'),
+      new T('文档 (3个)', 'docx / pptx / xlsx', 'skill'),
+      new T('记忆/学习 (4个)', 'remembering-conversations / self-improvement / mem-search / knowledge-agent', 'skill'),
+      new T('自建: win-safe-ps', 'Windows PowerShell 安全执行', 'skill'),
+      new T('web-access', '网页访问', 'skill')
+    ])
+  ]);
+
+  // ============ 布局 ============
+  function layout(node) {
+    if (node.children.length === 0) { node._w = NODE_W; return; }
+    node.children.forEach(function(c) { layout(c); });
+    var totalKidW = 0;
+    node.children.forEach(function(c) { totalKidW += c._w; });
+    totalKidW += H_GAP * (node.children.length - 1);
+    node._w = Math.max(NODE_W, totalKidW);
+  }
+
+  function place(node, x, y) {
+    node.y = y;
+    if (node.children.length === 0) { node.x = x; return; }
+    var kidW = 0;
+    node.children.forEach(function(c) { kidW += c._w; });
+    kidW += H_GAP * (node.children.length - 1);
+    var cx = x + (node._w - kidW) / 2;
+    node.children.forEach(function(c) {
+      place(c, cx, y + NODE_H + V_GAP);
+      cx += c._w + H_GAP;
+    });
+    var firstKid = node.children[0];
+    var lastKid = node.children[node.children.length - 1];
+    var kidsCenter = (firstKid.x + firstKid._w / 2 + lastKid.x + lastKid._w / 2) / 2;
+    node.x = kidsCenter - NODE_W / 2;
+  }
+
+  layout(tree);
+  place(tree, 0, 0);
+
+  // ============ 渲染 ============
+  var svg = document.getElementById('s');
+  var NS = 'http://www.w3.org/2000/svg';
+  var gRoot = document.createElementNS(NS, 'g');
+  svg.appendChild(gRoot);
+
+  function drawNode(node) {
+    if (node === tree) { node.children.forEach(drawNode); return; }
+    var col = S[node.style] || S.pre;
+    var g = document.createElementNS(NS, 'g');
+
+    // 背景矩形
+    var r = document.createElementNS(NS, 'rect');
+    r.setAttribute('x', node.x);
+    r.setAttribute('y', node.y);
+    r.setAttribute('width', NODE_W);
+    r.setAttribute('height', NODE_H);
+    r.setAttribute('rx', 8);
+    r.setAttribute('ry', 8);
+    r.setAttribute('fill', col.bg);
+    r.setAttribute('stroke', col.stroke);
+    r.setAttribute('stroke-width', 1.5);
+    g.appendChild(r);
+
+    // 标题文字
+    var t = document.createElementNS(NS, 'text');
+    t.setAttribute('x', node.x + 12);
+    t.setAttribute('y', node.y + 21);
+    t.setAttribute('font-size', '13px');
+    t.setAttribute('font-weight', '700');
+    t.setAttribute('fill', col.title);
+    t.setAttribute('font-family', 'PingFang SC, Microsoft YaHei, Segoe UI, sans-serif');
+    t.textContent = node.label;
+    g.appendChild(t);
+
+    // 时机文字
+    if (node.when) {
+      var w = document.createElementNS(NS, 'text');
+      w.setAttribute('x', node.x + 12);
+      w.setAttribute('y', node.y + 41);
+      w.setAttribute('font-size', '10px');
+      w.setAttribute('fill', col.when);
+      w.setAttribute('font-family', 'PingFang SC, Microsoft YaHei, Segoe UI, sans-serif');
+      w.textContent = node.when;
+      g.appendChild(w);
+    }
+
+    gRoot.appendChild(g);
+
+    // 连线：从本节点底部到子节点顶部
+    node.children.forEach(function(k) {
+      var p = document.createElementNS(NS, 'path');
+      var x1 = node.x + NODE_W / 2;
+      var y1 = node.y + NODE_H;
+      var x2 = k.x + NODE_W / 2;
+      var y2 = k.y;
+      var my = (y1 + y2) / 2;
+      p.setAttribute('d', 'M' + x1 + ',' + y1 + ' C' + x1 + ',' + my + ' ' + x2 + ',' + my + ' ' + x2 + ',' + y2);
+      p.setAttribute('fill', 'none');
+      p.setAttribute('stroke', '#484f58');
+      p.setAttribute('stroke-width', 1.2);
+      gRoot.appendChild(p);
+    });
+
+    node.children.forEach(drawNode);
+  }
+
+  drawNode(tree);
+
+  // ============ 自动适配窗口 ============
+  var allRects = [];
+  function collectBounds(node) {
+    if (node === tree) { node.children.forEach(collectBounds); return; }
+    allRects.push({ x: node.x, y: node.y, w: NODE_W, h: NODE_H });
+    node.children.forEach(collectBounds);
+  }
+  collectBounds(tree);
+
+  var minX = Math.min.apply(null, allRects.map(function(r) { return r.x; })) - 60;
+  var maxX = Math.max.apply(null, allRects.map(function(r) { return r.x + r.w; })) + 60;
+  var minY = Math.min.apply(null, allRects.map(function(r) { return r.y; })) - 40;
+  var maxY = Math.max.apply(null, allRects.map(function(r) { return r.y + r.h; })) + 80;
+  var totalW = maxX - minX;
+  var totalH = maxY - minY;
+
+  // ============ 缩放 & 平移 ============
+  var scale = 1, tx = 0, ty = 0;
+  var panning = false, sx, sy, stx, sty;
+
+  function apply() {
+    gRoot.setAttribute('transform', 'translate(' + tx + ',' + ty + ') scale(' + scale + ')');
+  }
+
+  function fitScreen() {
+    var vw = window.innerWidth;
+    var vh = window.innerHeight;
+    scale = Math.min(vw / totalW, vh / totalH, 1.0);
+    tx = (vw - totalW * scale) / 2 - minX * scale;
+    ty = (vh - totalH * scale) / 2 - minY * scale;
+    apply();
+  }
+
+  fitScreen();
+  window.addEventListener('resize', fitScreen);
+
+  svg.addEventListener('wheel', function(e) {
+    e.preventDefault();
+    var rect = svg.getBoundingClientRect();
+    var mx = e.clientX - rect.left, my = e.clientY - rect.top;
+    var d = e.deltaY > 0 ? 0.9 : 1.1;
+    var ns = Math.min(Math.max(scale * d, 0.08), 4);
+    tx = mx - (mx - tx) * (ns / scale);
+    ty = my - (my - ty) * (ns / scale);
+    scale = ns;
+    apply();
+  }, { passive: false });
+
+  svg.addEventListener('mousedown', function(e) {
+    panning = true; sx = e.clientX; sy = e.clientY; stx = tx; sty = ty;
+    svg.style.cursor = 'grabbing';
+  });
+  window.addEventListener('mousemove', function(e) {
+    if (!panning) return;
+    tx = stx + (e.clientX - sx); ty = sty + (e.clientY - sy);
+    apply();
+  });
+  window.addEventListener('mouseup', function() { panning = false; svg.style.cursor = 'grab'; });
+  svg.addEventListener('dblclick', fitScreen);
+
+  document.getElementById('zo').onclick = function() { scale = Math.min(scale * 1.25, 4); apply(); };
+  document.getElementById('zi').onclick = function() { scale = Math.max(scale / 1.25, 0.08); apply(); };
+  document.getElementById('zr').onclick = fitScreen;
+
+})();
+</script>
+</body>
+</html>

@@ -15,7 +15,15 @@ metadata:
 
 进入模式后，自动读取：
 
-- `E:\psychology-knowledge-base\index.md` —— 总规范、目录结构、使用流程
+- `E:\psychology-knowledge-base\meta\psychology-expert-mode.md` —— 本文件（模式行为约定）
+
+以下技术规范文件按需触发（见 `CLAUDE.md` 读取规则表）：
+
+- `E:\psychology-knowledge-base\04-index\spec-card.md` —— 概念卡片规范
+- `E:\psychology-knowledge-base\04-index\spec-observation.md` —— 观察记录规范
+- `E:\psychology-knowledge-base\04-index\spec-archive.md` —— 归档与同步规范
+- `E:\psychology-knowledge-base\04-index\spec-tools.md` —— 工具脚本规范
+- `E:\psychology-knowledge-base\04-index\spec-maintenance.md` —— 维护机制
 
 以下文件按需读取：
 

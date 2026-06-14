@@ -2,7 +2,7 @@
 concept: emotion_regulation
 concept_cn: 情绪调节
 domain: general_psychology
-tags: ['emotion', 'emotion_regulation', 'cognitive_reappraisal', 'expressive_suppression', 'gross_process_model']
+tags: [emotion, emotion_regulation, cognitive_reappraisal, expressive_suppression, gross_process_model, 学科/情绪与动机, 学科/普通心理学]
 ---
 
 # 情绪调节 / Emotion Regulation

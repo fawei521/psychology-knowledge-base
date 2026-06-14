@@ -2,7 +2,7 @@
 concept: consciousness_and_sleep
 concept_cn: 意识与睡眠
 domain: general_psychology
-tags: ['consciousness', 'sleep', 'rem_sleep', 'nrem_sleep', 'hypnosis']
+tags: [consciousness, sleep, rem_sleep, nrem_sleep, hypnosis, 学科/普通心理学]
 ---
 
 # 意识与睡眠 / Consciousness And Sleep

@@ -2,7 +2,7 @@
 concept: group_influence
 concept_cn: 群体影响
 domain: social_psychology
-tags: ['group_influence', 'social_facilitation', 'social_loafing', 'deindividuation', 'group_polarization', 'groupthink']
+tags: [group_influence, social_facilitation, social_loafing, deindividuation, group_polarization, groupthink, 学科/社会心理学]
 ---
 
 # 群体影响 / Group Influence

@@ -4,7 +4,7 @@ title: "某明星塌房事件中的群体极化现象"
 event_date: "2026-06-01"
 context: "社交媒体上关于某明星负面新闻的讨论"
 behavior: "粉丝群体内部观点越来越极端，对立双方互相攻击"
-tags: ["group_polarization", "social_media", "identity", "fan_psychology"]
+tags: [group_polarization, social_media, identity, fan_psychology, '事件类型/认同-团结']
 related_entities: ["fundamental_attribution_error"]
 sources: ["summary-social-behavior-framework-2026"]
 ---

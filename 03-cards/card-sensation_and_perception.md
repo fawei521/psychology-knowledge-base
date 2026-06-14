@@ -2,7 +2,7 @@
 concept: sensation_and_perception
 concept_cn: 感觉与知觉
 domain: general_psychology
-tags: ['sensation', 'perception', 'psychophysics']
+tags: [sensation, perception, psychophysics, 学科/普通心理学, 学科/实验心理学]
 ---
 
 # 感觉与知觉 / Sensation And Perception

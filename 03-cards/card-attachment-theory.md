@@ -1,7 +1,7 @@
 ---
 concept: "attachment_theory"
 domain: "developmental psychology / relationships"
-tags: ["attachment", "relationships", "intimacy", "development"]
+tags: [attachment, relationships, intimacy, development, 学科/人格心理学, 学科/发展心理学]
 source_papers: ["summary-personality-analysis-framework-2026"]
 relations:
   - target: "card-big-five-personality"

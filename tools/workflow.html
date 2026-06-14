@@ -1,0 +1,404 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>心理学知识库 · 工作流程图</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+    background: #0f172a;
+    color: #e2e8f0;
+    padding: 40px 20px;
+    line-height: 1.7;
+  }
+  .container { max-width: 1100px; margin: 0 auto; }
+  h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 8px;
+    color: #f1f5f9;
+  }
+  .subtitle { text-align: center; color: #94a3b8; margin-bottom: 48px; font-size: 0.95rem; }
+
+  /* ===== 阶段块 ===== */
+  .phase {
+    background: #1e293b;
+    border-radius: 14px;
+    margin-bottom: 32px;
+    overflow: hidden;
+    border: 1px solid #334155;
+  }
+  .phase-header {
+    padding: 16px 28px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    border-bottom: 1px solid #334155;
+  }
+  .phase-num {
+    width: 36px; height: 36px; border-radius: 10px;
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 700; font-size: 1rem; flex-shrink: 0;
+  }
+  .phase:nth-child(1) .phase-num { background: #3b82f6; }  /* 蓝 */
+  .phase:nth-child(2) .phase-num { background: #8b5cf6; }  /* 紫 */
+  .phase:nth-child(3) .phase-num { background: #06b6d4; }  /* 青 */
+  .phase:nth-child(4) .phase-num { background: #f59e0b; }  /* 橙 */
+  .phase:nth-child(5) .phase-num { background: #10b981; }  /* 绿 */
+  .phase:nth-child(6) .phase-num { background: #ef4444; }  /* 红 */
+  .phase-title { font-size: 1.2rem; font-weight: 600; }
+  .phase-body { padding: 24px 28px; }
+
+  /* ===== 流程步骤 ===== */
+  .flow-row { display: flex; align-items: flex-start; gap: 16px; margin-bottom: 20px; }
+  .flow-row:last-child { margin-bottom: 0; }
+  .step-box {
+    flex: 1; background: #0f172a; border-radius: 10px; padding: 16px 18px;
+    border: 1px solid #334155; position: relative;
+    transition: border-color 0.2s;
+  }
+  .step-box:hover { border-color: #6366f1; }
+  .step-label {
+    font-size: 0.75rem; font-weight: 700; text-transform: uppercase;
+    letter-spacing: 0.05em; margin-bottom: 6px;
+  }
+  .step-label.tag    { color: #a78bfa; }
+  .step-label.cmd    { color: #fbbf24; }
+  .step-label.action { color: #60a5fa; }
+  .step-label.result { color: #34d399; }
+  .step-label.load   { color: #94a3b8; }
+  .step-text { font-size: 0.95rem; color: #cbd5e1; }
+  .step-text code {
+    background: #1e293b; padding: 1px 6px; border-radius: 4px;
+    font-size: 0.88rem; color: #fbbf24;
+  }
+
+  /* 箭头 */
+  .arrow-col {
+    display: flex; align-items: center; justify-content: center;
+    width: 32px; flex-shrink: 0; padding-top: 16px;
+  }
+  .arrow-col svg { width: 24px; height: 24px; color: #475569; }
+
+  /* 分叉行 */
+  .branch-row { display: flex; gap: 16px; margin-bottom: 20px; }
+  .branch-label {
+    width: 100%; text-align: center; font-size: 0.8rem; color: #64748b;
+    margin-bottom: 8px; font-weight: 600;
+  }
+  .branch-col { flex: 1; display: flex; flex-direction: column; gap: 12px; }
+
+  /* 文件路径 */
+  .file-path {
+    font-size: 0.82rem; color: #64748b; font-family: 'Consolas', 'Cascadia Code', monospace;
+    margin-top: 6px;
+  }
+  .file-path span { color: #a78bfa; }
+
+  /* 数据库 */
+  .db-box {
+    background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+    border: 2px dashed #6366f1; border-radius: 12px; padding: 20px 24px;
+    text-align: center; margin-top: 16px;
+  }
+  .db-box h3 { color: #a78bfa; font-size: 1rem; margin-bottom: 6px; }
+  .db-box p { color: #94a3b8; font-size: 0.9rem; }
+
+  /* 搜索终点 */
+  .search-end {
+    display: flex; gap: 16px; margin-top: 16px;
+  }
+  .search-end > div {
+    flex: 1; background: #0f172a; border-radius: 10px; padding: 16px;
+    text-align: center; border: 1px solid #334155;
+  }
+  .search-end h4 { color: #a78bfa; margin-bottom: 4px; }
+
+  /* 注意事项 */
+  .note {
+    background: #312e81; color: #c7d2fe; border-radius: 8px;
+    padding: 12px 16px; font-size: 0.88rem; margin-top: 16px;
+  }
+  .note strong { color: #fbbf24; }
+
+  /* 响应式 */
+  @media (max-width: 768px) {
+    .flow-row, .branch-row, .search-end { flex-direction: column; }
+    .arrow-col { transform: rotate(90deg); padding-top: 0; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>心理学知识库 · 完整工作流程</h1>
+  <p class="subtitle">从 AI 启动 → 加内容 → 自动标签 → 同步 → 检索，全链路可视化</p>
+
+  <!-- ====== 阶段一：启动 ====== -->
+  <div class="phase">
+    <div class="phase-header">
+      <div class="phase-num">1</div>
+      <div class="phase-title">会话启动 — AI 自动加载</div>
+    </div>
+    <div class="phase-body">
+      <div class="flow-row">
+        <div class="step-box">
+          <div class="step-label load">自动读取</div>
+          <div class="step-text">
+            <code>CLAUDE.md</code> — 项目规则手册<br>
+            <span style="color:#94a3b8;font-size:0.85rem;">目录结构 · 命名规范 · frontmatter 字段 · 处理流程</span>
+          </div>
+          <div class="file-path"><span>E:\psychology-knowledge-base\</span>CLAUDE.md</div>
+        </div>
+        <div class="arrow-col">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </div>
+        <div class="step-box">
+          <div class="step-label load">自动读取</div>
+          <div class="step-text">
+            <code>MEMORY.md</code> — 个人档案索引<br>
+            <span style="color:#94a3b8;font-size:0.85rem;">你是谁 · 已装技能 · 项目列表 · 踩坑记录</span>
+          </div>
+          <div class="file-path"><span>C:\Users\乏味\.claude\...\memory\</span>MEMORY.md</div>
+        </div>
+      </div>
+      <div class="note">
+        <strong>不会自动加载：</strong>项目详细记忆（提到具体项目时才读）、心理学专家模式（切换时才加载）
+      </div>
+    </div>
+  </div>
+
+  <!-- ====== 阶段二：加内容 ====== -->
+  <div class="phase">
+    <div class="phase-header">
+      <div class="phase-num">2</div>
+      <div class="phase-title">添加新内容 — 四类入口</div>
+    </div>
+    <div class="phase-body">
+      <div class="branch-row">
+        <div class="branch-col">
+          <div class="branch-label">📄 原始材料</div>
+          <div class="step-box">
+            <div class="step-label tag">写入目录</div>
+            <div class="step-text"><code>01-raw/pdfs/</code> 或 <code>01-raw/web-pages/</code></div>
+            <div class="step-text" style="color:#94a3b8;font-size:0.85rem;">论文 PDF、网页存档、视频稿<br>只存不检索，作为原始备份</div>
+          </div>
+        </div>
+        <div class="branch-col">
+          <div class="branch-label">📝 结构化摘要</div>
+          <div class="step-box">
+            <div class="step-label tag">写入文件</div>
+            <div class="step-text"><code>02-summaries/summary-xxx.md</code></div>
+            <div class="step-text" style="color:#94a3b8;font-size:0.85rem;">从 raw 材料中提取<br>包含关键发现、方法、概念</div>
+          </div>
+        </div>
+        <div class="branch-col">
+          <div class="branch-label">🃏 概念卡片</div>
+          <div class="step-box">
+            <div class="step-label tag">写入文件</div>
+            <div class="step-text"><code>03-cards/card-xxx.md</code></div>
+            <div class="step-text" style="color:#94a3b8;font-size:0.85rem;">必须写 <code>domain</code> 和 <code>tags</code><br>这是自动标签的依据</div>
+          </div>
+        </div>
+        <div class="branch-col">
+          <div class="branch-label">🔍 观察/事件</div>
+          <div class="step-box">
+            <div class="step-label tag">写入文件</div>
+            <div class="step-text"><code>05-observations/current-events/</code><br><code>05-observations/personal-experiences/</code><br><code>05-observations/typical-cases/</code></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ====== 阶段三：自动标签 ====== -->
+  <div class="phase">
+    <div class="phase-header">
+      <div class="phase-num">3</div>
+      <div class="phase-title">自动标签 — auto_tag.py</div>
+    </div>
+    <div class="phase-body">
+      <div class="flow-row">
+        <div class="step-box">
+          <div class="step-label cmd">命令</div>
+          <div class="step-text"><code>python tools/auto_tag.py</code><br><span style="color:#94a3b8;">预览模式，不修改文件</span></div>
+        </div>
+        <div class="arrow-col">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </div>
+        <div class="step-box">
+          <div class="step-label cmd">确认后执行</div>
+          <div class="step-text"><code>python tools/auto_tag.py --apply</code><br><span style="color:#fbbf24;">实际写入标签</span></div>
+        </div>
+      </div>
+
+      <div class="branch-row" style="margin-top:20px;">
+        <div class="branch-col">
+          <div class="branch-label">🃏 概念卡片</div>
+          <div class="step-box">
+            <div class="step-label action">匹配逻辑</div>
+            <div class="step-text">
+              扫描 <code>domain</code> + <code>tags</code> + <code>concept</code> 字段<br>
+              对照 13 学科关键词表<br>
+              补全 <code>#学科/xxx</code> 标签
+            </div>
+          </div>
+        </div>
+        <div class="branch-col">
+          <div class="branch-label">🔍 事件文件</div>
+          <div class="step-box">
+            <div class="step-label action">匹配逻辑</div>
+            <div class="step-text">
+              扫描 YAML 字段 + 正文前 800 字<br>
+              对照 8 种事件类型关键词表<br>
+              ≥2 个关键词命中才确认<br>
+              补全 <code>#事件类型/xxx</code> 标签
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="note" style="margin-top:16px;">
+        <strong>为什么概念卡只看 YAML，事件要扫正文？</strong><br>
+        概念卡的 domain 字段已明确学科，不需要扫正文。事件文件的 YAML 通常太简略（只有标题），需要读正文前几段才能判断类型。限制前 800 字是为了避开分析区的引用讨论。
+      </div>
+    </div>
+  </div>
+
+  <!-- ====== 阶段四：同步数据库 ====== -->
+  <div class="phase">
+    <div class="phase-header">
+      <div class="phase-num">4</div>
+      <div class="phase-title">同步数据库 — import_md.py</div>
+    </div>
+    <div class="phase-body">
+      <div class="flow-row">
+        <div class="step-box">
+          <div class="step-label cmd">命令</div>
+          <div class="step-text"><code>python tools/import_md.py</code></div>
+        </div>
+        <div class="arrow-col">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </div>
+        <div class="step-box">
+          <div class="step-label action">增量同步</div>
+          <div class="step-text">
+            对比文件 mtime + hash<br>
+            只处理 <span style="color:#34d399;">新增 / 修改 / 删除</span> 的文件<br>
+            不会每次全量重建
+          </div>
+        </div>
+      </div>
+      <div class="db-box">
+        <h3>📦 kb.db（SQLite 数据库）</h3>
+        <p>存储表：sources · snippets · entities · observations · relations · tags · vec_documents（向量）</p>
+        <p style="font-size:0.82rem;margin-top:4px;">数据库由 Markdown 文件生成，可随时删除重建——Markdown 是唯一真相源</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ====== 阶段五：检索 ====== -->
+  <div class="phase">
+    <div class="phase-header">
+      <div class="phase-num">5</div>
+      <div class="phase-title">检索与查找</div>
+    </div>
+    <div class="phase-body">
+      <div class="search-end">
+        <div>
+          <h4>🏷️ 标签筛选</h4>
+          <p style="color:#94a3b8;font-size:0.9rem;">
+            Obsidian 标签面板<br>
+            点 <code style="color:#a78bfa;">#学科/社会心理学</code><br>
+            所有相关卡片直接列出
+          </p>
+        </div>
+        <div>
+          <h4>🔗 反向链接</h4>
+          <p style="color:#94a3b8;font-size:0.9rem;">
+            打开一张卡片<br>
+            看哪些事件/摘要引用了它<br>
+            Obsidian 自动显示
+          </p>
+        </div>
+        <div>
+          <h4>🧠 语义搜索</h4>
+          <p style="color:#94a3b8;font-size:0.9rem;">
+            <code style="color:#fbbf24;">python tools/semantic_search.py "查询文本"</code><br>
+            384 维向量相似度匹配<br>
+            不依赖关键词，理解语义
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ====== 阶段六：更新索引 ====== -->
+  <div class="phase">
+    <div class="phase-header">
+      <div class="phase-num">6</div>
+      <div class="phase-title">维护与更新</div>
+    </div>
+    <div class="phase-body">
+      <div class="flow-row">
+        <div class="step-box">
+          <div class="step-label action">更新索引</div>
+          <div class="step-text">
+            手动或脚本更新：<br>
+            <code>04-index/concept-map.md</code> — 概念关系图<br>
+            <code>04-index/tag-index.md</code> — 标签索引<br>
+            <code>04-index/event-classification.md</code> — 事件分类手册
+          </div>
+        </div>
+        <div class="arrow-col">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </div>
+        <div class="step-box">
+          <div class="step-label action">写日志</div>
+          <div class="step-text">
+            更新 <code>PROJECT_LOG.md</code> — 操作记录 + 踩坑<br>
+            更新 <code>CURRENT_STATE.md</code> — 当前状态 + 待办
+          </div>
+        </div>
+        <div class="arrow-col">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </div>
+        <div class="step-box">
+          <div class="step-label result">git commit</div>
+          <div class="step-text">
+            批量修改前先 commit 做安全网<br>
+            阶段性完成后 push 到 GitHub
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ====== 总结 ====== -->
+  <div class="phase" style="border-color: #6366f1;">
+    <div class="phase-header" style="border-bottom-color: #6366f1;">
+      <div class="phase-num" style="background:linear-gradient(135deg,#6366f1,#8b5cf6);">→</div>
+      <div class="phase-title">完整链路一览</div>
+    </div>
+    <div class="phase-body" style="text-align:center;font-size:1rem;font-family:'Consolas','Cascadia Code',monospace;color:#cbd5e1;line-height:2.2;">
+      启动：读取 CLAUDE.md + MEMORY.md<br>
+      &darr;<br>
+      加内容：写 Markdown → 01-raw / 02-summaries / 03-cards / 05-observations<br>
+      &darr;<br>
+      打标签：<code style="color:#fbbf24;">python tools/auto_tag.py --apply</code><br>
+      &darr;<br>
+      同步库：<code style="color:#fbbf24;">python tools/import_md.py</code><br>
+      &darr;<br>
+      可用啦：Obsidian 标签面板 / 语义搜索 / AI 问答<br>
+      &darr;<br>
+      收尾：更新索引 + 写日志 + git commit
+    </div>
+  </div>
+
+  <p style="text-align:center;color:#475569;margin-top:40px;font-size:0.85rem;">
+    用浏览器打开此文件即可查看 · <code>E:\psychology-knowledge-base\tools\workflow.html</code>
+  </p>
+</div>
+</body>
+</html>

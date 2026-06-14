@@ -1,6 +1,6 @@
 ---
 name: psychology-expert-mode-load-optimization
-description: 心理学专家模式知识库读取策略优化为只读 index.md，其他按需读取
+description: 心理学专家模式知识库读取策略优化为只读行为约定，技术规范按需触发
 metadata:
   type: feedback
 ---
@@ -13,6 +13,6 @@ metadata:
 - 后续知识库膨胀后，全读成本会越来越高。
 
 **How to apply：**
-- 触发「开启心理学专家模式」后，只自动读取 `E:\psychology-knowledge-base\index.md`。
+- 触发「开启心理学专家模式」后，只自动读取 `E:\psychology-knowledge-base\meta\psychology-expert-mode.md`。技术规范按任务触发 `04-index/spec-*.md`。
 - `04-index/concept-map.md` 和 `04-index/tag-index.md` 改为按需读取（例如用户问到概念关系或标签检索时）。
 - 不要把当前文本框的会话上下文误当成长期记忆来推销，用户会觉得这是理所当然的。

@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Claude Code 启动工作流 · 精细流程图</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: #0d1117;
+    font-family: 'PingFang SC', 'Microsoft YaHei', 'Segoe UI', sans-serif;
+    overflow: hidden;
+    height: 100vh;
+    user-select: none;
+  }
+
+  /* 工具栏 */
+  #toolbar {
+    position: fixed; top: 16px; right: 16px; z-index: 100;
+    display: flex; flex-direction: column; gap: 8px;
+  }
+  #toolbar button {
+    width: 40px; height: 40px; border-radius: 10px;
+    border: 1px solid #30363d; background: #161b22;
+    color: #c9d1d9; font-size: 20px; cursor: pointer;
+    display: flex; align-items: center; justify-content: center;
+    transition: background 0.15s;
+  }
+  #toolbar button:hover { background: #21262d; border-color: #58a6ff; }
+  #toolbar button:active { background: #30363d; }
+
+  /* 图例 */
+  #legend {
+    position: fixed; bottom: 20px; left: 20px; z-index: 100;
+    display: flex; flex-wrap: wrap; gap: 12px;
+    font-size: 12px; color: #8b949e;
+  }
+  .legend-dot {
+    width: 12px; height: 12px; border-radius: 3px; display: inline-block; margin-right: 5px;
+  }
+
+  /* 提示 */
+  #hint {
+    position: fixed; bottom: 20px; right: 20px; z-index: 100;
+    font-size: 12px; color: #484f58;
+  }
+
+  /* SVG */
+  svg { width: 100vw; height: 100vh; cursor: grab; }
+  svg:active { cursor: grabbing; }
+
+  /* 节点样式 */
+  .node rect, .node .bg {
+    fill: #161b22; stroke: #30363d; stroke-width: 1.5;
+    rx: 8; ry: 8;
+  }
+  .node .title-bg { rx: 8; ry: 8; }
+  .node text.title { font-size: 15px; font-weight: 700; fill: #f0f6fc; }
+  .node text.label { font-size: 12px; fill: #8b949e; }
+  .node text.detail { font-size: 11px; fill: #c9d1d9; }
+  .node text.small { font-size: 10px; fill: #6e7681; }
+
+  /* 不同层级颜色 */
+  .layer-env .bg { fill: #0d1b2a; stroke: #1b3a5c; }
+  .layer-env .title-bg { fill: #1b3a5c; }
+  .layer-env text.title { fill: #58a6ff; }
+
+  .layer-autoload .bg { fill: #1a0d2e; stroke: #3d1a6b; }
+  .layer-autoload .title-bg { fill: #3d1a6b; }
+  .layer-autoload text.title { fill: #bc8cff; }
+
+  .layer-memory .bg { fill: #0d1f1a; stroke: #1a4d3d; }
+  .layer-memory .title-bg { fill: #1a4d3d; }
+  .layer-memory text.title { fill: #3fb950; }
+
+  .layer-project .bg { fill: #1a1500; stroke: #4d3a00; }
+  .layer-project .title-bg { fill: #4d3a00; }
+  .layer-project text.title { fill: #d29922; }
+
+  .layer-mode .bg { fill: #1a0d1f; stroke: #5c1a6b; }
+  .layer-mode .title-bg { fill: #5c1a6b; }
+  .layer-mode text.title { fill: #f778ba; }
+
+  .layer-skill .bg { fill: #1a1a0d; stroke: #4d4d1a; }
+  .layer-skill .title-bg { fill: #4d4d1a; }
+  .layer-skill text.title { fill: #e6e600; }
+
+  /* 箭头 */
+  path.line { fill: none; stroke: #30363d; stroke-width: 1.5; }
+  path.line.thick { stroke-width: 2.5; stroke: #58a6ff; }
+  path.line.dashed { stroke-dasharray: 6 4; }
+
+  /* 标签徽章 */
+  .badge-auto { fill: #238636; }
+  .badge-manual { fill: #9e6a03; }
+  .badge-trigger { fill: #6e40c9; }
+  .badge-ondemand { fill: #c9510c; }
+</style>
+</head>
+<body>
+
+<div id="toolbar">
+  <button id="btn-zoom-in" title="放大">＋</button>
+  <button id="btn-zoom-out" title="缩小">－</button>
+  <button id="btn-reset" title="重置视图">↺</button>
+  <button id="btn-fit" title="适应窗口">⊡</button>
+</div>
+
+<div id="legend">
+  <span><span class="legend-dot" style="background:#58a6ff"></span>环境层（启动前就绪）</span>
+  <span><span class="legend-dot" style="background:#bc8cff"></span>自建档案（自动注入）</span>
+  <span><span class="legend-dot" style="background:#3fb950"></span>记忆系统</span>
+  <span><span class="legend-dot" style="background:#d29922"></span>项目感知（按需）</span>
+  <span><span class="legend-dot" style="background:#f778ba"></span>模式切换</span>
+  <span><span class="legend-dot" style="background:#e6e600"></span>技能系统</span>
+</div>
+<div id="hint">🖱️ 滚轮缩放 · 拖拽平移 · 双击重置</div>
+
+<svg id="flow"></svg>
+
+<script>
+const NS = 'http://www.w3.org/2000/svg';
+const svg = document.getElementById('flow');
+const gRoot = document.createElementNS(NS, 'g');
+gRoot.setAttribute('id', 'root-group');
+svg.appendChild(gRoot);
+
+// ============================
+// 辅助函数
+// ============================
+
+// 防深度嵌套 over-engineering, 直接手写节点
+// 用 group 包装每个节点方块
+function makeNode(x, y, w, h, cls) {
+  const g = document.createElementNS(NS, 'g');
+  g.setAttribute('class', `node ${cls}`);
+  g.setAttribute('transform', `translate(${x},${y})`);
+
+  // 背景
+  const bg = document.createElementNS(NS, 'rect');
+  bg.setAttribute('width', w); bg.setAttribute('height', h);
+  bg.setAttribute('class', 'bg');
+  g.appendChild(bg);
+  return g;
+}
+
+function addTitle(g, text, y) {
+  const t = document.createElementNS(NS, 'text');
+  t.setAttribute('x', 12); t.setAttribute('y', y);
+  t.setAttribute('class', 'title');
+  t.textContent = text;
+  g.appendChild(t);
+  return t;
+}
+function addLabel(g, text, y) {
+  const t = document.createElementNS(NS, 'text');
+  t.setAttribute('x', 12); t.setAttribute('y', y);
+  t.setAttribute('class', 'label');
+  t.textContent = text;
+  g.appendChild(t);
+  return t;
+}
+function addDetail(g, text, y, indent) {
+  const t = document.createElementNS(NS, 'text');
+  t.setAttribute('x', (indent || 12)); t.setAttribute('y', y);
+  t.setAttribute('class', 'detail');
+  t.textContent = text;
+  g.appendChild(t);
+  return t;
+}
+function addSmall(g, text, y) {
+  const t = document.createElementNS(NS, 'text');
+  t.setAttribute('x', 12); t.setAttribute('y', y);
+  t.setAttribute('class', 'small');
+  t.textContent = text;
+  g.appendChild(t);
+  return t;
+}
+
+function boxW(g) { return g.children[0].getAttribute('width') * 1; }
+function boxH(g) { return g.children[0].getAttribute('height') * 1; }
+
+// 画线
+function line(x1, y1, x2, y2, cls) {
+  const p = document.createElementNS(NS, 'path');
+  const midX = (x1 + x2) / 2;
+  let d = '';
+  if (Math.abs(y2 - y1) < 5) {
+    d = `M${x1},${y1} L${x2},${y2}`;
+  } else {
+    d = `M${x1},${y1} C${x1},${(y1+y2)/2} ${x2},${(y1+y2)/2} ${x2},${y2}`;
+  }
+  p.setAttribute('d', d);
+  p.setAttribute('class', `line ${cls || ''}`);
+  gRoot.appendChild(p);
+  return p;
+}
+
+function arrowMarker() {
+  const defs = document.createElementNS(NS, 'defs');
+  const m = document.createElementNS(NS, 'marker');
+  m.setAttribute('id', 'arrow');
+  m.setAttribute('markerWidth', 8); m.setAttribute('markerHeight', 6);
+  m.setAttribute('refX', 8); m.setAttribute('refY', 3);
+  m.setAttribute('orient', 'auto');
+  const mp = document.createElementNS(NS, 'polygon');
+  mp.setAttribute('points', '0 0, 8 3, 0 6');
+  mp.setAttribute('fill', '#484f58');
+  m.appendChild(mp);
+  defs.appendChild(m);
+  svg.appendChild(defs);
+}
+arrowMarker();
+
+// badge
+function addBadge(g, text, cls, y) {
+  const r = document.createElementNS(NS, 'rect');
+  r.setAttribute('x', 4); r.setAttribute('y', y); r.setAttribute('rx', 4); r.setAttribute('ry', 4);
+  r.setAttribute('width', text.length * 7 + 10); r.setAttribute('height', 18);
+  r.setAttribute('class', cls);
+  const t = document.createElementNS(NS, 'text');
+  t.setAttribute('x', 9); t.setAttribute('y', y + 13);
+  t.setAttribute('class', 'small'); t.setAttribute('fill', '#fff'); t.textContent = text;
+  g.appendChild(r); g.appendChild(t);
+}
+
+// ============================
+// 画布
+// ============================
+
+const LAYER_GAP = 40;
+const X0 = 60;
+let yPos = 40;
+
+// ======= 标题 =======
+function addSectionTitle(text, color) {
+  const g = document.createElementNS(NS, 'g');
+  g.setAttribute('transform', `translate(${X0 - 20},${yPos})`);
+  const r = document.createElementNS(NS, 'rect');
+  r.setAttribute('width', 8); r.setAttribute('height', 26); r.setAttribute('rx', 4);
+  r.setAttribute('fill', color);
+  g.appendChild(r);
+  const t = document.createElementNS(NS, 'text');
+  t.setAttribute('x', 18); t.setAttribute('y', 19);
+  t.setAttribute('style', 'font-size:17px;font-weight:700;fill:#f0f6fc;');
+  t.textContent = text;
+  g.appendChild(t);
+  gRoot.appendChild(g);
+  g._y = yPos;
+  g._h = 30;
+  yPos += 36;
+}
+
+// ============================================
+// 第〇层：启动前环境
+// ============================================
+addSectionTitle('〇 启动前 · 环境就绪', '#58a6ff');
+
+{
+  const rowY = yPos;
+  // OS + Shell
+  const osW = 220, osH = 70;
+  const g1 = makeNode(X0, yPos, osW, osH, 'layer-env');
+  addTitle(g1, '🖥️ Windows 11 + Git Bash', 22);
+  addDetail(g1, 'MSYS 环境 · 中文编码需注意', 44);
+  gRoot.appendChild(g1);
+
+  // 工作目录
+  const g2 = makeNode(X0 + osW + 24, yPos, 240, osH, 'layer-env');
+  addTitle(g2, '📂 工作目录', 22);
+  addDetail(g2, 'C:\\Users\\乏味  /  E:\\知识库', 44);
+  addSmall(g2, '可切换，不固定', 62);
+  gRoot.appendChild(g2);
+
+  g1._cx = X0 + osW / 2; g1._cy = yPos + osH / 2;
+  g2._cx = X0 + osW + 24 + 120; g2._cy = yPos + osH / 2;
+
+  yPos += osH + 16;
+
+  // MCP 服务器
+  const mcpW = 660, mcpH = 58;
+  const gMCP = makeNode(X0, yPos, mcpW, mcpH, 'layer-env');
+  addTitle(gMCP, '🔌 MCP 服务器（启动时连接）', 22);
+  addDetail(gMCP, 'context7（文档查询）  ·  fetch（网页抓取）  ·  memory（知识图谱）  ·  sequential-thinking（深度思考）', 44);
+  gRoot.appendChild(gMCP);
+  gMCP._cx = X0 + mcpW / 2; gMCP._cy = yPos + mcpH / 2;
+
+  yPos += mcpH + LAYER_GAP;
+}
+
+// ============================================
+// 第一层：自建档案（每次自动注入）
+// ============================================
+addSectionTitle('一 启动第一步 · 自建档案全量注入', '#bc8cff');
+
+{
+  // 主入口
+  const gw1 = 280, gh1 = 64;
+  const gIdx = makeNode(X0, yPos, gw1, gh1, 'layer-autoload');
+  addTitle(gIdx, '📋 MEMORY.md', 22);
+  addDetail(gIdx, '记忆索引 · 启动后第一个读的文件', 44);
+  addBadge(gIdx, '自动', 'badge-auto', gh1 - 24);
+  gRoot.appendChild(gIdx);
+
+  // 第1行：5个文件
+  const files1Y = yPos + gh1 + 20;
+  const cards = [
+    { w: 180, h: 80, title: '👤 user-profile', lines: ['心理学学生', '编程零基础', '大白话 · 时间>token'] },
+    { w: 170, h: 80, title: '🛠 installed-skills', lines: ['21 个已装技能', '含自建 win-safe-ps'] },
+    { w: 190, h: 80, title: '📝 lessons-learned', lines: ['文件上传/技能安装/批量操作', 'PowerShell 编码/自动标签'] },
+    { w: 180, h: 80, title: '💾 workspace-setup', lines: ['C盘→E盘迁移', 'junction 用法'] },
+    { w: 170, h: 80, title: '📑 projects-index', lines: ['项目列表', '只读索引，不读详情'] },
+  ];
+  let fx = X0;
+  const fNodes = [];
+  cards.forEach(c => {
+    const g = makeNode(fx, files1Y, c.w, c.h, 'layer-autoload');
+    addTitle(g, c.title, 22);
+    c.lines.forEach((l, i) => addDetail(g, l, 42 + i * 17));
+    addBadge(g, '自动', 'badge-auto', c.h - 24);
+    gRoot.appendChild(g);
+    g._cx = fx + c.w / 2; g._cy = files1Y + c.h / 2;
+    fNodes.push(g);
+    fx += c.w + 14;
+  });
+
+  // 从 MEMORY 引线到各个文件
+  fNodes.forEach(n => {
+    line(gIdx._cx - X0 + X0 + gw1 / 2, yPos + gh1, X0 + gw1 / 2, yPos + gh1, '');
+  });
+
+  // 第2行：模式入口
+  const modeEntW = 320, modeEntH = 54;
+  const gModeEnt = makeNode(X0, files1Y + 100, modeEntW, modeEntH, 'layer-autoload');
+  addTitle(gModeEnt, '🧭 psychology-expert-mode/index', 22);
+  addSmall(gModeEnt, '模式入口索引 · 只读触发指令 · 不自动加载详情', 42);
+  addBadge(gModeEnt, '触发', 'badge-trigger', modeEntH - 24);
+  gRoot.appendChild(gModeEnt);
+  gModeEnt._cx = X0 + modeEntW / 2; gModeEnt._cy = files1Y + 100 + modeEntH / 2;
+
+  yPos = files1Y + 100 + modeEntH + LAYER_GAP;
+}
+
+// ============================================
+// 第二层：记忆系统
+// ============================================
+addSectionTitle('二 记忆系统 · 双轨互补', '#3fb950');
+
+{
+  const memY = yPos;
+  // 自建档案
+  const gSelf = makeNode(X0, memY, 340, 110, 'layer-memory');
+  addTitle(gSelf, '📂 自建档案（Markdown）', 22);
+  addDetail(gSelf, '定位：长期百科全书 · 人可直接读', 42);
+  addDetail(gSelf, '放什么：用户画像 · 项目档案 · 经验教训 · 环境配置', 60);
+  addDetail(gSelf, '特点：不会随对话变化 · 每次全量注入索引', 78);
+  addBadge(gSelf, '手动整理', 'badge-manual', 92);
+  gRoot.appendChild(gSelf);
+
+  // claude-mem
+  const gAuto = makeNode(X0 + 370, memY, 340, 110, 'layer-memory');
+  addTitle(gAuto, '🧠 claude-mem（MCP 版）', 22);
+  addDetail(gAuto, '定位：短期对话记忆 · 只能通过查询接口', 42);
+  addDetail(gAuto, '放什么：临时想法 · 对话碎片 · 决策过程', 60);
+  addDetail(gAuto, '特点：自动捕获 · 第二次会话起注入相关上下文', 78);
+  addBadge(gAuto, '自动捕获', 'badge-auto', 92);
+  gRoot.appendChild(gAuto);
+
+  // 中间箭头
+  const midX = X0 + 370;
+  const arrowY = memY + 55;
+  const pArr = document.createElementNS(NS, 'path');
+  pArr.setAttribute('d', `M${X0 + 344},${arrowY} L${midX - 18},${arrowY} L${midX - 6},${arrowY - 6} M${midX - 18},${arrowY} L${midX - 6},${arrowY + 6}`);
+  pArr.setAttribute('class', 'line thick');
+  gRoot.appendChild(pArr);
+  addSmall(gRoot.appendChild(document.createElementNS(NS, 'text')),
+    '⇄', midX - 22, arrowY - 8);
+
+  yPos = memY + 110 + LAYER_GAP;
+}
+
+// ============================================
+// 第三层：项目感知（按需加载）
+// ============================================
+addSectionTitle('三 项目感知 · 按需不主动', '#d29922');
+
+{
+  // 当前目录 CLAUDE.md
+  const gCur = makeNode(X0, yPos, 320, 74, 'layer-project');
+  addTitle(gCur, '📄 当前目录有 CLAUDE.md', 22);
+  addDetail(gCur, '自动读取项目规则（如在 E:\\知识库 目录时）', 44);
+  addBadge(gCur, '自动检测', 'badge-auto', 56);
+  gRoot.appendChild(gCur);
+
+  // 用户提到某项目
+  const gMen = makeNode(X0 + 350, yPos, 320, 74, 'layer-project');
+  addTitle(gMen, '💬 用户提到某项目', 22);
+  addDetail(gMen, '读 projects/项目名/xxx.md  ·  项目间互相隔离', 44);
+  addBadge(gMen, '按需', 'badge-ondemand', 56);
+  gRoot.appendChild(gMen);
+
+  yPos += 74 + 12;
+
+  // 具体项目列表
+  const projY = yPos;
+  const projs = [
+    'kaoyan-companion  考研陪伴应用', 'psychology-miniapp  心理学小程序',
+    'psychology-resources  心理学资源', 'psychology-kb  心理学知识库',
+    'weread-exporter  微信读书导出',
+  ];
+  const gPL = makeNode(X0, projY, 690, 40, 'layer-project');
+  addSmall(gPL, '已注册子项目：' + projs.join('  │  '), 26);
+  gRoot.appendChild(gPL);
+
+  yPos = projY + 40 + LAYER_GAP;
+}
+
+// ============================================
+// 第四层：模式切换
+// ============================================
+addSectionTitle('四 模式切换 · 用户说指令才切换', '#f778ba');
+
+{
+  const modeY = yPos;
+  // 普通模式
+  const gDef = makeNode(X0, modeY, 200, 60, 'layer-mode');
+  addTitle(gDef, '🟢 默认 · 普通模式', 22);
+  addSmall(gDef, '什么都没开 · AI 正常应答', 44);
+  addBadge(gDef, '默认', 'badge-auto', 42);
+  gRoot.appendChild(gDef);
+
+  // 箭头
+  const arrX1 = X0 + 210, arrY = modeY + 30;
+  const parr1 = document.createElementNS(NS, 'path');
+  parr1.setAttribute('d', `M${arrX1},${arrY} L${arrX1 + 60},${arrY}`);
+  parr1.setAttribute('class', 'line');
+  parr1.setAttribute('marker-end', 'url(#arrow)');
+  gRoot.appendChild(parr1);
+
+  // 心理学专家模式
+  const gExp = makeNode(X0 + 280, modeY, 420, 130, 'layer-mode');
+  addTitle(gExp, '🔵 心理学专家模式', 22);
+  addSmall(gExp, '触发："开启心理学专家模式"', 40);
+  addDetail(gExp, '自动加载：psychology-expert-mode.md（行为约定）', 58);
+  addDetail(gExp, '按需加载：concept-map.md  ·  tag-index.md  ·  知识库概念卡片', 75);
+  addDetail(gExp, '→ 进一步触发："开启跨学科研究搭档模式"', 92);
+  addDetail(gExp, '   加载 research-partner-prompt  ·  进入事件分析协作工作流', 109);
+  addBadge(gExp, '触发', 'badge-trigger', 112);
+  gRoot.appendChild(gExp);
+
+  yPos = modeY + 130 + LAYER_GAP;
+}
+
+// ============================================
+// 第五层：技能系统
+// ============================================
+addSectionTitle('五 技能系统 · / 触发 或 AI 判断', '#e6e600');
+
+{
+  const skY = yPos;
+  const skills = [
+    { cat: '开发', items: ['find-skills', 'skill-creator', 'learn-codebase', 'make-plan', 'do', 'smart-explore', 'pathfinder'] },
+    { cat: '前端/设计', items: ['frontend-design', 'web-design-guidelines', 'design-is'] },
+    { cat: '文档', items: ['docx', 'pptx', 'xlsx'] },
+    { cat: '记忆/学习', items: ['remembering-conversations', 'self-improvement', 'mem-search', 'knowledge-agent'] },
+    { cat: '其他', items: ['web-access', 'win-safe-ps（自建）'] },
+  ];
+  let sx = X0;
+  const sNodes = [];
+  skills.forEach(s => {
+    const h = Math.max(s.items.length * 17 + 40, 60);
+    const g = makeNode(sx, skY, 180, h, 'layer-skill');
+    addTitle(g, '📦 ' + s.cat, 22);
+    s.items.forEach((it, i) => addDetail(g, it, 42 + i * 17));
+    addBadge(g, '/ 触发', 'badge-trigger', h - 24);
+    gRoot.appendChild(g);
+    g._cx = sx + 90; g._cy = skY + h / 2;
+    sNodes.push({ g, h });
+    sx += 194;
+  });
+
+  yPos = skY + 100 + LAYER_GAP;
+}
+
+// ============================================
+// 底部：启动完成
+// ============================================
+{
+  const gDone = makeNode(X0, yPos, 860, 48, 'layer-env');
+  addTitle(gDone, '✅ 启动完成 → 等待你的输入', 28);
+  gRoot.appendChild(gDone);
+}
+
+// ============================
+// 缩放 & 平移
+// ============================
+let scale = 1, tx = 0, ty = 0;
+let isPanning = false, startX, startY, startTX, startTY;
+
+function applyTransform() {
+  gRoot.setAttribute('transform', `translate(${tx},${ty}) scale(${scale})`);
+}
+
+svg.addEventListener('wheel', (e) => {
+  e.preventDefault();
+  const rect = svg.getBoundingClientRect();
+  const mx = e.clientX - rect.left;
+  const my = e.clientY - rect.top;
+  const delta = e.deltaY > 0 ? 0.9 : 1.1;
+  const newScale = Math.min(Math.max(scale * delta, 0.15), 4.0);
+
+  tx = mx - (mx - tx) * (newScale / scale);
+  ty = my - (my - ty) * (newScale / scale);
+  scale = newScale;
+  applyTransform();
+}, { passive: false });
+
+svg.addEventListener('mousedown', (e) => {
+  if (e.target !== svg) return;
+  isPanning = true;
+  startX = e.clientX; startY = e.clientY;
+  startTX = tx; startTY = ty;
+  svg.style.cursor = 'grabbing';
+});
+window.addEventListener('mousemove', (e) => {
+  if (!isPanning) return;
+  tx = startTX + (e.clientX - startX);
+  ty = startTY + (e.clientY - startY);
+  applyTransform();
+});
+window.addEventListener('mouseup', () => {
+  isPanning = false;
+  svg.style.cursor = 'grab';
+});
+
+svg.addEventListener('dblclick', () => {
+  scale = 1; tx = 0; ty = 0;
+  applyTransform();
+});
+
+document.getElementById('btn-zoom-in').onclick = () => {
+  scale = Math.min(scale * 1.2, 4.0);
+  applyTransform();
+};
+document.getElementById('btn-zoom-out').onclick = () => {
+  scale = Math.max(scale / 1.2, 0.15);
+  applyTransform();
+};
+document.getElementById('btn-reset').onclick = () => {
+  scale = 1; tx = 0; ty = 0;
+  applyTransform();
+};
+document.getElementById('btn-fit').onclick = () => {
+  scale = 0.55; tx = 30; ty = 20;
+  applyTransform();
+};
+
+// 初始 fit
+setTimeout(() => {
+  scale = 0.55; tx = 30; ty = 20;
+  applyTransform();
+}, 100);
+</script>
+</body>
+</html>

@@ -2,7 +2,7 @@
 concept: cognitive_styles
 concept_cn: 认知风格
 domain: general_psychology
-tags: ['cognitive_style', 'field_independence', 'field_dependence', 'reflective_impulsive', 'deep_processing']
+tags: [cognitive_style, field_independence, field_dependence, reflective_impulsive, deep_processing, 学科/普通心理学]
 ---
 
 # 认知风格 / Cognitive Styles

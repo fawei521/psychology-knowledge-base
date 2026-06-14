@@ -2,7 +2,7 @@
 concept: personality_trait_theories
 concept_cn: 人格特质理论
 domain: general_psychology
-tags: ['personality', 'big_five', 'eysenck', 'traits', 'person_situation_debate']
+tags: [personality, big_five, eysenck, traits, person_situation_debate, 学科/人格心理学, 学科/普通心理学]
 ---
 
 # 人格特质理论 / Personality Trait Theories

@@ -2,7 +2,7 @@
 concept: three_stage_memory_model
 concept_cn: 记忆的三级模型
 domain: general_psychology
-tags: ['memory', 'sensory_memory', 'short_term_memory', 'long_term_memory', 'encoding', 'retrieval']
+tags: [memory, sensory_memory, short_term_memory, long_term_memory, encoding, retrieval, 学科/普通心理学]
 ---
 
 # 记忆的三级模型 / Three Stage Memory Model

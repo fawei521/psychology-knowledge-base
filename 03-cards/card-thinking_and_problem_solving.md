@@ -2,7 +2,7 @@
 concept: thinking_and_problem_solving
 concept_cn: 思维与问题解决
 domain: general_psychology
-tags: ['thinking', 'problem_solving', 'heuristic', 'algorithm', 'mental_set', 'functional_fixedness']
+tags: [thinking, problem_solving, heuristic, algorithm, mental_set, functional_fixedness, 学科/普通心理学]
 ---
 
 # 思维与问题解决 / Thinking And Problem Solving

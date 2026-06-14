@@ -1,7 +1,7 @@
 ---
 concept: "fundamental_attribution_error"
 domain: "social psychology"
-tags: ["attribution", "bias", "social_cognition"]
+tags: [attribution, bias, social_cognition, 学科/社会心理学]
 source_papers: ["summary-social-behavior-framework-2026"]
 relations:
   - target: "card-actor-observer-bias"

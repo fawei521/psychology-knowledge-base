@@ -1,1 +1,3 @@
 tools/weread-exporter/
+.obsidian/
+*.tmp.*

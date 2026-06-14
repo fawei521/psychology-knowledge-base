@@ -2,7 +2,7 @@
 concept: conformity
 concept_cn: 从众
 domain: social_psychology
-tags: ['conformity', 'asch', 'normative_influence', 'informational_influence']
+tags: [conformity, asch, normative_influence, informational_influence, 学科/社会心理学]
 ---
 
 # 从众 / Conformity

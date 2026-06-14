@@ -2,7 +2,7 @@
 concept: prejudice_and_discrimination
 concept_cn: 偏见与歧视
 domain: social_psychology
-tags: ['prejudice', 'discrimination', 'stereotype', 'in_group_bias', 'out_group_homogeneity']
+tags: [prejudice, discrimination, stereotype, in_group_bias, out_group_homogeneity, 学科/社会心理学]
 ---
 
 # 偏见与歧视 / Prejudice And Discrimination
