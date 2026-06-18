@@ -1,23 +1,34 @@
 ---
-title: "Evolutionary Psychology and Physiological Instincts"
-authors: ["synthesized from web sources"]
+title: Evolutionary Psychology and Physiological Instincts
+authors:
+- synthesized from web sources
 year: 2026
-source: "Bernard et al. 2005; Schaller et al. 2017; multiple online resources"
-type: "review"
-tags: ["evolutionary_psychology", "motivation", "instinct", "human_behavior"]
-methods: ["framework synthesis"]
+source: Bernard et al. 2005; Schaller et al. 2017; multiple online resources
+type: review
+tags:
+- evolutionary_psychology
+- motivation
+- instinct
+- human_behavior
+methods:
+- framework synthesis
 key_findings:
-  - "Evolutionary psychology explains ultimate causes of behavior, not proximate mechanisms"
-  - "Fundamental motives include self-protection, disease avoidance, affiliation, status, mate acquisition, mate retention, and parental care"
-  - "Instincts are predispositions, not fixed programs"
-concepts: ["evolutionary_psychology", "inclusive_fitness", "environmental_mismatch", "fundamental_motives", "sexual_selection"]
+- Evolutionary psychology explains ultimate causes of behavior, not proximate mechanisms
+- Fundamental motives include self-protection, disease avoidance, affiliation, status,
+  mate acquisition, mate retention, and parental care
+- Instincts are predispositions, not fixed programs
+concepts:
+- evolutionary_psychology
+- inclusive_fitness
+- environmental_mismatch
+- fundamental_motives
+- sexual_selection
 relations:
-  - target: "card-evolutionary-mismatch"
-    type: "supports"
-  - target: "card-fundamental-motives"
-    type: "supports"
+- target: evolutionary_mismatch
+  type: supports
+- target: fundamental-motives
+  type: supports
 ---
-
 # Evolutionary Psychology and Physiological Instincts
 
 ## 研究问题

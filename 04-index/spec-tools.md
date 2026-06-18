@@ -2,6 +2,7 @@
 
 > **触发条件**：用户要跑脚本、改工具、写新脚本
 > 本文件独立自足，不需要跨文件引用。
+> 完整脚本清单与状态索引见 [`tools/README.md`](../tools/README.md)。
 
 ---
 
@@ -10,6 +11,7 @@
 | 脚本 | 用途 | 用法 |
 |------|------|------|
 | `import_md.py` | 同步 Markdown → SQLite | `python tools/import_md.py` |
+| `watch_sync.py` | 自动监控 .md 变化并调用 `import_md.py` | `python tools/watch_sync.py` |
 | `auto_tag.py` | 自动补全标签 | `python tools/auto_tag.py`（预览）；`--apply`（写入） |
 | `db_init.py` | 初始化数据库 | `python tools/db_init.py` |
 | `query.py` | 命令行查询数据库 | `python tools/query.py "SQL语句"` |
@@ -26,9 +28,48 @@
 - **PowerShell 不要内联**：复杂 PowerShell 先 `Write` 到 `.ps1` 文件，再用 `pwsh -File` 执行
 - **批量操作前先 git commit**：涉及 >5 个文件的改动，先打 checkpoint
 
+## watch_sync.py 行为
+
+- 启动时默认先跑一次全量同步（`import_md.py`），可用 `--no-initial-sync` 跳过。
+- 轮询监控以下目录的 `.md` 文件：
+  - `01-raw/pdfs/`
+  - `01-raw/web-pages/`
+  - `02-summaries/`
+  - `03-cards/`
+  - `05-observations/`
+- 检测到文件 `mtime` 或 `hash` 变化后，等待 **2 秒防抖（debounce）**，然后调用 `import_md.py`。
+- 日志同时输出到控制台和 `tools/watch_sync.log`。
+
+### 使用方式
+
+```bash
+# 前台运行（适合临时开启，Ctrl+C 停止）
+python tools/watch_sync.py
+
+# 后台运行（当前终端不退出）
+python tools/watch_sync.py &
+
+# 只监控，启动时不全量同步
+python tools/watch_sync.py --no-initial-sync
+
+# 每 3 秒轮询一次
+python tools/watch_sync.py --interval 3
+```
+
+### 注意事项
+
+- `watch_sync.py` **只调用 `import_md.py`**，不会自动运行 `auto_tag.py`，避免标签脚本修改文件导致循环触发。
+- 如果 embedding 模型加载较慢，首次同步可能需要几十秒，后续增量同步通常很快。
+- Windows 下如需长期后台运行，建议使用 `pythonw.exe tools/watch_sync.py`（无控制台窗口），或配置为系统服务/计划任务。
+
 ## auto_tag.py 行为
 
 | 文件类型 | 匹配范围 | 对照表 | 阈值 |
 |---------|---------|-------|------|
 | `03-cards/` | YAML 的 `domain` + `tags` + `concept` 字段 | 13 学科关键词表 | 1 命中即可 |
 | `05-observations/` | YAML + 正文前 800 字 | 8 种事件类型关键词表 | ≥2 命中确认 |
+
+### 已知问题（已修复）
+
+- ~~`auto_tag.py` 会在文件末尾追加新的 `tags:` 字段，导致 frontmatter 重复。~~
+- 当前版本 `patch_tags()` 已改为合并已有 tags 并覆盖写回 frontmatter，支持 inline 和 list 两种格式。运行后仍建议用 `grep -n "^tags:" 03-cards/card-*.md` 抽查。

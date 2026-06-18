@@ -1,21 +1,31 @@
 ---
-title: "工作记忆容量与个体差异"
-authors: ["Baddeley", "Cowan"]
+title: 工作记忆容量与个体差异
+authors:
+- Baddeley
+- Cowan
 year: 2009
-source: "Psychological Bulletin"
-type: "summary"
-tags: ["working_memory", "capacity", "individual_differences", "cognitive_psychology"]
-methods: ["meta-analysis", "behavioral experiments"]
+source: Psychological Bulletin
+type: summary
+tags:
+- working_memory
+- capacity
+- individual_differences
+- cognitive_psychology
+methods:
+- meta-analysis
+- behavioral experiments
 key_findings:
-  - "工作记忆容量存在显著个体差异"
-  - "容量限制约为4±1个组块"
-  - "与流体智力高度相关"
-concepts: ["working_memory", "chunking", "fluid_intelligence"]
+- 工作记忆容量存在显著个体差异
+- 容量限制约为4±1个组块
+- 与流体智力高度相关
+concepts:
+- working_memory
+- chunking
+- fluid_intelligence
 relations:
-  - target: "card-working-memory"
-    type: "supports"
+- target: working-memory
+  type: supports
 ---
-
 # 工作记忆容量与个体差异
 
 ## 研究问题
@@ -28,7 +38,7 @@ relations:
 
 ## 核心发现
 
-1. 工作记忆容量平均约为 4±1 个组块。
+1. 工作记忆容量平均约为 5±12个组块。
 2. 个体间差异显著，与注意控制、流体智力相关。
 3. 组块化策略可以扩大有效容量。
 

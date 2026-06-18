@@ -1,23 +1,30 @@
 ---
-concept: "亲密关系政治化"
+concept: 亲密关系政治化
 domain: 社会心理学 / 性别研究 / 政治传播
-tags: [亲密关系, 文化战争, 性别政治, 反性别运动, 私人领域公共化, 学科/社会心理学, 学科/临床与咨询]
+tags:
+- 亲密关系
+- 文化战争
+- 性别政治
+- 反性别运动
+- 私人领域公共化
+- 学科/社会心理学
+- 学科/临床与咨询
 status: draft
 confidence: medium
-related:
-  - target: "card-structure-expectation-loop-2026"
-    type: "correlates-with"
-  - target: "card-needs-vs-tests-2026"
-    type: "correlates-with"
-source_papers:
-  - "Illouz, E. (n.d.). Intimacy and the political. Lecture/article, University of Liège."
-  - "OHCHR. (2024). The International Anti-Gender Movement. Office of the United Nations High Commissioner for Human Rights."
-  - "Bambrick, L. (2025). Constitutionalizing the private sphere: A comparative inquiry. Cambridge University Press."
-citekeys: []
+citekeys:
+- Illouz, E. (n.d.). Intimacy and the political. Lecture/article, University of Liège.
+- OHCHR. (2024). The International Anti-Gender Movement. Office of the United Nations
+  High Commissioner for Human Rights.
+- 'Bambrick, L. (2025). Constitutionalizing the private sphere: A comparative inquiry.
+  Cambridge University Press.'
 observations:
-  - "05-observations/current-events/彩礼事件分析-v1.1.md"
+- 05-observations/current-events/彩礼事件分析-v1.1.md
+relations:
+- target: 结构-预期-自我实现循环
+  type: correlates-with
+- target: 需求与测试的边界
+  type: correlates-with
 ---
-
 # 亲密关系政治化
 
 ## 一句话定义

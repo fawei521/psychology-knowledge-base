@@ -1,23 +1,31 @@
 ---
-concept: "坚定选择测试陷阱"
+concept: 坚定选择测试陷阱
 domain: 亲密关系 / 依恋理论 / 沟通心理学
-tags: [坚定选择, 测试陷阱, 焦虑型依恋, 承诺疲劳, 不可证伪, 学科/临床与咨询]
+tags:
+- 坚定选择
+- 测试陷阱
+- 焦虑型依恋
+- 承诺疲劳
+- 不可证伪
+- 学科/临床与咨询
 status: draft
 confidence: medium
-related:
-  - target: "card-structure-expectation-loop-2026"
-    type: "is-a"
-  - target: "card-needs-vs-tests-2026"
-    type: "contrasts"
-source_papers:
-  - "Shaver, P. R., & Mikulincer, M. (2005). Attachment theory and emotions in close relationships: Exploring attachment-related dynamics. In M. Mikulincer & P. R. Shaver (Eds.), Attachment in adulthood: Structure, dynamics, and change. Guilford Press."
-  - "Downey, G., & Feldman, S. I. (1996). Implications of rejection sensitivity for intimate relationships. Journal of Personality and Social Psychology, 70(6), 1327–1343."
-  - "Hundhausen, H. (2024). When Love Feels Like a Test: Understanding Anxious Attachment and Manipulation in Relationships."
-citekeys: []
+citekeys:
+- 'Shaver, P. R., & Mikulincer, M. (2005). Attachment theory and emotions in close
+  relationships: Exploring attachment-related dynamics. In M. Mikulincer & P. R. Shaver
+  (Eds.), Attachment in adulthood: Structure, dynamics, and change. Guilford Press.'
+- Downey, G., & Feldman, S. I. (1996). Implications of rejection sensitivity for intimate
+  relationships. Journal of Personality and Social Psychology, 70(6), 1327–1343.
+- 'Hundhausen, H. (2024). When Love Feels Like a Test: Understanding Anxious Attachment
+  and Manipulation in Relationships.'
 observations:
-  - "05-observations/current-events/彩礼事件分析-v1.1.md"
+- 05-observations/current-events/彩礼事件分析-v1.1.md
+relations:
+- target: 结构-预期-自我实现循环
+  type: is-a
+- target: 需求与测试的边界
+  type: contrasts
 ---
-
 # "坚定选择"测试陷阱
 
 ## 一句话定义

@@ -27,13 +27,24 @@
 psychology-knowledge-base/
 ├── CLAUDE.md          ← 本文件
 ├── 01-raw/            ← 原始材料（只存不检索）
+│   ├── pdfs/
+│   └── web-pages/
 ├── 02-summaries/      ← 结构化摘要
 ├── 03-cards/          ← 概念卡片（核心资产）
+│   └── {学科编号}-{学科名}/   ← 按学科分子目录，如 10-普通心理学、20-社会心理学
 ├── 04-index/          ← 索引文件 + 技术规范（spec-*.md，按需触发）
+│   ├── concept-map.md         ← 概念关系总图
+│   ├── tag-index.md           ← 标签索引目录
+│   ├── event-classification.md ← 事件分类手册
+│   └── spec-*.md              ← 各任务规范
 ├── 05-observations/   ← 事件/经验/案例
+│   ├── personal-experiences/
+│   ├── typical-cases/
+│   └── current-events/
 ├── tools/             ← 脚本工具
 ├── meta/              ← 模式约定
 ├── 00-prompts/        ← 子模式规则
+├── .obsidian/         ← Obsidian 库配置
 ├── kb.db              ← SQLite 数据库（可重建）
 ├── PROJECT_LOG.md     ← 项目日志
 └── CURRENT_STATE.md   ← 当前状态 + 待办
@@ -48,6 +59,7 @@ psychology-knowledge-base/
 | 用户任务 | 读取文件 |
 |---------|---------|
 | 写/改概念卡片 | `04-index/spec-card.md` |
+| 批量填充知识库/为主题填充理论卡片 | `04-index/spec-kb-fill-workflow.md` |
 | 写/改事件/经验/案例 | `04-index/spec-observation.md` |
 | 同步数据库、归档 | `04-index/spec-archive.md` |
 | 跑脚本、改工具 | `04-index/spec-tools.md` |

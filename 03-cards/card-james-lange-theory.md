@@ -1,15 +1,19 @@
 ---
-concept: "james_lange_theory"
-domain: "emotion psychology"
-tags: [emotion, physiology, theory, 学科/情绪与动机]
-source_papers: ["summary-emotion-analysis-framework-2026"]
+concept: james_lange_theory
+domain: emotion psychology
+tags:
+- emotion
+- physiology
+- theory
+- 学科/情绪与动机
 relations:
-  - target: "card-schachter-singer-theory"
-    type: "contrasts"
-  - target: "card-valence-arousal"
-    type: "part-of"
+- target: schachter-singer-theory
+  type: contrasts
+- target: valence-arousal
+  type: part-of
+citekeys:
+- summary-emotion-analysis-framework-2026
 ---
-
 # James-Lange Theory of Emotion
 
 ## 定义

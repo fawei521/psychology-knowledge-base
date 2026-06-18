@@ -1,23 +1,35 @@
 ---
-title: "Social Behavior Analysis Framework"
-authors: ["synthesized from web sources"]
+title: Social Behavior Analysis Framework
+authors:
+- synthesized from web sources
 year: 2026
-source: "multiple online psychology resources"
-type: "review"
-tags: ["social_psychology", "conformity", "obedience", "attribution", "group_behavior"]
-methods: ["framework synthesis"]
+source: multiple online psychology resources
+type: review
+tags:
+- social_psychology
+- conformity
+- obedience
+- attribution
+- group_behavior
+methods:
+- framework synthesis
 key_findings:
-  - "Situational forces often explain behavior better than personality"
-  - "Fundamental attribution error leads to overestimating dispositional causes"
-  - "Group processes include social loafing, deindividuation, group polarization, and groupthink"
-concepts: ["fundamental_attribution_error", "conformity", "obedience", "groupthink", "social_loafing"]
+- Situational forces often explain behavior better than personality
+- Fundamental attribution error leads to overestimating dispositional causes
+- Group processes include social loafing, deindividuation, group polarization, and
+  groupthink
+concepts:
+- fundamental_attribution_error
+- conformity
+- obedience
+- groupthink
+- social_loafing
 relations:
-  - target: "card-fundamental-attribution-error"
-    type: "supports"
-  - target: "card-milgram-experiment"
-    type: "supports"
+- target: fundamental_attribution_error
+  type: supports
+- target: milgram-experiment
+  type: supports
 ---
-
 # Social Behavior Analysis Framework
 
 ## 研究问题

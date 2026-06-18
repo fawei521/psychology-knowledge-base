@@ -1,23 +1,38 @@
 ---
-title: "Introduction to Psychology - Chapter 1 Overview"
-authors: ["OpenStax"]
+title: Introduction to Psychology - Chapter 1 Overview
+authors:
+- OpenStax
 year: 2020
-source: "https://openstax.org/details/books/psychology-2e"
-type: "book-chapter"
-tags: ["intro_psychology", "history", "methods", "overview"]
-methods: ["textbook", "review"]
+source: https://openstax.org/details/books/psychology-2e
+type: book-chapter
+tags:
+- intro_psychology
+- history
+- methods
+- overview
+methods:
+- textbook
+- review
 key_findings:
-  - "Psychology is the scientific study of mind and behavior"
-  - "Major schools include structuralism, functionalism, psychoanalysis, behaviorism, humanism, and cognitive psychology"
-  - "Modern psychology spans biological, cognitive, developmental, personality, social, clinical, and forensic subfields"
-concepts: ["psychology", "scientific_method", "structuralism", "functionalism", "behaviorism", "humanism", "cognitive_revolution"]
+- Psychology is the scientific study of mind and behavior
+- Major schools include structuralism, functionalism, psychoanalysis, behaviorism,
+  humanism, and cognitive psychology
+- Modern psychology spans biological, cognitive, developmental, personality, social,
+  clinical, and forensic subfields
+concepts:
+- psychology
+- scientific_method
+- structuralism
+- functionalism
+- behaviorism
+- humanism
+- cognitive_revolution
 relations:
-  - target: "card-psychology-definition"
-    type: "supports"
-  - target: "card-big-five-personality"
-    type: "applies-to"
+- target: psychology
+  type: supports
+- target: big_five_personality
+  type: applies-to
 ---
-
 # OpenStax Psychology 2e - Chapter 1 Summary
 
 ## 研究问题

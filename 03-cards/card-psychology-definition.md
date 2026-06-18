@@ -1,15 +1,21 @@
 ---
-concept: "psychology"
-domain: "general"
-tags: [definition, science, mind, behavior, 学科/普通心理学, 学科/基础与进化]
-source_papers: ["summary-intro-psychology-openstax-2020"]
+concept: psychology
+domain: general
+tags:
+- definition
+- science
+- mind
+- behavior
+- 学科/普通心理学
+- 学科/基础与进化
 relations:
-  - target: "card-scientific-method"
-    type: "part-of"
-  - target: "card-cognitive-psychology"
-    type: "is-a"
+- target: scientific-method
+  type: part-of
+- target: cognitive-psychology
+  type: is-a
+citekeys:
+- summary-intro-psychology-openstax-2020
 ---
-
 # Psychology
 
 ## 定义

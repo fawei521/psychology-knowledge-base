@@ -1,23 +1,31 @@
 ---
-concept: "需求与测试的边界"
+concept: 需求与测试的边界
 domain: 亲密关系 / 沟通心理学 / 依恋理论
-tags: [健康需求, 测试, 边界, 可协商性, 焦虑型依恋, 沟通, 学科/临床与咨询]
+tags:
+- 健康需求
+- 测试
+- 边界
+- 可协商性
+- 焦虑型依恋
+- 沟通
+- 学科/临床与咨询
 status: draft
 confidence: medium
-related:
-  - target: "card-commitment-test-trap-2026"
-    type: "contrasts"
-  - target: "card-loosening-structure-techniques-2026"
-    type: "supports"
-source_papers:
-  - "Rosenberg, M. B. (2003). Nonviolent communication: A language of life (2nd ed.). PuddleDancer Press."
-  - "Gottman, J. M., & Silver, N. (2015). The seven principles for making marriage work. Harmony Books."
-  - "Cloud, H., & Townsend, J. (1992). Boundaries: When to say yes, how to say no to take control of your life. Zondervan."
-citekeys: []
+citekeys:
+- 'Rosenberg, M. B. (2003). Nonviolent communication: A language of life (2nd ed.).
+  PuddleDancer Press.'
+- Gottman, J. M., & Silver, N. (2015). The seven principles for making marriage work.
+  Harmony Books.
+- 'Cloud, H., & Townsend, J. (1992). Boundaries: When to say yes, how to say no to
+  take control of your life. Zondervan.'
 observations:
-  - "05-observations/current-events/彩礼事件分析-v1.1.md"
+- 05-observations/current-events/彩礼事件分析-v1.1.md
+relations:
+- target: 坚定选择测试陷阱
+  type: contrasts
+- target: 松动结构的日常技术
+  type: supports
 ---
-
 # 需求与测试的边界
 
 ## 一句话定义

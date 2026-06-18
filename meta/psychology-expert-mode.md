@@ -23,7 +23,9 @@ metadata:
 - `E:\psychology-knowledge-base\04-index\spec-observation.md` —— 观察记录规范
 - `E:\psychology-knowledge-base\04-index\spec-archive.md` —— 归档与同步规范
 - `E:\psychology-knowledge-base\04-index\spec-tools.md` —— 工具脚本规范
+- `E:\psychology-knowledge-base\04-index\spec-index.md` —— 索引维护规范
 - `E:\psychology-knowledge-base\04-index\spec-maintenance.md` —— 维护机制
+- `E:\psychology-knowledge-base\04-index\spec-kb-fill-workflow.md` —— 批量填充知识库/为主题填充理论卡片
 
 以下文件按需读取：
 

@@ -121,34 +121,64 @@ def match_keywords(text, mapping):
     return hits
 
 
+def _yaml_str(value):
+    """将单个 tag 格式化为 YAML 字符串：必要时加单引号"""
+    if re.match(r"^[A-Za-z0-9_]+$", value):
+        return value
+    return f"'{value}'"
+
+
+def _format_tags_inline(tags):
+    return "tags: [" + ", ".join(_yaml_str(t) for t in tags) + "]"
+
+
+def _format_tags_list(tags):
+    lines = ["tags:"]
+    for t in tags:
+        lines.append(f"- {_yaml_str(t)}")
+    return "\n".join(lines)
+
+
 def patch_tags(filepath, content, existing_tags, new_tags, dry_run):
-    """给文件的 YAML tags 数组追加新标签"""
+    """给文件的 YAML tags 数组追加新标签，保持原格式（inline 或 list）"""
     if dry_run:
         return False
 
-    all_tags = existing_tags + new_tags
-    tags_str = ", ".join(f"'{t}'" if ("/" in t or " " in t or "-" in t) else t
-                         for t in all_tags)
+    # 合并并去重，保持顺序
+    seen = set()
+    all_tags = []
+    for t in existing_tags + new_tags:
+        if t not in seen:
+            all_tags.append(t)
+            seen.add(t)
 
-    # 情况1：已有 tags: [...] 行 → 替换
+    # 情况1：已有 inline tags: [...] 行 → 替换整行
     if re.search(r"^tags:\s*\[.*?\]", content, flags=re.MULTILINE):
         new_content = re.sub(
             r"^tags:\s*\[.*?\]",
-            f"tags: [{tags_str}]",
+            _format_tags_inline(all_tags),
             content,
             flags=re.MULTILINE,
         )
-    # 情况2：有 YAML frontmatter 但没有 tags 行 → 在末尾加
+    # 情况2：已有多行 tags 列表 → 替换整个 tags 块
+    elif re.search(r"^tags:\s*\n(?:\s*-\s*.*?\n)+", content, flags=re.MULTILINE):
+        new_content = re.sub(
+            r"^tags:\s*\n(?:\s*-\s*.*?\n)+",
+            _format_tags_list(all_tags) + "\n",
+            content,
+            flags=re.MULTILINE,
+        )
+    # 情况3：有 YAML frontmatter 但没有 tags 行 → 在 frontmatter 末尾加 inline tags
     elif content.startswith("---"):
         new_content = re.sub(
             r"(\n---)",
-            f"\ntags: [{tags_str}]\\1",
+            f"\n{_format_tags_inline(all_tags)}\\1",
             content,
             count=1,
         )
-    # 情况3：没有 YAML frontmatter → 新建一个
+    # 情况4：没有 YAML frontmatter → 新建一个
     else:
-        new_content = f"---\ntags: [{tags_str}]\n---\n\n{content}"
+        new_content = f"---\n{_format_tags_inline(all_tags)}\n---\n\n{content}"
 
     with open(filepath, "w", encoding="utf-8") as f:
         f.write(new_content)

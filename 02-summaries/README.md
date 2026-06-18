@@ -20,7 +20,7 @@ methods: ["RCT", "n=120"]
 key_findings: ["发现1", "发现2"]
 concepts: ["概念A", "概念B"]
 relations:
-  - target: "card-concept-a-2024"
+  - target: "concept_a"              # 使用目标卡片的 concept 字段值，不要带 card- 前缀
     type: "supports"
 ---
 ```

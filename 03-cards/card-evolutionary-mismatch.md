@@ -1,15 +1,20 @@
 ---
-concept: "evolutionary_mismatch"
-domain: "evolutionary psychology"
-tags: [evolution, adaptation, modern_environment, instinct, 学科/基础与进化]
-source_papers: ["summary-evolutionary-psychology-framework-2026"]
+concept: evolutionary_mismatch
+domain: evolutionary psychology
+tags:
+- evolution
+- adaptation
+- modern_environment
+- instinct
+- 学科/基础与进化
 relations:
-  - target: "card-fundamental-motives"
-    type: "causes"
-  - target: "card-sexual-selection"
-    type: "part-of"
+- target: fundamental-motives
+  type: causes
+- target: sexual-selection
+  type: part-of
+citekeys:
+- summary-evolutionary-psychology-framework-2026
 ---
-
 # Evolutionary Mismatch
 
 ## 定义

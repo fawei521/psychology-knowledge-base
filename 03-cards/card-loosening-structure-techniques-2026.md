@@ -1,23 +1,32 @@
 ---
-concept: "松动结构的日常技术"
+concept: 松动结构的日常技术
 domain: 临床心理学 / 叙事治疗 / 接纳承诺治疗 / 亲密关系
-tags: [外化, 元认知, 延迟反应, 共同敌人, 认知解离, 结构松动, 学科/临床与咨询]
+tags:
+- 外化
+- 元认知
+- 延迟反应
+- 共同敌人
+- 认知解离
+- 结构松动
+- 学科/临床与咨询
 status: draft
 confidence: medium
-related:
-  - target: "card-structure-expectation-loop-2026"
-    type: "applies-to"
-  - target: "card-needs-vs-tests-2026"
-    type: "supports"
-source_papers:
-  - "White, M., & Epston, D. (1990). Narrative means to therapeutic ends. W. W. Norton & Company."
-  - "Hayes, S. C., Strosahl, K. D., & Wilson, K. G. (2016). Acceptance and commitment therapy: The process and practice of mindful change (2nd ed.). Guilford Press."
-  - "Fraenkel, P. (2006). Engaging the overinvolved alienated parent: Revisiting child custody and post-divorce visitation disputes through a family systems lens. Family Process, 45(4), 411–427."
-citekeys: []
+citekeys:
+- White, M., & Epston, D. (1990). Narrative means to therapeutic ends. W. W. Norton
+  & Company.
+- 'Hayes, S. C., Strosahl, K. D., & Wilson, K. G. (2016). Acceptance and commitment
+  therapy: The process and practice of mindful change (2nd ed.). Guilford Press.'
+- 'Fraenkel, P. (2006). Engaging the overinvolved alienated parent: Revisiting child
+  custody and post-divorce visitation disputes through a family systems lens. Family
+  Process, 45(4), 411–427.'
 observations:
-  - "05-observations/current-events/彩礼事件分析-v1.1.md"
+- 05-observations/current-events/彩礼事件分析-v1.1.md
+relations:
+- target: 结构-预期-自我实现循环
+  type: applies-to
+- target: 需求与测试的边界
+  type: supports
 ---
-
 # 松动结构的日常技术
 
 ## 一句话定义

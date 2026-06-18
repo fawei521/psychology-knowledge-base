@@ -1,23 +1,34 @@
 ---
-title: "Personality Analysis Framework"
-authors: ["synthesized from web sources"]
+title: Personality Analysis Framework
+authors:
+- synthesized from web sources
 year: 2026
-source: "multiple online psychology resources"
-type: "review"
-tags: ["personality", "assessment", "framework", "big_five", "attachment"]
-methods: ["framework synthesis"]
+source: multiple online psychology resources
+type: review
+tags:
+- personality
+- assessment
+- framework
+- big_five
+- attachment
+methods:
+- framework synthesis
 key_findings:
-  - "Big Five (OCEAN) is the most academically validated trait model"
-  - "Attachment theory explains relationship patterns"
-  - "Multiple methods should be used for triangulation"
-concepts: ["big_five", "attachment_theory", "mbti", "dark_triad", "personality_assessment"]
+- Big Five (OCEAN) is the most academically validated trait model
+- Attachment theory explains relationship patterns
+- Multiple methods should be used for triangulation
+concepts:
+- big_five
+- attachment_theory
+- mbti
+- dark_triad
+- personality_assessment
 relations:
-  - target: "card-big-five-personality"
-    type: "supports"
-  - target: "card-attachment-theory"
-    type: "supports"
+- target: big_five_personality
+  type: supports
+- target: attachment_theory
+  type: supports
 ---
-
 # Personality Analysis Framework
 
 ## 研究问题

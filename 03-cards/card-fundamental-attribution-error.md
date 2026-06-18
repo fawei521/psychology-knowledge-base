@@ -1,15 +1,19 @@
 ---
-concept: "fundamental_attribution_error"
-domain: "social psychology"
-tags: [attribution, bias, social_cognition, 学科/社会心理学]
-source_papers: ["summary-social-behavior-framework-2026"]
+concept: fundamental_attribution_error
+domain: social psychology
+tags:
+- attribution
+- bias
+- social_cognition
+- 学科/社会心理学
 relations:
-  - target: "card-actor-observer-bias"
-    type: "is-a"
-  - target: "card-self-serving-bias"
-    type: "correlates-with"
+- target: actor-observer-bias
+  type: is-a
+- target: self-serving-bias
+  type: correlates-with
+citekeys:
+- summary-social-behavior-framework-2026
 ---
-
 # Fundamental Attribution Error
 
 ## 定义

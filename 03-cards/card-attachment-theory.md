@@ -1,15 +1,21 @@
 ---
-concept: "attachment_theory"
-domain: "developmental psychology / relationships"
-tags: [attachment, relationships, intimacy, development, 学科/人格心理学, 学科/发展心理学]
-source_papers: ["summary-personality-analysis-framework-2026"]
+concept: attachment_theory
+domain: developmental psychology / relationships
+tags:
+- attachment
+- relationships
+- intimacy
+- development
+- 学科/人格心理学
+- 学科/发展心理学
 relations:
-  - target: "card-big-five-personality"
-    type: "correlates-with"
-  - target: "card-anxiety-attachment"
-    type: "is-a"
+- target: big_five_personality
+  type: correlates-with
+- target: anxiety-attachment
+  type: is-a
+citekeys:
+- summary-personality-analysis-framework-2026
 ---
-
 # Attachment Theory
 
 ## 定义

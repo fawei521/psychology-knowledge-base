@@ -1,36 +1,62 @@
 ---
-concept: "示例概念"
-domain: "示例领域"
-tags: ["example", "template"]
-source_papers: ["summary-example-2024"]
+concept: example_concept
+concept_cn: 示例概念
+domain: general_psychology
+tags:
+- example
+- template
+- 学科/普通心理学
+citekeys: []
 relations:
-  - target: "card-related-concept"
-    type: "is-a"
-  - target: "card-parent-concept"
-    type: "part-of"
+  - target: related_concept
+    type: is-a
+  - target: parent_concept
+    type: part-of
 ---
 
-# 示例概念
+# 示例概念 / Example Concept
 
 ## 定义
 
-精确描述这个概念是什么。
+用一句话精确描述这个概念是什么。
 
-## 适用条件
+## 核心要点
 
-- 什么时候成立？
-- 在什么人群中更常见？
+- 要点1：...
+- 要点2：...
+- 要点3：...
 
-## 反例/争议
+## 理论背景
 
-- 什么时候不成立？
-- 学界有什么争议？
+- 提出者/流派：...
+- 发展脉络：...
+- 关键假设：...
 
-## 应用提示
+## 经典实验
 
-分析他人时如何观察这个概念的表达？
+- 实验名称/研究者/年份：...
+- 实验设计/关键操作：...
+- 主要发现及其与概念的关系：...
 
-## 关联概念
+## 评价与争议
 
-- [[card-related-concept]]
-- [[card-parent-concept]]
+- 优势：...
+- 争议/反例：...
+- 与相近理论的区别：...
+
+## 生活实例
+
+- 例1：...
+- 例2：...
+
+## 考研重点
+
+- 常考题型：...
+- 易混淆点：...
+- 记忆口诀：...
+
+## 文献来源
+
+- 教材章节：...
+- 经典论文：...
+- 网页/综述（补充）：...

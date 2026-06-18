@@ -2,9 +2,20 @@
 concept: forgetting_theories
 concept_cn: 遗忘理论
 domain: general_psychology
-tags: [memory, forgetting, decay, interference, repression, retrieval_failure, 学科/普通心理学]
+tags:
+- memory
+- forgetting
+- decay
+- interference
+- repression
+- retrieval_failure
+- 学科/普通心理学
+relations:
+- target: three_stage_memory_model
+  type: applies-to
+- target: memory_retrieval
+  type: correlates-with
 ---
-
 # 遗忘理论 / Forgetting Theories
 
 ## 定义

@@ -1,15 +1,20 @@
 ---
-concept: "big_five_personality"
-domain: "personality psychology"
-tags: [personality, traits, assessment, OCEAN, 学科/人格心理学]
-source_papers: ["summary-personality-analysis-framework-2026"]
+concept: big_five_personality
+domain: personality psychology
+tags:
+- personality
+- traits
+- assessment
+- OCEAN
+- 学科/人格心理学
 relations:
-  - target: "card-personality-assessment"
-    type: "part-of"
-  - target: "card-attachment-theory"
-    type: "correlates-with"
+- target: personality-assessment
+  type: part-of
+- target: attachment_theory
+  type: correlates-with
+citekeys:
+- summary-personality-analysis-framework-2026
 ---
-
 # Big Five Personality Model
 
 ## 定义

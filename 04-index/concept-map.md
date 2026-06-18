@@ -29,7 +29,29 @@
 - [[card-psychology-definition]]
   - part-of → [[card-scientific-method]] (待创建)
 
-### 6. 普通心理学考研核心概念
+### 6. 浪漫爱情理论簇
+
+- [[card-romantic_love]] 浪漫爱情（社会心理学）
+  - extends → [[card-attachment-theory]] 依恋理论
+  - correlates-with → [[card-interpersonal_attraction]] 人际吸引
+- [[card-triangular_theory_of_love]] 爱情三元理论
+  - is-a → [[card-romantic_love]]
+  - extends → [[card-passionate_vs_companionate_love]] 激情式与伴侣式爱情
+  - contrasts → [[card-love_styles]] 爱情风格
+- [[card-passionate_vs_companionate_love]] 激情式与伴侣式爱情
+  - is-a → [[card-romantic_love]]
+  - contrasts → [[card-triangular_theory_of_love]]
+  - correlates-with → [[card-james-lange-theory]] 詹姆斯-兰格情绪理论
+- [[card-love_styles]] 爱情风格
+  - is-a → [[card-romantic_love]]
+  - contrasts → [[card-triangular_theory_of_love]]
+- [[card-adult_attachment_romantic_relationships]] 成人依恋与浪漫关系
+  - is-a → [[card-romantic_love]]
+  - extends → [[card-attachment-theory]]
+- [[card-interdependence_theory]] 相互依赖理论
+  - is-a → [[card-romantic_love]]
+
+### 7. 普通心理学考研核心概念
 
 - [[card-sensation_and_perception]] 感觉与知觉（普通心理学）
 - [[card-attention]] 注意（普通心理学）
@@ -66,10 +88,11 @@
 
 | 关系类型 | 数量 |
 |---|---|
-| is-a | 1 |
+| is-a | 6 |
 | part-of | 2 |
-| correlates-with | 2 |
-| contrasts | 1 |
+| correlates-with | 10 |
+| contrasts | 4 |
 | causes | 1 |
-| supports | 0 |
-| applies-to | 0 |
+| extends | 3 |
+| supports | 3 |
+| applies-to | 1 |

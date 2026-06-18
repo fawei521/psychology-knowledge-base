@@ -13,9 +13,9 @@ concept: english_concept_name       # 英文概念名，唯一标识，用作文
 concept_cn: 中文概念名               # 用于检索和展示
 domain: general_psychology          # 所属学科，见下方学科列表
 tags: [tag1, tag2, tag3]           # 3-8 个，帮助分类检索
-source_papers: ["summary-xxx"]      # 来源摘要（可选）
+citekeys: []                        # Zotero Better BibTeX citekeys（可选）
 relations:                          # 概念关系（可选）
-  - target: "card-related-concept"
+  - target: "related_concept"       # 使用目标卡片的 concept 字段值，不要带 card- 前缀
     type: "is-a"
 ---
 ```
@@ -51,30 +51,61 @@ relations:                          # 概念关系（可选）
 | `applies-to` | 适用于 |
 | `extends` | 扩展 |
 
-## 文件命名
+## 文件存放位置
 
 ```
-card-{english_concept}.md          # 多词用下划线：card-cognitive_dissonance.md
+03-cards/{学科编号}-{学科名}/card-{english_concept}.md
 ```
 
-## 正文结构
+- 学科子目录编号见 `03-cards/` 实际结构（如 `10-普通心理学`、`20-社会心理学`）。
+- 多词概念用下划线连接：`card-cognitive_dissonance.md`
+- 如果概念跨多个学科，选择最核心的一门放主文件，其他学科通过 `tags` 和 `relations` 体现。
+
+## 正文结构（八段式）
 
 ```markdown
-# 概念中文名
+# 概念中文名 / English Concept Name
 
 ## 定义
-精确描述这个概念是什么。
+用一句话精确描述这个概念是什么。
 
-## 适用条件
-- 什么时候成立？在什么人群中更常见？
+## 核心要点
+- 要点1：...
+- 要点2：...
+- 要点3：...
 
-## 反例/争议
-- 什么时候不成立？学界有什么争议？
+## 理论背景
+- 提出者/流派
+- 发展脉络
+- 关键假设
 
-## 应用提示
-分析他人时如何观察这个概念的表达？
+## 经典实验
+- 实验名称、研究者、年份
+- 实验设计/关键操作
+- 主要发现及其与概念的关系
 
-## 关联概念
-- [[card-related-concept]]
-- [[card-parent-concept]]
+## 评价与争议
+- 优势
+- 争议/反例
+- 与相近理论的区别
+
+## 生活实例
+- 例1：...
+- 例2：...
+
+## 考研重点
+- 常考题型
+- 易混淆点
+- 记忆口诀
+
+## 文献来源
+- 教材章节
+- 经典论文（可用 Zotero citekey）
+- 网页/综述（作为补充）
 ```
+
+## 字段说明
+
+- **`citekeys`**：Zotero 已通过 Better BibTeX 部署，填写 citekey 即可与文献库联动。没有文献时留空 `[]`。
+- **`relations.target`**：统一使用目标卡片的 `concept` 字段值，不要加 `card-` 前缀。例如 `target: working_memory`。
+- **`tags`**：建议至少包含 `#学科/xxx` 自动标签，方便 Obsidian 标签面板分组。

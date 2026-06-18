@@ -1,25 +1,35 @@
 ---
-concept: "结构-预期-自我实现循环"
+concept: 结构-预期-自我实现循环
 domain: 社会心理学 / 依恋理论 / 家庭系统治疗
-tags: [社会脚本, 自我实现预言, 循环因果, 依恋图式, 投射性认同, 学科/社会心理学, 学科/临床与咨询]
+tags:
+- 社会脚本
+- 自我实现预言
+- 循环因果
+- 依恋图式
+- 投射性认同
+- 学科/社会心理学
+- 学科/临床与咨询
 status: draft
 confidence: medium
-related:
-  - target: "card-intimacy-politicization-2026"
-    type: "correlates-with"
-  - target: "card-commitment-test-trap-2026"
-    type: "causes"
-  - target: "card-needs-vs-tests-2026"
-    type: "correlates-with"
-source_papers:
-  - "Downey, G., Freitas, A. L., Michaelis, B., & Khouri, H. (1998). The self-fulfilling prophecy in close relationships: Rejection sensitivity and rejection by romantic partners. Journal of Personality and Social Psychology, 75(2), 545–560."
-  - "Murray, S. L., Holmes, J. G., & Griffin, D. W. (1996). The self-fulfilling nature of positive illusions in romantic relationships. Journal of Personality and Social Psychology, 71(6), 1155–1180."
-  - "Dallos, R., & Vetere, A. (2009). Systemic therapy and attachment narratives: Applications with families and couples. Routledge."
-citekeys: []
+citekeys:
+- 'Downey, G., Freitas, A. L., Michaelis, B., & Khouri, H. (1998). The self-fulfilling
+  prophecy in close relationships: Rejection sensitivity and rejection by romantic
+  partners. Journal of Personality and Social Psychology, 75(2), 545–560.'
+- Murray, S. L., Holmes, J. G., & Griffin, D. W. (1996). The self-fulfilling nature
+  of positive illusions in romantic relationships. Journal of Personality and Social
+  Psychology, 71(6), 1155–1180.
+- 'Dallos, R., & Vetere, A. (2009). Systemic therapy and attachment narratives: Applications
+  with families and couples. Routledge.'
 observations:
-  - "05-observations/current-events/彩礼事件分析-v1.1.md"
+- 05-observations/current-events/彩礼事件分析-v1.1.md
+relations:
+- target: 亲密关系政治化
+  type: correlates-with
+- target: 坚定选择测试陷阱
+  type: causes
+- target: 需求与测试的边界
+  type: correlates-with
 ---
-
 # 结构-预期-自我实现循环
 
 ## 一句话定义

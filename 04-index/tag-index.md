@@ -99,4 +99,18 @@
 - [[card-prosocial_behavior]] 亲社会行为
 - [[card-interpersonal_attraction]] 人际吸引
 - [[card-self_concept]] 自我概念
+- [[card-romantic_love]] 浪漫爱情
+- [[card-triangular_theory_of_love]] 爱情三元理论
+- [[card-passionate_vs_companionate_love]] 激情式与伴侣式爱情
+- [[card-love_styles]] 爱情风格
+- [[card-adult_attachment_romantic_relationships]] 成人依恋与浪漫关系
+- [[card-interdependence_theory]] 相互依赖理论
 
+### `romantic_love`
+
+- [[card-romantic_love]] 浪漫爱情
+- [[card-triangular_theory_of_love]] 爱情三元理论
+- [[card-passionate_vs_companionate_love]] 激情式与伴侣式爱情
+- [[card-love_styles]] 爱情风格
+- [[card-adult_attachment_romantic_relationships]] 成人依恋与浪漫关系
+- [[card-interdependence_theory]] 相互依赖理论
