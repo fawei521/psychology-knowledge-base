@@ -1,0 +1,170 @@
+# Rule registry for the generic rule loader.
+# This file is read by tools/load_rule.py.
+# When adding/moving/renaming rule files OR scripts, keep this registry in sync.
+# See also: rule-maintenance-loop.md and tools/README.md for the full sync checklist.
+
+namespaces:
+  research-partner:
+    description: 跨学科研究搭档模式
+    base_dir: E:/psychology-knowledge-base/00-prompts/rules
+    constitution: E:/psychology-knowledge-base/00-prompts/research-partner-constitution.md
+    auto_discover: false
+    aliases:
+      # Core files
+      constitution: E:/psychology-knowledge-base/00-prompts/research-partner-constitution.md
+      宪法: E:/psychology-knowledge-base/00-prompts/research-partner-constitution.md
+      core: E:/psychology-knowledge-base/00-prompts/research-partner-constitution.md
+      meta: meta.md
+      前言: meta.md
+      元规则: meta.md
+      role: role.md
+      角色: role.md
+      workflow: workflow.md
+      工作流: workflow.md
+      # Stages
+      stage-a: stage-a.md
+      阶段a: stage-a.md
+      事实锚定: stage-a.md
+      stage-b: stage-b.md
+      阶段b: stage-b.md
+      角度速览: stage-b.md
+      stage-c: stage-c.md
+      阶段c: stage-c.md
+      分轮深入: stage-c.md
+      stage-d: stage-d.md
+      阶段d: stage-d.md
+      卡片归档: stage-d.md
+      # Other rule files
+      output: output.md
+      输出: output.md
+      commands: commands.md
+      指令: commands.md
+      交互指令: commands.md
+      scenarios: scenarios.md
+      场景: scenarios.md
+      traps: traps.md
+      陷阱: traps.md
+      card-template: card-template.md
+      卡片模板: card-template.md
+      testing: testing.md
+      测试: testing.md
+      theory-blacklist: theory-blacklist.md
+      理论禁用: theory-blacklist.md
+      source-template: source-template.md
+      信源: source-template.md
+
+  psychology-expert-mode:
+    description: 心理学专家模式
+    base_dir: E:/psychology-knowledge-base/meta
+    auto_discover: false
+    aliases:
+      main: psychology-expert-mode.md
+      主文件: psychology-expert-mode.md
+      mode: psychology-expert-mode.md
+      模式: psychology-expert-mode.md
+      load-optimization: psychology-expert-mode-load-optimization.md
+      加载优化: psychology-expert-mode-load-optimization.md
+      textbooks: psychology-textbook-recommendations.md
+      教材推荐: psychology-textbook-recommendations.md
+
+  startup-workflow:
+    description: Claude Code 启动工作流
+    base_dir: E:/psychology-knowledge-base/04-index
+    auto_discover: false
+    aliases:
+      main: claude-code-startup-workflow.md
+      启动工作流: claude-code-startup-workflow.md
+      workflow: claude-code-startup-workflow.md
+      workflow-mindmap: workflow-mindmap.md
+      工作流程图: workflow-mindmap.md
+
+  memory-rules:
+    description: 个人记忆库中的触发式规则
+    base_dir: C:/Users/乏味/.claude/projects/C--Users---/memory
+    auto_discover: false
+    aliases:
+      rule-maintenance: rule-maintenance-loop.md
+      规则维护: rule-maintenance-loop.md
+      execute-without-confirm: execute-without-confirm.md
+      执行无需确认: execute-without-confirm.md
+      priority-messages: priority-user-messages.md
+      优先处理消息: priority-user-messages.md
+      priority-user-messages: priority-user-messages.md
+      memory-system-guide: memory-system-guide.md
+      记忆系统说明: memory-system-guide.md
+      work-principles: work-principles-systemic-thinking.md
+      工作原则: work-principles-systemic-thinking.md
+      lessons-learned: lessons-learned.md
+      经验教训: lessons-learned.md
+      user-profile: user-profile.md
+      用户档案: user-profile.md
+      workspace-setup: workspace-setup.md
+      工作区约定: workspace-setup.md
+      verify-hook: psychology-kb-verify-hook.md
+      保存验证钩子: psychology-kb-verify-hook.md
+      psychology-kb-verify-hook: psychology-kb-verify-hook.md
+
+  kb-specs:
+    description: 心理学知识库规范索引
+    base_dir: E:/psychology-knowledge-base/04-index
+    auto_discover: false
+    aliases:
+      spec-index: spec-index.md
+      规范索引: spec-index.md
+      spec-card: spec-card.md
+      卡片规范: spec-card.md
+      spec-observation: spec-observation.md
+      观察规范: spec-observation.md
+      spec-archive: spec-archive.md
+      归档规范: spec-archive.md
+      spec-tools: spec-tools.md
+      工具规范: spec-tools.md
+      spec-maintenance: spec-maintenance.md
+      维护规范: spec-maintenance.md
+      concept-map: concept-map.md
+      概念地图: concept-map.md
+      tag-index: tag-index.md
+      标签索引: tag-index.md
+      event-classification: event-classification.md
+      事件分类: event-classification.md
+      topic-backlog: topic-backlog.md
+      主题待办: topic-backlog.md
+      kb-fill-workflow: spec-kb-fill-workflow.md
+      知识库填充流程: spec-kb-fill-workflow.md
+
+  kb-tools:
+    description: 心理学知识库工具说明
+    base_dir: E:/psychology-knowledge-base/tools
+    auto_discover: false
+    aliases:
+      # Index
+      readme: README.md
+      工具说明: README.md
+      脚本索引: README.md
+      # Currently used scripts
+      auto-tag: auto_tag.py
+      自动标签: auto_tag.py
+      import-md: import_md.py
+      导入数据库: import_md.py
+      watch-sync: watch_sync.py
+      自动同步: watch_sync.py
+      db-init: db_init.py
+      初始化数据库: db_init.py
+      query: query.py
+      数据库查询: query.py
+      semantic-search: semantic_search.py
+      语义搜索: semantic_search.py
+      reindex-vectors: reindex_vectors.py
+      重建向量: reindex_vectors.py
+      load-rule: load_rule.py
+      规则加载器: load_rule.py
+      # Historical scripts
+      rewrite-cards: rewrite_cards.py
+      重写卡片: rewrite_cards.py
+      split-rules: split_rules.py
+      拆分规则: split_rules.py
+      # Subdirectories
+      weread-exporter: weread-exporter/README.md
+      微信读书导出: weread-exporter/README.md
+      weread-scripts: weread-exporter/SCRIPTS.md
+      微信读书脚本: weread-exporter/SCRIPTS.md

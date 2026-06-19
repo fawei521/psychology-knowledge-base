@@ -3,12 +3,15 @@
 
 ```markdown
 ---
-event: "事件标题"
-date: "YYYY-MM-DD"
+observation_type: current_event   # current_event / typical_case / personal_experience
+title: "事件标题"
+claim: "用一句完整陈述句概括本次分析的核心判断"
+event_date: "YYYY-MM-DD"
 tags: [标签1, 标签2]
 theories: [理论A, 理论B]
 confidence: high/medium/low
 contradictions: ["理论X与理论Y在ZZ上的分歧"]
+related_entities: [english_concept_1, english_concept_2]
 sources:
   official: ["来源1"]
   media: ["来源2"]

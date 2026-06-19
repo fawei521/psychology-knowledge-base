@@ -78,6 +78,8 @@ AI：输出标准化知识卡片（阶段 D）
 - 阶段 C → `rules/stage-c.md`
 - 阶段 D → `rules/stage-d.md`
 
+具体规则通过 `python tools/load_rule.py <别名>` 精确加载，完整映射见第八条规则索引中的「别名」列。
+
 ---
 
 ## 第六条 联网规则
@@ -99,24 +101,35 @@ AI：输出标准化知识卡片（阶段 D）
 
 ## 第八条 完整规则索引
 
-需要详细规则时，按需读取以下文件或启动向量检索：
+进入本模式时，除本宪法外，以下文件按说明加载。别名用于 `python tools/load_rule.py <别名>` 精确加载对应规则。
 
-| 主题 | 文件 |
-|---|---|
-| 元规则与协议切换 | `rules/meta.md` |
-| 角色与关系 | `rules/role.md` |
-| 整体工作流 | `rules/workflow.md` |
-| 阶段 A：事实锚定 | `rules/stage-a.md` |
-| 阶段 B：角度速览 | `rules/stage-b.md` |
-| 阶段 C：分轮深入 | `rules/stage-c.md` |
-| 阶段 D：卡片归档 | `rules/stage-d.md` |
-| 输出规范与反幻觉 | `rules/output.md` |
-| 常见陷阱 | `rules/traps.md` |
-| 知识卡片模板 | `rules/card-template.md` |
-| 示例 | `rules/examples.md` |
-| 理论禁用区 | `rules/theory-blacklist.md` |
-| 交互指令集 | `rules/commands.md` |
-| 场景模式 | `rules/scenarios.md` |
+### 默认必读（始终生效）
+
+| 文件 | 作用 | 别名 |
+|---|---|---|
+| `rules/traps.md` | 常见陷阱与避免方法 | `traps` / `陷阱` |
+| `rules/theory-blacklist.md` | 严禁作为科学解释使用的概念 | `theory-blacklist` / `理论禁用` |
+
+### 按需读取
+
+| 触发条件 | 文件 | 别名 |
+|---|---|---|
+| 需要模式前言、元规则补充、边界限制说明 | `rules/meta.md` | `meta` / `前言` / `元规则` |
+| 用户要求角色提醒或切换角色 | `rules/role.md` | `role` / `角色` |
+| 用户发出具体指令（如"质疑""归档""切换模式"） | `rules/commands.md` | `commands` / `指令` / `交互指令` |
+| 切换[日常/讲课/诊断/考研]场景模式 | `rules/scenarios.md` | `scenarios` / `场景` |
+| 需要了解完整工作流结构 | `rules/workflow.md` | `workflow` / `工作流` |
+
+### 按阶段触发
+
+| 阶段 | 文件 | 别名 |
+|---|---|---|
+| 阶段 A：事实锚定 | `rules/stage-a.md` + `rules/source-template.md`（提供给用户参考） | `stage-a` / `事实锚定` / `阶段a`；`source-template` / `信源` |
+| 阶段 B：角度速览 | `rules/stage-b.md` | `stage-b` / `角度速览` / `阶段b` |
+| 阶段 C：分轮深入 | `rules/stage-c.md` | `stage-c` / `分轮深入` / `阶段c` |
+| 阶段 D：卡片归档 | `rules/stage-d.md` + `rules/card-template.md` + `rules/output.md` | `stage-d` / `卡片归档` / `阶段d`；`card-template` / `卡片模板`；`output` / `输出` |
+
+> 完整映射以 `tools/rules-registry.yaml` 中 `research-partner` namespace 的 `aliases` 为准。宪法、本模式入口、`rules-registry.yaml` 三者不一致时，以 `rules-registry.yaml` 为准。
 
 ---
 
@@ -126,7 +139,9 @@ AI：输出标准化知识卡片（阶段 D）
 
 - **"检查规则"**：AI 快速回顾本宪法。
 - **"回到核心"**：AI 重读宪法，并检查最近输出是否偏离。
-- **"规则提醒 [主题]"**：AI 读取或检索对应主题的完整规则。
+- **"规则提醒 [主题]"**：AI 读取对应主题的完整规则（可用 `python tools/load_rule.py <别名>` 加载）。
+
+当用户发出具体动作指令（如"质疑""显化张力""归档""切换模式"）时，先按 `rules/commands.md` 理解指令含义，再执行。
 
 ---
 

@@ -7,12 +7,25 @@
 | 脚本 | 用途 | 常用命令 | 备注 |
 |------|------|---------|------|
 | `import_md.py` | 同步 Markdown → SQLite | `python tools/import_md.py` | 增量同步，基于 mtime + hash |
+| `watch_sync.py` | 自动监控 .md 变化并调用 `import_md.py` | `python tools/watch_sync.py` | 2 秒防抖，日志写入 `tools/watch_sync.log` |
 | `auto_tag.py` | 自动补全学科/事件标签 | `python tools/auto_tag.py`（预览）；`--apply`（写入） | 先预览再写入 |
 | `db_init.py` | 初始化数据库 | `python tools/db_init.py` | 会清空数据库，谨慎使用 |
 | `query.py` | 命令行查询数据库 | `python tools/query.py "SQL语句"` | 快速查 `entities`/`relations` |
 | `semantic_search.py` | 语义搜索 | `python tools/semantic_search.py "查询文本"` | 基于 384 维向量 |
 | `reindex_vectors.py` | 重建向量索引 | `python tools/reindex_vectors.py` | 向量异常时重跑 |
-| `load_rule.py` | 加载研究搭档规则文件 | `python tools/load_rule.py <别名>` | 子模式专用 |
+| `load_rule.py` | 加载规则文件（多规则集通用） | `python tools/load_rule.py --list` | 基于 `rules-registry.yaml`，支持 namespace + 别名 |
+
+## 新增/修改脚本时的同步清单
+
+新增、删除、重命名脚本，或改变脚本的常用命令时，必须同步更新以下三处，否则索引会再次脱节：
+
+1. **本文件（`tools/README.md`）** — 更新脚本清单、用途、常用命令、备注。
+2. **`04-index/spec-tools.md`** — 更新脚本清单和约定说明；如果脚本是新类型，补充使用规范。
+3. **`tools/rules-registry.yaml`** — 在 `kb-tools` namespace 下新增/删除/重命名别名，保持中英文别名可用。
+
+如果脚本触发的是全局钩子或影响记忆库加载链，还需同步更新：
+- 对应的 `memory/*.md` 入口文件
+- `MEMORY.md` 总索引（若该文件需要在对话中被 AI 自动加载）
 
 ## 历史保留脚本
 

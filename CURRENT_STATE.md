@@ -51,6 +51,8 @@ psychology-knowledge-base/
 | Zotero 文献 + citekeys 字段填充 | 低 |
 | 自动生成 tag-index.md 和 concept-map.md 的脚本 | 中 |
 | 分析报告附录路径引用更新（仍引旧 06-event-cards/） | 低 |
+| `03-cards/` 中 `card-*-2026.md` 事件卡迁移到 `05-observations/` | 低 |
+| `02-summaries/` 模板和流程优化 | 远期 |
 | sqlite-vec 语义搜索升级 | 远期 |
 
 ## 最近关键决策

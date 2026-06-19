@@ -66,11 +66,9 @@ psychology-knowledge-base/
 | 更新概念图/标签索引 | `04-index/spec-index.md` |
 | 阶段性完成后自查 | `04-index/spec-maintenance.md` |
 | 开启专家模式 | `meta/psychology-expert-mode.md` |
-| 开启研究搭档模式 | `00-prompts/research-partner-constitution.md` |
+| 开启研究搭档模式 | `meta/psychology-expert-mode.md` → `00-prompts/research-partner-constitution.md` |
 
 ---
-
-## 日常概览
 
 ```
 回答问题（查 kb.db / 03-cards）

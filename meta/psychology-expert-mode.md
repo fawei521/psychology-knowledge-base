@@ -17,20 +17,7 @@ metadata:
 
 - `E:\psychology-knowledge-base\meta\psychology-expert-mode.md` —— 本文件（模式行为约定）
 
-以下技术规范文件按需触发（见 `CLAUDE.md` 读取规则表）：
-
-- `E:\psychology-knowledge-base\04-index\spec-card.md` —— 概念卡片规范
-- `E:\psychology-knowledge-base\04-index\spec-observation.md` —— 观察记录规范
-- `E:\psychology-knowledge-base\04-index\spec-archive.md` —— 归档与同步规范
-- `E:\psychology-knowledge-base\04-index\spec-tools.md` —— 工具脚本规范
-- `E:\psychology-knowledge-base\04-index\spec-index.md` —— 索引维护规范
-- `E:\psychology-knowledge-base\04-index\spec-maintenance.md` —— 维护机制
-- `E:\psychology-knowledge-base\04-index\spec-kb-fill-workflow.md` —— 批量填充知识库/为主题填充理论卡片
-
-以下文件按需读取：
-
-- `E:\psychology-knowledge-base\04-index\concept-map.md` —— 概念关系总图
-- `E:\psychology-knowledge-base\04-index\tag-index.md` —— 标签索引目录
+以下技术规范文件按需触发，具体索引见项目 `CLAUDE.md` 中的读取规则表。
 
 回答具体问题时，通过 SQL 查询 `E:\psychology-knowledge-base\kb.db`：
 
@@ -41,11 +28,7 @@ metadata:
 
 原始 Markdown 文件（`01-raw/`、`02-summaries/`、`03-cards/`、`05-observations/`）作为编辑层，通过 `tools/import_md.py` 同步到数据库。
 
-以下情况**不触发**：
-- 用户提到"心理学"、"心理"、"专家"等词汇
-- 用户问心理学相关问题
-- 用户说"用心理学的方式回答"、"你是心理学专家吗"等模糊表达
-- 用户说"进入/切换到心理学专家模式"（非完整原句）
+
 
 ## 如何关闭
 
@@ -63,27 +46,9 @@ metadata:
 
 当用户要求进入**跨学科研究搭档模式**（或讨论社会事件、时事分析、知识卡片归档）时，在心理学专家模式基础上额外加载：
 
-1. **常驻规则**：`E:\psychology-knowledge-base\00-prompts\research-partner-constitution.md`
-   - 进入该子模式时**首先读取**，始终保留在上下文前端。
-   - 包含三条铁律（不编造、不讨好、不放弃追问）、协议切换、核心工作流。
+- `E:\psychology-knowledge-base\00-prompts\research-partner-constitution.md`
 
-2. **按需规则文件**：`E:\psychology-knowledge-base\00-prompts\rules/`
-   - 按当前阶段/主题精确读取，不使用向量检索匹配规则。
-   - 可用 `python tools/load_rule.py <别名>` 查看和加载。
-   - 关键别名：
-     - `stage-a` / `事实锚定`
-     - `stage-b` / `角度速览`
-     - `stage-c` / `分轮深入`
-     - `stage-d` / `卡片归档`
-     - `role` / `角色`
-     - `output` / `输出`
-     - `commands` / `指令`
-     - `traps` / `陷阱`
-
-3. **为什么不把规则也做向量检索？**
-   - 规则是结构化约束，必须**精确命中、不遗漏、不误召**。
-   - 向量检索是概率匹配，可能漏掉关键约束或召回无关规则。
-   - 因此规则用**文件名/阶段关键词**确定性加载；向量检索保留给历史知识卡片、案例库、个人观察记录。
+详细规则、阶段说明、别名表见该宪法文件。
 
 ---
 
@@ -97,9 +62,6 @@ metadata:
 
 ### 待评估/未安装的专家模式 skills
 
-- **paper-search-mcp**（`openags/paper-search-mcp@paper-search`）：学术文献搜索
-  - 当前安装量仅 69，来源不够成熟，暂不安装，待观察
-
 ### 通用型但仅在专家模式下主动使用的 skills
 
 - **web-access**：搜索网页、访问心理学文章/百科/论文页面
@@ -111,55 +73,6 @@ metadata:
 
 关闭心理学专家模式后，恢复普通助手的工具使用习惯。
 
-## 已积累知识：普通心理学入门教材推荐
+## 已积累知识：教材推荐
 
-### 中文经典教材
-
-- **彭聃龄《普通心理学》（第5/6版），北京师范大学出版社**
-  - 国内心理学专业"奠基之作"
-  - 覆盖感知、记忆、思维、情绪、动机、人格等核心领域
-  - 多数高校心理系入门首选，考研常用
-
-- **张厚粲、许燕《心理学导论》（2020）**
-  - 融合中外视角，案例丰富
-  - 可作为彭聃龄《普通心理学》的补充读物
-
-- **张钦《普通心理学》（第2版，2019）**
-  - 纳入情绪神经机制、社会行为等前沿研究
-
-- **张春兴《现代心理学》**
-  - 台湾学者编写，文笔通俗，适合零基础
-
-- **梁宁建《基础心理学》**
-  - 面向师范/小学教育专业，图表丰富
-
-### 国外经典教材
-
-- **《心理学与生活》（Psychology and Life），菲利普·津巴多**
-  - 国际最著名入门教材之一
-  - 案例生动、语言通俗，适合跨专业/零基础
-
-- **《心理学》（Psychology），David Myers**
-  - 内容丰富、图文并茂
-
-- **《心理学导论》（Introduction to Psychology），Dennis Coon**
-  - 模块化编排，适合自学
-
-### 免费开源教材
-
-- **OpenStax *Psychology***
-  - 完全免费，PDF/在线阅读，含测试题
-  - 美国多所大学采用
-
-- **Noba Project: Psychology**
-  - 模块化设计，可自由组合
-
-### 学习建议
-
-- **零基础/非心理专业**：《心理学与生活》或彭聃龄《普通心理学》
-- **心理学专业/考研**：彭聃龄《普通心理学》为主，张厚粲《心理学导论》补充
-- **预算有限/想先试**：OpenStax Psychology 免费PDF
-
-**Sources:**
-- [Free Online Psychology Textbooks](https://www.psychology.org/resources/free-online-psychology-textbooks/)
-- [Introduction to Psychology v4.0 - FlatWorld](https://catalog.flatworldknowledge.com/catalog/editions/intro-psychology-4)
+详见 `meta/psychology-textbook-recommendations.md`。

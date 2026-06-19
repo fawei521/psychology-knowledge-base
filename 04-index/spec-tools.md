@@ -17,9 +17,17 @@
 | `query.py` | 命令行查询数据库 | `python tools/query.py "SQL语句"` |
 | `semantic_search.py` | 语义搜索（384 维向量） | `python tools/semantic_search.py "查询文本"` |
 | `reindex_vectors.py` | 重建向量索引 | `python tools/reindex_vectors.py` |
-| `load_rule.py` | 加载研究搭档规则文件 | `python tools/load_rule.py <别名>` |
+| `load_rule.py` | 加载规则文件（多规则集通用） | `python tools/load_rule.py --list` |
 | `rewrite_cards.py` | 批量重写卡片 | 历史脚本，谨慎使用 |
 | `split_rules.py` | 拆分规则文件 | 历史脚本，谨慎使用 |
+
+## 新增/修改脚本时的同步清单
+
+新增、删除、重命名脚本，或改变脚本的常用命令时，必须同步更新以下三处：
+
+1. **`tools/README.md`** — 更新脚本清单、用途、常用命令、备注。
+2. **本文件（`04-index/spec-tools.md`）** — 更新脚本清单和约定说明。
+3. **`tools/rules-registry.yaml`** — 在 `kb-tools` namespace 下新增/删除/重命名别名。
 
 ## 脚本约定
 
