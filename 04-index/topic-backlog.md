@@ -17,7 +17,7 @@ metadata:
 | 概念点 | 所属学科 | 考研关联 | 状态 | 说明 |
 |---|---|---|---|---|
 | 认知发展 | developmental_psychology | 高频 | 待开始 | 皮亚杰认知发展阶段、维果茨基社会文化理论、最近发展区等核心理论簇。 |
-| 社会发展 | developmental_psychology | 高频 | 待开始 | 埃里克森心理社会发展阶段、依恋类型（Bowlby/Ainsworth）、气质与社会化。 |
+| 社会发展 | developmental_psychology | 高频 | 已完成 | 埃里克森心理社会发展阶段、依恋类型（Bowlby/Ainsworth）、气质与社会化。 |
 | 精神分析人格理论 | personality_psychology | 高频 | 待开始 | 弗洛伊德人格结构、防御机制、心理性欲发展阶段；荣格/阿德勒的修正。 |
 | 焦虑与心境障碍 | abnormal_psychology | 高频 | 待开始 | 焦虑障碍谱系、重性抑郁、双相障碍、病因模型（生物-心理-社会）。 |
 | 精神分裂症谱系 | abnormal_psychology | 中高频 | 待开始 | 阳性/阴性症状、DSM-5 诊断、多巴胺假说、病因与治疗。 |
@@ -39,6 +39,7 @@ metadata:
 |---|---|---|---|---|
 | 记忆 | 2026-06-18 | 12 | 23 | `three_stage_memory_model` |
 | 浪漫爱情理论簇 | 2026-06-18 | 6 | 13 | `romantic_love` |
+| 社会发展 | 2026-06-20 | 6 | 16 | `social_development` |
 
 ## 选择规则
 

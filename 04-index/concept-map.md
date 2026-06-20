@@ -84,6 +84,31 @@
 - [[card-interpersonal_attraction]] 人际吸引（社会心理学）
 - [[card-self_concept]] 自我概念（普通心理学 / 社会心理学）
 
+### 8. 社会发展理论簇
+
+- [[card-social_development]] 社会发展（发展心理学）
+  - part-of → [[card-erikson_psychosocial_development]] 埃里克森心理社会发展理论
+  - part-of → [[card-attachment-theory]] 依恋理论
+  - part-of → [[card-moral_development]] 道德发展
+  - part-of → [[card-peer_relationships]] 同伴关系
+  - correlates-with → [[card-temperament]] 气质
+  - correlates-with → [[card-parenting_styles]] 教养方式
+- [[card-erikson_psychosocial_development]] 埃里克森心理社会发展理论
+  - correlates-with → [[card-attachment-theory]] 依恋理论
+  - correlates-with → [[card-self_concept]] 自我概念
+- [[card-temperament]] 气质
+  - correlates-with → [[card-attachment-theory]] 依恋理论
+  - correlates-with → [[card-parenting_styles]] 教养方式
+  - correlates-with → [[card-big-five-personality]] 大五人格
+- [[card-parenting_styles]] 教养方式
+  - correlates-with → [[card-attachment-theory]] 依恋理论
+- [[card-moral_development]] 道德发展
+  - correlates-with → [[card-cognitive_styles]] 认知风格
+- [[card-peer_relationships]] 同伴关系
+  - correlates-with → [[card-attachment-theory]] 依恋理论
+  - correlates-with → [[card-erikson_psychosocial_development]] 埃里克森心理社会发展理论
+  - correlates-with → [[card-self_concept]] 自我概念
+
 ## 关系统计
 
 | 关系类型 | 数量 |
