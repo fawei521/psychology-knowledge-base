@@ -120,6 +120,46 @@
 - [[card-synaptic_transmission]] 突触传递
 - [[card-neurotransmitters]] 神经递质
 
+### `perception`
+
+- [[card-sensation_and_perception]] 感觉与知觉
+- [[card-psychophysics]] 心理物理学
+- [[card-visual_perception]] 视觉知觉
+- [[card-auditory_perception]] 听觉知觉
+- [[card-perceptual_organization]] 知觉组织
+- [[card-depth_perception]] 深度知觉
+- [[card-perceptual_constancy]] 知觉恒常性
+- [[card-motion_perception]] 运动知觉
+- [[card-illusions]] 错觉
+
+### `consciousness`
+
+- [[card-consciousness_and_sleep]] 意识与睡眠
+- [[card-sleep_stages]] 睡眠阶段
+- [[card-rem_sleep]] REM 睡眠
+- [[card-nrem_sleep]] NREM 睡眠
+- [[card-dreams]] 梦
+- [[card-hypnosis]] 催眠
+- [[card-meditation]] 冥想
+- [[card-psychoactive_substances]] 精神活性物质
+
+### `personality`
+
+- [[card-big-five-personality]] Big Five Personality Model
+- [[card-personality_trait_theories]] 人格特质理论
+- [[card-personality_dynamic_theories]] 人格动力理论
+- [[card-humanistic_personality]] 人本主义人格
+- [[card-personality_and_individual_differences]] 人格与个体差异
+- [[card-temperament]] 气质
+- [[card-self_esteem]] 自尊
+- [[card-self_efficacy]] 自我效能感
+- [[card-self_serving_bias]] 自我服务偏差
+- [[card-social_identity_theory]] 社会认同理论
+- [[card-in_group_favoritism]] 内群体偏好
+- [[card-out_group_homogeneity]] 外群体同质性
+- [[card-locus_of_control]] 控制点
+- [[card-learned_helplessness]] 习得性无助
+
 ### `social_psychology`
 
 - [[card-cognitive_dissonance]] 认知失调

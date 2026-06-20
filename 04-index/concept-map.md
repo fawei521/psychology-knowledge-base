@@ -160,6 +160,119 @@
 - [[card-synaptic_transmission]] 突触传递
   - part-of → [[card-neurotransmitters]] 神经递质
 
+## 12. 感觉与知觉系统理论簇
+
+- [[card-sensation_and_perception]] 感觉与知觉（普通心理学）
+  - part-of → [[card-psychophysics]] 心理物理学
+  - part-of → [[card-visual_perception]] 视觉知觉
+  - part-of → [[card-auditory_perception]] 听觉知觉
+  - part-of → [[card-perceptual_organization]] 知觉组织
+  - part-of → [[card-depth_perception]] 深度知觉
+  - part-of → [[card-perceptual_constancy]] 知觉恒常性
+  - part-of → [[card-motion_perception]] 运动知觉
+  - part-of → [[card-illusions]] 错觉
+- [[card-psychophysics]] 心理物理学
+  - part-of → [[card-sensation_and_perception]] 感觉与知觉
+- [[card-visual_perception]] 视觉知觉
+  - part-of → [[card-sensation_and_perception]] 感觉与知觉
+  - correlates-with → [[card-perceptual_organization]] 知觉组织
+- [[card-auditory_perception]] 听觉知觉
+  - part-of → [[card-sensation_and_perception]] 感觉与知觉
+- [[card-perceptual_organization]] 知觉组织
+  - part-of → [[card-sensation_and_perception]] 感觉与知觉
+  - part-of → [[card-depth_perception]] 深度知觉
+  - part-of → [[card-perceptual_constancy]] 知觉恒常性
+  - part-of → [[card-motion_perception]] 运动知觉
+  - contrasts → [[card-illusions]] 错觉
+- [[card-depth_perception]] 深度知觉
+  - part-of → [[card-sensation_and_perception]] 感觉与知觉
+  - part-of → [[card-perceptual_organization]] 知觉组织
+- [[card-perceptual_constancy]] 知觉恒常性
+  - part-of → [[card-sensation_and_perception]] 感觉与知觉
+  - part-of → [[card-perceptual_organization]] 知觉组织
+- [[card-motion_perception]] 运动知觉
+  - part-of → [[card-sensation_and_perception]] 感觉与知觉
+  - part-of → [[card-perceptual_organization]] 知觉组织
+- [[card-illusions]] 错觉
+  - part-of → [[card-sensation_and_perception]] 感觉与知觉
+  - contrasts → [[card-perceptual_organization]] 知觉组织
+
+## 13. 意识状态与睡眠理论簇
+
+- [[card-consciousness_and_sleep]] 意识与睡眠（普通心理学）
+  - part-of → [[card-sleep_stages]] 睡眠阶段
+  - part-of → [[card-dreams]] 梦
+  - is-a → [[card-hypnosis]] 催眠
+  - is-a → [[card-meditation]] 冥想
+  - is-a → [[card-psychoactive_substances]] 精神活性物质
+- [[card-sleep_stages]] 睡眠阶段
+  - part-of → [[card-consciousness_and_sleep]] 意识与睡眠
+  - part-of → [[card-rem_sleep]] REM 睡眠
+  - part-of → [[card-nrem_sleep]] NREM 睡眠
+- [[card-rem_sleep]] REM 睡眠
+  - part-of → [[card-consciousness_and_sleep]] 意识与睡眠
+  - part-of → [[card-sleep_stages]] 睡眠阶段
+  - contrasts → [[card-nrem_sleep]] NREM 睡眠
+  - correlates-with → [[card-dreams]] 梦
+- [[card-nrem_sleep]] NREM 睡眠
+  - part-of → [[card-consciousness_and_sleep]] 意识与睡眠
+  - part-of → [[card-sleep_stages]] 睡眠阶段
+  - contrasts → [[card-rem_sleep]] REM 睡眠
+- [[card-dreams]] 梦
+  - part-of → [[card-consciousness_and_sleep]] 意识与睡眠
+  - correlates-with → [[card-rem_sleep]] REM 睡眠
+- [[card-hypnosis]] 催眠
+  - is-a → [[card-consciousness_and_sleep]] 意识与睡眠
+- [[card-meditation]] 冥想
+  - is-a → [[card-consciousness_and_sleep]] 意识与睡眠
+  - contrasts → [[card-hypnosis]] 催眠
+- [[card-psychoactive_substances]] 精神活性物质
+  - is-a → [[card-consciousness_and_sleep]] 意识与睡眠
+
+## 14. 人格与个体差异理论簇
+
+- [[card-personality_and_individual_differences]] 人格与个体差异（人格心理学/社会心理学）
+  - part-of → [[card-big_five_personality]] 大五人格
+  - part-of → [[card-personality_trait_theories]] 人格特质理论
+  - part-of → [[card-self_concept]] 自我概念
+  - part-of → [[card-temperament]] 气质
+  - part-of → [[card-self_esteem]] 自尊
+  - part-of → [[card-self_efficacy]] 自我效能感
+  - part-of → [[card-self_serving_bias]] 自我服务偏差
+  - part-of → [[card-social_identity_theory]] 社会认同理论
+  - part-of → [[card-locus_of_control]] 控制点
+  - part-of → [[card-learned_helplessness]] 习得性无助
+- [[card-temperament]] 气质
+  - part-of → [[card-personality_and_individual_differences]] 人格与个体差异
+  - correlates-with → [[card-big_five_personality]] 大五人格
+- [[card-self_esteem]] 自尊
+  - part-of → [[card-personality_and_individual_differences]] 人格与个体差异
+  - part-of → [[card-self_concept]] 自我概念
+- [[card-self_efficacy]] 自我效能感
+  - part-of → [[card-personality_and_individual_differences]] 人格与个体差异
+  - correlates-with → [[card-locus_of_control]] 控制点
+  - contrasts → [[card-learned_helplessness]] 习得性无助
+- [[card-self_serving_bias]] 自我服务偏差
+  - part-of → [[card-personality_and_individual_differences]] 人格与个体差异
+  - contrasts → [[card-fundamental_attribution_error]] 基本归因错误
+- [[card-social_identity_theory]] 社会认同理论
+  - part-of → [[card-personality_and_individual_differences]] 人格与个体差异
+  - extends → [[card-self_concept]] 自我概念
+  - part-of → [[card-in_group_favoritism]] 内群体偏好
+  - part-of → [[card-out_group_homogeneity]] 外群体同质性
+- [[card-in_group_favoritism]] 内群体偏好
+  - part-of → [[card-social_identity_theory]] 社会认同理论
+  - correlates-with → [[card-out_group_homogeneity]] 外群体同质性
+- [[card-out_group_homogeneity]] 外群体同质性
+  - part-of → [[card-social_identity_theory]] 社会认同理论
+  - correlates-with → [[card-in_group_favoritism]] 内群体偏好
+- [[card-locus_of_control]] 控制点
+  - part-of → [[card-personality_and_individual_differences]] 人格与个体差异
+  - correlates-with → [[card-self_efficacy]] 自我效能感
+- [[card-learned_helplessness]] 习得性无助
+  - part-of → [[card-personality_and_individual_differences]] 人格与个体差异
+  - contrasts → [[card-self_efficacy]] 自我效能感
+
 ## 关系统计
 
 | 关系类型 | 数量 |
