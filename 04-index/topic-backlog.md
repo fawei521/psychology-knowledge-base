@@ -43,7 +43,7 @@ metadata:
 
 | 概念点 | 所属学科 | 考研关联 | 状态 | 说明 |
 |---|---|---|---|---|
-| 情绪理论细化 | general_psychology | 高频 | 待填充 | James-Lange、Cannon-Bard、Schachter-Singer、Lazarus 等单独成卡并建立关系网络。 |
+| 情绪理论细化 | general_psychology | 高频 | 已完成 | James-Lange、Cannon-Bard、Schachter-Singer、Lazarus 等单独成卡并建立关系网络。 |
 | 动机与自我调节 | general_psychology | 高频 | 待填充 | 自我决定理论、成就动机理论、目标定向、自我损耗等。 |
 | 思维偏差与启发式 | general_psychology | 高频 | 待填充 | 代表性启发、易得性启发、锚定效应、框架效应、确认偏误等。 |
 | 问题解决与创造力 | general_psychology | 中高频 | 待填充 | 功能固着、心理定势、酝酿效应、发散思维、创造力投资理论。 |
@@ -529,6 +529,7 @@ metadata:
 | 感觉与知觉系统 | 2026-06-20 | 8 | 13 | `sensation_and_perception` |
 | 意识状态与睡眠 | 2026-06-20 | 7 | 12 | `consciousness_and_sleep` |
 | 人格与个体差异 | 2026-06-20 | 10 | 30 | `personality_and_individual_differences` |
+| 情绪理论细化 | 2026-06-20 | 4 | 8 | `emotion_theories` |
 
 ## 选择规则
 
