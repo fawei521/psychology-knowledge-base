@@ -3,6 +3,14 @@ concept: cognitive_dissonance
 concept_cn: 认知失调
 domain: social_psychology
 tags: [attitude, cognitive_dissonance, festinger, overjustification_effect, 学科/社会心理学]
+citekeys: []
+relations:
+  - target: attitude_formation_and_change
+    type: part-of
+  - target: foot_in_the_door_technique
+    type: supports
+  - target: door_in_the_face_technique
+    type: supports
 ---
 
 # 认知失调 / Cognitive Dissonance

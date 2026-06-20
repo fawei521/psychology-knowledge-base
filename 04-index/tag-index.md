@@ -106,7 +106,25 @@
 - [[card-adult_attachment_romantic_relationships]] 成人依恋与浪漫关系
 - [[card-interdependence_theory]] 相互依赖理论
 
-### `romantic_love`
+### `persuasion`
+
+- [[card-elaboration_likelihood_model]] 精细加工可能性模型
+- [[card-central_vs_peripheral_route]] 中心路径与边缘路径
+- [[card-foot_in_the_door_technique]] 登门槛效应
+- [[card-door_in_the_face_technique]] 留面子效应
+- [[card-source_credibility]] 信息源可信度
+- [[card-heuristic_systematic_model]] 启发式-系统模型
+
+### `attitude`
+
+- [[card-attitude_formation_and_change]] 态度形成与改变
+- [[card-cognitive_dissonance]] 认知失调
+- [[card-elaboration_likelihood_model]] 精细加工可能性模型
+- [[card-central_vs_peripheral_route]] 中心路径与边缘路径
+- [[card-foot_in_the_door_technique]] 登门槛效应
+- [[card-door_in_the_face_technique]] 留面子效应
+- [[card-source_credibility]] 信息源可信度
+- [[card-heuristic_systematic_model]] 启发式-系统模型
 
 - [[card-romantic_love]] 浪漫爱情
 - [[card-triangular_theory_of_love]] 爱情三元理论

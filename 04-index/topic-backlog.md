@@ -28,7 +28,7 @@ metadata:
 | 描述与推断统计 | 统计与测量 | 高频 | 待开始 | 集中/离散趋势、概率分布、假设检验、t 检验、方差分析基础。 |
 | 学习的基本形式 | learning_psychology | 高频 | 待开始 | 经典条件作用、操作性条件作用、观察学习、学习的认知理论。 |
 | 教学与学习迁移 | educational_psychology | 中频 | 待开始 | 迁移理论、知识表征、学习策略、动机培养与教学设计。 |
-| 态度与说服 | social_psychology | 高频 | 部分完成 | 已有 `attitude_formation_and_change`、`cognitive_dissonance`，可补精细加工可能性模型（ELM）、说服路径等。 |
+| 态度与说服 | social_psychology | 高频 | 已完成 | 核心节点 `attitude_formation_and_change`，新增 6 张卡片：ELM、中心/边缘路径、登门槛效应、留面子效应、信息源可信度、HSM。 |
 | 浪漫爱情理论簇 | social_psychology | 高频 | 已完成 | 核心节点 `romantic_love`，含三元理论、激情/伴侣之爱、爱情风格、成人依恋、相互依赖理论。 |
 | 自我概念与社会认同 | social_psychology | 中频 | 部分完成 | 已有 `self_concept`，可补自尊、自我服务偏差、社会认同理论、内群体偏好。 |
 | 亲社会行为与攻击 | social_psychology | 中频 | 部分完成 | 已有 `aggression`、`prosocial_behavior` 总览卡，可补具体理论（社会学习、去个体化、旁观者效应等）。 |
@@ -40,6 +40,7 @@ metadata:
 | 记忆 | 2026-06-18 | 12 | 23 | `three_stage_memory_model` |
 | 浪漫爱情理论簇 | 2026-06-18 | 6 | 13 | `romantic_love` |
 | 社会发展 | 2026-06-20 | 6 | 16 | `social_development` |
+| 态度与说服 | 2026-06-20 | 8 | 12 | `attitude_formation_and_change` |
 
 ## 选择规则
 

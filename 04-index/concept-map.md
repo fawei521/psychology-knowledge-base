@@ -109,6 +109,27 @@
   - correlates-with → [[card-erikson_psychosocial_development]] 埃里克森心理社会发展理论
   - correlates-with → [[card-self_concept]] 自我概念
 
+### 9. 态度与说服理论簇
+
+- [[card-attitude_formation_and_change]] 态度形成与改变（社会心理学）
+  - part-of → [[card-cognitive_dissonance]] 认知失调
+  - part-of → [[card-elaboration_likelihood_model]] 精细加工可能性模型
+  - part-of → [[card-central_vs_peripheral_route]] 中心路径与边缘路径
+  - part-of → [[card-foot_in_the_door_technique]] 登门槛效应
+  - part-of → [[card-door_in_the_face_technique]] 留面子效应
+  - part-of → [[card-source_credibility]] 信息源可信度
+- [[card-cognitive_dissonance]] 认知失调
+  - supports → [[card-foot_in_the_door_technique]] 登门槛效应
+  - supports → [[card-door_in_the_face_technique]] 留面子效应
+- [[card-elaboration_likelihood_model]] 精细加工可能性模型
+  - extends → [[card-central_vs_peripheral_route]] 中心路径与边缘路径
+- [[card-central_vs_peripheral_route]] 中心路径与边缘路径
+  - correlates-with → [[card-source_credibility]] 信息源可信度
+- [[card-foot_in_the_door_technique]] 登门槛效应
+  - contrasts → [[card-door_in_the_face_technique]] 留面子效应
+- [[card-heuristic_systematic_model]] 启发式-系统模型
+  - contrasts → [[card-elaboration_likelihood_model]] 精细加工可能性模型
+
 ## 关系统计
 
 | 关系类型 | 数量 |

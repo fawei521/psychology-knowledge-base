@@ -3,6 +3,20 @@ concept: attitude_formation_and_change
 concept_cn: 态度形成与改变
 domain: social_psychology
 tags: [attitude, balance_theory, elm, persuasion, central_route, peripheral_route, 学科/社会心理学]
+citekeys: []
+relations:
+  - target: cognitive_dissonance
+    type: part-of
+  - target: elaboration_likelihood_model
+    type: part-of
+  - target: foot_in_the_door_technique
+    type: part-of
+  - target: door_in_the_face_technique
+    type: part-of
+  - target: central_vs_peripheral_route
+    type: part-of
+  - target: source_credibility
+    type: part-of
 ---
 
 # 态度形成与改变 / Attitude Formation And Change
