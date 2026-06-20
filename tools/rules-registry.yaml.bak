@@ -3,21 +3,11 @@
 # When adding/moving/renaming rule files OR scripts, keep this registry in sync.
 # See also: rule-maintenance-loop.md and tools/README.md for the full sync checklist.
 
-# Global aliases are resolved before namespace defaults.
-# Use them for natural-language shortcuts that route to a specific namespace/alias
-# or to an absolute project file path.
-global_aliases:
-  知识库: E:/psychology-knowledge-base/CLAUDE.md
-  心理学知识库: E:/psychology-knowledge-base/CLAUDE.md
-  写卡片: kb-specs/spec-card
-  填充概念卡片: kb-specs/spec-card
-  批量填充: kb-specs/kb-fill-workflow
-  规则地图: memory-rules/rule-toolbox
-
 namespaces:
   research-partner:
     description: 跨学科研究搭档模式
     base_dir: E:/psychology-knowledge-base/00-prompts/rules
+    constitution: E:/psychology-knowledge-base/00-prompts/research-partner-constitution.md
     auto_discover: false
     aliases:
       # Core files
@@ -79,7 +69,7 @@ namespaces:
 
   startup-workflow:
     description: Claude Code 启动工作流
-    base_dir: E:/psychology-knowledge-base/04-index/startup
+    base_dir: E:/psychology-knowledge-base/04-index
     auto_discover: false
     aliases:
       main: claude-code-startup-workflow.md
@@ -91,7 +81,6 @@ namespaces:
   memory-rules:
     description: 个人记忆库中的触发式规则
     base_dir: C:/Users/乏味/.claude/projects/C--Users---/memory
-    external: true
     auto_discover: false
     aliases:
       rule-maintenance: rule-maintenance-loop.md
@@ -114,16 +103,6 @@ namespaces:
       verify-hook: psychology-kb-verify-hook.md
       保存验证钩子: psychology-kb-verify-hook.md
       psychology-kb-verify-hook: psychology-kb-verify-hook.md
-      memory-index: MEMORY.md
-      记忆总索引: MEMORY.md
-      installed-skills: installed-skills.md
-      已安装技能: installed-skills.md
-      projects-index: projects-index.md
-      项目索引: projects-index.md
-      no-repetitive-failed: no-repetitive-failed-operations.md
-      禁止重复失败操作: no-repetitive-failed-operations.md
-      rule-toolbox: rule-toolbox.md
-      规则工具箱: rule-toolbox.md
 
   kb-specs:
     description: 心理学知识库规范索引
@@ -179,8 +158,6 @@ namespaces:
       重建向量: reindex_vectors.py
       load-rule: load_rule.py
       规则加载器: load_rule.py
-      check-rule-refs: check_rule_refs.py
-      规则引用检查: check_rule_refs.py
       # Historical scripts
       rewrite-cards: rewrite_cards.py
       重写卡片: rewrite_cards.py

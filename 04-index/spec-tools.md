@@ -17,9 +17,20 @@
 | `query.py` | 命令行查询数据库 | `python tools/query.py "SQL语句"` |
 | `semantic_search.py` | 语义搜索（384 维向量） | `python tools/semantic_search.py "查询文本"` |
 | `reindex_vectors.py` | 重建向量索引 | `python tools/reindex_vectors.py` |
-| `load_rule.py` | 加载规则文件（多规则集通用） | `python tools/load_rule.py --list` |
+| `load_rule.py` | 加载规则文件（多规则集通用） | `python tools/load_rule.py --list`<br>`python tools/load_rule.py --verify` |
+| `check_rule_refs.py` | 扫描规则文件中的硬编码引用 | `python tools/check_rule_refs.py`（实验性） |
 | `rewrite_cards.py` | 批量重写卡片 | 历史脚本，谨慎使用 |
 | `split_rules.py` | 拆分规则文件 | 历史脚本，谨慎使用 |
+
+## 注册表完整性检查
+
+`load_rule.py --verify` 用于审计 `tools/rules-registry.yaml` 与实际文件的一致性，建议在以下场景运行：
+
+- 新增、删除、重命名规则文件或脚本后
+- 修改 namespace 的 `base_dir` 后
+- 批量维护后发现 `load_rule.py` 加载异常
+
+检查项包括：注册文件是否缺失、base_dir 下是否有未注册文件、别名是否跨 namespace 冲突。
 
 ## 新增/修改脚本时的同步清单
 

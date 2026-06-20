@@ -16,17 +16,16 @@ metadata:
 
 | 概念点 | 所属学科 | 考研关联 | 状态 | 说明 |
 |---|---|---|---|---|
-| 认知发展 | developmental_psychology | 高频 | 待开始 | 皮亚杰认知发展阶段、维果茨基社会文化理论、最近发展区等核心理论簇。 |
+| 认知发展 | developmental_psychology | 高频 | 已完成 | 皮亚杰认知发展阶段、维果茨基社会文化理论、最近发展区等核心理论簇。 |
 | 社会发展 | developmental_psychology | 高频 | 已完成 | 埃里克森心理社会发展阶段、依恋类型（Bowlby/Ainsworth）、气质与社会化。 |
-| 精神分析人格理论 | personality_psychology | 高频 | 待开始 | 弗洛伊德人格结构、防御机制、心理性欲发展阶段；荣格/阿德勒的修正。 |
-| 焦虑与心境障碍 | abnormal_psychology | 高频 | 待开始 | 焦虑障碍谱系、重性抑郁、双相障碍、病因模型（生物-心理-社会）。 |
-| 精神分裂症谱系 | abnormal_psychology | 中高频 | 待开始 | 阳性/阴性症状、DSM-5 诊断、多巴胺假说、病因与治疗。 |
-| 神经元与神经传导 | biological_psychology | 高频 | 待开始 | 神经元结构、动作电位、突触传递、主要神经递质及其功能。 |
-| 脑结构与功能 | biological_psychology | 中高频 | 待开始 | 中枢神经系统、大脑皮层分区、边缘系统、脑成像技术基础。 |
-| 实验设计基础 | experimental_psychology | 高频 | 待开始 | 变量、控制、效度与信度、实验设计类型（被试内/间/混合）。 |
+| 焦虑与心境障碍 | abnormal_psychology | 高频 | 已完成 | 焦虑障碍谱系、重性抑郁、双相障碍、病因模型（生物-心理-社会）。 |
+| 精神分裂症谱系 | abnormal_psychology | 中高频 | 已完成 | 阳性/阴性症状、DSM-5 诊断、多巴胺假说、病因与治疗。 |
+| 神经元与神经传导 | biological_psychology | 高频 | 已完成 | 核心节点 `neuron_and_synaptic_transmission`，新增 4 张卡片：神经元结构、动作电位、突触传递、神经递质。 |
+| 脑结构与功能 | biological_psychology | 中高频 | 已完成 | 中枢神经系统、大脑皮层分区、边缘系统、脑成像技术基础。 |
+| 实验设计基础 | experimental_psychology | 高频 | 已完成 | 变量、控制、效度与信度、实验设计类型（被试内/间/混合）。 |
 | 心理测量基础 | 统计与测量 | 高频 | 待开始 | 测量水平、信度/效度类型、项目分析、常模与标准化。 |
 | 描述与推断统计 | 统计与测量 | 高频 | 待开始 | 集中/离散趋势、概率分布、假设检验、t 检验、方差分析基础。 |
-| 学习的基本形式 | learning_psychology | 高频 | 待开始 | 经典条件作用、操作性条件作用、观察学习、学习的认知理论。 |
+| 学习的基本形式 | learning_psychology | 高频 | 已完成 | 核心节点 `learning_theories`，新增 4 张卡片：经典条件作用、操作性条件作用、观察学习、认知学习理论。 |
 | 教学与学习迁移 | educational_psychology | 中频 | 待开始 | 迁移理论、知识表征、学习策略、动机培养与教学设计。 |
 | 态度与说服 | social_psychology | 高频 | 已完成 | 核心节点 `attitude_formation_and_change`，新增 6 张卡片：ELM、中心/边缘路径、登门槛效应、留面子效应、信息源可信度、HSM。 |
 | 浪漫爱情理论簇 | social_psychology | 高频 | 已完成 | 核心节点 `romantic_love`，含三元理论、激情/伴侣之爱、爱情风格、成人依恋、相互依赖理论。 |
@@ -41,6 +40,14 @@ metadata:
 | 浪漫爱情理论簇 | 2026-06-18 | 6 | 13 | `romantic_love` |
 | 社会发展 | 2026-06-20 | 6 | 16 | `social_development` |
 | 态度与说服 | 2026-06-20 | 8 | 12 | `attitude_formation_and_change` |
+| 学习的基本形式 | 2026-06-20 | 5 | 9 | `learning_theories` |
+| 神经元与神经传导 | 2026-06-20 | 5 | 7 | `neuron_and_synaptic_transmission` |
+| 认知发展 | 2026-06-20 | 9 | 13 | `cognitive_development` |
+| 精神分析人格理论 | 2026-06-20 | 7 | 10 | `psychoanalytic_personality_theory` |
+| 焦虑与心境障碍 | 2026-06-20 | 8 | 8 | `anxiety_and_mood_disorders` |
+| 精神分裂症谱系 | 2026-06-20 | 6 | 11 | `schizophrenia_spectrum` |
+| 脑结构与功能 | 2026-06-20 | 6 | 5 | `brain_structure_and_function` |
+| 实验设计基础 | 2026-06-20 | 7 | 12 | `experimental_design_basics` |
 
 ## 选择规则
 

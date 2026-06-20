@@ -130,6 +130,36 @@
 - [[card-heuristic_systematic_model]] 启发式-系统模型
   - contrasts → [[card-elaboration_likelihood_model]] 精细加工可能性模型
 
+### 10. 学习的基本形式理论簇
+
+- [[card-learning_theories]] 学习理论（普通心理学/学习心理学）
+  - part-of → [[card-classical_conditioning]] 经典条件作用
+  - part-of → [[card-operant_conditioning]] 操作性条件作用
+  - part-of → [[card-observational_learning]] 观察学习
+  - part-of → [[card-cognitive_learning_theory]] 认知学习理论
+- [[card-classical_conditioning]] 经典条件作用
+  - contrasts → [[card-operant_conditioning]] 操作性条件作用
+  - contrasts → [[card-cognitive_learning_theory]] 认知学习理论
+- [[card-operant_conditioning]] 操作性条件作用
+  - extends → [[card-observational_learning]] 观察学习
+  - contrasts → [[card-cognitive_learning_theory]] 认知学习理论
+- [[card-observational_learning]] 观察学习
+  - correlates-with → [[card-cognitive_learning_theory]] 认知学习理论
+
+### 11. 神经元与神经传导理论簇
+
+- [[card-neuron_and_synaptic_transmission]] 神经元与神经传导（生理心理学/生物心理学）
+  - part-of → [[card-neuron_structure]] 神经元结构
+  - part-of → [[card-action_potential]] 动作电位
+  - part-of → [[card-synaptic_transmission]] 突触传递
+  - part-of → [[card-neurotransmitters]] 神经递质
+- [[card-neuron_structure]] 神经元结构
+  - causes → [[card-action_potential]] 动作电位
+- [[card-action_potential]] 动作电位
+  - causes → [[card-synaptic_transmission]] 突触传递
+- [[card-synaptic_transmission]] 突触传递
+  - part-of → [[card-neurotransmitters]] 神经递质
+
 ## 关系统计
 
 | 关系类型 | 数量 |

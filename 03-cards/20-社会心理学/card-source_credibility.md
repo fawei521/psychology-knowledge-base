@@ -2,7 +2,7 @@
 concept: source_credibility
 concept_cn: 信息源可信度
 domain: social_psychology
-tags: [attitude, persuasion, source, expertise, trustworthiness, attractiveness, 学科/社会心理学]
+tags: [attitude, persuasion, source, expertise, trustworthiness, attractiveness, '学科/社会心理学', '学科/临床与咨询']
 citekeys: []
 relations:
   - target: attitude_formation_and_change

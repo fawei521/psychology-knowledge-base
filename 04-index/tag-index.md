@@ -86,6 +86,40 @@
 
 - [[card-prosocial_behavior]] 亲社会行为
 
+### `learning`
+
+- [[card-learning_theories]] 学习理论
+- [[card-classical_conditioning]] 经典条件作用
+- [[card-operant_conditioning]] 操作性条件作用
+- [[card-observational_learning]] 观察学习
+- [[card-cognitive_learning_theory]] 认知学习理论
+
+### `behaviorism`
+
+- [[card-classical_conditioning]] 经典条件作用
+- [[card-operant_conditioning]] 操作性条件作用
+
+### `cognition`
+
+- [[card-attention]] 注意
+- [[card-three_stage_memory_model]] 记忆的三级模型
+- [[card-working_memory]] 工作记忆
+- [[card-thinking_and_problem_solving]] 思维与问题解决
+- [[card-language]] 语言
+- [[card-intelligence_theories]] 智力理论
+- [[card-cognitive_styles]] 认知风格
+- [[card-social_cognitive_theory]] 社会认知理论
+- [[card-cognitive_dissonance]] 认知失调
+- [[card-cognitive_learning_theory]] 认知学习理论
+
+### `neuroscience`
+
+- [[card-neuron_and_synaptic_transmission]] 神经元与神经传导
+- [[card-neuron_structure]] 神经元结构
+- [[card-action_potential]] 动作电位
+- [[card-synaptic_transmission]] 突触传递
+- [[card-neurotransmitters]] 神经递质
+
 ### `social_psychology`
 
 - [[card-cognitive_dissonance]] 认知失调

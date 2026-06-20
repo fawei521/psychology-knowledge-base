@@ -13,7 +13,23 @@
 | `query.py` | 命令行查询数据库 | `python tools/query.py "SQL语句"` | 快速查 `entities`/`relations` |
 | `semantic_search.py` | 语义搜索 | `python tools/semantic_search.py "查询文本"` | 基于 384 维向量 |
 | `reindex_vectors.py` | 重建向量索引 | `python tools/reindex_vectors.py` | 向量异常时重跑 |
-| `load_rule.py` | 加载规则文件（多规则集通用） | `python tools/load_rule.py --list` | 基于 `rules-registry.yaml`，支持 namespace + 别名 |
+| `load_rule.py` | 加载规则文件（多规则集通用） | `python tools/load_rule.py --list` | 基于 `rules-registry.yaml`，支持 namespace + 别名；可用 `--verify` 检查注册表完整性 |
+| `check_rule_refs.py` | 扫描规则文件中的硬编码引用 | `python tools/check_rule_refs.py` | 实验性工具，报告疑似断裂的 `.md` / `.py` 引用 |
+
+## 注册表完整性检查
+
+修改 `rules-registry.yaml` 或新增规则文件后，建议运行：
+
+```bash
+python tools/load_rule.py --verify
+```
+
+该命令会检查：
+
+- 注册表中的别名是否都指向真实存在的文件
+- `base_dir` 下是否存在未注册的文件
+- 是否有别名跨 namespace 冲突
+- 是否有同一文件被多个别名重复注册
 
 ## 新增/修改脚本时的同步清单
 

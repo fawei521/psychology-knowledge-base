@@ -189,14 +189,16 @@ def patch_tags(filepath, content, existing_tags, new_tags, dry_run):
 # 主逻辑
 # ============================================================
 def process_cards(dry_run):
-    """处理 03-cards/ 下的概念卡片"""
+    """处理 03-cards/ 及其子目录下的概念卡片"""
     cards_dir = os.path.join(BASE, "03-cards")
     updated, unchanged = 0, 0
 
-    for filename in sorted(os.listdir(cards_dir)):
-        if not (filename.startswith("card-") and filename.endswith(".md")):
-            continue
-        filepath = os.path.join(cards_dir, filename)
+    for root, dirs, files in os.walk(cards_dir):
+        # 跳过非学科子目录中的模板或 README
+        for filename in sorted(files):
+            if not (filename.startswith("card-") and filename.endswith(".md")):
+                continue
+            filepath = os.path.join(root, filename)
         meta, content = parse_frontmatter(filepath)
         if not meta:
             continue

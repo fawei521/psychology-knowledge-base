@@ -67,7 +67,7 @@ psychology-knowledge-base/
 | 阶段性完成后自查 | `04-index/spec-maintenance.md` |
 | 开启专家模式 | `meta/psychology-expert-mode.md` |
 | 开启研究搭档模式 | `meta/psychology-expert-mode.md` → `00-prompts/research-partner-constitution.md` |
-
+[心理学知识库保存验证钩子](psychology-kb-verify-hook.md) — 自动触发、生效条件与配置位置
 ---
 
 ```

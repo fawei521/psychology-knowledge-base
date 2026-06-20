@@ -3,6 +3,16 @@ concept: learning_theories
 concept_cn: 学习理论
 domain: general_psychology
 tags: [learning, classical_conditioning, operant_conditioning, observational_learning, latent_learning, 学科/学习心理学, 学科/普通心理学]
+citekeys: []
+relations:
+  - target: classical_conditioning
+    type: part-of
+  - target: operant_conditioning
+    type: part-of
+  - target: observational_learning
+    type: part-of
+  - target: cognitive_learning_theory
+    type: part-of
 ---
 
 # 学习理论 / Learning Theories

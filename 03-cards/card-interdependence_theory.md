@@ -10,6 +10,7 @@ tags:
 - commitment
 - satisfaction
 - '学科/社会心理学'
+- '学科/临床与咨询'
 citekeys: []
 relations:
   - target: romantic_love
