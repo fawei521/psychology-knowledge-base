@@ -2,26 +2,26 @@
 
 > 记录本项目的关键进展、决策、踩坑与想法。
 > 更新频率：每周一次，关键节点追加。
-> 历史日志按日期归档在 [04-index/project-logs/](04-index/project-logs/)。
+> 历史日志按日期归档在 [project-logs/](project-logs/)。
 
 ## 最近更新
 
-- [2026-06-21 工作流工具链优化与重复文件清理](04-index/project-logs/2026-06-21.md)
-- [2026-06-20 规则注册表完整性审计](04-index/project-logs/2026-06-20.md)
-- [2026-06-18 概念簇填充工作流优化](04-index/project-logs/2026-06-18.md)
-- [2026-06-15 Claude Code 启动链优化 + 技术规范拆分](04-index/project-logs/2026-06-15.md)
-- [2026-06-14 目录重构、分类手册整合、自动标签系统](04-index/project-logs/2026-06-14.md)
+- [2026-06-21 工作流工具链优化与重复文件清理](project-logs/2026-06-21.md)
+- [2026-06-20 规则注册表完整性审计](project-logs/2026-06-20.md)
+- [2026-06-18 概念簇填充工作流优化](project-logs/2026-06-18.md)
+- [2026-06-15 Claude Code 启动链优化 + 技术规范拆分](project-logs/2026-06-15.md)
+- [2026-06-14 目录重构、分类手册整合、自动标签系统](project-logs/2026-06-14.md)
 
 ## 历史归档
 
 | 日期 | 文件 |
 |---|---|
-| 2026-06-21 | [project-logs/2026-06-21.md](04-index/project-logs/2026-06-21.md) |
-| 2026-06-20 | [project-logs/2026-06-20.md](04-index/project-logs/2026-06-20.md) |
-| 2026-06-18 | [project-logs/2026-06-18.md](04-index/project-logs/2026-06-18.md) |
-| 2026-06-15 | [project-logs/2026-06-15.md](04-index/project-logs/2026-06-15.md) |
-| 2026-06-14 | [project-logs/2026-06-14.md](04-index/project-logs/2026-06-14.md) |
-| 2026-06-12 | [project-logs/2026-06-12.md](04-index/project-logs/2026-06-12.md) |
+| 2026-06-21 | [project-logs/2026-06-21.md](project-logs/2026-06-21.md) |
+| 2026-06-20 | [project-logs/2026-06-20.md](project-logs/2026-06-20.md) |
+| 2026-06-18 | [project-logs/2026-06-18.md](project-logs/2026-06-18.md) |
+| 2026-06-15 | [project-logs/2026-06-15.md](project-logs/2026-06-15.md) |
+| 2026-06-14 | [project-logs/2026-06-14.md](project-logs/2026-06-14.md) |
+| 2026-06-12 | [project-logs/2026-06-12.md](project-logs/2026-06-12.md) |
 
 ## 项目背景
 
