@@ -66,7 +66,8 @@ mindmap
         tag-index.md
         event-classification.md
       写日志
-        PROJECT_LOG.md
+        PROJECT_LOG.md（索引）
+        project-logs/YYYY-MM-DD.md
         CURRENT_STATE.md
       git commit
         批量改动前先提交

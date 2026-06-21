@@ -19,7 +19,7 @@
 | 项目核心原则、日常流程 | `CLAUDE.md` |
 | 模式约定、触发条件 | `meta/psychology-expert-mode.md` |
 | 子模式规则 | `00-prompts/` 对应文件 + `psychology-expert-mode/index.md` |
-| 完成阶段性工作 | `PROJECT_LOG.md` + `CURRENT_STATE.md` |
+| 完成阶段性工作 | `PROJECT_LOG.md`（索引） + `project-logs/YYYY-MM-DD.md` + `CURRENT_STATE.md` |
 | 个人档案（身份/偏好/环境） | `memory/user-profile.md` |
 
 ## 检查清单（每次阶段性完成后跑一遍）
@@ -27,7 +27,7 @@
 - [ ] `grep -r "old-name"` 搜全仓库，确保没有残留引用（注释、附录、索引也要查）
 - [ ] 改了 >5 个文件 → 之前打 commit 了吗？
 - [ ] 跑过 `import_md.py` 同步数据库了吗？（或 `watch_sync.py` 正在运行）
-- [ ] 更新了 `PROJECT_LOG.md` 吗？
+- [ ] 更新了 `PROJECT_LOG.md` 索引，并在 `project-logs/` 中创建了当天归档文件吗？
 - [ ] 更新了 `CURRENT_STATE.md` 吗？
 - [ ] 如果有新概念/新事件 → 更新了 `04-index/` 下的索引文件吗？
 - [ ] 如果新增/修改了 spec 文件 → 同步更新了 `CLAUDE.md` 读取规则表、`meta/psychology-expert-mode.md` 按需列表、`MEMORY.md` 等入口索引吗？
@@ -44,7 +44,7 @@
 - [ ] **`python tools/auto_tag.py --apply` 已运行**：且 frontmatter 中没有重复 `tags:` 字段。
 - [ ] **索引已更新**：运行 `python tools/generate_concept_map.py --apply` 生成 `04-index/concept-map.md`；`04-index/tag-index.md` 待脚本化。
 - [ ] **候选池已标记**：`04-index/topic-backlog.md` 中该概念点标记为「已完成」。
-- [ ] **PROJECT_LOG 只记通用经验**：不记录具体填了哪个概念点。
+- [ ] **PROJECT_LOG 只记通用经验**：不记录具体填了哪个概念点。写入时同时更新 `PROJECT_LOG.md` 索引和 `project-logs/YYYY-MM-DD.md` 归档。
 
 ## 陈旧内容审查（每月一次）
 

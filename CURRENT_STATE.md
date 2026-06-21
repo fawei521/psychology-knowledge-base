@@ -1,7 +1,7 @@
 # 当前状态
 
 > 项目轻量状态看板。
-> 历史决策与踩坑见 [`PROJECT_LOG.md`](PROJECT_LOG.md)。
+> 历史决策与踩坑见 [`PROJECT_LOG.md`](PROJECT_LOG.md)（索引）和 [`project-logs/`](project-logs/)（按日期归档）。
 > 概念簇候选池见 [`04-index/topic-backlog.md`](04-index/topic-backlog.md)（冲刺池）和 [`04-index/topic-pool.md`](04-index/topic-pool.md)（储备池）。
 
 ## Sprint 目标
@@ -14,7 +14,7 @@
 
 ## 待处理
 
-- [ ] 合并/删除 7 个重复 concept 文件（子目录完整版 vs 根目录旧版）
+- [x] 合并/删除 7 个重复 concept 文件（子目录完整版 vs 根目录旧版）
 - [ ] 脚本化 `04-index/tag-index.md`
 - [ ] 13 个学科子目录写入首页导航卡片
 - [ ] Zotero 文献 + `citekeys` 字段填充

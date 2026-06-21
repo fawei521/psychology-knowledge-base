@@ -24,7 +24,8 @@ psychology-knowledge-base/
 ├── 00-prompts/          ← 子模式规则
 ├── kb.db                ← SQLite 数据库（由 Markdown 生成，可删除重建）
 ├── CLAUDE.md            ← 项目总纲
-├── PROJECT_LOG.md       ← 项目日志
+├── project-logs/      ← 项目日志归档（按日期）
+├── PROJECT_LOG.md     ← 项目日志索引
 └── CURRENT_STATE.md     ← 当前状态 + 待办
 ```
 
