@@ -10,7 +10,7 @@
 
 | 脚本 | 用途 | 用法 |
 |------|------|------|
-| `import_md.py` | 同步 Markdown → SQLite | `python tools/import_md.py` |
+| `import_md.py` | 同步 Markdown → SQLite（两阶段导入，先实体后关系） | `python tools/import_md.py` |
 | `watch_sync.py` | 自动监控 .md 变化并调用 `import_md.py` | `python tools/watch_sync.py` |
 | `auto_tag.py` | 自动补全标签 | `python tools/auto_tag.py`（预览）；`--apply`（写入） |
 | `db_init.py` | 初始化数据库 | `python tools/db_init.py` |
@@ -18,6 +18,7 @@
 | `semantic_search.py` | 语义搜索（384 维向量） | `python tools/semantic_search.py "查询文本"` |
 | `reindex_vectors.py` | 重建向量索引 | `python tools/reindex_vectors.py` |
 | `generate_concept_map.py` | 从卡片 `relations` 生成概念关系图 | `python tools/generate_concept_map.py`（预览）；`--apply`（写入） |
+| `rebuild_relations.py` | 从 Markdown frontmatter 重建实体关系 | `python tools/rebuild_relations.py --all` 或 `--topic concepts.txt` |
 | `load_rule.py` | 加载规则文件（多规则集通用） | `python tools/load_rule.py --list`<br>`python tools/load_rule.py --verify` |
 | `check_rule_refs.py` | 扫描规则文件中的硬编码引用 | `python tools/check_rule_refs.py`（实验性） |
 | `rewrite_cards.py` | 批量重写卡片 | 历史脚本，谨慎使用 |

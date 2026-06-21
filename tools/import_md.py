@@ -182,31 +182,35 @@ def delete_file_records(filename, cursor):
     cursor.execute("DELETE FROM sync_log WHERE filename = ?", (filename,))
 
 
-def import_file(md_file, cursor, model):
-    """Import a single Markdown file based on its location and frontmatter."""
+def import_file(md_file, cursor, model, phase="import"):
+    """Import a single Markdown file based on its location and frontmatter.
+
+    phase='import': insert/update records (entities, sources, observations, tags, snippets).
+    phase='relations': resolve and write entity relations (run after all entities exist).
+    """
     content = md_file.read_text(encoding="utf-8")
     fm, body = parse_frontmatter(content)
     relative_dir = md_file.parent.name
     source_file = str(md_file.relative_to(BASE_DIR))
 
+    result = None
     if relative_dir == "02-summaries":
         result = import_as_source(md_file, fm, body, cursor, source_file, default_type="summary")
     elif relative_dir == "03-cards":
-        result = import_as_entity(md_file, fm, body, cursor, source_file)
+        result = import_as_entity(md_file, fm, body, cursor, source_file, phase=phase)
     elif relative_dir == "05-observations":
         result = import_as_observation(md_file, fm, body, cursor, source_file)
     elif relative_dir in ["01-raw", "pdfs", "web-pages"]:
         result = import_as_source(md_file, fm, body, cursor, source_file, default_type="other")
     else:
         if "concept" in fm:
-            result = import_as_entity(md_file, fm, body, cursor, source_file)
+            result = import_as_entity(md_file, fm, body, cursor, source_file, phase=phase)
         elif "observation_type" in fm or "case_type" in fm:
             result = import_as_observation(md_file, fm, body, cursor, source_file)
         else:
             result = import_as_source(md_file, fm, body, cursor, source_file, default_type="other")
 
-    # Index vector for the imported record
-    if result:
+    if phase == "import" and result:
         doc_type, doc_id, embedding_text = result
         vec = generate_embedding(embedding_text, model)
         if vec:
@@ -218,6 +222,8 @@ def import_file(md_file, cursor, model):
                 """,
                 (doc_id, doc_type, source_file, preview, serialize_vector(vec)),
             )
+
+    return result
 
 
 def import_as_source(md_file, fm, body, cursor, source_file, default_type="other"):
@@ -258,8 +264,12 @@ def import_as_source(md_file, fm, body, cursor, source_file, default_type="other
     return "source", source_id, embedding_text
 
 
-def import_as_entity(md_file, fm, body, cursor, source_file):
-    """Import a Markdown file as an entity (concept card)."""
+def import_as_entity(md_file, fm, body, cursor, source_file, phase="import"):
+    """Import a single Markdown file as an entity (concept card).
+
+    phase='import': insert/update entity, tags, definition, content, vector text.
+    phase='relations': resolve and insert relations from frontmatter.
+    """
     template_meta = extract_metadata_from_new_template(body) if not fm else {}
 
     if template_meta:
@@ -271,6 +281,22 @@ def import_as_entity(md_file, fm, body, cursor, source_file):
         concept = fm.get("concept", md_file.stem)
         concept_cn = fm.get("concept_cn", "")
         domain = fm.get("domain", "")
+
+    if phase == "relations":
+        # Resolve target entity id from existing entities
+        cursor.execute(
+            "SELECT id FROM entities WHERE name = ? OR name_cn = ?",
+            (concept, concept_cn or concept),
+        )
+        row = cursor.fetchone()
+        if not row:
+            print(f"    Warning: entity '{concept}' not found during relations phase")
+            return None
+        entity_id = row[0]
+        template_meta = extract_metadata_from_new_template(body) if not fm else {}
+        relations = fm.get("relations", []) + template_meta.get("relations", [])
+        _insert_entity_relations(entity_id, concept, relations, cursor)
+        return None
 
     concept_en = fm.get("concept_en", "")
     entity_type = fm.get("entity_type", "concept")
@@ -306,7 +332,13 @@ def import_as_entity(md_file, fm, body, cursor, source_file):
             (tag, "entity", entity_id),
         )
 
-    relations = fm.get("relations", []) + template_meta.get("relations", [])
+    print(f"Imported entity: {md_file.name} -> entity_id={entity_id}")
+    embedding_text = f"{concept} {name_cn}\n{definition}\n{body}"
+    return "entity", entity_id, embedding_text
+
+
+def _insert_entity_relations(entity_id, concept, relations, cursor):
+    """Resolve relation targets and insert relations for an entity."""
     for rel in relations:
         target = rel.get("target", "")
         rel_type = rel.get("type", "related-to")
@@ -333,10 +365,6 @@ def import_as_entity(md_file, fm, body, cursor, source_file):
             )
         else:
             print(f"    Warning: could not resolve relation target '{target}' for entity '{concept}'")
-
-    print(f"Imported entity: {md_file.name} -> entity_id={entity_id}")
-    embedding_text = f"{concept} {name_cn}\n{definition}\n{body}"
-    return "entity", entity_id, embedding_text
 
 
 def import_as_observation(md_file, fm, body, cursor, source_file):
@@ -436,14 +464,29 @@ def main():
         print(f"Deleting records for removed file: {rel}")
         delete_file_records(rel, cursor)
 
-    # Import changed files
+    # Delete removed files
+    for rel in deleted_files:
+        print(f"Deleting records for removed file: {rel}")
+        delete_file_records(rel, cursor)
+
+    # Phase 1: Import changed files (entities, sources, observations, tags, snippets, vectors)
     for rel in changed_files:
         md_file = current_files[rel]
         print(f"Importing: {rel}")
         # Delete old records for this file first (in case of update)
         delete_file_records(rel, cursor)
-        import_file(md_file, cursor, model)
-        # Update sync log
+        import_file(md_file, cursor, model, phase="import")
+
+    # Phase 2: Resolve and write entity relations after all entities exist.
+    # Only process changed cards, since unchanged cards already have their relations.
+    print("\nResolving entity relations...")
+    for rel in changed_files:
+        md_file = current_files[rel]
+        import_file(md_file, cursor, model, phase="relations")
+
+    # Update sync log
+    for rel in changed_files:
+        md_file = current_files[rel]
         mtime = md_file.stat().st_mtime
         h = file_hash(md_file)
         cursor.execute(

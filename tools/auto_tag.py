@@ -9,6 +9,10 @@
 
 import os, re, sys, yaml
 
+# Ensure UTF-8 output on Windows terminals and other constrained environments
+sys.stdout.reconfigure(encoding='utf-8')
+sys.stderr.reconfigure(encoding='utf-8')
+
 BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # ============================================================

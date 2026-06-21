@@ -6,7 +6,7 @@
 
 | 脚本 | 用途 | 常用命令 | 备注 |
 |------|------|---------|------|
-| `import_md.py` | 同步 Markdown → SQLite | `python tools/import_md.py` | 增量同步，基于 mtime + hash |
+| `import_md.py` | 同步 Markdown → SQLite（两阶段导入，先实体后关系） | `python tools/import_md.py` | 增量同步，基于 mtime + hash |
 | `watch_sync.py` | 自动监控 .md 变化并调用 `import_md.py` | `python tools/watch_sync.py` | 2 秒防抖，日志写入 `tools/watch_sync.log` |
 | `auto_tag.py` | 自动补全学科/事件标签 | `python tools/auto_tag.py`（预览）；`--apply`（写入） | 先预览再写入 |
 | `db_init.py` | 初始化数据库 | `python tools/db_init.py` | 会清空数据库，谨慎使用 |
@@ -14,6 +14,7 @@
 | `semantic_search.py` | 语义搜索 | `python tools/semantic_search.py "查询文本"` | 基于 384 维向量 |
 | `reindex_vectors.py` | 重建向量索引 | `python tools/reindex_vectors.py` | 向量异常时重跑 |
 | `generate_concept_map.py` | 从卡片 relations 生成概念关系图 | `python tools/generate_concept_map.py --apply` | 覆盖写入 `04-index/concept-map.md` |
+| `rebuild_relations.py` | 从 Markdown frontmatter 重建实体关系 | `python tools/rebuild_relations.py --all` 或 `--topic concepts.txt` | 用于修复/重建关系网络 |
 | `load_rule.py` | 加载规则文件（多规则集通用） | `python tools/load_rule.py --list` | 基于 `rules-registry.yaml`，支持 namespace + 别名；可用 `--verify` 检查注册表完整性 |
 | `check_rule_refs.py` | 扫描规则文件中的硬编码引用 | `python tools/check_rule_refs.py` | 实验性工具，报告疑似断裂的 `.md` / `.py` 引用 |
 
