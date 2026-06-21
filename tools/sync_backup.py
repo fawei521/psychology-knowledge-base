@@ -161,9 +161,21 @@ def main() -> int:
     parser.add_argument(
         "--push",
         action="store_true",
-        help="After syncing, commit, push, and remove copied directories.",
+        help="After syncing, commit and push.",
+    )
+    parser.add_argument(
+        "--clean",
+        action="store_true",
+        help=(
+            "After pushing, remove the copied memory/ and me-me/ directories "
+            "from the repo working tree. WARNING: this will mark the files as "
+            "deleted in Git on the next run; most users should leave this off."
+        ),
     )
     args = parser.parse_args()
+
+    if args.clean and not args.push:
+        parser.error("--clean requires --push")
 
     root = repo_root()
     print(f"Repository root: {root}")
@@ -175,19 +187,21 @@ def main() -> int:
         print(f"\nSyncing '{name}':\n  from: {source}\n  to:   {target}")
         ensure_source_exists(source, name)
         copy_latest(source, target)
-        print(f"  done.")
+        print("  done.")
 
     if not args.push:
-        print("\nSync complete. Use --push to commit, push, and clean copies.")
+        print("\nSync complete. Use --push to commit and push.")
         return 0
 
     # 2. Commit and push
     print("\nCommitting and pushing...")
     git_add_commit_push(root)
 
-    # 3. Clean copied directories (only after successful push)
-    print("\nCleaning copied directories...")
-    clean_copies(root)
+    # 3. Optionally clean copied directories
+    if args.clean:
+        print("\nCleaning copied directories...")
+        clean_copies(root)
+
     print("Done.")
     return 0
 

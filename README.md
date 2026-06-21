@@ -31,4 +31,4 @@ python tools/import_md.py
 python tools/auto_tag.py --apply
 ```
 
-`tools/sync_backup.py --push` 会先把 `memory/` 和 `me-me/` 的源目录最新内容复制到本仓库，然后提交、推送到 GitHub，最后清理本仓库内的副本。
+`tools/sync_backup.py --push` 会先把 `memory/` 和 `me-me/` 的源目录最新内容复制到本仓库，然后提交、推送到 GitHub。副本默认保留在仓库里，因为 Git 需要跟踪它们。如果想推送后删除副本，可加 `--clean`（不推荐，会导致下次 Git 把这些文件标记为删除）。
