@@ -28,8 +28,9 @@ namespaces:
       元规则: meta.md
       role: role.md
       角色: role.md
-      workflow: workflow.md
-      工作流: workflow.md
+      research-partner-workflow: workflow.md
+      研究搭档工作流: workflow.md
+      rp-workflow: workflow.md
       # Stages
       stage-a: stage-a.md
       阶段a: stage-a.md
@@ -67,8 +68,8 @@ namespaces:
     base_dir: E:/psychology-knowledge-base/meta
     auto_discover: false
     aliases:
-      main: psychology-expert-mode.md
-      主文件: psychology-expert-mode.md
+      psychology-expert-mode: psychology-expert-mode.md
+      心理学专家模式: psychology-expert-mode.md
       mode: psychology-expert-mode.md
       模式: psychology-expert-mode.md
       load-optimization: psychology-expert-mode-load-optimization.md
@@ -81,9 +82,6 @@ namespaces:
     base_dir: E:/psychology-knowledge-base/04-index/startup
     auto_discover: false
     aliases:
-      main: claude-code-startup-workflow.md
-      启动工作流: claude-code-startup-workflow.md
-      workflow: claude-code-startup-workflow.md
       workflow-mindmap: workflow-mindmap.md
       工作流程图: workflow-mindmap.md
 

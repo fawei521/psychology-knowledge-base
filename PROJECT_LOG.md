@@ -3,6 +3,61 @@
 > 记录本项目的关键进展、决策、踩坑与想法。
 > 更新频率：每周一次，关键节点追加。
 
+## 2026-06-21 工作流工具链优化与重复文件清理
+
+### 背景
+
+批量填充「思维偏差与启发式」概念簇时，暴露出五个系统性问题：
+1. `import_md.py` 按文件排序导入，核心节点排序靠后时子卡片关系解析失败；
+2. 规范要求「运行关系重建脚本」，但仓库中并无此脚本；
+3. `auto_tag.py` 在 Windows 终端输出乱码；
+4. `generate_concept_map.py` 持续报告 7 组重复 concept 文件警告；
+5. `rules-registry.yaml` 存在 `main` / `workflow` 跨 namespace 别名冲突。
+
+### 本次工作
+
+1. **修复 `tools/import_md.py` 的两阶段导入**
+   - 新增 `phase="import"` 与 `phase="relations"` 参数；
+   - 第一阶段先插入/更新所有 entities、sources、observations、tags、vectors；
+   - 第二阶段统一解析 frontmatter 中的 `relations`，此时所有目标 entity 都已存在；
+   - 彻底消除因文件排序导致的关系解析警告。
+
+2. **新增 `tools/rebuild_relations.py`**
+   - 读取 `03-cards/**/*.md` 的 YAML frontmatter；
+   - 支持 `--all` 全量重建或 `--topic concepts.txt` 按概念簇重建；
+   - 删除旧关系后按 frontmatter 重新写入，作为关系修复兜底工具；
+   - 在 `tools/README.md`、`04-index/spec-tools.md`、`tools/rules-registry.yaml` 中注册。
+
+3. **修复 `tools/auto_tag.py` 输出编码**
+   - 脚本开头显式 `sys.stdout/stderr.reconfigure(encoding='utf-8')`；
+   - Windows Git Bash 终端输出中文不再乱码。
+
+4. **更新 `04-index/spec-kb-fill-workflow.md`**
+   - 删除「依赖文件排序」和「手动 SQL」的旧说明；
+   - 明确两阶段导入机制与 `rebuild_relations.py` 兜底用法；
+   - 新增「批量填充推进规则」：每完成一个概念簇输出摘要，AI 自动从冲刺池选择下一个最合适的概念点继续推进；用户可随时打断、指定方向或喊停。
+
+5. **修复 `tools/rules-registry.yaml` 别名冲突**
+   - 移除 `startup-workflow` namespace 下的 `main` / `workflow` / `启动工作流` 别名（`claude-code-startup-workflow.md` 不常用，不进入别名系统）；
+   - 将 `psychology-expert-mode/main` 改为 `psychology-expert-mode` / `心理学专家模式`；
+   - 将 `research-partner/workflow` 改为 `research-partner-workflow` / `研究搭档工作流` / `rp-workflow`；
+   - 保留 `startup-workflow` 的 `workflow-mindmap` / `工作流程图` 别名。
+
+6. **清理 7 组重复 concept 文件**
+   - 删除根目录旧版：`card-emotion_theories.md`、`card-james-lange-theory.md`、`card-motivation_theories.md`、`card-self_esteem.md`、`card-self_serving_bias.md`、`card-social_identity_theory.md`、`card-temperament.md`；
+   - 合并内容到子目录版本：`self_esteem`（人格心理学视角 + 社会心理学视角）、`self_serving_bias`（补充 `fundamental_attribution_error` 对比关系）、`social_identity_theory`（补充 `personality_and_individual_differences` / `out_group_homogeneity` 关系）；
+   - 以学科子目录版本为唯一真相源，符合 `spec-card.md` 的存放规范。
+
+### 验证
+
+- `python tools/import_md.py` 成功同步：200 个当前文件，4 个变更文件，7 个删除文件，无关系解析警告；
+- `python tools/rebuild_relations.py --all` 成功重建 193 张卡片、407 条关系；
+- `python tools/auto_tag.py --apply` 中文输出正常；
+- `python tools/generate_concept_map.py --apply` 成功生成 186 张卡片，无重复文件警告；
+- `python tools/load_rule.py --verify` 通过，仅保留 expected 的 `[UNREGISTERED] [startup-workflow] claude-code-startup-workflow.md`（用户明确要求不注册该文件）。
+
+---
+
 ## 2026-06-21 概念图自动化与候选池拆分
 
 ### 背景
@@ -49,7 +104,7 @@
 
 ### 待处理
 
-- [ ] 7 个重复 concept 文件（子目录完整版 vs 根目录旧版）需要人工合并或删除；
+- [ ] 7 个重复 concept 文件（子目录完整版 vs 根目录旧版）需要人工合并或删除；已完成
 - [ ] `tag-index.md` 仍待脚本化；
 - [ ] 可考虑把 `generate_concept_map.py` 接入 `watch_sync.py` 的同步链，实现保存卡片后自动更新概念图（concept-map 生成是只读操作，不会循环触发）；
 - [ ] `generate_concept_map.py` 扩展性预案（待卡片数 >500 或单簇 >50 节点时考虑）：
