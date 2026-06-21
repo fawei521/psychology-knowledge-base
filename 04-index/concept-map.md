@@ -15,10 +15,10 @@
 
 ## 概览
 
-- 总卡片数：176
+- 总卡片数：186
 - 概念簇数：29
 - 孤立卡片数：0
-- 关系总数：390
+- 关系总数：407
 
 ## 概念簇
 
@@ -211,7 +211,42 @@ fundamental_attribution_error -- correlates-with --> 自我服务偏差
 | [[03-cards/card-memory_strategies|memory_strategies]] 记忆策略与记忆术 | 记忆策略与记忆术 | 普通心理学 | 4 |
 | [[03-cards/card-working_memory|working_memory]] 工作记忆 | 工作记忆 | 普通心理学 | 2 |
 
-### 3. [[03-cards/120-统计与测量/card-psychological_measurement_basics|psychological_measurement_basics]] 心理测量基础（普通心理学）
+### 3. [[03-cards/10-普通心理学/card-core-cognitive_bias_and_heuristics|cognitive_bias_and_heuristics]] 思维偏差与启发式（普通心理学）
+
+```
+锚定效应 -- part-of --> 思维偏差与启发式
+可得性启发 -- part-of --> 思维偏差与启发式
+基础比率忽视 -- part-of --> 思维偏差与启发式
+基础比率忽视 -- correlates-with --> 代表性启发
+信念坚持 -- part-of --> 思维偏差与启发式
+信念坚持 -- contrasts --> 确认偏误
+确认偏误 -- part-of --> 思维偏差与启发式
+合取谬误 -- part-of --> 思维偏差与启发式
+合取谬误 -- correlates-with --> 代表性启发
+思维偏差与启发式 -- part-of --> 思维与问题解决
+框架效应 -- part-of --> 思维偏差与启发式
+框架效应 -- applies-to --> 思维与问题解决
+后见之明偏差 -- part-of --> 思维偏差与启发式
+代表性启发 -- part-of --> 思维偏差与启发式
+代表性启发 -- causes --> 基础比率忽视
+代表性启发 -- causes --> 合取谬误
+```
+
+| 成员 | 中文名 | 学科 | 簇内连接数 |
+|------|--------|------|-----------|
+| [[03-cards/10-普通心理学/card-core-cognitive_bias_and_heuristics|cognitive_bias_and_heuristics]] 思维偏差与启发式 | 思维偏差与启发式 | 普通心理学 | 10 |
+| [[03-cards/10-普通心理学/card-anchoring_effect|anchoring_effect]] 锚定效应 | 锚定效应 | 普通心理学 | 1 |
+| [[03-cards/10-普通心理学/card-availability_heuristic|availability_heuristic]] 可得性启发 | 可得性启发 | 普通心理学 | 1 |
+| [[03-cards/10-普通心理学/card-base_rate_neglect|base_rate_neglect]] 基础比率忽视 | 基础比率忽视 | 普通心理学 | 3 |
+| [[03-cards/10-普通心理学/card-belief_perseverance|belief_perseverance]] 信念坚持 | 信念坚持 | 普通心理学 | 3 |
+| [[03-cards/10-普通心理学/card-confirmation_bias|confirmation_bias]] 确认偏误 | 确认偏误 | 普通心理学 | 3 |
+| [[03-cards/10-普通心理学/card-conjunction_fallacy|conjunction_fallacy]] 合取谬误 | 合取谬误 | 普通心理学 | 3 |
+| [[03-cards/10-普通心理学/card-framing_effect|framing_effect]] 框架效应 | 框架效应 | 普通心理学 | 2 |
+| [[03-cards/10-普通心理学/card-hindsight_bias|hindsight_bias]] 后见之明偏差 | 后见之明偏差 | 普通心理学 | 1 |
+| [[03-cards/10-普通心理学/card-representativeness_heuristic|representativeness_heuristic]] 代表性启发 | 代表性启发 | 普通心理学 | 5 |
+| [[03-cards/card-thinking_and_problem_solving|thinking_and_problem_solving]] 思维与问题解决 | 思维与问题解决 | 普通心理学 | 2 |
+
+### 4. [[03-cards/120-统计与测量/card-psychological_measurement_basics|psychological_measurement_basics]] 心理测量基础（普通心理学）
 
 ```
 方差分析基础 -- is-a --> 假设检验
@@ -244,7 +279,7 @@ t检验 -- contrasts --> 方差分析基础
 | [[03-cards/120-统计与测量/card-t_test|t_test]] t检验 | t检验 | 普通心理学 | 3 |
 | [[03-cards/120-统计与测量/card-validity|validity]] 效度 | 效度 | 普通心理学 | 4 |
 
-### 4. [[03-cards/60-发展心理学/card-piaget_cognitive_stages|piaget_cognitive_stages]] 皮亚杰认知发展阶段论（发展心理学）
+### 5. [[03-cards/60-发展心理学/card-piaget_cognitive_stages|piaget_cognitive_stages]] 皮亚杰认知发展阶段论（发展心理学）
 
 ```
 同化与顺应 -- part-of --> 皮亚杰认知发展阶段论
@@ -275,7 +310,7 @@ t检验 -- contrasts --> 方差分析基础
 | [[03-cards/60-发展心理学/card-vygotsky_sociocultural_theory|vygotsky_sociocultural_theory]] 维果茨基社会文化理论 | 维果茨基社会文化理论 | 发展心理学 | 8 |
 | [[03-cards/60-发展心理学/card-zone_of_proximal_development|zone_of_proximal_development]] 最近发展区 | 最近发展区 | 发展心理学 | 4 |
 
-### 5. [[03-cards/card-learning_theories|learning_theories]] 学习理论（普通心理学）
+### 6. [[03-cards/card-learning_theories|learning_theories]] 学习理论（普通心理学）
 
 ```
 教学设计 -- applies-to --> 学习迁移
@@ -307,7 +342,7 @@ t检验 -- contrasts --> 方差分析基础
 | [[03-cards/80-学习心理学/card-operant_conditioning|operant_conditioning]] 操作性条件作用 | 操作性条件作用 | 普通心理学 | 8 |
 | [[03-cards/70-教育心理学/card-transfer_of_learning|transfer_of_learning]] 学习迁移 | 学习迁移 | 教育心理学 | 5 |
 
-### 6. [[03-cards/card-perceptual_organization|perceptual_organization]] 知觉组织（普通心理学）
+### 7. [[03-cards/card-perceptual_organization|perceptual_organization]] 知觉组织（普通心理学）
 
 ```
 听觉知觉 -- part-of --> 感觉与知觉
@@ -337,7 +372,7 @@ t检验 -- contrasts --> 方差分析基础
 | [[03-cards/card-sensation_and_perception|sensation_and_perception]] 感觉与知觉 | 感觉与知觉 | 普通心理学 | 8 |
 | [[03-cards/card-visual_perception|visual_perception]] 视觉知觉 | 视觉知觉 | 普通心理学 | 2 |
 
-### 7. [[03-cards/110-变态心理学/card-anxiety_disorders|anxiety_disorders]] 焦虑障碍（异常心理学）
+### 8. [[03-cards/110-变态心理学/card-anxiety_disorders|anxiety_disorders]] 焦虑障碍（异常心理学）
 
 ```
 焦虑与心境障碍 -- part-of --> 焦虑障碍
@@ -361,7 +396,7 @@ t检验 -- contrasts --> 方差分析基础
 | [[03-cards/110-变态心理学/card-panic_disorder|panic_disorder]] 惊恐障碍 | 惊恐障碍 | 异常心理学 | 2 |
 | [[03-cards/110-变态心理学/card-social_anxiety_disorder|social_anxiety_disorder]] 社交焦虑障碍 | 社交焦虑障碍 | 异常心理学 | 2 |
 
-### 8. [[03-cards/card-attitude_formation_and_change|attitude_formation_and_change]] 态度形成与改变（社会心理学）
+### 9. [[03-cards/card-attitude_formation_and_change|attitude_formation_and_change]] 态度形成与改变（社会心理学）
 
 ```
 中心路径与边缘路径 -- part-of --> 态度形成与改变
@@ -391,7 +426,7 @@ t检验 -- contrasts --> 方差分析基础
 | [[03-cards/20-社会心理学/card-heuristic_systematic_model|heuristic_systematic_model]] 启发式-系统模型 | 启发式-系统模型 | 社会心理学 | 2 |
 | [[03-cards/20-社会心理学/card-source_credibility|source_credibility]] 信息源可信度 | 信息源可信度 | 社会心理学 | 4 |
 
-### 9. [[03-cards/90-实验心理学/card-experimental_design_basics|experimental_design_basics]] 实验设计基础（实验心理学）
+### 10. [[03-cards/90-实验心理学/card-experimental_design_basics|experimental_design_basics]] 实验设计基础（实验心理学）
 
 ```
 被试间设计 -- part-of --> 实验设计基础
@@ -419,7 +454,7 @@ t检验 -- contrasts --> 方差分析基础
 | [[03-cards/90-实验心理学/card-variables_in_experiments|variables_in_experiments]] 实验变量 | 实验变量 | 实验心理学 | 4 |
 | [[03-cards/90-实验心理学/card-within_subjects_design|within_subjects_design]] 被试内设计 | 被试内设计 | 实验心理学 | 6 |
 
-### 10. [[03-cards/card-consciousness_and_sleep|consciousness_and_sleep]] 意识与睡眠（普通心理学）
+### 11. [[03-cards/card-consciousness_and_sleep|consciousness_and_sleep]] 意识与睡眠（普通心理学）
 
 ```
 梦 -- part-of --> 意识与睡眠
@@ -447,7 +482,7 @@ REM 睡眠 -- part-of --> 睡眠阶段
 | [[03-cards/card-rem_sleep|rem_sleep]] REM 睡眠 | REM 睡眠 | 普通心理学 | 7 |
 | [[03-cards/card-sleep_stages|sleep_stages]] 睡眠阶段 | 睡眠阶段 | 普通心理学 | 5 |
 
-### 11. [[03-cards/30-人格心理学/card-psychoanalytic_personality_theory|psychoanalytic_personality_theory]] 精神分析人格理论（人格心理学）
+### 12. [[03-cards/30-人格心理学/card-psychoanalytic_personality_theory|psychoanalytic_personality_theory]] 精神分析人格理论（人格心理学）
 
 ```
 阿德勒个体心理学 -- extends --> 精神分析人格理论
@@ -474,7 +509,7 @@ REM 睡眠 -- part-of --> 睡眠阶段
 | [[03-cards/30-人格心理学/card-jung_analytical_psychology|jung_analytical_psychology]] 荣格分析心理学 | 荣格分析心理学 | 人格心理学 | 2 |
 | [[03-cards/30-人格心理学/card-psychosexual_stages|psychosexual_stages]] 心理性欲发展阶段 | 心理性欲发展阶段 | 人格心理学 | 4 |
 
-### 12. [[03-cards/110-变态心理学/card-schizophrenia|schizophrenia]] 精神分裂症（异常心理学）
+### 13. [[03-cards/110-变态心理学/card-schizophrenia_spectrum|schizophrenia_spectrum]] 精神分裂症谱系（异常心理学）
 
 ```
 抗精神病药物 -- applies-to --> 精神分裂症谱系
@@ -492,14 +527,14 @@ REM 睡眠 -- part-of --> 睡眠阶段
 
 | 成员 | 中文名 | 学科 | 簇内连接数 |
 |------|--------|------|-----------|
-| [[03-cards/110-变态心理学/card-schizophrenia|schizophrenia]] 精神分裂症 | 精神分裂症 | 异常心理学 | 10 |
+| [[03-cards/110-变态心理学/card-schizophrenia_spectrum|schizophrenia_spectrum]] 精神分裂症谱系 | 精神分裂症谱系 | 异常心理学 | 10 |
 | [[03-cards/110-变态心理学/card-antipsychotic_medications|antipsychotic_medications]] 抗精神病药物 | 抗精神病药物 | 异常心理学 | 6 |
 | [[03-cards/110-变态心理学/card-dopamine_hypothesis|dopamine_hypothesis]] 多巴胺假说 | 多巴胺假说 | 异常心理学 | 6 |
 | [[03-cards/110-变态心理学/card-negative_symptoms|negative_symptoms]] 阴性症状 | 阴性症状 | 异常心理学 | 6 |
 | [[03-cards/110-变态心理学/card-positive_symptoms|positive_symptoms]] 阳性症状 | 阳性症状 | 异常心理学 | 6 |
-| [[03-cards/110-变态心理学/card-schizophrenia_spectrum|schizophrenia_spectrum]] 精神分裂症谱系 | 精神分裂症谱系 | 异常心理学 | 10 |
+| [[03-cards/110-变态心理学/card-schizophrenia|schizophrenia]] 精神分裂症 | 精神分裂症 | 异常心理学 | 10 |
 
-### 13. [[03-cards/100-生理心理学/card-brain_structure_and_function|brain_structure_and_function]] 脑结构与功能（生物心理学）
+### 14. [[03-cards/100-生理心理学/card-brain_structure_and_function|brain_structure_and_function]] 脑结构与功能（生物心理学）
 
 ```
 脑成像技术 -- applies-to --> 脑结构与功能
@@ -521,7 +556,7 @@ REM 睡眠 -- part-of --> 睡眠阶段
 | [[03-cards/100-生理心理学/card-limbic_system|limbic_system]] 边缘系统 | 边缘系统 | 生物心理学 | 3 |
 | [[03-cards/100-生理心理学/card-lobes_of_the_brain|lobes_of_the_brain]] 大脑皮层分区 | 大脑皮层分区 | 生物心理学 | 3 |
 
-### 14. [[03-cards/100-生理心理学/card-neuron_and_synaptic_transmission|neuron_and_synaptic_transmission]] 神经元与神经传导（生物心理学）
+### 15. [[03-cards/100-生理心理学/card-neuron_and_synaptic_transmission|neuron_and_synaptic_transmission]] 神经元与神经传导（生物心理学）
 
 ```
 动作电位 -- part-of --> 神经元与神经传导
@@ -543,7 +578,7 @@ REM 睡眠 -- part-of --> 睡眠阶段
 | [[03-cards/100-生理心理学/card-neurotransmitters|neurotransmitters]] 神经递质 | 神经递质 | 生物心理学 | 4 |
 | [[03-cards/100-生理心理学/card-synaptic_transmission|synaptic_transmission]] 突触传递 | 突触传递 | 生物心理学 | 6 |
 
-### 15. [[03-cards/card-needs-vs-tests-2026|需求与测试的边界]]（亲密关系 / 沟通心理学 / 依恋理论）
+### 16. [[03-cards/card-needs-vs-tests-2026|需求与测试的边界]]（亲密关系 / 沟通心理学 / 依恋理论）
 
 ```
 坚定选择测试陷阱 -- contrasts --> 需求与测试的边界
@@ -562,7 +597,7 @@ REM 睡眠 -- part-of --> 睡眠阶段
 | [[03-cards/card-loosening-structure-techniques-2026|松动结构的日常技术]] |  | 临床心理学 / 叙事治疗 / 接纳承诺治疗 / 亲密关系 | 2 |
 | [[03-cards/card-structure-expectation-loop-2026|结构-预期-自我实现循环]] |  | 社会心理学 / 依恋理论 / 家庭系统治疗 | 3 |
 
-### 16. [[03-cards/20-社会心理学/card-altruism|altruism]] 利他主义（社会心理学）
+### 17. [[03-cards/20-社会心理学/card-altruism|altruism]] 利他主义（社会心理学）
 
 ```
 利他主义 -- is-a --> 亲社会行为
@@ -576,83 +611,77 @@ REM 睡眠 -- part-of --> 睡眠阶段
 | [[03-cards/20-社会心理学/card-bystander_effect|bystander_effect]] 旁观者效应 | 旁观者效应 | 社会心理学 | 3 |
 | [[03-cards/card-prosocial_behavior|prosocial_behavior]] 亲社会行为 | 亲社会行为 | 社会心理学 | 2 |
 
-### 17. [[03-cards/card-attribution_theory|attribution_theory]] 归因理论（社会心理学）
+### 18. [[03-cards/card-attribution_theory|attribution_theory]] 归因理论（社会心理学）
 
 | 成员 | 中文名 | 学科 | 簇内连接数 |
 |------|--------|------|-----------|
 | [[03-cards/card-attribution_theory|attribution_theory]] 归因理论 | 归因理论 | 社会心理学 | 0 |
 
-### 18. [[03-cards/card-conformity|conformity]] 从众（社会心理学）
+### 19. [[03-cards/card-conformity|conformity]] 从众（社会心理学）
 
 | 成员 | 中文名 | 学科 | 簇内连接数 |
 |------|--------|------|-----------|
 | [[03-cards/card-conformity|conformity]] 从众 | 从众 | 社会心理学 | 0 |
 
-### 19. [[03-cards/card-evolutionary-mismatch|evolutionary_mismatch]]（evolutionary psychology）
+### 20. [[03-cards/card-evolutionary-mismatch|evolutionary_mismatch]]（evolutionary psychology）
 
 | 成员 | 中文名 | 学科 | 簇内连接数 |
 |------|--------|------|-----------|
 | [[03-cards/card-evolutionary-mismatch|evolutionary_mismatch]] |  | evolutionary psychology | 0 |
 
-### 20. [[03-cards/card-group_influence|group_influence]] 群体影响（社会心理学）
+### 21. [[03-cards/card-group_influence|group_influence]] 群体影响（社会心理学）
 
 | 成员 | 中文名 | 学科 | 簇内连接数 |
 |------|--------|------|-----------|
 | [[03-cards/card-group_influence|group_influence]] 群体影响 | 群体影响 | 社会心理学 | 0 |
 
-### 21. [[03-cards/card-humanistic_personality|humanistic_personality]] 人本主义人格（普通心理学）
+### 22. [[03-cards/card-humanistic_personality|humanistic_personality]] 人本主义人格（普通心理学）
 
 | 成员 | 中文名 | 学科 | 簇内连接数 |
 |------|--------|------|-----------|
 | [[03-cards/card-humanistic_personality|humanistic_personality]] 人本主义人格 | 人本主义人格 | 普通心理学 | 0 |
 
-### 22. [[03-cards/card-intelligence_theories|intelligence_theories]] 智力理论（普通心理学）
+### 23. [[03-cards/card-intelligence_theories|intelligence_theories]] 智力理论（普通心理学）
 
 | 成员 | 中文名 | 学科 | 簇内连接数 |
 |------|--------|------|-----------|
 | [[03-cards/card-intelligence_theories|intelligence_theories]] 智力理论 | 智力理论 | 普通心理学 | 0 |
 
-### 23. [[03-cards/card-language|language]] 语言（普通心理学）
+### 24. [[03-cards/card-language|language]] 语言（普通心理学）
 
 | 成员 | 中文名 | 学科 | 簇内连接数 |
 |------|--------|------|-----------|
 | [[03-cards/card-language|language]] 语言 | 语言 | 普通心理学 | 0 |
 
-### 24. [[03-cards/card-obedience|obedience]] 服从（社会心理学）
+### 25. [[03-cards/card-obedience|obedience]] 服从（社会心理学）
 
 | 成员 | 中文名 | 学科 | 簇内连接数 |
 |------|--------|------|-----------|
 | [[03-cards/card-obedience|obedience]] 服从 | 服从 | 社会心理学 | 0 |
 
-### 25. [[03-cards/card-personality_dynamic_theories|personality_dynamic_theories]] 人格动力理论（普通心理学）
+### 26. [[03-cards/card-personality_dynamic_theories|personality_dynamic_theories]] 人格动力理论（普通心理学）
 
 | 成员 | 中文名 | 学科 | 簇内连接数 |
 |------|--------|------|-----------|
 | [[03-cards/card-personality_dynamic_theories|personality_dynamic_theories]] 人格动力理论 | 人格动力理论 | 普通心理学 | 0 |
 
-### 26. [[03-cards/card-prejudice_and_discrimination|prejudice_and_discrimination]] 偏见与歧视（社会心理学）
+### 27. [[03-cards/card-prejudice_and_discrimination|prejudice_and_discrimination]] 偏见与歧视（社会心理学）
 
 | 成员 | 中文名 | 学科 | 簇内连接数 |
 |------|--------|------|-----------|
 | [[03-cards/card-prejudice_and_discrimination|prejudice_and_discrimination]] 偏见与歧视 | 偏见与歧视 | 社会心理学 | 0 |
 
-### 27. [[03-cards/card-psychology-definition|psychology]]（general）
+### 28. [[03-cards/card-psychology-definition|psychology]]（general）
 
 | 成员 | 中文名 | 学科 | 簇内连接数 |
 |------|--------|------|-----------|
 | [[03-cards/card-psychology-definition|psychology]] |  | general | 0 |
 
-### 28. [[03-cards/60-发展心理学/card-test_hook_verification|test_hook_verification]] 测试钩子验证（发展心理学）
+### 29. [[03-cards/60-发展心理学/card-test_hook_verification|test_hook_verification]] 测试钩子验证（发展心理学）
 
 | 成员 | 中文名 | 学科 | 簇内连接数 |
 |------|--------|------|-----------|
 | [[03-cards/60-发展心理学/card-test_hook_verification|test_hook_verification]] 测试钩子验证 | 测试钩子验证 | 发展心理学 | 0 |
-
-### 29. [[03-cards/card-thinking_and_problem_solving|thinking_and_problem_solving]] 思维与问题解决（普通心理学）
-
-| 成员 | 中文名 | 学科 | 簇内连接数 |
-|------|--------|------|-----------|
-| [[03-cards/card-thinking_and_problem_solving|thinking_and_problem_solving]] 思维与问题解决 | 思维与问题解决 | 普通心理学 | 0 |
 
 ## 指向未创建卡片的关系
 
@@ -673,12 +702,12 @@ REM 睡眠 -- part-of --> 睡眠阶段
 
 | 关系类型 | 数量 |
 |---------|------|
-| part-of | 183 |
-| correlates-with | 49 |
-| contrasts | 40 |
+| part-of | 193 |
+| correlates-with | 51 |
+| contrasts | 42 |
 | supports | 32 |
-| applies-to | 31 |
+| applies-to | 32 |
 | extends | 24 |
 | is-a | 23 |
-| causes | 7 |
+| causes | 9 |
 | requires | 1 |
