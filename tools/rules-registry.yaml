@@ -176,6 +176,8 @@ namespaces:
       自动同步: watch_sync.py
       generate-concept-map: generate_concept_map.py
       生成概念图: generate_concept_map.py
+      rebuild-relations: rebuild_relations.py
+      重建关系: rebuild_relations.py
       db-init: db_init.py
       初始化数据库: db_init.py
       query: query.py
