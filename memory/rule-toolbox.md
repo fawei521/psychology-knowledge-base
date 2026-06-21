@@ -39,6 +39,7 @@ metadata:
 | 跑脚本、改工具、新增脚本 | `kb-specs/spec-tools` + `kb-tools/readme` |
 | 更新索引/概念图/标签索引 | `kb-specs/spec-index` |
 | 项目阶段性自查/维护 | `kb-specs/spec-maintenance` |
+| 推送 psychology-knowledge-base 到 GitHub | `kb-tools/sync-backup`（即 `tools/sync_backup.py --push`） |
 | 进入心理学专家模式 | `psychology-expert-mode/main` |
 | 进入跨学科研究搭档模式 | `research-partner/constitution` |
 

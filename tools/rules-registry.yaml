@@ -188,6 +188,9 @@ namespaces:
       规则加载器: load_rule.py
       check-rule-refs: check_rule_refs.py
       规则引用检查: check_rule_refs.py
+      sync-backup: sync_backup.py
+      同步备份: sync_backup.py
+      推送脚本: sync_backup.py
       # Historical scripts
       rewrite-cards: rewrite_cards.py
       重写卡片: rewrite_cards.py

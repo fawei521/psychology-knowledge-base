@@ -28,3 +28,4 @@
 - [启动工作流图](思维导图\claude-code-startup-workflow.md) — 完整流程参考文档，给人看的，不需要每次启动读
 - [研究搭档模式思维导图](思维导图\research-partner-mode-mindmap.md) — 跨学科研究搭档模式交互式思维导图 HTML，浏览器打开
 - [心理学知识库保存验证钩子](psychology-kb-verify-hook.md) — 自动触发、生效条件与配置位置
+- [psychology-knowledge-base 推送脚本](psychology-knowledge-base-push-script.md) — 推送到 GitHub 时必须使用 `tools/sync_backup.py`
