@@ -51,7 +51,13 @@
 
 - [ ] 7 个重复 concept 文件（子目录完整版 vs 根目录旧版）需要人工合并或删除；
 - [ ] `tag-index.md` 仍待脚本化；
-- [ ] 可考虑把 `generate_concept_map.py` 接入 `watch_sync.py` 的同步链，实现保存卡片后自动更新概念图（concept-map 生成是只读操作，不会循环触发）。
+- [ ] 可考虑把 `generate_concept_map.py` 接入 `watch_sync.py` 的同步链，实现保存卡片后自动更新概念图（concept-map 生成是只读操作，不会循环触发）；
+- [ ] `generate_concept_map.py` 扩展性预案（待卡片数 >500 或单簇 >50 节点时考虑）：
+  - 按 `domain` 过滤生成子图；
+  - 按核心节点生成单簇图；
+  - 大簇折叠/精简输出；
+  - 增量更新（只重算 changed cards 涉及的簇）；
+  - 用并查集替代 BFS 重构聚类逻辑。
 
 ### 经验教训
 
