@@ -33,6 +33,12 @@ RENAME_MAP: dict[str, str] = {
     "Twilight of the Day": "Twilight-of-the-Day",
 }
 
+# Substrings: if a file/dir name contains any of these, skip it.
+IGNORE_SUBSTRINGS = {
+    "原文件",
+    "原始备份",
+}
+
 # Files/dirs to ignore during copy. These patterns are passed to shutil.copytree
 # via ignore=... and are in addition to .gitignore.
 IGNORE_PATTERNS = {
@@ -78,9 +84,15 @@ def copy_latest(source: Path, target: Path) -> None:
     def ignore_patterns(dirpath: str, names: list[str]) -> set[str]:
         ignored = set()
         for name in names:
+            # Exact match
             if name in IGNORE_PATTERNS:
                 ignored.add(name)
                 continue
+            # Contains a blocked substring (e.g. "99 原始备份")
+            if any(sub in name for sub in IGNORE_SUBSTRINGS):
+                ignored.add(name)
+                continue
+            # Extension match
             for ext in IGNORE_PATTERNS:
                 if ext.startswith("*") and name.endswith(ext.lstrip("*")):
                     ignored.add(name)
