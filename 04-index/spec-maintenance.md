@@ -28,6 +28,7 @@
 - [ ] 改了 >5 个文件 → 之前打 commit 了吗？
 - [ ] 跑过 `import_md.py` 同步数据库了吗？（或 `watch_sync.py` 正在运行）
 - [ ] 更新了 `PROJECT_LOG.md` 吗？
+- [ ] 更新了 `CURRENT_STATE.md` 吗？
 - [ ] 如果有新概念/新事件 → 更新了 `04-index/` 下的索引文件吗？
 - [ ] 如果新增/修改了 spec 文件 → 同步更新了 `CLAUDE.md` 读取规则表、`meta/psychology-expert-mode.md` 按需列表、`MEMORY.md` 等入口索引吗？
 

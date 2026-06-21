@@ -1,73 +1,55 @@
-# 当前项目状态
+# 当前状态
 
-## 项目目标
+> 项目轻量状态看板。
+> 历史决策与踩坑见 [`PROJECT_LOG.md`](PROJECT_LOG.md)。
+> 概念簇候选池见 [`04-index/topic-backlog.md`](04-index/topic-backlog.md)（冲刺池）和 [`04-index/topic-pool.md`](04-index/topic-pool.md)（储备池）。
 
-这是一个面向**心理学考研复习**的个人知识库项目。核心目标是让 AI 成为复习助手——通过结构化卡片和语义检索，用户提问时 AI 能从知识库中精准找到相关内容并作答。
+## Sprint 目标
 
-## 当前架构（2026-06-14）
+完成概念图自动化和候选池拆分，建立轻量状态看板，进入常规概念簇填充。
 
-```
-psychology-knowledge-base/
-├── 03-cards/                  ← 概念卡片（平铺，用 #学科/xxx 标签分类）
-│   ├── 10-普通心理学/...      ← 13 个学科子目录（首页导航入口）
-│   └── card-*.md              ← 41 张概念卡片
-├── 04-index/
-│   ├── concept-map.md
-│   ├── tag-index.md
-│   └── event-classification.md ← 社会事件分类手册（8 类型）
-├── 05-observations/
-│   ├── current-events/        ← 3 个文件（碳水脸 ×2, 明星塌房 ×1）
-│   ├── personal-experiences/  ← 2 个文件
-│   └── typical-cases/         ← 1 个文件（彩礼事件深度分析）
-├── tools/
-│   ├── auto_tag.py            ← 自动标签脚本（核心工具）
-│   ├── import_md.py           ← 增量导入数据库
-│   ├── semantic_search.py     ← 语义检索
-│   └── ...
-└── PROJECT_LOG.md
-```
+## 进行中
 
-## 已完成
+无
 
-| 事项 | 状态 |
-|---|---|
-| 41 张概念卡片（含完整 YAML frontmatter） | ✅ |
-| 增量同步导入脚本 (import_md.py) | ✅ |
-| sqlite-vec 语义检索 | ✅ |
-| Observations 模板与流程 | ✅ |
-| Git 仓库 + GitHub 推送 | ✅ |
-| 13 学科目录结构 | ✅ |
-| 标签替代子目录（#学科/xxx, #事件类型/xxx） | ✅ |
-| 自动标签脚本 (auto_tag.py) | ✅ |
-| 社会事件分类手册整合 (event-classification.md) | ✅ |
-| 删除 06-event-cards/，事件归入 05-observations | ✅ |
+## 待处理
 
-## 进行中 / 待处理
+- [ ] 合并/删除 7 个重复 concept 文件（子目录完整版 vs 根目录旧版）
+- [ ] 脚本化 `04-index/tag-index.md`
+- [ ] 13 个学科子目录写入首页导航卡片
+- [ ] Zotero 文献 + `citekeys` 字段填充
+- [ ] 分析报告附录路径引用更新（仍引旧 `06-event-cards/`）
+- [ ] `03-cards/` 中 `card-*-2026.md` 事件卡迁移到 `05-observations/`
+- [ ] 决定是否把 `generate_concept_map.py` 接入 `watch_sync.py`
+- [ ] `generate_concept_map.py` 扩展性预案（待卡片数 >500 或单簇 >50 节点时考虑）：
+  - 按 `domain` 过滤生成子图；
+  - 按核心节点生成单簇图；
+  - 大簇折叠/精简输出；
+  - 增量更新（只重算 changed cards 涉及的簇）；
+  - 用并查集替代 BFS 重构聚类逻辑。
 
-| 事项 | 优先级 |
-|---|---|
-| 13 个学科子目录写入首页导航卡片 | 中 |
-| 5 张占位符卡片（彩礼事件卡片 11-15）填充 | 低 |
-| Zotero 文献 + citekeys 字段填充 | 低 |
-| 自动生成 tag-index.md 和 concept-map.md 的脚本 | 中 |
-| 分析报告附录路径引用更新（仍引旧 06-event-cards/） | 低 |
-| `03-cards/` 中 `card-*-2026.md` 事件卡迁移到 `05-observations/` | 低 |
-| `02-summaries/` 模板和流程优化 | 远期 |
-| sqlite-vec 语义搜索升级 | 远期 |
+## 远期
 
-## 最近关键决策
+- `02-summaries/` 模板和流程优化
+- sqlite-vec 语义搜索升级
+- 5 张占位符卡片（彩礼事件卡片 11-15）填充
 
-- **标签 > 子目录**：一张卡多标签解决跨学科归属。Obsidian 标签面板原生支持嵌套标签筛选。
-- **auto_tag.py 扫描策略**：概念卡片只看 YAML 字段；事件文件只看 YAML + 正文前 800 字，≥2 关键词命中才确认。
-- **不合并 05 和 06**：05-observations 三子目录（current-events, personal-experiences, typical-cases），结构清晰。
+## 最近完成
 
-## 日常使用流程
+- 2026-06-21: 概念图自动化脚本 `tools/generate_concept_map.py` + 候选池拆分
+- 2026-06-21: 安装全局 pre-commit hook，禁止空 commit/amend
+- 2026-06-21: 创建 `CURRENT_STATE.md` 状态看板
 
-```
-加新概念卡片 → 写 domain / tags → python tools/auto_tag.py --apply
-加新事件     → 写 YAML + 正文   → python tools/auto_tag.py --apply
-找内容       → Obsidian 标签面板点击筛选
-```
+## 阻塞/需决策
+
+无
 
 ---
-*最后更新：2026-06-14*
+
+## 维护规则
+
+1. **每次工作收尾时更新本文件**：把完成项移到"最近完成"，把新发现的待处理项加入"待处理"。
+2. **进入新 sprint 时更新 Sprint 目标**：由用户确认或 AI 提议后写入。
+3. **不在这里写历史细节**：具体决策过程、踩坑、数据写入 `PROJECT_LOG.md`。
+4. **不在这里写概念簇详情**：候选概念簇只写标题，详情在 `topic-backlog.md` / `topic-pool.md`。
+5. **保持轻量**：待处理项超过 10 个时，把低优先级项移回 `topic-pool.md` 或 `PROJECT_LOG.md`。
