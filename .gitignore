@@ -4,3 +4,13 @@ tools/weread-exporter/
 tools/watch_sync.log
 __pycache__/
 *.pyc
+me-me/*/原文件/
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.webp
+*.mp4
+*.mov
+*.avi
+*.mp3
