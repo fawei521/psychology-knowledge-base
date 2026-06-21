@@ -129,17 +129,9 @@ def git_add_commit_push(root: Path) -> None:
         print("Nothing to commit.")
         return
 
-    timestamp = subprocess.run(
-        ["git", "log", "-1", "--format=%cd", "--date=format:%Y-%m-%d %H:%M:%S"],
-        cwd=root,
-        capture_output=True,
-        text=True,
-        check=False,
-    ).stdout.strip()
-
-    commit_msg = f"Sync memory and me-me from source dirs"
-    if timestamp:
-        commit_msg += f" ({timestamp})"
+    from datetime import datetime, timezone
+    timestamp = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S UTC")
+    commit_msg = f"Sync memory and me-me from source dirs ({timestamp})"
 
     subprocess.run(["git", "commit", "-m", commit_msg], cwd=root, check=True)
     subprocess.run(["git", "push"], cwd=root, check=True)
