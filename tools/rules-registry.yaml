@@ -84,6 +84,8 @@ namespaces:
     aliases:
       workflow-mindmap: workflow-mindmap.md
       工作流程图: workflow-mindmap.md
+      startup-workflow-reference-only: claude-code-startup-workflow.md
+      启动工作流参考图仅供人工查看: claude-code-startup-workflow.md
 
   memory-rules:
     description: 个人记忆库中的触发式规则
