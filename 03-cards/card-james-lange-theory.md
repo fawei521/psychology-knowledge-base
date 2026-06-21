@@ -7,9 +7,9 @@ tags:
 - theory
 - 学科/情绪与动机
 relations:
-- target: schachter-singer-theory
+- target: schachter_singer_theory
   type: contrasts
-- target: valence-arousal
+- target: valence_arousal
   type: part-of
 citekeys:
 - summary-emotion-analysis-framework-2026

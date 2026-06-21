@@ -3,6 +3,64 @@
 > 记录本项目的关键进展、决策、踩坑与想法。
 > 更新频率：每周一次，关键节点追加。
 
+## 2026-06-21 概念图自动化与候选池拆分
+
+### 背景
+
+`04-index/concept-map.md` 已增长到近 300 行，人工维护负担明显；`04-index/topic-backlog.md` 超过 500 行，候选池过大导致 sprint 焦点模糊。
+
+### 本次工作
+
+1. **新增 `tools/generate_concept_map.py`**
+   - 扫描 `03-cards/**/*.md` 的 YAML frontmatter；
+   - 基于 `relations` 构建无向图，用连通分量自动发现概念簇；
+   - 每个簇输出核心节点、成员表、簇内关系图；
+   - 孤立卡片、指向未创建卡片的关系、关系统计单独列出；
+   - 支持 `--apply` 写入 `04-index/concept-map.md`；
+   - 检测到同一 `concept` 对应多个文件时，自动选择内容更完整的版本，并在输出中警告。
+
+2. **修复 `tools/import_md.py` 的 `name_cn` 读取 bug**
+   - 原代码在 YAML frontmatter 分支里把 `concept_cn` 硬编码为空字符串，导致数据库 `name_cn` 字段大量为空；
+   - 已改为从 frontmatter 正确读取 `concept_cn`。
+
+3. **拆分候选池**
+   - 原 `topic-backlog.md`（完整大表）重命名为 `topic-pool.md`，作为长期储备池；
+   - 新建精简版 `topic-backlog.md`，只保留最近完成项和当前冲刺的 8 个高频待填充概念点；
+   - 两个文件顶部互相引用，避免维护时搞混。
+
+4. **同步更新规范与注册表**
+   - `04-index/spec-index.md`：标记 `generate_concept_map.py` 为“已可用”；
+   - `04-index/spec-tools.md`：脚本清单加入 `generate_concept_map.py`；
+   - `04-index/spec-maintenance.md`：概念簇完成 checklist 的索引项改为明确命令；
+   - `04-index/spec-kb-fill-workflow.md`：工作流第 7 步加入生成概念图命令；
+   - `tools/README.md`：脚本清单加入 `generate_concept_map.py`；
+   - `tools/rules-registry.yaml`：注册 `generate-concept-map` / `生成概念图`、`topic-pool` / `主题储备池` 别名。
+
+5. **清理数据噪音**
+   - 删除两个 0 字节占位卡 `03-cards/card-schachter-singer-theory.md` 和 `03-cards/card-valence-arousal.md`；
+   - 修正 `card-james-lange-theory.md` 中指向这两个占位符的关系 target 为下划线命名；
+   - `valence_arousal` 仍为待创建卡片，保留在 concept-map 的“指向未创建卡片的关系”中。
+
+### 验证
+
+- `python tools/generate_concept_map.py --apply` 成功生成 176 张卡片、29 个概念簇、0 个孤立卡片；
+- `python tools/import_md.py` 增量同步无报错；
+- `python tools/load_rule.py --verify` 通过，无新增 `[MISSING]` / `[UNREGISTERED]` 错误，仅保留历史 2 个 `[DUPLICATE_ALIAS]` 信息级提示。
+
+### 待处理
+
+- [ ] 7 个重复 concept 文件（子目录完整版 vs 根目录旧版）需要人工合并或删除；
+- [ ] `tag-index.md` 仍待脚本化；
+- [ ] 可考虑把 `generate_concept_map.py` 接入 `watch_sync.py` 的同步链，实现保存卡片后自动更新概念图（concept-map 生成是只读操作，不会循环触发）。
+
+### 经验教训
+
+- 批量操作前先 `git status` 确认意外文件，再执行删除/移动；
+- 自动脚本应处理 concept 命名不一致（连字符 vs 下划线），但最佳做法还是从源头规范命名；
+- 大索引文件应尽早脚本化，否则会成为维护瓶颈。
+
+---
+
 ## 2026-06-20 规则注册表完整性审计
 
 ### 背景

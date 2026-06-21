@@ -24,7 +24,7 @@
 | 脚本 | 生成内容 | 状态 |
 |------|---------|------|
 | `auto_tag.py --apply` | 自动补全卡片和观察的标签 | 已可用 |
-| （待开发） | 从 `relations` 表生成 `concept-map.md` | 见 `CURRENT_STATE.md` |
+| `generate_concept_map.py --apply` | 从 `relations` 字段生成 `concept-map.md` | 已可用 |
 | （待开发） | 从 `tags` 字段生成 `tag-index.md` | 见 `CURRENT_STATE.md` |
 
 ## 手动维护例外

@@ -13,6 +13,7 @@
 | `query.py` | 命令行查询数据库 | `python tools/query.py "SQL语句"` | 快速查 `entities`/`relations` |
 | `semantic_search.py` | 语义搜索 | `python tools/semantic_search.py "查询文本"` | 基于 384 维向量 |
 | `reindex_vectors.py` | 重建向量索引 | `python tools/reindex_vectors.py` | 向量异常时重跑 |
+| `generate_concept_map.py` | 从卡片 relations 生成概念关系图 | `python tools/generate_concept_map.py --apply` | 覆盖写入 `04-index/concept-map.md` |
 | `load_rule.py` | 加载规则文件（多规则集通用） | `python tools/load_rule.py --list` | 基于 `rules-registry.yaml`，支持 namespace + 别名；可用 `--verify` 检查注册表完整性 |
 | `check_rule_refs.py` | 扫描规则文件中的硬编码引用 | `python tools/check_rule_refs.py` | 实验性工具，报告疑似断裂的 `.md` / `.py` 引用 |
 

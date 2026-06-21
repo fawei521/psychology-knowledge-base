@@ -17,6 +17,7 @@
 | `query.py` | 命令行查询数据库 | `python tools/query.py "SQL语句"` |
 | `semantic_search.py` | 语义搜索（384 维向量） | `python tools/semantic_search.py "查询文本"` |
 | `reindex_vectors.py` | 重建向量索引 | `python tools/reindex_vectors.py` |
+| `generate_concept_map.py` | 从卡片 `relations` 生成概念关系图 | `python tools/generate_concept_map.py`（预览）；`--apply`（写入） |
 | `load_rule.py` | 加载规则文件（多规则集通用） | `python tools/load_rule.py --list`<br>`python tools/load_rule.py --verify` |
 | `check_rule_refs.py` | 扫描规则文件中的硬编码引用 | `python tools/check_rule_refs.py`（实验性） |
 | `rewrite_cards.py` | 批量重写卡片 | 历史脚本，谨慎使用 |

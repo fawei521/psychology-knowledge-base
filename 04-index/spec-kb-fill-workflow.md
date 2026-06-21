@@ -1,17 +1,21 @@
 ---
 name: spec-kb-fill-workflow
-description: 心理学专家模式下为知识库填充概念卡片的标准工作流与操作规范
+description: 心理学知识库填充概念卡片的标准工作流与操作规范
 metadata:
   node_type: spec
   type: reference
-  updated: 2026-06-18
+  updated: 2026-06-21
 ---
 
 # 心理学知识库填充工作流
 
-> 触发条件：用户在心理学专家模式下要求为知识库填充理论概念卡片。
+> 触发条件：用户要求为知识库填充/编写理论概念卡片（无论是否开启心理学专家模式）。
+> 本规范为项目特定规则，执行批量写卡任务前应由 AI 主动加载：`kb-specs/kb-fill-workflow`。
 
 ## 标准工作流
+
+0. **批量操作前检查**
+   - 如果涉及批量操作（>5 个文件可能改动），先 `git status` 确认状态并打一个 checkpoint commit。
 
 1. **确认概念点**
    - 用户从候选池中选择一个**具体概念点/理论簇**（如「记忆」「浪漫爱情」「认知发展」）。
@@ -41,13 +45,19 @@ metadata:
 5. **同步到 kb.db**
    - 运行：`python tools/import_md.py`
    - 该脚本会基于文件 hash 做增量同步，自动生成 embedding 并更新向量索引。
-   - 导入顺序按**文件名排序**，因此关系目标若尚未存在，第一次导入可能无法解析。处理办法：
-     - 若核心节点文件名排在子卡片之后，第一次导入后目标节点已存在，第二次运行 `import_md.py` 会重新解析 changed files 的关系；
-     - 更稳妥的做法是导入后执行 SQL 验证，发现缺失时运行关系重建脚本（删除该概念簇内部旧关系，按 frontmatter 重新插入）。
+   - 导入后若关系缺失，用 SQL 查询验证，并运行关系重建脚本（删除该概念簇内部旧关系，按 frontmatter 重新插入）。
 
-6. **验证关系网络**
+6. **验证关系网络与索引**
    - 用 SQL 查询 `relations` 表，确认同一主题内的卡片关系完整。
-   - 若关系缺失，使用批量脚本根据 frontmatter 重建关系网络（删除该主题内部旧关系后重新插入）。
+   - 运行 `python tools/auto_tag.py --apply` 补全学科/事件标签，并检查 frontmatter 中没有重复 `tags:` 字段。
+   - 检查 `04-index/concept-map.md` 是否有重复文件警告或关系异常。
+
+7. **冲刺池收尾：统一生成概念关系图**
+   - 当前 `topic-backlog.md` 冲刺池内的概念点全部完成后，统一运行：
+     ```bash
+     python tools/generate_concept_map.py --apply
+     ```
+   - 如果只完成一个概念簇就进入收尾，也可以提前运行。
 
 ## 卡片内容要点
 
@@ -93,18 +103,19 @@ metadata:
    WHERE e1.name IN ('concept_a', 'concept_b', ...);
    ```
 4. **数据库已同步**：运行过 `python tools/import_md.py` 且无报错。
-5. **标签已补全且无重复字段**：运行过 `python tools/auto_tag.py --apply`，并检查没有生成第二个 `tags:` 行。
-6. **索引文件已更新**：`04-index/concept-map.md` 和 `04-index/tag-index.md` 已手动补充（或脚本已生成）。
-7. **候选池已标记**：在 `04-index/topic-backlog.md` 中标记该概念点为「已完成」。
-8. **已 git commit**：批量改动打检查点。
+5. **标签已补全且无重复字段**：运行过 `python tools/auto_tag.py --apply`。
+6. **关系网络已验证**：用 SQL 查询 `relations` 表，核心节点与子节点关系完整。
+7. **冲刺池索引已更新**：当前冲刺池内概念点全部完成后，运行 `python tools/generate_concept_map.py --apply`。
+8. **候选池已标记**：在 `04-index/topic-backlog.md` 中标记该概念点为「已完成」。
+9. **已 git commit**：批量改动打检查点。
 
 > **PROJECT_LOG 记录原则**：只记录通用流程改进、架构决策、可复用的踩坑教训，不记录具体填了哪个概念点（由 `topic-backlog.md` 负责）。
 
 ## 选择下一个概念点
 
-候选池统一维护在 `04-index/topic-backlog.md`（如不存在则创建）。候选粒度是**具体概念点**（如「记忆」「认知发展」「焦虑障碍」），而不是宽泛学科（如「发展心理学」）。流程：
+候选池统一维护在 `04-index/topic-backlog.md`（冲刺池）和 `04-index/topic-pool.md`（长期储备池）。候选粒度是**具体概念点**（如「记忆」「认知发展」「焦虑障碍」），而不是宽泛学科（如「发展心理学」）。流程：
 
-1. **展示候选**：从 `topic-backlog.md` 中列出 3-5 个未完成的候选概念点，每个附一句话说明重要性与考研关联。
+1. **展示候选**：从 `topic-backlog.md` 冲刺池中列出 2–3 个未完成的候选概念点，每个附一句话说明重要性与考研关联。若冲刺池为空，从 `topic-pool.md` 补充下一批。
 2. **用户选择**：等待用户明确选择其中一个概念点。
 3. **开始工作流**：回到本规范第 1 步「确认主题」。
-4. **标记完成**：概念点填充并验收完成后，在 `topic-backlog.md` 中标记为「已完成」。流程改进、工具 bug、架构决策等通用经验才写入 `PROJECT_LOG.md`。
+4. **标记完成**：概念点填充并验收完成后，在 `topic-backlog.md` 和 `topic-pool.md` 中同步标记为「已完成」。流程改进、工具 bug、架构决策等通用经验才写入 `PROJECT_LOG.md`。

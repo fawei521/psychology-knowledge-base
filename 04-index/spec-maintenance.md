@@ -41,7 +41,7 @@
 - [ ] **`python tools/import_md.py` 已运行**：无报错，新卡片成功导入。
 - [ ] **关系网络已验证**：用 SQL 查询 `relations` 表，核心节点与子节点关系完整。
 - [ ] **`python tools/auto_tag.py --apply` 已运行**：且 frontmatter 中没有重复 `tags:` 字段。
-- [ ] **索引已更新**：`04-index/concept-map.md` 和 `04-index/tag-index.md` 已补充该概念簇。
+- [ ] **索引已更新**：运行 `python tools/generate_concept_map.py --apply` 生成 `04-index/concept-map.md`；`04-index/tag-index.md` 待脚本化。
 - [ ] **候选池已标记**：`04-index/topic-backlog.md` 中该概念点标记为「已完成」。
 - [ ] **PROJECT_LOG 只记通用经验**：不记录具体填了哪个概念点。
 

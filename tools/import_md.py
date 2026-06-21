@@ -269,7 +269,7 @@ def import_as_entity(md_file, fm, body, cursor, source_file):
         domain = template_meta.get("domain", "")
     else:
         concept = fm.get("concept", md_file.stem)
-        concept_cn = ""
+        concept_cn = fm.get("concept_cn", "")
         domain = fm.get("domain", "")
 
     concept_en = fm.get("concept_en", "")

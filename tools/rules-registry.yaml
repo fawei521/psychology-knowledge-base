@@ -10,8 +10,9 @@ global_aliases:
   知识库: E:/psychology-knowledge-base/CLAUDE.md
   心理学知识库: E:/psychology-knowledge-base/CLAUDE.md
   写卡片: kb-specs/spec-card
-  填充概念卡片: kb-specs/spec-card
+  填充概念卡片: kb-specs/kb-fill-workflow
   批量填充: kb-specs/kb-fill-workflow
+  批量写卡: kb-specs/kb-fill-workflow
   规则地图: memory-rules/rule-toolbox
 
 namespaces:
@@ -144,6 +145,10 @@ namespaces:
       维护规范: spec-maintenance.md
       concept-map: concept-map.md
       概念地图: concept-map.md
+      topic-pool: topic-pool.md
+      主题储备池: topic-pool.md
+      topic-backlog: topic-backlog.md
+      主题待办: topic-backlog.md
       tag-index: tag-index.md
       标签索引: tag-index.md
       event-classification: event-classification.md
@@ -169,6 +174,8 @@ namespaces:
       导入数据库: import_md.py
       watch-sync: watch_sync.py
       自动同步: watch_sync.py
+      generate-concept-map: generate_concept_map.py
+      生成概念图: generate_concept_map.py
       db-init: db_init.py
       初始化数据库: db_init.py
       query: query.py
