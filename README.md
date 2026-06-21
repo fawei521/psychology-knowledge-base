@@ -26,6 +26,9 @@
 
 ```bash
 cd /e/psychology-knowledge-base
+python tools/sync_backup.py --push
 python tools/import_md.py
 python tools/auto_tag.py --apply
 ```
+
+`tools/sync_backup.py --push` 会先把 `memory/` 和 `me-me/` 的源目录最新内容复制到本仓库，然后提交、推送到 GitHub，最后清理本仓库内的副本。
