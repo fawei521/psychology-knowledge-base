@@ -4,8 +4,8 @@ tools/weread-exporter/
 tools/watch_sync.log
 __pycache__/
 *.pyc
-me-me/
-memory/
+me-me/*/原文件/
+me-me/*/原始备份/
 *.jpg
 *.jpeg
 *.png
