@@ -17,8 +17,7 @@ metadata:
 
 | 概念点 | 所属学科 | 考研关联 | 状态 | 说明 |
 |---|---|---|---|---|
-| 成年期与老年发展 | developmental_psychology | 中频 | 进行中 | 社会情绪选择理论、生成性、退休适应、认知老化。 |
-| 道德推理细化 | developmental_psychology | 中高频 | 待填充 | 科尔伯格三水平六阶段、吉利根关怀伦理、亲社会道德推理。 |
+| 道德推理细化 | developmental_psychology | 中高频 | 进行中 | 科尔伯格三水平六阶段、吉利根关怀伦理、亲社会道德推理。 |
 | 游戏与认知发展 | developmental_psychology | 中频 | 待填充 | 皮亚杰游戏理论、维果茨基最近发展区中的游戏、假装游戏。 |
 | 自我调节发展 | developmental_psychology | 中频 | 待填充 | 执行功能发展、延迟满足、努力控制、气质与自我调节。 |
 
@@ -29,6 +28,7 @@ metadata:
 | 依恋类型与测量 | 2026-06-23 | 10 | 56 | attachment_theory, internal_working_model, secure_base, strange_situation, secure_attachment, avoidant_attachment, anxious_ambivalent_attachment, disorganized_attachment, adult_attachment_interview, adult_attachment_romantic_relationships |
 | 婴儿期认知发展 | 2026-06-23 | 11 | 36 | infant_cognitive_development, habituation_and_dishabituation, preferential_looking, violation_of_expectation, core_knowledge_theory, object_permanence, infant_number_sense, infant_physical_reasoning, infant_statistical_learning, deferred_imitation, infant_categorization |
 | 青少年社会情绪发展 | 2026-06-23 | 5 | 39 | adolescent_socioemotional_development, identity_formation, marcia_identity_statuses, adolescent_egocentrism, dual_systems_model, adolescent_peer_influence |
+| 成年期与老年发展 | 2026-06-23 | 6 | 41 | adulthood_and_aging_development, generativity_vs_stagnation, integrity_vs_despair, socioemotional_selectivity_theory, retirement_adjustment, cognitive_aging |
 
 ## 选择规则
 

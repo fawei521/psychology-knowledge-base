@@ -14,6 +14,14 @@ relations:
     type: part-of
   - target: cognitive_styles
     type: correlates-with
+  - target: kohlberg_moral_stages
+    type: part-of
+  - target: gilligan_ethics_of_care
+    type: part-of
+  - target: prosocial_moral_reasoning
+    type: part-of
+  - target: piaget_cognitive_stages
+    type: extends
 ---
 
 # 道德发展 / Moral Development
