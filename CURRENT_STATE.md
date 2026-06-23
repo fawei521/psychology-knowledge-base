@@ -15,11 +15,11 @@
 ## 待处理
 
 - [x] 合并/删除 7 个重复 concept 文件（子目录完整版 vs 根目录旧版）
-- [ ] 脚本化 `04-index/tag-index.md`
-- [ ] 13 个学科子目录写入首页导航卡片
-- [ ] Zotero 文献 + `citekeys` 字段填充
-- [ ] 分析报告附录路径引用更新（仍引旧 `06-event-cards/`）
-- [ ] `03-cards/` 中 `card-*-2026.md` 事件卡迁移到 `05-observations/`
+- [x] 脚本化 `04-index/tag-index.md`
+- [x] 13 个学科子目录写入首页导航卡片
+- [x] Zotero 文献 + `citekeys` 字段填充
+- [x] 分析报告附录路径引用更新（仍引旧 `06-event-cards/`）
+- [x] `03-cards/` 中 `card-*-2026.md` 事件卡迁移到 `05-observations/`
 - [ ] 决定是否把 `generate_concept_map.py` 接入 `watch_sync.py`
 - [ ] `generate_concept_map.py` 扩展性预案（待卡片数 >500 或单簇 >50 节点时考虑）：
   - 按 `domain` 过滤生成子图；
