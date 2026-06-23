@@ -18,6 +18,12 @@ relations:
     type: extends
   - target: habituation_and_dishabituation
     type: supports
+  - target: preferential_looking
+    type: supports
+  - target: violation_of_expectation
+    type: supports
+  - target: core_knowledge_theory
+    type: explains
   - target: object_permanence
     type: part-of
   - target: infant_statistical_learning
