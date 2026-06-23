@@ -19,6 +19,8 @@ relations:
     type: correlates-with
   - target: self_concept
     type: correlates-with
+  - target: adolescent_peer_influence
+    type: extends
 ---
 
 # 同伴关系 / Peer Relationships

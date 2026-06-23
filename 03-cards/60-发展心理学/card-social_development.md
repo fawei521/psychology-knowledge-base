@@ -22,6 +22,8 @@ relations:
     type: part-of
   - target: peer_relationships
     type: part-of
+  - target: adolescent_socioemotional_development
+    type: part-of
 ---
 
 # 社会发展 / Social Development

@@ -17,6 +17,10 @@ relations:
     type: correlates-with
   - target: self_concept
     type: correlates-with
+  - target: adolescent_socioemotional_development
+    type: explains
+  - target: identity_formation
+    type: explains
 ---
 
 # 埃里克森心理社会发展理论 / Erikson's Psychosocial Development
