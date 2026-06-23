@@ -15,9 +15,7 @@ metadata:
 
 ## 当前冲刺（待填充）
 
-| 概念点 | 所属学科 | 考研关联 | 状态 | 说明 |
-|---|---|---|---|---|
-| 自我调节发展 | developmental_psychology | 中频 | 进行中 | 执行功能发展、延迟满足、努力控制、气质与自我调节。 |
+_本冲刺池已清空，下一批候选请从 [`topic-pool.md`](topic-pool.md) 补充。_
 
 ## 本冲刺已完成
 
@@ -29,6 +27,7 @@ metadata:
 | 成年期与老年发展 | 2026-06-23 | 6 | 41 | adulthood_and_aging_development, generativity_vs_stagnation, integrity_vs_despair, socioemotional_selectivity_theory, retirement_adjustment, cognitive_aging |
 | 道德推理细化 | 2026-06-23 | 3 | 32 | moral_development, kohlberg_moral_stages, gilligan_ethics_of_care, prosocial_moral_reasoning |
 | 游戏与认知发展 | 2026-06-23 | 5 | - | play_and_cognitive_development, piaget_play_stages, symbolic_pretend_play, vygotsky_play_theory, sociodramatic_play |
+| 自我调节发展 | 2026-06-23 | 4 | 26 | self_regulation_development, executive_function, delay_of_gratification, effortful_control |
 
 ## 选择规则
 
