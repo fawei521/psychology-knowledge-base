@@ -17,8 +17,7 @@ metadata:
 
 | 概念点 | 所属学科 | 考研关联 | 状态 | 说明 |
 |---|---|---|---|---|
-| 游戏与认知发展 | developmental_psychology | 中频 | 进行中 | 皮亚杰游戏理论、维果茨基最近发展区中的游戏、假装游戏。 |
-| 自我调节发展 | developmental_psychology | 中频 | 待填充 | 执行功能发展、延迟满足、努力控制、气质与自我调节。 |
+| 自我调节发展 | developmental_psychology | 中频 | 进行中 | 执行功能发展、延迟满足、努力控制、气质与自我调节。 |
 
 ## 本冲刺已完成
 
@@ -29,6 +28,7 @@ metadata:
 | 青少年社会情绪发展 | 2026-06-23 | 5 | 39 | adolescent_socioemotional_development, identity_formation, marcia_identity_statuses, adolescent_egocentrism, dual_systems_model, adolescent_peer_influence |
 | 成年期与老年发展 | 2026-06-23 | 6 | 41 | adulthood_and_aging_development, generativity_vs_stagnation, integrity_vs_despair, socioemotional_selectivity_theory, retirement_adjustment, cognitive_aging |
 | 道德推理细化 | 2026-06-23 | 3 | 32 | moral_development, kohlberg_moral_stages, gilligan_ethics_of_care, prosocial_moral_reasoning |
+| 游戏与认知发展 | 2026-06-23 | 5 | - | play_and_cognitive_development, piaget_play_stages, symbolic_pretend_play, vygotsky_play_theory, sociodramatic_play |
 
 ## 选择规则
 

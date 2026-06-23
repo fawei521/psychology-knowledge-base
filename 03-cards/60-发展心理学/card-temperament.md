@@ -18,6 +18,8 @@ relations:
     type: correlates-with
   - target: big_five_personality
     type: correlates-with
+  - target: effortful_control
+    type: explains
 ---
 
 # 气质 / Temperament
