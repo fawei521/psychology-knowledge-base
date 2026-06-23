@@ -9,7 +9,7 @@ metadata:
 
 # 规则系统触发地图
 
-**核心原则**：规则文件很多，AI 不能凭记忆判断该读哪个。**遇到异常或任务时，先查本表，再按别名加载规则。**
+**核心原则**：规则文件很多，AI 不能凭记忆判断该读哪个。**遇到非琐碎任务，先检查是否有匹配的 skill/headroom/markitdown/agent-reach等工具。**遇到异常或任务时，先查本表，再按别名加载规则。** 本规则系统通过 `~/.claude/hooks/rule_hooks.py` 全局生效，所有 Claude Code 会话都会自动注入核心规则并监听规则文件改动。
 
 ---
 
@@ -34,7 +34,7 @@ metadata:
 |---------|---------|
 | 用户提到「知识库」/项目总纲 | `python load_rule.py 知识库` |
 | 写/改概念卡片 | `python load_rule.py 写卡片`（即 `kb-specs/spec-card`） |
-| 批量填充知识库/为主题填充理论卡片 | `python load_rule.py 批量填充`（即 `kb-specs/kb-fill-workflow`） |
+| 批量填充知识库/为主题填充理论卡片 | `python load_rule.py 填充概念卡片`（即 `kb-specs/kb-fill-workflow`） |
 | 写/改事件/经验/案例 | `kb-specs/spec-observation` |
 | 跑脚本、改工具、新增脚本 | `kb-specs/spec-tools` + `kb-tools/readme` |
 | 更新索引/概念图/标签索引 | `kb-specs/spec-index` |
@@ -42,6 +42,8 @@ metadata:
 | 推送 psychology-knowledge-base 到 GitHub | `kb-tools/sync-backup`（即 `tools/sync_backup.py --push`） |
 | 进入心理学专家模式 | `psychology-expert-mode/main` |
 | 进入跨学科研究搭档模式 | `research-partner/constitution` |
+| 选择/调用 agent skills 或 AI 工具（headroom、markitdown、agent-reach、web-access）| `memory-rules/proactive-skill-usage` |
+|选择/调用skills工具| `memory-rules/installed-skills.md` |
 
 ---
 
@@ -74,6 +76,9 @@ python E:/psychology-knowledge-base/tools/load_rule.py --verify
 
 - **SessionStart**：自动注入 `priority-user-messages` + 本触发地图。
 - **PostToolUse(Write|Edit)**：修改规则相关文件后，自动提醒维护闭环并运行 `--verify`。
+- **保存后验证/格式化（当前未自动启用）**：`C:/Users/乏味/.claude/hooks/format_on_save.py` 与 `verify_on_save.py` 是 Claude Code `PostToolUse` Hook 脚本，设计为在每次 Write/Edit 后由 Claude Code 自动调用。它们通过 stdin 读取工具调用的 JSON payload，**直接手动运行不会生效**（stdin 为空即退出）。
+  - 当前 `settings.json` 只注册了 `rule_hooks.py`，这两个脚本**未启用**。
+  - 如需启用，需将其加入 `settings.json` 的 `hooks.PostToolUse` 配置；在此之前，写/改 `03-cards/`、`05-observations/`、`02-summaries/`、`04-index/`、`me-me/moo/日记/` 下的 `.md` 文件后，应自行检查格式与 frontmatter 完整性。
 
 ---
 

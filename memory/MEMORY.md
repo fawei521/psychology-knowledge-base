@@ -15,6 +15,7 @@
 
 - [优先处理用户新消息](priority-user-messages.md) — 收到新消息后停下当前工作、优先回应（已 hook 自动注入）
 - [已装技能](installed-skills.md) — 使用 Claude Code 技能或遇到技能相关问题时读取
+- [AI 工具与工作流使用指南](proactive-skill-and-tool-usage.md) — 主动调用 agent-skills、headroom、markitdown、agent-reach 的规范（按需读取）
 - [心理学专家模式索引](psychology-expert-mode/index.md) — 进入心理学专家模式或研究搭档模式前读取
 - [项目记忆索引](projects-index.md) — 用户提到具体项目时读取
 - [执行指令无需反复确认](execute-without-confirm.md) — 听懂后直接执行，听不懂才问

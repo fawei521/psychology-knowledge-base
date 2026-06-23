@@ -22,7 +22,23 @@ metadata:
 - `verify_profiles.yaml` —— `verify_on_save.py` 的检查规则
 - `format_profiles.yaml` —— `format_on_save.py` 的格式化规则
 
-## 启用方法（必须手动）
+## 启用方法（当前推荐：手动运行）
+
+保存后验证/格式化脚本默认**不通过 hook 自动触发**，需要时在 Bash 中手动运行：
+
+```bash
+python "C:/Users/乏味/.claude/hooks/format_on_save.py"
+python "C:/Users/乏味/.claude/hooks/verify_on_save.py"
+```
+
+手动运行的优点：
+- 只在需要时执行，避免每次保存都弹出无意义警告。
+- 结果直接显示在终端，方便查看和调试。
+- 不依赖 hook 配置是否生效，行为更确定。
+
+## 历史方案：注册到 Claude Code Hook（已不推荐）
+
+> 以下配置仅在希望保存后**全自动**触发时启用。当前维护负担大于收益，保留作历史参考。
 
 在全局 `C:/Users/乏味/.claude/settings.json` 中新增 `hooks` 字段（**注意必须使用 Claude Code 官方格式**）：
 
@@ -37,7 +53,7 @@ metadata:
         "hooks": [
           {
             "type": "command",
-            "command": "python C:/Users/乏味/.claude/hooks/rule_hooks.py"
+            "command": "python \"C:/Users/乏味/.claude/hooks/rule_hooks.py\""
           }
         ]
       }
@@ -48,15 +64,15 @@ metadata:
         "hooks": [
           {
             "type": "command",
-            "command": "python C:/Users/乏味/.claude/hooks/format_on_save.py"
+            "command": "python \"C:/Users/乏味/.claude/hooks/format_on_save.py\""
           },
           {
             "type": "command",
-            "command": "python C:/Users/乏味/.claude/hooks/verify_on_save.py"
+            "command": "python \"C:/Users/乏味/.claude/hooks/verify_on_save.py\""
           },
           {
             "type": "command",
-            "command": "python C:/Users/乏味/.claude/hooks/rule_hooks.py"
+            "command": "python \"C:/Users/乏味/.claude/hooks/rule_hooks.py\""
           }
         ]
       }
@@ -75,14 +91,7 @@ metadata:
 "PostToolUse:Write": ["C:/Users/乏味/.claude/hooks/verify_on_save.py"]
 ```
 
-## 重载配置
-
-修改 `settings.json` 后，必须让 Claude Code 重新加载配置：
-
-1. 在 Claude Code 中输入 `/hooks` 打开 hooks 面板，系统会自动加载；或
-2. 完全退出并重启 Claude Code。
-
-只保存文件不重启，钩子不会生效。
+**重载配置**：修改 `settings.json` 后，在 Claude Code 中输入 `/hooks` 打开 hooks 面板，或完全退出并重启 Claude Code。
 
 ## 自动触发条件
 

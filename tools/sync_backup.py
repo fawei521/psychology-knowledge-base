@@ -127,8 +127,15 @@ def git_status_clean(root: Path) -> bool:
     return result.returncode == 0 and not result.stdout.strip()
 
 
-def git_add_commit_push(root: Path) -> None:
+def git_add_commit_push(root: Path, tracked_names: set[str]) -> None:
+    """Stage all changes, force-add ignored backup directories, commit and push."""
     subprocess.run(["git", "add", "-A"], cwd=root, check=True)
+
+    # Force-add directories that are gitignored but must remain tracked in the repo.
+    for name in tracked_names:
+        target = root / name
+        if target.exists():
+            subprocess.run(["git", "add", "-f", "--", str(target)], cwd=root, check=True)
 
     status = subprocess.run(
         ["git", "status", "--porcelain"],
@@ -179,15 +186,11 @@ def main() -> int:
         "--clean",
         action="store_true",
         help=(
-            "After pushing, remove the copied memory/ and me-me/ directories "
-            "from the repo working tree. WARNING: this will mark the files as "
-            "deleted in Git on the next run; most users should leave this off."
+            "Deprecated: copied directories are now cleaned automatically after a "
+            "successful push. This flag is kept for compatibility and does nothing."
         ),
     )
     args = parser.parse_args()
-
-    if args.clean and not args.push:
-        parser.error("--clean requires --push")
 
     root = repo_root()
     print(f"Repository root: {root}")
@@ -205,14 +208,14 @@ def main() -> int:
         print("\nSync complete. Use --push to commit and push.")
         return 0
 
-    # 2. Commit and push
+    # 2. Commit and push (force-add ignored backup dirs)
     print("\nCommitting and pushing...")
-    git_add_commit_push(root)
+    tracked_names = set(SYNC_MAP.keys())
+    git_add_commit_push(root, tracked_names)
 
-    # 3. Optionally clean copied directories
-    if args.clean:
-        print("\nCleaning copied directories...")
-        clean_copies(root)
+    # 3. Clean copied directories from working tree after push
+    print("\nCleaning copied directories...")
+    clean_copies(root)
 
     print("Done.")
     return 0
