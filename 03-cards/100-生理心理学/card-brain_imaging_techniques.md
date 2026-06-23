@@ -15,6 +15,8 @@ citekeys: []
 relations:
   - target: brain_structure_and_function
     type: applies-to
+  - target: cognitive_neuroscience
+    type: applies-to
 ---
 
 # 脑成像技术 / Brain Imaging Techniques

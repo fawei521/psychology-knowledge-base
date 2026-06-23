@@ -3,6 +3,10 @@ concept: attribution_theory
 concept_cn: 归因理论
 domain: social_psychology
 tags: [attribution, fundamental_attribution_error, self_serving_bias, weiner, kelley, 学科/社会心理学]
+citekeys: []
+relations:
+  - target: social_cognitive_bias
+    type: supports
 ---
 
 # 归因理论 / Attribution Theory

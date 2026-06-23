@@ -100,6 +100,10 @@ namespaces:
       priority-messages: priority-user-messages.md
       优先处理消息: priority-user-messages.md
       priority-user-messages: priority-user-messages.md
+      proactive-skill-usage: proactive-skill-and-tool-usage.md
+      主动调用技能: proactive-skill-and-tool-usage.md
+      ai-tool-usage: proactive-skill-and-tool-usage.md
+      AI工具使用: proactive-skill-and-tool-usage.md
       memory-system-guide: memory-system-guide.md
       记忆系统说明: memory-system-guide.md
       work-principles: work-principles-systemic-thinking.md

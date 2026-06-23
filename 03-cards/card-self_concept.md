@@ -3,6 +3,12 @@ concept: self_concept
 concept_cn: 自我概念
 domain: general_psychology, social_psychology
 tags: [self_concept, self_schema, self_esteem, self_verification, self_enhancement, self_handicapping, 学科/社会心理学, 学科/人格心理学, 学科/普通心理学]
+citekeys: []
+relations:
+  - target: rogers_person_centered_theory
+    type: part-of
+  - target: humanistic_personality_theory
+    type: part-of
 ---
 
 # 自我概念 / Self Concept

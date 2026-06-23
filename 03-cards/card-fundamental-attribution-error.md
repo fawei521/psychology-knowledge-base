@@ -7,10 +7,12 @@ tags:
 - social_cognition
 - 学科/社会心理学
 relations:
-- target: actor-observer-bias
-  type: is-a
-- target: self-serving-bias
+- target: social_cognitive_bias
+  type: part-of
+- target: actor_observer_bias
   type: correlates-with
+- target: self_serving_bias
+  type: contrasts
 citekeys:
 - summary-social-behavior-framework-2026
 ---

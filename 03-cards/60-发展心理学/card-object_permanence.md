@@ -12,6 +12,10 @@ citekeys: []
 relations:
   - target: piaget_cognitive_stages
     type: part-of
+  - target: infant_cognitive_development
+    type: part-of
+  - target: infant_physical_reasoning
+    type: is-a
   - target: schema
     type: extends
 ---

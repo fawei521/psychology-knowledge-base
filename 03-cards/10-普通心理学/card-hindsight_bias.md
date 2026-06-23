@@ -12,6 +12,8 @@ citekeys: []
 relations:
   - target: cognitive_bias_and_heuristics
     type: part-of
+  - target: social_cognitive_bias
+    type: part-of
 ---
 
 # 后见之明偏差 / Hindsight Bias

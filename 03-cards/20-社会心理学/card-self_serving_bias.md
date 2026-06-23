@@ -18,6 +18,8 @@ relations:
     type: applies-to
   - target: attribution_theory
     type: is-a
+  - target: social_cognitive_bias
+    type: part-of
   - target: fundamental_attribution_error
     type: contrasts
 ---

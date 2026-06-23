@@ -17,22 +17,18 @@ metadata:
 
 | 概念点 | 所属学科 | 考研关联 | 状态 | 说明 |
 |---|---|---|---|---|
-| 思维偏差与启发式 | general_psychology | 高频 | 已完成 | 代表性启发、易得性启发、锚定效应、框架效应、确认偏误等。 |
 | 婴儿期认知发展 | developmental_psychology | 高频 | 待填充 | 习惯化、去习惯化、客体永久性、婴儿推理、数能力。 |
-| 社会认知偏差 | social_psychology | 高频 | 待填充 | 基本归因错误、行动者-观察者偏差、自我服务偏差、虚假共识、后见之明。 |
-| 人本主义人格理论细化 | personality_psychology | 中高频 | 待填充 | 马斯洛、罗杰斯、自我实现、无条件积极关注、真实自我。 |
-| 人格障碍谱系 | abnormal_psychology | 高频 | 待填充 | A/B/C 群人格障碍、DSM-5 诊断、病因与治疗。 |
-| 心理治疗主要流派 | clinical_psychology | 高频 | 待填充 | CBT、精神分析、人本主义、行为治疗、家庭治疗概述。 |
-| 遗传与行为遗传学 | biological_psychology | 中高频 | 待填充 | 双生子研究、收养研究、遗传率、基因-环境交互。 |
-| 认知神经科学基础 | cognitive_psychology | 中高频 | 待填充 | 双分离、脑损伤研究、神经心理学方法。 |
+| 青少年社会情绪发展 | developmental_psychology | 高频 | 待填充 | 身份认同、自我中心主义、同伴影响、冒险行为。 |
+| 成年期与老年发展 | developmental_psychology | 中频 | 待填充 | 社会情绪选择理论、生成性、退休适应、认知老化。 |
+| 依恋类型与测量 | developmental_psychology | 高频 | 待填充 | 陌生情境实验、安全/回避/矛盾/混乱型依恋、成人依恋访谈。 |
+| 道德推理细化 | developmental_psychology | 中高频 | 待填充 | 科尔伯格三水平六阶段、吉利根关怀伦理、亲社会道德推理。 |
+| 游戏与认知发展 | developmental_psychology | 中频 | 待填充 | 皮亚杰游戏理论、维果茨基最近发展区中的游戏、假装游戏。 |
+| 自我调节发展 | developmental_psychology | 中频 | 待填充 | 执行功能发展、延迟满足、努力控制、气质与自我调节。 |
 
 ## 本冲刺已完成
 
 | 概念点 | 完成日期 | 卡片数 | 关系数 | 核心节点 |
 |---|---|---|---|---|
-| 思维偏差与启发式 | 2026-06-21 | 10 | 15 | `cognitive_bias_and_heuristics` |
-| 情绪理论细化 | 2026-06-20 | 4 | 8 | `emotion_theories` |
-| 动机与自我调节 | 2026-06-20 | 7 | 12 | `motivation_theories` |
 
 ## 选择规则
 
