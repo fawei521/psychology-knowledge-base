@@ -14,10 +14,6 @@ metadata:
 > 每次用户要求「填充概念卡片」时，从本列表中挑选 1 个候选概念点展示，由用户选择后标记为「进行中」。
 
 ## 当前冲刺（待填充）
-| 社会助长与社会懈怠 | social_psychology | 中高频 | 待填充 | Zajonc 驱力理论、评价忧虑、搭便车、去个体化。 |
-| 去个体化 | social_psychology | 中频 | 待填充 | 匿名性、自我觉察降低、群体中的去抑制。 |
-| 内隐联想与偏见 | social_psychology | 中高频 | 待填充 | 内隐态度测量、IAT、内隐-外显态度不一致。 |
-| 态度测量与计划行为理论 | social_psychology | 中高频 | 待填充 | 态度-行为关系、TPB、Fishbein & Ajzen、自我报告测量。 |
 | 亲密关系维持 | social_psychology | 中频 | 待填充 | 投资模型、关系满意度、沟通模式、冲突解决。 |
 | 冲突与谈判 | social_psychology | 中频 | 待填充 | 社会困境、囚徒困境、谈判策略、整合性协议。 |
 | 文化心理学基础 | social_psychology | 中频 | 待填充 | 个人主义/集体主义、独立/互依自我、文化对认知情绪的影响。 |
@@ -32,6 +28,7 @@ metadata:
 | 社会认知偏差 | 2026-07-05 | 10 | 32 | social_cognitive_bias / attribution_theory |
 | 群体思维与群体极化 | 2026-07-05 | 13 | 42 | group_influence |
 | 刻板印象威胁 | 2026-07-05 | 12 | 31 | stereotype_threat / prejudice_and_discrimination |
+| 态度测量与计划行为理论 | 2026-07-05 | 12 | 27 | theory_of_planned_behavior / attitude_formation_and_change |
 ## 选择规则
 
 1. 候选粒度为**具体概念点/理论簇**，而不是整个学科。
