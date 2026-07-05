@@ -16,7 +16,6 @@ metadata:
 ## 当前冲刺（待填充）
 | 社会助长与社会懈怠 | social_psychology | 中高频 | 待填充 | Zajonc 驱力理论、评价忧虑、搭便车、去个体化。 |
 | 去个体化 | social_psychology | 中频 | 待填充 | 匿名性、自我觉察降低、群体中的去抑制。 |
-| 刻板印象威胁 | social_psychology | 高频 | 待填充 | Steele & Aronson 经典研究、机制、干预策略。 |
 | 内隐联想与偏见 | social_psychology | 中高频 | 待填充 | 内隐态度测量、IAT、内隐-外显态度不一致。 |
 | 态度测量与计划行为理论 | social_psychology | 中高频 | 待填充 | 态度-行为关系、TPB、Fishbein & Ajzen、自我报告测量。 |
 | 亲密关系维持 | social_psychology | 中频 | 待填充 | 投资模型、关系满意度、沟通模式、冲突解决。 |
@@ -32,6 +31,7 @@ metadata:
 |---|---|---|---|---|
 | 社会认知偏差 | 2026-07-05 | 10 | 32 | social_cognitive_bias / attribution_theory |
 | 群体思维与群体极化 | 2026-07-05 | 13 | 42 | group_influence |
+| 刻板印象威胁 | 2026-07-05 | 12 | 31 | stereotype_threat / prejudice_and_discrimination |
 ## 选择规则
 
 1. 候选粒度为**具体概念点/理论簇**，而不是整个学科。
