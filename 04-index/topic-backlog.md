@@ -14,21 +14,24 @@ metadata:
 > 每次用户要求「填充概念卡片」时，从本列表中挑选 1 个候选概念点展示，由用户选择后标记为「进行中」。
 
 ## 当前冲刺（待填充）
+| 社会认知偏差 | social_psychology | 高频 | 待填充 | 基本归因错误、行动者-观察者偏差、自我服务偏差、虚假共识、后见之明。 |
+| 群体思维与群体极化 | social_psychology | 高频 | 待填充 | Janis 群体思维模型、风险转移、极化机制、信息/规范影响。 |
+| 社会助长与社会懈怠 | social_psychology | 中高频 | 待填充 | Zajonc 驱力理论、评价忧虑、搭便车、去个体化。 |
+| 去个体化 | social_psychology | 中频 | 待填充 | 匿名性、自我觉察降低、群体中的去抑制。 |
+| 刻板印象威胁 | social_psychology | 高频 | 待填充 | Steele & Aronson 经典研究、机制、干预策略。 |
+| 内隐联想与偏见 | social_psychology | 中高频 | 待填充 | 内隐态度测量、IAT、内隐-外显态度不一致。 |
+| 态度测量与计划行为理论 | social_psychology | 中高频 | 待填充 | 态度-行为关系、TPB、Fishbein & Ajzen、自我报告测量。 |
+| 亲密关系维持 | social_psychology | 中频 | 待填充 | 投资模型、关系满意度、沟通模式、冲突解决。 |
+| 冲突与谈判 | social_psychology | 中频 | 待填充 | 社会困境、囚徒困境、谈判策略、整合性协议。 |
+| 文化心理学基础 | social_psychology | 中频 | 待填充 | 个人主义/集体主义、独立/互依自我、文化对认知情绪的影响。 |
+| 社会认同与群体冲突 | social_psychology | 中高频 | 待填充 | 最小群体范式、内群体偏好、外群体同质性、现实群体冲突理论。 |
 
-_本冲刺池已清空，下一批候选请从 [`topic-pool.md`](topic-pool.md) 补充。_
+
 
 ## 本冲刺已完成
 
 | 概念点 | 完成日期 | 卡片数 | 关系数 | 核心节点 |
 |---|---|---|---|---|
-| 依恋类型与测量 | 2026-06-23 | 10 | 56 | attachment_theory, internal_working_model, secure_base, strange_situation, secure_attachment, avoidant_attachment, anxious_ambivalent_attachment, disorganized_attachment, adult_attachment_interview, adult_attachment_romantic_relationships |
-| 婴儿期认知发展 | 2026-06-23 | 11 | 36 | infant_cognitive_development, habituation_and_dishabituation, preferential_looking, violation_of_expectation, core_knowledge_theory, object_permanence, infant_number_sense, infant_physical_reasoning, infant_statistical_learning, deferred_imitation, infant_categorization |
-| 青少年社会情绪发展 | 2026-06-23 | 5 | 39 | adolescent_socioemotional_development, identity_formation, marcia_identity_statuses, adolescent_egocentrism, dual_systems_model, adolescent_peer_influence |
-| 成年期与老年发展 | 2026-06-23 | 6 | 41 | adulthood_and_aging_development, generativity_vs_stagnation, integrity_vs_despair, socioemotional_selectivity_theory, retirement_adjustment, cognitive_aging |
-| 道德推理细化 | 2026-06-23 | 3 | 32 | moral_development, kohlberg_moral_stages, gilligan_ethics_of_care, prosocial_moral_reasoning |
-| 游戏与认知发展 | 2026-06-23 | 5 | - | play_and_cognitive_development, piaget_play_stages, symbolic_pretend_play, vygotsky_play_theory, sociodramatic_play |
-| 自我调节发展 | 2026-06-23 | 4 | 26 | self_regulation_development, executive_function, delay_of_gratification, effortful_control |
-
 ## 选择规则
 
 1. 候选粒度为**具体概念点/理论簇**，而不是整个学科。
