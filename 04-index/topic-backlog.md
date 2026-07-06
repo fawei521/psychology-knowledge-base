@@ -15,18 +15,25 @@ metadata:
 
 ## 当前冲刺（待填充）
 
-*当前冲刺池已清空，下一次填充前请从 [`topic-pool.md`](topic-pool.md) 补充新的一批概念点。*
+
+| 人格障碍谱系 | abnormal_psychology | 高频 | 待填充 | A/B/C 群人格障碍、DSM-5 诊断、病因与治疗。 |
+| 强迫及相关障碍 | abnormal_psychology | 高频 | 待填充 | OCD、囤积障碍、拔毛癖、躯体变形障碍、强迫认知模型。 |
+| 创伤与应激相关障碍 | abnormal_psychology | 高频 | 待填充 | PTSD、急性应激障碍、适应障碍、延长哀伤障碍。 |
+| 分离障碍 | abnormal_psychology | 中频 | 待填充 | 分离性身份障碍、分离性遗忘、人格解体/现实解体。 |
+| 进食障碍 | abnormal_psychology | 中高频 | 待填充 | 神经性厌食、神经性贪食、暴食障碍、身体意象。 |
+| 物质使用障碍 | abnormal_psychology | 中频 | 待填充 | 成瘾循环、耐受、戒断、生物心理社会病因。 |
+| 儿童青少年心理障碍 | abnormal_psychology | 中频 | 待填充 | ADHD、自闭症谱系、品行障碍、对立违抗障碍。 |
+| 抑郁认知理论 | abnormal_psychology | 高频 | 待填充 | Beck 认知三联征、习得性无助、无望理论、反刍。 |
+| 焦虑认知模型 | abnormal_psychology | 高频 | 待填充 | 焦虑敏感性、灾难化、注意偏向、intolerance of uncertainty。 |
+| 心理治疗主要流派 | clinical_psychology | 高频 | 待填充 | CBT、精神分析、人本主义、行为治疗、家庭治疗概述。 |
+| 认知行为治疗 | clinical_psychology | 高频 | 待填充 | 认知重构、行为激活、暴露疗法、第三波 CBT。 |
+| 精神分析治疗 | clinical_psychology | 中频 | 待填充 | 自由联想、移情、防御、现代短程动力治疗。 |
+| 人本主义治疗 | clinical_psychology | 中频 | 待填充 | 来访者中心疗法、共情、真诚一致、无条件积极关注。 |
 
 ## 本冲刺已完成
 
 | 概念点 | 完成日期 | 卡片数 | 关系数 | 核心节点 |
 |---|---|---|---|---|
-| 人本主义人格理论细化 | 2026-07-06 | 5 | 11 | humanistic_personality_theory |
-| 行为主义与社会学习人格理论 | 2026-07-06 | 6 | 12 | behavioral_personality_theory / social_cognitive_personality_theory |
-| 认知人格理论 | 2026-07-06 | 4 | 8 | cognitive_personality_theory |
-| 人格测量工具 | 2026-07-06 | 4 | 8 | personality_assessment |
-| 人格稳定性与变化 | 2026-07-06 | 4 | 7 | personality_stability_and_change |
-| 气质与人格连续性 | 2026-07-06 | 3 | 5 | temperament_and_personality_continuity |
 ## 选择规则
 
 1. 候选粒度为**具体概念点/理论簇**，而不是整个学科。
