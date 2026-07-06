@@ -16,7 +16,6 @@ metadata:
 ## 当前冲刺（待填充）
 | 概念点 | 所属学科 | 考研关联 | 状态 | 说明 |
 |---|---|---|---|---|
-| 人格稳定性与变化 | personality_psychology | 中频 | 待填充 | 等级秩序稳定性、均值变化、生活事件影响。 |
 | 气质与人格连续性 | personality_psychology | 中频 | 待填充 | 气质维度、Thomas & Chess 气质类型、气质到人格的连续性。 |
 
 ## 本冲刺已完成
@@ -27,6 +26,7 @@ metadata:
 | 行为主义与社会学习人格理论 | 2026-07-06 | 6 | 12 | behavioral_personality_theory / social_cognitive_personality_theory |
 | 认知人格理论 | 2026-07-06 | 4 | 8 | cognitive_personality_theory |
 | 人格测量工具 | 2026-07-06 | 4 | 8 | personality_assessment |
+| 人格稳定性与变化 | 2026-07-06 | 4 | 7 | personality_stability_and_change |
 ## 选择规则
 
 1. 候选粒度为**具体概念点/理论簇**，而不是整个学科。
