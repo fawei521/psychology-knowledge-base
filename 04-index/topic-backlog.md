@@ -14,9 +14,8 @@ metadata:
 > 每次用户要求「填充概念卡片」时，从本列表中挑选 1 个候选概念点展示，由用户选择后标记为「进行中」。
 
 ## 当前冲刺（待填充）
-| 概念点 | 所属学科 | 考研关联 | 状态 | 说明 |
-|---|---|---|---|---|
-| 气质与人格连续性 | personality_psychology | 中频 | 待填充 | 气质维度、Thomas & Chess 气质类型、气质到人格的连续性。 |
+
+*当前冲刺池已清空，下一次填充前请从 [`topic-pool.md`](topic-pool.md) 补充新的一批概念点。*
 
 ## 本冲刺已完成
 
@@ -27,6 +26,7 @@ metadata:
 | 认知人格理论 | 2026-07-06 | 4 | 8 | cognitive_personality_theory |
 | 人格测量工具 | 2026-07-06 | 4 | 8 | personality_assessment |
 | 人格稳定性与变化 | 2026-07-06 | 4 | 7 | personality_stability_and_change |
+| 气质与人格连续性 | 2026-07-06 | 3 | 5 | temperament_and_personality_continuity |
 ## 选择规则
 
 1. 候选粒度为**具体概念点/理论簇**，而不是整个学科。
