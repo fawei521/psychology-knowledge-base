@@ -14,10 +14,12 @@ metadata:
 > 每次用户要求「填充概念卡片」时，从本列表中挑选 1 个候选概念点展示，由用户选择后标记为「进行中」。
 
 ## 当前冲刺（待填充）
-| 亲密关系维持 | social_psychology | 中频 | 待填充 | 投资模型、关系满意度、沟通模式、冲突解决。 |
-| 冲突与谈判 | social_psychology | 中频 | 待填充 | 社会困境、囚徒困境、谈判策略、整合性协议。 |
-| 文化心理学基础 | social_psychology | 中频 | 待填充 | 个人主义/集体主义、独立/互依自我、文化对认知情绪的影响。 |
-| 社会认同与群体冲突 | social_psychology | 中高频 | 待填充 | 最小群体范式、内群体偏好、外群体同质性、现实群体冲突理论。 |
+| 人本主义人格理论细化 | personality_psychology | 中高频 | 待填充 | 马斯洛、罗杰斯、自我实现、无条件积极关注、真实自我。 |
+| 行为主义与社会学习人格理论 | personality_psychology | 中高频 | 待填充 | 斯金纳、班杜拉交互决定论、自我效能、观察学习与人格。 |
+| 认知人格理论 | personality_psychology | 中频 | 待填充 | Kelly 个人构念、Rotter 控制点、Mischel 认知-情感系统理论。 |
+| 人格测量工具 | personality_psychology | 高频 | 待填充 | MMPI、NEO-PI、投射测验、自陈量表优缺点。 |
+| 人格稳定性与变化 | personality_psychology | 中频 | 待填充 | 等级秩序稳定性、均值变化、生活事件影响。 |
+| 气质与人格连续性 | personality_psychology | 中频 | 待填充 | 气质维度、Thomas & Chess 气质类型、气质到人格的连续性。 |
 
 
 
@@ -25,10 +27,6 @@ metadata:
 
 | 概念点 | 完成日期 | 卡片数 | 关系数 | 核心节点 |
 |---|---|---|---|---|
-| 社会认知偏差 | 2026-07-05 | 10 | 32 | social_cognitive_bias / attribution_theory |
-| 群体思维与群体极化 | 2026-07-05 | 13 | 42 | group_influence |
-| 刻板印象威胁 | 2026-07-05 | 12 | 31 | stereotype_threat / prejudice_and_discrimination |
-| 态度测量与计划行为理论 | 2026-07-05 | 12 | 27 | theory_of_planned_behavior / attitude_formation_and_change |
 ## 选择规则
 
 1. 候选粒度为**具体概念点/理论簇**，而不是整个学科。

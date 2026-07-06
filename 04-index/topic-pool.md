@@ -79,17 +79,15 @@ metadata:
 
 | 概念点 | 所属学科 | 考研关联 | 状态 | 说明 |
 |---|---|---|---|---|
+| 社会认知偏差 | 2026-07-05 | 10 | 32 | social_cognitive_bias / attribution_theory |
+| 群体思维与群体极化 | 2026-07-05 | 13 | 42 | group_influence |
+| 刻板印象威胁 | 2026-07-05 | 12 | 31 | stereotype_threat / prejudice_and_discrimination |
+| 态度测量与计划行为理论 | 2026-07-05 | 12 | 27 | theory_of_planned_behavior / attitude_formation_and_change |
 
 ### 人格心理学
 
 | 概念点 | 所属学科 | 考研关联 | 状态 | 说明 |
 |---|---|---|---|---|
-| 人本主义人格理论细化 | personality_psychology | 中高频 | 待填充 | 马斯洛、罗杰斯、自我实现、无条件积极关注、真实自我。 |
-| 行为主义与社会学习人格理论 | personality_psychology | 中高频 | 待填充 | 斯金纳、班杜拉交互决定论、自我效能、观察学习与人格。 |
-| 认知人格理论 | personality_psychology | 中频 | 待填充 | Kelly 个人构念、Rotter 控制点、Mischel 认知-情感系统理论。 |
-| 人格测量工具 | personality_psychology | 高频 | 待填充 | MMPI、NEO-PI、投射测验、自陈量表优缺点。 |
-| 人格稳定性与变化 | personality_psychology | 中频 | 待填充 | 等级秩序稳定性、均值变化、生活事件影响。 |
-| 气质与人格连续性 | personality_psychology | 中频 | 待填充 | 气质维度、Thomas & Chess 气质类型、气质到人格的连续性。 |
 
 ### 异常心理学
 
