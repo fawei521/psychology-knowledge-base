@@ -16,10 +16,10 @@ metadata:
 ## 当前冲刺（待填充）
 
 
-| 人格障碍谱系 | abnormal_psychology | 高频 | 待填充 | A/B/C 群人格障碍、DSM-5 诊断、病因与治疗。 |
-| 强迫及相关障碍 | abnormal_psychology | 高频 | 待填充 | OCD、囤积障碍、拔毛癖、躯体变形障碍、强迫认知模型。 |
-| 创伤与应激相关障碍 | abnormal_psychology | 高频 | 待填充 | PTSD、急性应激障碍、适应障碍、延长哀伤障碍。 |
+| 强迫及相关障碍 | abnormal_psychology | 高频 | 已完成 | OCD、囤积障碍、拔毛癖、躯体变形障碍、强迫认知模型。 |
+| 创伤与应激相关障碍 | abnormal_psychology | 高频 | 已完成 | PTSD、急性应激障碍、适应障碍、延长哀伤障碍。 |
 | 分离障碍 | abnormal_psychology | 中频 | 待填充 | 分离性身份障碍、分离性遗忘、人格解体/现实解体。 |
+| 人格障碍谱系 | abnormal_psychology | 高频 | 待填充 | A/B/C 群人格障碍、DSM-5 诊断、病因与治疗。 |
 | 进食障碍 | abnormal_psychology | 中高频 | 待填充 | 神经性厌食、神经性贪食、暴食障碍、身体意象。 |
 | 物质使用障碍 | abnormal_psychology | 中频 | 待填充 | 成瘾循环、耐受、戒断、生物心理社会病因。 |
 | 儿童青少年心理障碍 | abnormal_psychology | 中频 | 待填充 | ADHD、自闭症谱系、品行障碍、对立违抗障碍。 |
@@ -34,6 +34,8 @@ metadata:
 
 | 概念点 | 完成日期 | 卡片数 | 关系数 | 核心节点 |
 |---|---|---|---|---|
+| 强迫及相关障碍 | 2026-07-06 | 8 | 18 | obsessive_compulsive_disorder |
+| 创伤与应激相关障碍 | 2026-07-06 | 6 | 19 | posttraumatic_stress_disorder |
 ## 选择规则
 
 1. 候选粒度为**具体概念点/理论簇**，而不是整个学科。
