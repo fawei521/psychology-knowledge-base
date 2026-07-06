@@ -14,19 +14,19 @@ metadata:
 > 每次用户要求「填充概念卡片」时，从本列表中挑选 1 个候选概念点展示，由用户选择后标记为「进行中」。
 
 ## 当前冲刺（待填充）
-| 人本主义人格理论细化 | personality_psychology | 中高频 | 待填充 | 马斯洛、罗杰斯、自我实现、无条件积极关注、真实自我。 |
-| 行为主义与社会学习人格理论 | personality_psychology | 中高频 | 待填充 | 斯金纳、班杜拉交互决定论、自我效能、观察学习与人格。 |
+| 概念点 | 所属学科 | 考研关联 | 状态 | 说明 |
+|---|---|---|---|---|
 | 认知人格理论 | personality_psychology | 中频 | 待填充 | Kelly 个人构念、Rotter 控制点、Mischel 认知-情感系统理论。 |
 | 人格测量工具 | personality_psychology | 高频 | 待填充 | MMPI、NEO-PI、投射测验、自陈量表优缺点。 |
 | 人格稳定性与变化 | personality_psychology | 中频 | 待填充 | 等级秩序稳定性、均值变化、生活事件影响。 |
 | 气质与人格连续性 | personality_psychology | 中频 | 待填充 | 气质维度、Thomas & Chess 气质类型、气质到人格的连续性。 |
 
-
-
 ## 本冲刺已完成
 
 | 概念点 | 完成日期 | 卡片数 | 关系数 | 核心节点 |
 |---|---|---|---|---|
+| 人本主义人格理论细化 | 2026-07-06 | 5 | 11 | humanistic_personality_theory |
+| 行为主义与社会学习人格理论 | 2026-07-06 | 6 | 12 | behavioral_personality_theory / social_cognitive_personality_theory |
 ## 选择规则
 
 1. 候选粒度为**具体概念点/理论簇**，而不是整个学科。
@@ -34,3 +34,4 @@ metadata:
 3. 每次只锁定一个概念点，完成后才进入下一个。
 4. 用户也可直接指定某个概念点，不受优先级排序限制。
 5. 冲刺池清空或接近清空时，从 [`topic-pool.md`](topic-pool.md) 中补充下一批。
+6.ai不得自行翻看topic-pool.md

@@ -3,11 +3,13 @@ concept: stress_and_immunity
 concept_cn: 应激与免疫
 domain: general_psychology
 tags:
-  - 学科/普通心理学
-  - 应激
-  - 免疫
-  - 健康心理学
-  - HPA轴
+- '学科/普通心理学'
+- '应激'
+- '免疫'
+- '健康心理学'
+- 'HPA轴'
+- '学科/情绪与动机'
+- '学科/生理心理学'
 citekeys: []
 relations:
   - target: stress_and_coping
