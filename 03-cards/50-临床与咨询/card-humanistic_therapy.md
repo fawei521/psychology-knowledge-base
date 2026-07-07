@@ -18,6 +18,16 @@ relations:
     type: extends
   - target: self_concept
     type: supports
+  - target: client_centered_therapy
+    type: part-of
+  - target: empathy
+    type: part-of
+  - target: congruence
+    type: part-of
+  - target: unconditional_positive_regard
+    type: part-of
+  - target: fully_functioning_person
+    type: supports
 ---
 
 # 人本主义治疗 / Humanistic Therapy

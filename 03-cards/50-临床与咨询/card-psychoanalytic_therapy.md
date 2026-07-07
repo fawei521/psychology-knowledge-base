@@ -18,6 +18,14 @@ relations:
     type: supports
   - target: psychosexual_stages
     type: supports
+  - target: free_association
+    type: part-of
+  - target: transference
+    type: part-of
+  - target: modern_short_term_dynamic_therapy
+    type: extends
+  - target: psychoanalytic_personality_theory
+    type: supports
 ---
 
 # 精神分析治疗 / Psychoanalytic Therapy

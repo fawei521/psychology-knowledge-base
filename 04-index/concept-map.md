@@ -6,10 +6,10 @@
 
 ## 概览
 
-- 总卡片数：459
-- 概念簇数：11
+- 总卡片数：488
+- 概念簇数：10
 - 孤立卡片数：0
-- 关系总数：1513
+- 关系总数：1659
 
 ## 概念簇
 
@@ -214,6 +214,13 @@ Yerkes-Dodson 定律 -- applies-to --> 情绪调节
 动作电位 -- part-of --> 神经元与神经传导
 动作电位 -- is-a --> 神经元结构
 动作电位 -- causes --> 突触传递
+程序性细胞凋亡 -- part-of --> 神经系统发育
+程序性细胞凋亡 -- correlates-with --> 神经发生
+程序性细胞凋亡 -- correlates-with --> 突触发生
+听觉系统 -- part-of --> 感觉神经系统
+听觉系统 -- correlates-with --> 感觉编码
+听觉系统 -- supports --> 听觉知觉
+听觉系统 -- part-of --> 中枢神经系统
 血氧水平依赖信号 -- part-of --> 功能性磁共振成像
 脑成像技术 -- applies-to --> 脑结构与功能
 脑成像技术 -- applies-to --> 认知神经科学
@@ -227,6 +234,14 @@ Yerkes-Dodson 定律 -- applies-to --> 情绪调节
 脑损伤研究 -- is-a --> 认知神经科学
 脑损伤研究 -- supports --> 双分离
 脑损伤研究 -- supports --> 脑功能定位
+脑可塑性 -- part-of --> 神经系统发育
+脑可塑性 -- correlates-with --> 关键期
+脑可塑性 -- correlates-with --> 突触发生
+脑可塑性 -- supports --> 神经元与神经传导
+脑可塑性 -- correlates-with --> 突触传递
+脑可塑性 -- is-a --> 经验依赖型发育
+脑可塑性 -- correlates-with --> 经验预期型发育
+脑可塑性 -- is-a --> 认知神经科学
 脑结构与功能 -- part-of --> 中枢神经系统
 中枢神经系统 -- part-of --> 大脑皮层
 中枢神经系统 -- part-of --> 边缘系统
@@ -243,17 +258,58 @@ Yerkes-Dodson 定律 -- applies-to --> 情绪调节
 认知神经科学 -- supports --> 脑可塑性
 认知神经科学 -- supports --> 脑功能定位
 认知神经科学 -- supports --> 大脑半球特化
+关键期 -- part-of --> 神经系统发育
+关键期 -- applies-to --> 语言
+关键期 -- is-a --> 经验预期型发育
 双分离 -- is-a --> 认知神经科学
 双分离 -- supports --> 脑功能定位
 脑电图 -- is-a --> 脑成像技术
 脑电图 -- supports --> 事件相关电位
 脑电图 -- contrasts --> 功能性磁共振成像
+内分泌系统 -- correlates-with --> 中枢神经系统
+内分泌系统 -- contrasts --> 神经递质
+内分泌系统 -- part-of --> 下丘脑-垂体-肾上腺轴
+内分泌系统 -- part-of --> 垂体激素与行为
+内分泌系统 -- part-of --> 性激素与行为
+内分泌系统 -- part-of --> 甲状腺激素与行为
+内分泌系统 -- correlates-with --> 激素与昼夜节律
 事件相关电位 -- extends --> 脑电图
 事件相关电位 -- is-a --> 脑成像技术
+经验依赖型发育 -- part-of --> 神经系统发育
+经验依赖型发育 -- correlates-with --> 突触发生
+经验依赖型发育 -- contrasts --> 经验预期型发育
+经验预期型发育 -- part-of --> 神经系统发育
+经验预期型发育 -- correlates-with --> 关键期
+经验预期型发育 -- correlates-with --> 突触发生
 功能性磁共振成像 -- is-a --> 脑成像技术
 功能性磁共振成像 -- contrasts --> 正电子发射断层扫描
+味觉系统 -- part-of --> 感觉神经系统
+味觉系统 -- correlates-with --> 感觉编码
+味觉系统 -- correlates-with --> 嗅觉系统
+味觉系统 -- part-of --> 中枢神经系统
+激素与昼夜节律 -- correlates-with --> 下丘脑-垂体-肾上腺轴
+激素与昼夜节律 -- correlates-with --> 应激激素
+激素与昼夜节律 -- correlates-with --> 睡眠阶段
+下丘脑-垂体-肾上腺轴 -- causes --> 应激激素
+下丘脑-垂体-肾上腺轴 -- correlates-with --> 中枢神经系统
+下丘脑-垂体-肾上腺轴 -- correlates-with --> 边缘系统
+下丘脑-垂体-肾上腺轴 -- correlates-with --> 一般适应症候群
+下丘脑-垂体-肾上腺轴 -- correlates-with --> 应激与应对
 边缘系统 -- part-of --> 脑结构与功能
 大脑皮层分区 -- part-of --> 脑结构与功能
+髓鞘化 -- part-of --> 神经系统发育
+髓鞘化 -- correlates-with --> 突触发生
+髓鞘化 -- supports --> 动作电位
+髓鞘化 -- part-of --> 中枢神经系统
+髓鞘化 -- correlates-with --> 认知发展
+神经系统发育 -- part-of --> 神经元结构
+神经系统发育 -- part-of --> 中枢神经系统
+神经系统发育 -- part-of --> 神经发生
+神经系统发育 -- part-of --> 突触发生
+神经系统发育 -- correlates-with --> 认知发展
+神经发生 -- correlates-with --> 突触发生
+神经发生 -- correlates-with --> 脑可塑性
+神经发生 -- part-of --> 中枢神经系统
 脑成像技术比较 -- contrasts --> 脑电图
 脑成像技术比较 -- contrasts --> 功能性磁共振成像
 脑成像技术比较 -- contrasts --> 正电子发射断层扫描
@@ -264,15 +320,51 @@ Yerkes-Dodson 定律 -- applies-to --> 情绪调节
 神经元结构 -- causes --> 动作电位
 神经心理学评估 -- is-a --> 认知神经科学
 神经递质 -- part-of --> 突触传递
+嗅觉系统 -- part-of --> 感觉神经系统
+嗅觉系统 -- correlates-with --> 感觉编码
+嗅觉系统 -- correlates-with --> 边缘系统
+嗅觉系统 -- part-of --> 中枢神经系统
+痛觉知觉 -- part-of --> 体感系统
+痛觉知觉 -- part-of --> 感觉神经系统
+痛觉知觉 -- correlates-with --> 应激激素
+痛觉知觉 -- correlates-with --> 中枢神经系统
 正电子发射断层扫描 -- is-a --> 脑成像技术
+垂体激素与行为 -- part-of --> 下丘脑-垂体-肾上腺轴
+垂体激素与行为 -- correlates-with --> 性激素与行为
+垂体激素与行为 -- correlates-with --> 甲状腺激素与行为
+感觉编码 -- part-of --> 感觉神经系统
+感觉编码 -- applies-to --> 视觉系统
+感觉编码 -- applies-to --> 听觉系统
+感觉编码 -- applies-to --> 体感系统
+感觉编码 -- applies-to --> 嗅觉系统
+感觉编码 -- applies-to --> 味觉系统
+感觉神经系统 -- part-of --> 中枢神经系统
+感觉神经系统 -- part-of --> 视觉系统
+感觉神经系统 -- part-of --> 体感系统
+感觉神经系统 -- supports --> 视觉知觉
+感觉神经系统 -- supports --> 听觉知觉
+性激素与行为 -- correlates-with --> 激素与昼夜节律
+体感系统 -- correlates-with --> 感觉编码
+体感系统 -- part-of --> 中枢神经系统
 裂脑研究 -- is-a --> 认知神经科学
 裂脑研究 -- supports --> 脑结构与功能
 裂脑研究 -- supports --> 大脑半球特化
+应激激素 -- part-of --> 下丘脑-垂体-肾上腺轴
+应激激素 -- part-of --> 内分泌系统
+应激激素 -- correlates-with --> 一般适应症候群
+应激激素 -- correlates-with --> 应对方式
+应激激素 -- correlates-with --> 应激与应对
+应激激素 -- correlates-with --> 中枢神经系统
 突触传递 -- is-a --> 动作电位
+突触发生 -- part-of --> 神经元与神经传导
+甲状腺激素与行为 -- correlates-with --> 中枢神经系统
 经颅磁刺激 -- is-a --> 脑成像技术
 经颅磁刺激 -- contrasts --> 功能性磁共振成像
 经颅磁刺激 -- applies-to --> 认知神经科学
 经颅磁刺激 -- correlates-with --> 脑成像技术
+视觉系统 -- correlates-with --> 感觉编码
+视觉系统 -- supports --> 视觉知觉
+视觉系统 -- part-of --> 中枢神经系统
 急性应激障碍 -- is-a --> 创伤与应激相关障碍
 急性应激障碍 -- related-to --> 创伤后应激障碍
 成瘾循环 -- part-of --> 物质使用障碍
@@ -872,6 +964,10 @@ Rotter控制点理论 -- correlates-with --> 归因理论
 行为激活 -- part-of --> 认知行为治疗
 行为激活 -- applies-to --> 重性抑郁障碍
 行为激活 -- applies-to --> 习得性无助
+来访者中心疗法 -- is-a --> 人本主义治疗
+来访者中心疗法 -- applies-to --> 罗杰斯以人为中心理论
+来访者中心疗法 -- supports --> 自我概念
+来访者中心疗法 -- contrasts --> 价值条件化
 认知行为治疗 -- is-a --> 心理治疗主要流派
 认知行为治疗 -- extends --> 行为治疗
 认知行为治疗 -- supports --> 思维偏差与启发式
@@ -888,9 +984,15 @@ Rotter控制点理论 -- correlates-with --> 归因理论
 认知重构 -- applies-to --> Beck 认知三联征
 认知重构 -- applies-to --> 灾难化
 认知重构 -- applies-to --> 抑郁归因风格
+真诚一致 -- part-of --> 人本主义治疗
+真诚一致 -- part-of --> 来访者中心疗法
+真诚一致 -- supports --> 罗杰斯以人为中心理论
 辩证行为治疗 -- is-a --> 心理治疗主要流派
 辩证行为治疗 -- extends --> 认知行为治疗
 辩证行为治疗 -- supports --> 情绪调节
+共情 -- part-of --> 人本主义治疗
+共情 -- part-of --> 来访者中心疗法
+共情 -- supports --> 罗杰斯以人为中心理论
 暴露与反应阻止 -- is-a --> 认知行为治疗
 暴露与反应阻止 -- applies-to --> 强迫症
 暴露疗法 -- part-of --> 认知行为治疗
@@ -900,15 +1002,26 @@ Rotter控制点理论 -- correlates-with --> 归因理论
 暴露疗法 -- applies-to --> 创伤后应激障碍
 暴露疗法 -- part-of --> 暴露与反应阻止
 家庭系统治疗 -- is-a --> 心理治疗主要流派
+自由联想 -- part-of --> 精神分析治疗
+自由联想 -- correlates-with --> 防御机制
+自由联想 -- supports --> 精神分析人格理论
 人本主义治疗 -- is-a --> 心理治疗主要流派
 人本主义治疗 -- extends --> 罗杰斯以人为中心理论
 人本主义治疗 -- supports --> 自我概念
+人本主义治疗 -- part-of --> 来访者中心疗法
+人本主义治疗 -- part-of --> 无条件积极关注
+人本主义治疗 -- supports --> 充分发挥功能的人
 正念基础治疗 -- is-a --> 心理治疗主要流派
 正念基础治疗 -- extends --> 认知行为治疗
 正念基础治疗 -- supports --> 冥想
+现代短程动力治疗 -- extends --> 精神分析治疗
+现代短程动力治疗 -- contrasts --> 认知行为治疗
+现代短程动力治疗 -- supports --> 精神分析人格理论
 精神分析治疗 -- is-a --> 心理治疗主要流派
 精神分析治疗 -- supports --> 防御机制
 精神分析治疗 -- supports --> 心理性欲发展阶段
+精神分析治疗 -- part-of --> 移情
+精神分析治疗 -- supports --> 精神分析人格理论
 心理治疗主要流派 -- supports --> 精神分析治疗
 心理治疗主要流派 -- supports --> 认知行为治疗
 心理治疗主要流派 -- supports --> 行为治疗
@@ -920,6 +1033,8 @@ Rotter控制点理论 -- correlates-with --> 归因理论
 第三波认知行为治疗 -- supports --> 正念基础治疗
 第三波认知行为治疗 -- supports --> 辩证行为治疗
 第三波认知行为治疗 -- supports --> 情绪调节
+移情 -- correlates-with --> 依恋理论
+移情 -- supports --> 精神分析人格理论
 青少年自我中心主义 -- part-of --> 青少年社会情绪发展
 青少年自我中心主义 -- extends --> 皮亚杰认知发展阶段论
 青少年自我中心主义 -- correlates-with --> 社会发展
@@ -1123,8 +1238,6 @@ Marcia 同一性状态 -- part-of --> 青少年社会情绪发展
 观察学习 -- part-of --> 学习理论
 观察学习 -- extends --> 操作性条件作用
 操作性条件作用 -- part-of --> 学习理论
-脑可塑性 -- is-a --> 认知神经科学
-脑可塑性 -- correlates-with --> 突触传递
 脑功能定位 -- is-a --> 认知神经科学
 脑功能定位 -- supports --> 脑结构与功能
 大脑半球特化 -- is-a --> 认知神经科学
@@ -1132,8 +1245,11 @@ Marcia 同一性状态 -- part-of --> 青少年社会情绪发展
 注意 -- supports --> 记忆的三级模型
 态度形成与改变 -- part-of --> 认知失调
 归因理论 -- supports --> 社会认知偏差
+听觉知觉 -- part-of --> 感觉与知觉
 big_five_personality -- part-of --> 人格测量
 big_five_personality -- correlates-with --> 依恋理论
+深度知觉 -- part-of --> 感觉与知觉
+深度知觉 -- part-of --> 知觉组织
 梦 -- part-of --> 意识与睡眠
 梦 -- correlates-with --> REM 睡眠
 编码特异性原则 -- applies-to --> 记忆的三级模型
@@ -1152,6 +1268,8 @@ big_five_personality -- correlates-with --> 依恋理论
 群体影响 -- supports --> 规范性社会影响
 群体影响 -- supports --> 信息性社会影响
 催眠 -- is-a --> 意识与睡眠
+错觉 -- part-of --> 感觉与知觉
+错觉 -- contrasts --> 知觉组织
 内隐记忆与外显记忆 -- correlates-with --> 长时记忆的分类
 内隐记忆与外显记忆 -- applies-to --> 记忆策略与记忆术
 内群体偏好 -- part-of --> 社会认同理论
@@ -1173,12 +1291,17 @@ big_five_personality -- correlates-with --> 依恋理论
 记忆巩固 -- applies-to --> 长时记忆的分类
 记忆提取 -- part-of --> 记忆的三级模型
 记忆策略与记忆术 -- applies-to --> 工作记忆
+运动知觉 -- part-of --> 感觉与知觉
+运动知觉 -- part-of --> 知觉组织
 NREM 睡眠 -- part-of --> 意识与睡眠
 NREM 睡眠 -- part-of --> 睡眠阶段
 NREM 睡眠 -- contrasts --> REM 睡眠
 激情式爱情与伴侣式爱情 -- is-a --> 浪漫爱情
 激情式爱情与伴侣式爱情 -- contrasts --> 爱情三元理论
 激情式爱情与伴侣式爱情 -- correlates-with --> 詹姆斯-兰格情绪理论
+知觉恒常性 -- part-of --> 感觉与知觉
+知觉恒常性 -- part-of --> 知觉组织
+知觉组织 -- part-of --> 感觉与知觉
 人格与个体差异 -- part-of --> big_five_personality
 人格与个体差异 -- part-of --> 人格特质理论
 人格与个体差异 -- part-of --> 自我概念
@@ -1186,6 +1309,7 @@ NREM 睡眠 -- contrasts --> REM 睡眠
 人格与个体差异 -- part-of --> 自我效能感
 人格与个体差异 -- part-of --> 自我服务偏差
 精神活性物质 -- is-a --> 意识与睡眠
+心理物理学 -- part-of --> 感觉与知觉
 REM 睡眠 -- part-of --> 意识与睡眠
 REM 睡眠 -- part-of --> 睡眠阶段
 浪漫爱情 -- extends --> 依恋理论
@@ -1195,15 +1319,17 @@ REM 睡眠 -- part-of --> 睡眠阶段
 睡眠阶段 -- part-of --> 意识与睡眠
 爱情三元理论 -- is-a --> 浪漫爱情
 爱情三元理论 -- extends --> 激情式爱情与伴侣式爱情
+视觉知觉 -- part-of --> 感觉与知觉
+视觉知觉 -- correlates-with --> 知觉组织
 工作记忆 -- extends --> 记忆的三级模型
 ```
 
 | 成员 | 中文名 | 学科 | 簇内连接数 |
 |------|--------|------|-----------|
-| [[03-cards/50-临床与咨询/card-cognitive_behavioral_therapy|cognitive_behavioral_therapy]] 认知行为治疗 | 认知行为治疗 | 临床心理学 | 31 |
+| [[03-cards/50-临床与咨询/card-cognitive_behavioral_therapy|cognitive_behavioral_therapy]] 认知行为治疗 | 认知行为治疗 | 临床心理学 | 32 |
 | [[03-cards/10-普通心理学/card-achievement_goal_theory|achievement_goal_theory]] 成就目标理论 | 成就目标理论 | 普通心理学 | 5 |
 | [[03-cards/10-普通心理学/card-achievement_motivation_theory|achievement_motivation_theory]] 成就动机理论 | 成就动机理论 | 普通心理学 | 5 |
-| [[03-cards/100-生理心理学/card-action_potential|action_potential]] 动作电位 | 动作电位 | 生物心理学 | 6 |
+| [[03-cards/100-生理心理学/card-action_potential|action_potential]] 动作电位 | 动作电位 | 生物心理学 | 7 |
 | [[03-cards/20-社会心理学/card-actor_observer_bias|actor_observer_bias]] 行动者-观察者偏差 | 行动者-观察者偏差 | 社会心理学 | 6 |
 | [[03-cards/110-变态心理学/card-acute_stress_disorder|acute_stress_disorder]] 急性应激障碍 | 急性应激障碍 | 异常心理学 | 4 |
 | [[03-cards/110-变态心理学/card-addiction_cycle|addiction_cycle]] 成瘾循环 | 成瘾循环 | 异常心理学 | 8 |
@@ -1226,8 +1352,9 @@ REM 睡眠 -- part-of --> 睡眠阶段
 | [[03-cards/110-变态心理学/card-anxiety_disorders|anxiety_disorders]] 焦虑障碍 | 焦虑障碍 | 异常心理学 | 20 |
 | [[03-cards/110-变态心理学/card-anxiety_sensitivity|anxiety_sensitivity]] 焦虑敏感性 | 焦虑敏感性 | 异常心理学 | 7 |
 | [[03-cards/60-发展心理学/card-anxious_ambivalent_attachment|anxious_ambivalent_attachment]] 焦虑-矛盾型依恋 | 焦虑-矛盾型依恋 | 发展心理学 | 12 |
+| [[03-cards/100-生理心理学/card-apoptosis_in_brain_development|apoptosis_in_brain_development]] 程序性细胞凋亡 | 程序性细胞凋亡 | 生物心理学 | 4 |
 | [[03-cards/60-发展心理学/card-assimilation_accommodation|assimilation_accommodation]] 同化与顺应 | 同化与顺应 | 发展心理学 | 5 |
-| [[03-cards/60-发展心理学/card-attachment_theory|attachment_theory]] 依恋理论 | 依恋理论 | 发展心理学 | 28 |
+| [[03-cards/60-发展心理学/card-attachment_theory|attachment_theory]] 依恋理论 | 依恋理论 | 发展心理学 | 29 |
 | [[03-cards/card-attention|attention]] 注意 | 注意 | 普通心理学 | 9 |
 | [[03-cards/110-变态心理学/card-attention_deficit_hyperactivity_disorder|attention_deficit_hyperactivity_disorder]] 注意缺陷多动障碍 | 注意缺陷多动障碍 | 异常心理学 | 8 |
 | [[03-cards/110-变态心理学/card-attentional_bias_threat|attentional_bias_threat]] 威胁注意偏向 | 威胁注意偏向 | 异常心理学 | 9 |
@@ -1235,6 +1362,8 @@ REM 睡眠 -- part-of --> 睡眠阶段
 | [[03-cards/20-社会心理学/card-attitude_behavior_consistency|attitude_behavior_consistency]] 态度-行为一致性 | 态度-行为一致性 | 社会心理学 | 3 |
 | [[03-cards/card-attitude_formation_and_change|attitude_formation_and_change]] 态度形成与改变 | 态度形成与改变 | 社会心理学 | 21 |
 | [[03-cards/card-attribution_theory|attribution_theory]] 归因理论 | 归因理论 | 社会心理学 | 15 |
+| [[03-cards/card-auditory_perception|auditory_perception]] 听觉知觉 | 听觉知觉 | 普通心理学 | 3 |
+| [[03-cards/100-生理心理学/card-auditory_system|auditory_system]] 听觉系统 | 听觉系统 | 生物心理学 | 6 |
 | [[03-cards/30-人格心理学/card-authentic_self|authentic_self]] 真实自我 | 真实自我 | 人格心理学 | 6 |
 | [[03-cards/110-变态心理学/card-autism_spectrum_disorder|autism_spectrum_disorder]] 自闭症谱系障碍 | 自闭症谱系障碍 | 异常心理学 | 4 |
 | [[03-cards/10-普通心理学/card-availability_heuristic|availability_heuristic]] 可得性启发 | 可得性启发 | 普通心理学 | 3 |
@@ -1261,22 +1390,23 @@ REM 睡眠 -- part-of --> 睡眠阶段
 | [[03-cards/110-变态心理学/card-borderline_personality_disorder|borderline_personality_disorder]] 边缘型人格障碍 | 边缘型人格障碍 | 异常心理学 | 8 |
 | [[03-cards/100-生理心理学/card-brain_imaging_techniques|brain_imaging_techniques]] 脑成像技术 | 脑成像技术 | 生物心理学 | 18 |
 | [[03-cards/100-生理心理学/card-brain_lesion_studies|brain_lesion_studies]] 脑损伤研究 | 脑损伤研究 | 认知心理学 | 6 |
-| [[03-cards/90-实验心理学/card-brain_plasticity|brain_plasticity]] 脑可塑性 | 脑可塑性 | 认知心理学 | 3 |
+| [[03-cards/100-生理心理学/card-brain_plasticity|brain_plasticity]] 脑可塑性 | 脑可塑性 | 生物心理学 | 14 |
 | [[03-cards/100-生理心理学/card-brain_structure_and_function|brain_structure_and_function]] 脑结构与功能 | 脑结构与功能 | 生物心理学 | 11 |
 | [[03-cards/110-变态心理学/card-bulimia_nervosa|bulimia_nervosa]] 神经性贪食 | 神经性贪食 | 异常心理学 | 10 |
 | [[03-cards/10-普通心理学/card-cannon_bard_theory|cannon_bard_theory]] 坎农-巴德情绪理论 | 坎农-巴德情绪理论 | 普通心理学 | 5 |
 | [[03-cards/110-变态心理学/card-catastrophizing|catastrophizing]] 灾难化 | 灾难化 | 异常心理学 | 11 |
-| [[03-cards/100-生理心理学/card-central_nervous_system|central_nervous_system]] 中枢神经系统 | 中枢神经系统 | 生物心理学 | 6 |
+| [[03-cards/100-生理心理学/card-central_nervous_system|central_nervous_system]] 中枢神经系统 | 中枢神经系统 | 生物心理学 | 20 |
 | [[03-cards/20-社会心理学/card-central_vs_peripheral_route|central_vs_peripheral_route]] 中心路径与边缘路径 | 中心路径与边缘路径 | 社会心理学 | 6 |
 | [[03-cards/100-生理心理学/card-cerebral_cortex|cerebral_cortex]] 大脑皮层 | 大脑皮层 | 生物心理学 | 5 |
 | [[03-cards/110-变态心理学/card-childhood_adolescent_psychopathology|childhood_adolescent_psychopathology]] 儿童青少年心理障碍 | 儿童青少年心理障碍 | 异常心理学 | 9 |
 | [[03-cards/80-学习心理学/card-classical_conditioning|classical_conditioning]] 经典条件作用 | 经典条件作用 | 普通心理学 | 7 |
+| [[03-cards/50-临床与咨询/card-client_centered_therapy|client_centered_therapy]] 来访者中心疗法 | 来访者中心疗法 | 临床心理学 | 7 |
 | [[03-cards/110-变态心理学/card-cluster_a_personality_disorders|cluster_a_personality_disorders]] A群人格障碍 | A群人格障碍 | 异常心理学 | 9 |
 | [[03-cards/110-变态心理学/card-cluster_b_personality_disorders|cluster_b_personality_disorders]] B群人格障碍 | B群人格障碍 | 异常心理学 | 10 |
 | [[03-cards/110-变态心理学/card-cluster_c_personality_disorders|cluster_c_personality_disorders]] C群人格障碍 | C群人格障碍 | 异常心理学 | 8 |
 | [[03-cards/60-发展心理学/card-cognitive_aging|cognitive_aging]] 认知老化 | 认知老化 | 发展心理学 | 5 |
 | [[03-cards/10-普通心理学/card-core-cognitive_bias_and_heuristics|cognitive_bias_and_heuristics]] 思维偏差与启发式 | 思维偏差与启发式 | 普通心理学 | 14 |
-| [[03-cards/60-发展心理学/card-cognitive_development|cognitive_development]] 认知发展 | 认知发展 | 发展心理学 | 8 |
+| [[03-cards/60-发展心理学/card-cognitive_development|cognitive_development]] 认知发展 | 认知发展 | 发展心理学 | 10 |
 | [[03-cards/card-cognitive_dissonance|cognitive_dissonance]] 认知失调 | 认知失调 | 社会心理学 | 6 |
 | [[03-cards/80-学习心理学/card-cognitive_learning_theory|cognitive_learning_theory]] 认知学习理论 | 认知学习理论 | 普通心理学 | 8 |
 | [[03-cards/100-生理心理学/card-cognitive_neuroscience|cognitive_neuroscience]] 认知神经科学 | 认知神经科学 | 认知心理学 | 20 |
@@ -1286,23 +1416,25 @@ REM 睡眠 -- part-of --> 睡眠阶段
 | [[03-cards/20-社会心理学/card-common_ingroup_identity_model|common_ingroup_identity_model]] 共同内群体认同模型 | 共同内群体认同模型 | 社会心理学 | 3 |
 | [[03-cards/20-社会心理学/card-communication_patterns_in_intimate_relationships|communication_patterns_in_intimate_relationships]] 亲密关系中的沟通模式 | 亲密关系中的沟通模式 | 社会心理学 | 4 |
 | [[03-cards/110-变态心理学/card-complex_posttraumatic_stress_disorder|complex_posttraumatic_stress_disorder]] 复杂性创伤后应激障碍 | 复杂性创伤后应激障碍 | 异常心理学 | 4 |
-| [[03-cards/30-人格心理学/card-conditions_of_worth|conditions_of_worth]] 价值条件化 | 价值条件化 | 人格心理学 | 4 |
+| [[03-cards/30-人格心理学/card-conditions_of_worth|conditions_of_worth]] 价值条件化 | 价值条件化 | 人格心理学 | 5 |
 | [[03-cards/110-变态心理学/card-conduct_disorder|conduct_disorder]] 品行障碍 | 品行障碍 | 异常心理学 | 8 |
 | [[03-cards/10-普通心理学/card-confirmation_bias|confirmation_bias]] 确认偏误 | 确认偏误 | 普通心理学 | 7 |
 | [[03-cards/20-社会心理学/card-conflict_resolution|conflict_resolution]] 冲突解决 | 冲突解决 | 社会心理学 | 8 |
 | [[03-cards/card-conformity|conformity]] 从众 | 从众 | 社会心理学 | 4 |
+| [[03-cards/50-临床与咨询/card-congruence|congruence]] 真诚一致 | 真诚一致 | 临床心理学 | 4 |
 | [[03-cards/10-普通心理学/card-conjunction_fallacy|conjunction_fallacy]] 合取谬误 | 合取谬误 | 普通心理学 | 3 |
 | [[03-cards/card-consciousness_and_sleep|consciousness_and_sleep]] 意识与睡眠 | 意识与睡眠 | 普通心理学 | 7 |
 | [[03-cards/60-发展心理学/card-conservation|conservation]] 守恒 | 守恒 | 发展心理学 | 2 |
-| [[03-cards/10-普通心理学/card-coping_strategies|coping_strategies]] 应对方式 | 应对方式 | 普通心理学 | 5 |
+| [[03-cards/10-普通心理学/card-coping_strategies|coping_strategies]] 应对方式 | 应对方式 | 普通心理学 | 6 |
 | [[03-cards/60-发展心理学/card-core_knowledge_theory|core_knowledge_theory]] 核心知识理论 | 核心知识理论 | 发展心理学 | 6 |
 | [[03-cards/20-社会心理学/card-correspondence_bias|correspondence_bias]] 对应偏见 | 对应偏见 | 社会心理学 | 4 |
 | [[03-cards/10-普通心理学/card-creativity|creativity]] 创造力 | 创造力 | 普通心理学 | 7 |
+| [[03-cards/100-生理心理学/card-critical_period|critical_period]] 关键期 | 关键期 | 生物心理学 | 7 |
 | [[03-cards/10-普通心理学/card-critical_period_hypothesis|critical_period_hypothesis]] 关键期假设 | 关键期假设 | 普通心理学 | 6 |
 | [[03-cards/20-社会心理学/card-culture_and_cognition|culture_and_cognition]] 文化对认知的影响 | 文化对认知的影响 | 社会心理学 | 4 |
 | [[03-cards/10-普通心理学/card-decision_making_and_judgment|decision_making_and_judgment]] 决策与判断 | 决策与判断 | 普通心理学 | 19 |
 | [[03-cards/10-普通心理学/card-deductive_reasoning|deductive_reasoning]] 演绎推理 | 演绎推理 | 认知心理学 | 4 |
-| [[03-cards/30-人格心理学/card-defense_mechanisms|defense_mechanisms]] 防御机制 | 防御机制 | 人格心理学 | 5 |
+| [[03-cards/30-人格心理学/card-defense_mechanisms|defense_mechanisms]] 防御机制 | 防御机制 | 人格心理学 | 6 |
 | [[03-cards/20-社会心理学/card-defensive_attribution_hypothesis|defensive_attribution_hypothesis]] 防御性归因假设 | 防御性归因假设 | 社会心理学 | 4 |
 | [[03-cards/60-发展心理学/card-deferred_imitation|deferred_imitation]] 延迟模仿 | 延迟模仿 | 发展心理学 | 3 |
 | [[03-cards/20-社会心理学/card-dehumanization|dehumanization]] 去人性化 | 去人性化 | 社会心理学 | 3 |
@@ -1311,6 +1443,7 @@ REM 睡眠 -- part-of --> 睡眠阶段
 | [[03-cards/110-变态心理学/card-dependent_personality_disorder|dependent_personality_disorder]] 依赖型人格障碍 | 依赖型人格障碍 | 异常心理学 | 9 |
 | [[03-cards/110-变态心理学/card-depersonalization_derealization_disorder|depersonalization_derealization_disorder]] 人格解体/现实解体障碍 | 人格解体/现实解体障碍 | 异常心理学 | 7 |
 | [[03-cards/110-变态心理学/card-depressive_attributional_style|depressive_attributional_style]] 抑郁归因风格 | 抑郁归因风格 | 异常心理学 | 10 |
+| [[03-cards/card-depth_perception|depth_perception]] 深度知觉 | 深度知觉 | 普通心理学 | 3 |
 | [[03-cards/120-统计与测量/card-descriptive_statistics|descriptive_statistics]] 描述统计 | 描述统计 | 普通心理学 | 2 |
 | [[03-cards/50-临床与咨询/card-dialectical_behavior_therapy|dialectical_behavior_therapy]] 辩证行为治疗 | 辩证行为治疗 | 临床心理学 | 5 |
 | [[03-cards/60-发展心理学/card-disorganized_attachment|disorganized_attachment]] 混乱型依恋 | 混乱型依恋 | 发展心理学 | 12 |
@@ -1334,7 +1467,9 @@ REM 睡眠 -- part-of --> 睡眠阶段
 | [[03-cards/card-emotion_regulation|emotion_regulation]] 情绪调节 | 情绪调节 | 普通心理学 | 15 |
 | [[03-cards/10-普通心理学/card-emotion_regulation_strategies|emotion_regulation_strategies]] 情绪调节策略 | 情绪调节策略 | 普通心理学 | 3 |
 | [[03-cards/10-普通心理学/card-emotion_theories|emotion_theories]] 情绪理论 | 情绪理论 | 普通心理学 | 9 |
+| [[03-cards/50-临床与咨询/card-empathy|empathy]] 共情 | 共情 | 临床心理学 | 4 |
 | [[03-cards/card-encoding_specificity|encoding_specificity]] 编码特异性原则 | 编码特异性原则 | 普通心理学 | 5 |
+| [[03-cards/100-生理心理学/card-endocrine_system|endocrine_system]] 内分泌系统 | 内分泌系统 | 生物心理学 | 13 |
 | [[03-cards/10-普通心理学/card-endowment_effect|endowment_effect]] 禀赋效应 | 禀赋效应 | 普通心理学 | 4 |
 | [[03-cards/10-普通心理学/card-episodic_memory|episodic_memory]] 情景记忆 | 情景记忆 | 普通心理学 | 4 |
 | [[03-cards/60-发展心理学/card-erikson_psychosocial_development|erikson_psychosocial_development]] 埃里克森心理社会发展理论 | 埃里克森心理社会发展理论 | 发展心理学 | 13 |
@@ -1343,6 +1478,8 @@ REM 睡眠 -- part-of --> 睡眠阶段
 | [[03-cards/110-变态心理学/card-excoriation_disorder|excoriation_disorder]] 皮肤搔抓障碍 | 皮肤搔抓障碍 | 异常心理学 | 4 |
 | [[03-cards/60-发展心理学/card-executive_function|executive_function]] 执行功能 | 执行功能 | 发展心理学 | 11 |
 | [[03-cards/10-普通心理学/card-expected_utility_theory|expected_utility_theory]] 期望效用理论 | 期望效用理论 | 普通心理学 | 4 |
+| [[03-cards/100-生理心理学/card-experience_dependent_development|experience_dependent_development]] 经验依赖型发育 | 经验依赖型发育 | 生物心理学 | 7 |
+| [[03-cards/100-生理心理学/card-experience_expectant_development|experience_expectant_development]] 经验预期型发育 | 经验预期型发育 | 生物心理学 | 8 |
 | [[03-cards/10-普通心理学/card-explicit_memory|explicit_memory]] 外显记忆 | 外显记忆 | 普通心理学 | 7 |
 | [[03-cards/50-临床与咨询/card-exposure_response_prevention|exposure_response_prevention]] 暴露与反应阻止 | 暴露与反应阻止 | 临床心理学 | 5 |
 | [[03-cards/50-临床与咨询/card-exposure_therapy|exposure_therapy]] 暴露疗法 | 暴露疗法 | 临床心理学 | 7 |
@@ -1358,12 +1495,13 @@ REM 睡眠 -- part-of --> 睡眠阶段
 | [[03-cards/10-普通心理学/card-forgetting_curve|forgetting_curve]] 遗忘曲线与记忆保持 | 遗忘曲线与记忆保持 | 普通心理学 | 3 |
 | [[03-cards/card-forgetting_theories|forgetting_theories]] 遗忘理论 | 遗忘理论 | 普通心理学 | 3 |
 | [[03-cards/10-普通心理学/card-framing_effect|framing_effect]] 框架效应 | 框架效应 | 普通心理学 | 6 |
+| [[03-cards/50-临床与咨询/card-free_association|free_association]] 自由联想 | 自由联想 | 临床心理学 | 4 |
 | [[03-cards/20-社会心理学/card-free_rider_effect|free_rider_effect]] 搭便车效应 | 搭便车效应 | 社会心理学 | 5 |
-| [[03-cards/30-人格心理学/card-fully_functioning_person|fully_functioning_person]] 充分发挥功能的人 | 充分发挥功能的人 | 人格心理学 | 5 |
+| [[03-cards/30-人格心理学/card-fully_functioning_person|fully_functioning_person]] 充分发挥功能的人 | 充分发挥功能的人 | 人格心理学 | 6 |
 | [[03-cards/10-普通心理学/card-functional_fixedness|functional_fixedness]] 功能固着 | 功能固着 | 普通心理学 | 5 |
 | [[03-cards/90-实验心理学/card-functional_localization|functional_localization]] 脑功能定位 | 脑功能定位 | 认知心理学 | 6 |
 | [[03-cards/20-社会心理学/card-fundamental_attribution_error|fundamental_attribution_error]] 基本归因错误 | 基本归因错误 | 社会心理学 | 14 |
-| [[03-cards/10-普通心理学/card-general_adaptation_syndrome|general_adaptation_syndrome]] 一般适应症候群 | 一般适应症候群 | 普通心理学 | 4 |
+| [[03-cards/10-普通心理学/card-general_adaptation_syndrome|general_adaptation_syndrome]] 一般适应症候群 | 一般适应症候群 | 普通心理学 | 6 |
 | [[03-cards/110-变态心理学/card-generalized_anxiety_disorder|generalized_anxiety_disorder]] 广泛性焦虑障碍 | 广泛性焦虑障碍 | 异常心理学 | 9 |
 | [[03-cards/60-发展心理学/card-generativity_vs_stagnation|generativity_vs_stagnation]] 繁衍对停滞 | 繁衍对停滞 | 发展心理学 | 6 |
 | [[03-cards/60-发展心理学/card-gilligan_ethics_of_care|gilligan_ethics_of_care]] 吉利根关怀伦理 | 吉利根关怀伦理 | 发展心理学 | 6 |
@@ -1371,6 +1509,7 @@ REM 睡眠 -- part-of --> 睡眠阶段
 | [[03-cards/card-group_influence|group_influence]] 群体影响 | 群体影响 | 社会心理学 | 17 |
 | [[03-cards/20-社会心理学/card-group_polarization|group_polarization]] 群体极化 | 群体极化 | 社会心理学 | 9 |
 | [[03-cards/20-社会心理学/card-groupthink|groupthink]] 群体思维 | 群体思维 | 社会心理学 | 7 |
+| [[03-cards/100-生理心理学/card-gustatory_system|gustatory_system]] 味觉系统 | 味觉系统 | 生物心理学 | 6 |
 | [[03-cards/20-社会心理学/card-guttman_scale|guttman_scale]] Guttman量表 | Guttman量表 | 社会心理学 | 2 |
 | [[03-cards/60-发展心理学/card-habituation_and_dishabituation|habituation_and_dishabituation]] 习惯化与去习惯化 | 习惯化与去习惯化 | 发展心理学 | 11 |
 | [[03-cards/90-实验心理学/card-hemispheric_specialization|hemispheric_specialization]] 大脑半球特化 | 大脑半球特化 | 认知心理学 | 5 |
@@ -1379,14 +1518,17 @@ REM 睡眠 -- part-of --> 睡眠阶段
 | [[03-cards/110-变态心理学/card-histrionic_personality_disorder|histrionic_personality_disorder]] 表演型人格障碍 | 表演型人格障碍 | 异常心理学 | 8 |
 | [[03-cards/110-变态心理学/card-hoarding_disorder|hoarding_disorder]] 囤积障碍 | 囤积障碍 | 异常心理学 | 3 |
 | [[03-cards/110-变态心理学/card-hopelessness_theory_depression|hopelessness_theory_depression]] 抑郁无望理论 | 抑郁无望理论 | 异常心理学 | 9 |
+| [[03-cards/100-生理心理学/card-hormones_and_circadian_rhythm|hormones_and_circadian_rhythm]] 激素与昼夜节律 | 激素与昼夜节律 | 生物心理学 | 6 |
+| [[03-cards/100-生理心理学/card-hpa_axis|hpa_axis]] 下丘脑-垂体-肾上腺轴 | 下丘脑-垂体-肾上腺轴 | 生物心理学 | 10 |
 | [[03-cards/card-humanistic_personality|humanistic_personality]] 人本主义人格 | 人本主义人格 | 普通心理学 | 1 |
 | [[03-cards/30-人格心理学/card-humanistic_personality_theory|humanistic_personality_theory]] 人本主义人格理论 | 人本主义人格理论 | 人格心理学 | 17 |
-| [[03-cards/50-临床与咨询/card-humanistic_therapy|humanistic_therapy]] 人本主义治疗 | 人本主义治疗 | 临床心理学 | 4 |
+| [[03-cards/50-临床与咨询/card-humanistic_therapy|humanistic_therapy]] 人本主义治疗 | 人本主义治疗 | 临床心理学 | 12 |
 | [[03-cards/card-hypnosis|hypnosis]] 催眠 | 催眠 | 普通心理学 | 2 |
 | [[03-cards/120-统计与测量/card-hypothesis_testing|hypothesis_testing]] 假设检验 | 假设检验 | 普通心理学 | 3 |
 | [[03-cards/30-人格心理学/card-id_ego_superego|id_ego_superego]] 本我、自我与超我 | 本我、自我与超我 | 人格心理学 | 4 |
 | [[03-cards/30-人格心理学/card-ideal_self|ideal_self]] 理想自我 | 理想自我 | 人格心理学 | 6 |
 | [[03-cards/60-发展心理学/card-identity_formation|identity_formation]] 身份认同形成 | 身份认同形成 | 发展心理学 | 7 |
+| [[03-cards/card-illusions|illusions]] 错觉 | 错觉 | 普通心理学 | 3 |
 | [[03-cards/20-社会心理学/card-implementation_intention|implementation_intention]] 执行意向 | 执行意向 | 社会心理学 | 3 |
 | [[03-cards/20-社会心理学/card-implicit_association_test|implicit_association_test]] 内隐联想测验 | 内隐联想测验 | 社会心理学 | 4 |
 | [[03-cards/20-社会心理学/card-implicit_bias|implicit_bias]] 内隐偏见 | 内隐偏见 | 社会心理学 | 8 |
@@ -1423,7 +1565,7 @@ REM 睡眠 -- part-of --> 睡眠阶段
 | [[03-cards/30-人格心理学/card-kelly_personal_construct_theory|kelly_personal_construct_theory]] Kelly个人构念理论 | Kelly个人构念理论 | 人格心理学 | 4 |
 | [[03-cards/70-教育心理学/card-knowledge_representation|knowledge_representation]] 知识表征 | 知识表征 | 教育心理学 | 1 |
 | [[03-cards/60-发展心理学/card-kohlberg_moral_stages|kohlberg_moral_stages]] 科尔伯格道德发展阶段 | 科尔伯格道德发展阶段 | 发展心理学 | 6 |
-| [[03-cards/card-language|language]] 语言 | 语言 | 普通心理学 | 7 |
+| [[03-cards/card-language|language]] 语言 | 语言 | 普通心理学 | 8 |
 | [[03-cards/10-普通心理学/card-language_acquisition_device|language_acquisition_device]] 语言习得装置 | 语言习得装置 | 普通心理学 | 7 |
 | [[03-cards/10-普通心理学/card-language_comprehension|language_comprehension]] 语言理解过程 | 语言理解过程 | 普通心理学 | 4 |
 | [[03-cards/10-普通心理学/card-late_selection_model|late_selection_model]] 晚期选择模型 | 晚期选择模型 | 普通心理学 | 6 |
@@ -1434,7 +1576,7 @@ REM 睡眠 -- part-of --> 睡眠阶段
 | [[03-cards/card-levels_of_processing|levels_of_processing]] 加工水平理论 | 加工水平理论 | 普通心理学 | 6 |
 | [[03-cards/30-人格心理学/card-life_events_and_personality_change|life_events_and_personality_change]] 生活事件与人格变化 | 生活事件与人格变化 | 人格心理学 | 5 |
 | [[03-cards/20-社会心理学/card-likert_scale|likert_scale]] Likert量表 | Likert量表 | 社会心理学 | 6 |
-| [[03-cards/100-生理心理学/card-limbic_system|limbic_system]] 边缘系统 | 边缘系统 | 生物心理学 | 3 |
+| [[03-cards/100-生理心理学/card-limbic_system|limbic_system]] 边缘系统 | 边缘系统 | 生物心理学 | 5 |
 | [[03-cards/100-生理心理学/card-lobes_of_the_brain|lobes_of_the_brain]] 大脑皮层分区 | 大脑皮层分区 | 生物心理学 | 3 |
 | [[03-cards/card-locus_of_control|locus_of_control]] 控制点 | 控制点 | 人格心理学 | 8 |
 | [[03-cards/10-普通心理学/card-long_term_memory_encoding|long_term_memory_encoding]] 长时记忆编码与存储 | 长时记忆编码与存储 | 普通心理学 | 5 |
@@ -1460,18 +1602,23 @@ REM 睡眠 -- part-of --> 睡眠阶段
 | [[03-cards/30-人格心理学/card-mischel_cognitive_affective_personality_system|mischel_cognitive_affective_personality_system]] Mischel认知-情感人格系统 | Mischel认知-情感人格系统 | 人格心理学 | 5 |
 | [[03-cards/30-人格心理学/card-mmpi|mmpi]] 明尼苏达多相人格调查表 | 明尼苏达多相人格调查表 | 人格心理学 | 6 |
 | [[03-cards/20-社会心理学/card-modern_racism|modern_racism]] 现代种族主义 | 现代种族主义 | 社会心理学 | 3 |
+| [[03-cards/50-临床与咨询/card-modern_short_term_dynamic_therapy|modern_short_term_dynamic_therapy]] 现代短程动力治疗 | 现代短程动力治疗 | 临床心理学 | 4 |
 | [[03-cards/60-发展心理学/card-moral_development|moral_development]] 道德发展 | 道德发展 | 发展心理学 | 10 |
+| [[03-cards/card-motion_perception|motion_perception]] 运动知觉 | 运动知觉 | 普通心理学 | 3 |
 | [[03-cards/70-教育心理学/card-motivation_in_education|motivation_in_education]] 教育中的动机 | 教育中的动机 | 教育心理学 | 1 |
 | [[03-cards/10-普通心理学/card-motivation_theories|motivation_theories]] 动机理论 | 动机理论 | 普通心理学 | 17 |
+| [[03-cards/100-生理心理学/card-myelination|myelination]] 髓鞘化 | 髓鞘化 | 生物心理学 | 7 |
 | [[03-cards/110-变态心理学/card-narcissistic_personality_disorder|narcissistic_personality_disorder]] 自恋型人格障碍 | 自恋型人格障碍 | 异常心理学 | 6 |
 | [[03-cards/110-变态心理学/card-negative_symptoms|negative_symptoms]] 阴性症状 | 阴性症状 | 异常心理学 | 6 |
 | [[03-cards/20-社会心理学/card-negotiation_strategies|negotiation_strategies]] 谈判策略 | 谈判策略 | 社会心理学 | 5 |
 | [[03-cards/30-人格心理学/card-neo_pi|neo_pi]] NEO人格量表 | NEO人格量表 | 人格心理学 | 5 |
+| [[03-cards/100-生理心理学/card-nervous_system_development|nervous_system_development]] 神经系统发育 | 神经系统发育 | 生物心理学 | 19 |
+| [[03-cards/100-生理心理学/card-neurogenesis|neurogenesis]] 神经发生 | 神经发生 | 生物心理学 | 7 |
 | [[03-cards/100-生理心理学/card-neuroimaging_comparison|neuroimaging_comparison]] 脑成像技术比较 | 脑成像技术比较 | 生物心理学 | 6 |
-| [[03-cards/100-生理心理学/card-neuron_and_synaptic_transmission|neuron_and_synaptic_transmission]] 神经元与神经传导 | 神经元与神经传导 | 生物心理学 | 8 |
-| [[03-cards/100-生理心理学/card-neuron_structure|neuron_structure]] 神经元结构 | 神经元结构 | 生物心理学 | 4 |
+| [[03-cards/100-生理心理学/card-neuron_and_synaptic_transmission|neuron_and_synaptic_transmission]] 神经元与神经传导 | 神经元与神经传导 | 生物心理学 | 10 |
+| [[03-cards/100-生理心理学/card-neuron_structure|neuron_structure]] 神经元结构 | 神经元结构 | 生物心理学 | 5 |
 | [[03-cards/100-生理心理学/card-neuropsychological_assessment|neuropsychological_assessment]] 神经心理学评估 | 神经心理学评估 | 认知心理学 | 2 |
-| [[03-cards/100-生理心理学/card-neurotransmitters|neurotransmitters]] 神经递质 | 神经递质 | 生物心理学 | 4 |
+| [[03-cards/100-生理心理学/card-neurotransmitters|neurotransmitters]] 神经递质 | 神经递质 | 生物心理学 | 5 |
 | [[03-cards/20-社会心理学/card-normative_social_influence|normative_social_influence]] 规范性社会影响 | 规范性社会影响 | 社会心理学 | 9 |
 | [[03-cards/card-nrem_sleep|nrem_sleep]] NREM 睡眠 | NREM 睡眠 | 普通心理学 | 5 |
 | [[03-cards/60-发展心理学/card-object_permanence|object_permanence]] 客体永久性 | 客体永久性 | 发展心理学 | 10 |
@@ -1480,9 +1627,11 @@ REM 睡眠 -- part-of --> 睡眠阶段
 | [[03-cards/110-变态心理学/card-obsessive_compulsive_disorder|obsessive_compulsive_disorder]] 强迫症 | 强迫症 | 异常心理学 | 11 |
 | [[03-cards/110-变态心理学/card-obsessive_compulsive_personality_disorder|obsessive_compulsive_personality_disorder]] 强迫型人格障碍 | 强迫型人格障碍 | 异常心理学 | 9 |
 | [[03-cards/110-变态心理学/card-obsessive_compulsive_related_disorders|obsessive_compulsive_related_disorders]] 强迫及相关障碍 | 强迫及相关障碍 | 异常心理学 | 12 |
+| [[03-cards/100-生理心理学/card-olfactory_system|olfactory_system]] 嗅觉系统 | 嗅觉系统 | 生物心理学 | 7 |
 | [[03-cards/80-学习心理学/card-operant_conditioning|operant_conditioning]] 操作性条件作用 | 操作性条件作用 | 普通心理学 | 11 |
 | [[03-cards/110-变态心理学/card-oppositional_defiant_disorder|oppositional_defiant_disorder]] 对立违抗障碍 | 对立违抗障碍 | 异常心理学 | 7 |
 | [[03-cards/card-out_group_homogeneity|out_group_homogeneity]] 外群体同质性 | 外群体同质性 | 社会心理学 | 4 |
+| [[03-cards/100-生理心理学/card-pain_perception|pain_perception]] 痛觉知觉 | 痛觉知觉 | 生物心理学 | 5 |
 | [[03-cards/110-变态心理学/card-panic_disorder|panic_disorder]] 惊恐障碍 | 惊恐障碍 | 异常心理学 | 11 |
 | [[03-cards/110-变态心理学/card-paranoid_personality_disorder|paranoid_personality_disorder]] 偏执型人格障碍 | 偏执型人格障碍 | 异常心理学 | 6 |
 | [[03-cards/60-发展心理学/card-parenting_styles|parenting_styles]] 教养方式 | 教养方式 | 发展心理学 | 7 |
@@ -1490,6 +1639,8 @@ REM 睡眠 -- part-of --> 睡眠阶段
 | [[03-cards/30-人格心理学/card-peak_experience|peak_experience]] 高峰体验 | 高峰体验 | 人格心理学 | 4 |
 | [[03-cards/60-发展心理学/card-peer_relationships|peer_relationships]] 同伴关系 | 同伴关系 | 发展心理学 | 8 |
 | [[03-cards/20-社会心理学/card-perceived_behavioral_control|perceived_behavioral_control]] 感知行为控制 | 感知行为控制 | 社会心理学 | 3 |
+| [[03-cards/card-perceptual_constancy|perceptual_constancy]] 知觉恒常性 | 知觉恒常性 | 普通心理学 | 3 |
+| [[03-cards/card-perceptual_organization|perceptual_organization]] 知觉组织 | 知觉组织 | 普通心理学 | 10 |
 | [[03-cards/card-personality_and_individual_differences|personality_and_individual_differences]] 人格与个体差异 | 人格与个体差异 | 人格心理学 | 21 |
 | [[03-cards/30-人格心理学/card-personality_assessment|personality_assessment]] 人格测量 | 人格测量 | 人格心理学 | 10 |
 | [[03-cards/110-变态心理学/card-personality_disorders|personality_disorders]] 人格障碍 | 人格障碍 | 异常心理学 | 28 |
@@ -1499,6 +1650,7 @@ REM 睡眠 -- part-of --> 睡眠阶段
 | [[03-cards/100-生理心理学/card-pet|pet]] 正电子发射断层扫描 | 正电子发射断层扫描 | 生物心理学 | 5 |
 | [[03-cards/60-发展心理学/card-piaget_cognitive_stages|piaget_cognitive_stages]] 皮亚杰认知发展阶段论 | 皮亚杰认知发展阶段论 | 发展心理学 | 21 |
 | [[03-cards/60-发展心理学/card-piaget_play_stages|piaget_play_stages]] 皮亚杰游戏阶段 | 皮亚杰游戏阶段 | 发展心理学 | 5 |
+| [[03-cards/100-生理心理学/card-pituitary_hormones_and_behavior|pituitary_hormones_and_behavior]] 垂体激素与行为 | 垂体激素与行为 | 生物心理学 | 7 |
 | [[03-cards/60-发展心理学/card-play_and_cognitive_development|play_and_cognitive_development]] 游戏与认知发展 | 游戏与认知发展 | 发展心理学 | 11 |
 | [[03-cards/110-变态心理学/card-positive_symptoms|positive_symptoms]] 阳性症状 | 阳性症状 | 异常心理学 | 6 |
 | [[03-cards/110-变态心理学/card-posttraumatic_stress_disorder|posttraumatic_stress_disorder]] 创伤后应激障碍 | 创伤后应激障碍 | 异常心理学 | 17 |
@@ -1512,9 +1664,10 @@ REM 睡眠 -- part-of --> 睡眠阶段
 | [[03-cards/10-普通心理学/card-prospect_theory|prospect_theory]] 前景理论 | 前景理论 | 普通心理学 | 7 |
 | [[03-cards/10-普通心理学/card-prospective_memory|prospective_memory]] 前瞻记忆 | 前瞻记忆 | 普通心理学 | 3 |
 | [[03-cards/card-psychoactive_substances|psychoactive_substances]] 精神活性物质 | 精神活性物质 | 普通心理学 | 1 |
-| [[03-cards/30-人格心理学/card-psychoanalytic_personality_theory|psychoanalytic_personality_theory]] 精神分析人格理论 | 精神分析人格理论 | 人格心理学 | 15 |
-| [[03-cards/50-临床与咨询/card-psychoanalytic_therapy|psychoanalytic_therapy]] 精神分析治疗 | 精神分析治疗 | 临床心理学 | 4 |
+| [[03-cards/30-人格心理学/card-psychoanalytic_personality_theory|psychoanalytic_personality_theory]] 精神分析人格理论 | 精神分析人格理论 | 人格心理学 | 19 |
+| [[03-cards/50-临床与咨询/card-psychoanalytic_therapy|psychoanalytic_therapy]] 精神分析治疗 | 精神分析治疗 | 临床心理学 | 11 |
 | [[03-cards/120-统计与测量/card-psychological_measurement_basics|psychological_measurement_basics]] 心理测量基础 | 心理测量基础 | 普通心理学 | 8 |
+| [[03-cards/card-psychophysics|psychophysics]] 心理物理学 | 心理物理学 | 普通心理学 | 1 |
 | [[03-cards/30-人格心理学/card-psychosexual_stages|psychosexual_stages]] 心理性欲发展阶段 | 心理性欲发展阶段 | 人格心理学 | 5 |
 | [[03-cards/50-临床与咨询/card-psychotherapy_major_approaches|psychotherapy_major_approaches]] 心理治疗主要流派 | 心理治疗主要流派 | 临床心理学 | 14 |
 | [[03-cards/30-人格心理学/card-rank_order_stability|rank_order_stability]] 等级秩序稳定性 | 等级秩序稳定性 | 人格心理学 | 6 |
@@ -1528,7 +1681,7 @@ REM 睡眠 -- part-of --> 睡眠阶段
 | [[03-cards/10-普通心理学/card-representativeness_heuristic|representativeness_heuristic]] 代表性启发 | 代表性启发 | 普通心理学 | 7 |
 | [[03-cards/60-发展心理学/card-retirement_adjustment|retirement_adjustment]] 退休适应 | 退休适应 | 发展心理学 | 4 |
 | [[03-cards/20-社会心理学/card-risky_shift|risky_shift]] 风险转移 | 风险转移 | 社会心理学 | 3 |
-| [[03-cards/30-人格心理学/card-rogers_person_centered_theory|rogers_person_centered_theory]] 罗杰斯以人为中心理论 | 罗杰斯以人为中心理论 | 人格心理学 | 13 |
+| [[03-cards/30-人格心理学/card-rogers_person_centered_theory|rogers_person_centered_theory]] 罗杰斯以人为中心理论 | 罗杰斯以人为中心理论 | 人格心理学 | 16 |
 | [[03-cards/card-romantic_love|romantic_love]] 浪漫爱情 | 浪漫爱情 | 社会心理学 | 8 |
 | [[03-cards/30-人格心理学/card-rotter_locus_of_control|rotter_locus_of_control]] Rotter控制点理论 | Rotter控制点理论 | 人格心理学 | 5 |
 | [[03-cards/110-变态心理学/card-rumination|rumination]] 反刍 | 反刍 | 异常心理学 | 10 |
@@ -1543,7 +1696,7 @@ REM 睡眠 -- part-of --> 睡眠阶段
 | [[03-cards/60-发展心理学/card-secure_base|secure_base]] 安全基地与避风港 | 安全基地与避风港 | 发展心理学 | 4 |
 | [[03-cards/10-普通心理学/card-selective_attention|selective_attention]] 选择性注意 | 选择性注意 | 普通心理学 | 10 |
 | [[03-cards/30-人格心理学/card-self_actualization|self_actualization]] 自我实现 | 自我实现 | 人格心理学 | 6 |
-| [[03-cards/card-self_concept|self_concept]] 自我概念 | 自我概念 | general_psychology, social_psychology | 27 |
+| [[03-cards/card-self_concept|self_concept]] 自我概念 | 自我概念 | general_psychology, social_psychology | 28 |
 | [[03-cards/10-普通心理学/card-self_determination_theory|self_determination_theory]] 自我决定理论 | 自我决定理论 | 普通心理学 | 6 |
 | [[03-cards/card-self_efficacy|self_efficacy]] 自我效能感 | 自我效能感 | 人格心理学 | 16 |
 | [[03-cards/20-社会心理学/card-self_esteem|self_esteem]] 自尊 | 自尊 | 社会心理学 | 4 |
@@ -1555,10 +1708,14 @@ REM 睡眠 -- part-of --> 睡眠阶段
 | [[03-cards/20-社会心理学/card-self_serving_bias|self_serving_bias]] 自我服务偏差 | 自我服务偏差 | 社会心理学 | 9 |
 | [[03-cards/20-社会心理学/card-semantic_differential|semantic_differential]] 语义差异量表 | 语义差异量表 | 社会心理学 | 2 |
 | [[03-cards/10-普通心理学/card-semantic_memory|semantic_memory]] 语义记忆 | 语义记忆 | 普通心理学 | 4 |
+| [[03-cards/card-sensation_and_perception|sensation_and_perception]] 感觉与知觉 | 感觉与知觉 | 普通心理学 | 8 |
+| [[03-cards/100-生理心理学/card-sensory_coding|sensory_coding]] 感觉编码 | 感觉编码 | 生物心理学 | 12 |
 | [[03-cards/10-普通心理学/card-sensory_memory|sensory_memory]] 感觉记忆 | 感觉记忆 | 普通心理学 | 4 |
+| [[03-cards/100-生理心理学/card-sensory_nervous_system|sensory_nervous_system]] 感觉神经系统 | 感觉神经系统 | 生物心理学 | 16 |
+| [[03-cards/100-生理心理学/card-sex_hormones_and_behavior|sex_hormones_and_behavior]] 性激素与行为 | 性激素与行为 | 生物心理学 | 5 |
 | [[03-cards/10-普通心理学/card-short_term_memory|short_term_memory]] 短时记忆 | 短时记忆 | 普通心理学 | 6 |
 | [[03-cards/30-人格心理学/card-skinner_operant_behaviorism_personality|skinner_operant_behaviorism_personality]] 斯金纳操作性行为主义人格观 | 斯金纳操作性行为主义人格观 | 人格心理学 | 5 |
-| [[03-cards/card-sleep_stages|sleep_stages]] 睡眠阶段 | 睡眠阶段 | 普通心理学 | 5 |
+| [[03-cards/card-sleep_stages|sleep_stages]] 睡眠阶段 | 睡眠阶段 | 普通心理学 | 6 |
 | [[03-cards/110-变态心理学/card-social_anxiety_disorder|social_anxiety_disorder]] 社交焦虑障碍 | 社交焦虑障碍 | 异常心理学 | 8 |
 | [[03-cards/20-社会心理学/card-social_cognitive_bias|social_cognitive_bias]] 社会认知偏差 | 社会认知偏差 | 社会心理学 | 17 |
 | [[03-cards/30-人格心理学/card-social_cognitive_personality_theory|social_cognitive_personality_theory]] 社会认知人格理论 | 社会认知人格理论 | 人格心理学 | 11 |
@@ -1571,6 +1728,7 @@ REM 睡眠 -- part-of --> 睡眠阶段
 | [[03-cards/20-社会心理学/card-social_loafing|social_loafing]] 社会惰化 | 社会惰化 | 社会心理学 | 7 |
 | [[03-cards/60-发展心理学/card-sociodramatic_play|sociodramatic_play]] 社会戏剧性游戏 | 社会戏剧性游戏 | 发展心理学 | 7 |
 | [[03-cards/60-发展心理学/card-socioemotional_selectivity_theory|socioemotional_selectivity_theory]] 社会情绪选择理论 | 社会情绪选择理论 | 发展心理学 | 5 |
+| [[03-cards/100-生理心理学/card-somatosensory_system|somatosensory_system]] 体感系统 | 体感系统 | 生物心理学 | 7 |
 | [[03-cards/20-社会心理学/card-source_credibility|source_credibility]] 信息源可信度 | 信息源可信度 | 社会心理学 | 4 |
 | [[03-cards/10-普通心理学/card-speech_production|speech_production]] 言语产生 | 言语产生 | 普通心理学 | 4 |
 | [[03-cards/100-生理心理学/card-split_brain_research|split_brain_research]] 裂脑研究 | 裂脑研究 | 认知心理学 | 5 |
@@ -1581,8 +1739,9 @@ REM 睡眠 -- part-of --> 睡眠阶段
 | [[03-cards/20-社会心理学/card-stereotype_lift|stereotype_lift]] 刻板印象提升 | 刻板印象提升 | 社会心理学 | 5 |
 | [[03-cards/20-社会心理学/card-stereotype_threat|stereotype_threat]] 刻板印象威胁 | 刻板印象威胁 | 社会心理学 | 10 |
 | [[03-cards/60-发展心理学/card-strange_situation|strange_situation]] 陌生情境实验 | 陌生情境实验 | 发展心理学 | 7 |
-| [[03-cards/card-stress_and_coping|stress_and_coping]] 应激与应对 | 应激与应对 | 普通心理学 | 7 |
+| [[03-cards/card-stress_and_coping|stress_and_coping]] 应激与应对 | 应激与应对 | 普通心理学 | 9 |
 | [[03-cards/10-普通心理学/card-stress_and_immunity|stress_and_immunity]] 应激与免疫 | 应激与免疫 | 普通心理学 | 4 |
+| [[03-cards/100-生理心理学/card-stress_hormones|stress_hormones]] 应激激素 | 应激激素 | 生物心理学 | 9 |
 | [[03-cards/10-普通心理学/card-stroop_effect|stroop_effect]] Stroop 效应 | Stroop 效应 | 普通心理学 | 4 |
 | [[03-cards/20-社会心理学/card-subjective_norm|subjective_norm]] 主观规范 | 主观规范 | 社会心理学 | 3 |
 | [[03-cards/110-变态心理学/card-substance_use_disorders|substance_use_disorders]] 物质使用障碍 | 物质使用障碍 | 异常心理学 | 10 |
@@ -1591,6 +1750,7 @@ REM 睡眠 -- part-of --> 睡眠阶段
 | [[03-cards/60-发展心理学/card-symbolic_pretend_play|symbolic_pretend_play]] 象征性假装游戏 | 象征性假装游戏 | 发展心理学 | 7 |
 | [[03-cards/20-社会心理学/card-symbolic_racism|symbolic_racism]] 象征性种族主义 | 象征性种族主义 | 社会心理学 | 4 |
 | [[03-cards/100-生理心理学/card-synaptic_transmission|synaptic_transmission]] 突触传递 | 突触传递 | 生物心理学 | 7 |
+| [[03-cards/100-生理心理学/card-synaptogenesis|synaptogenesis]] 突触发生 | 突触发生 | 生物心理学 | 12 |
 | [[03-cards/120-统计与测量/card-t_test|t_test]] t检验 | t检验 | 普通心理学 | 3 |
 | [[03-cards/60-发展心理学/card-temperament|temperament]] 气质 | 气质 | 发展心理学 | 14 |
 | [[03-cards/30-人格心理学/card-temperament_and_personality_continuity|temperament_and_personality_continuity]] 气质与人格连续性 | 气质与人格连续性 | 人格心理学 | 7 |
@@ -1601,17 +1761,21 @@ REM 睡眠 -- part-of --> 睡眠阶段
 | [[03-cards/50-临床与咨询/card-third_wave_cbt|third_wave_cbt]] 第三波认知行为治疗 | 第三波认知行为治疗 | 临床心理学 | 5 |
 | [[03-cards/card-three_stage_memory_model|three_stage_memory_model]] 记忆的三级模型 | 记忆的三级模型 | 普通心理学 | 14 |
 | [[03-cards/20-社会心理学/card-thurstone_scale|thurstone_scale]] Thurstone量表 | Thurstone量表 | 社会心理学 | 2 |
+| [[03-cards/100-生理心理学/card-thyroid_hormones_and_behavior|thyroid_hormones_and_behavior]] 甲状腺激素与行为 | 甲状腺激素与行为 | 生物心理学 | 5 |
 | [[03-cards/100-生理心理学/card-tms|tms]] 经颅磁刺激 | 经颅磁刺激 | 生物心理学 | 5 |
 | [[03-cards/110-变态心理学/card-tolerance_withdrawal|tolerance_withdrawal]] 耐受与戒断 | 耐受与戒断 | 异常心理学 | 6 |
 | [[03-cards/100-生理心理学/card-transcranial_magnetic_stimulation|transcranial_magnetic_stimulation]] 经颅磁刺激 | 经颅磁刺激 | 认知心理学 | 2 |
 | [[03-cards/70-教育心理学/card-transfer_of_learning|transfer_of_learning]] 学习迁移 | 学习迁移 | 教育心理学 | 6 |
+| [[03-cards/50-临床与咨询/card-transference|transference]] 移情 | 移情 | 临床心理学 | 4 |
 | [[03-cards/110-变态心理学/card-trauma_and_stressor_related_disorders|trauma_and_stressor_related_disorders]] 创伤与应激相关障碍 | 创伤与应激相关障碍 | 异常心理学 | 15 |
 | [[03-cards/card-triangular_theory_of_love|triangular_theory_of_love]] 爱情三元理论 | 爱情三元理论 | 社会心理学 | 6 |
 | [[03-cards/110-变态心理学/card-trichotillomania|trichotillomania]] 拔毛癖 | 拔毛癖 | 异常心理学 | 4 |
 | [[03-cards/20-社会心理学/card-ultimate_attribution_error|ultimate_attribution_error]] 终极归因错误 | 终极归因错误 | 社会心理学 | 6 |
-| [[03-cards/30-人格心理学/card-unconditional_positive_regard|unconditional_positive_regard]] 无条件积极关注 | 无条件积极关注 | 人格心理学 | 6 |
+| [[03-cards/30-人格心理学/card-unconditional_positive_regard|unconditional_positive_regard]] 无条件积极关注 | 无条件积极关注 | 人格心理学 | 7 |
 | [[03-cards/120-统计与测量/card-validity|validity]] 效度 | 效度 | 普通心理学 | 4 |
 | [[03-cards/60-发展心理学/card-violation_of_expectation|violation_of_expectation]] 违反预期范式 | 违反预期范式 | 发展心理学 | 7 |
+| [[03-cards/card-visual_perception|visual_perception]] 视觉知觉 | 视觉知觉 | 普通心理学 | 4 |
+| [[03-cards/100-生理心理学/card-visual_system|visual_system]] 视觉系统 | 视觉系统 | 生物心理学 | 6 |
 | [[03-cards/60-发展心理学/card-vygotsky_play_theory|vygotsky_play_theory]] 维果茨基游戏理论 | 维果茨基游戏理论 | 发展心理学 | 6 |
 | [[03-cards/60-发展心理学/card-vygotsky_sociocultural_theory|vygotsky_sociocultural_theory]] 维果茨基社会文化理论 | 维果茨基社会文化理论 | 发展心理学 | 11 |
 | [[03-cards/20-社会心理学/card-weiner_attribution_theory|weiner_attribution_theory]] Weiner归因理论 | Weiner归因理论 | 社会心理学 | 5 |
@@ -1666,37 +1830,7 @@ REM 睡眠 -- part-of --> 睡眠阶段
 | [[03-cards/130-基础与进化/card-shared_environment|shared_environment]] 共享环境 | 共享环境 | 生物心理学 | 8 |
 | [[03-cards/130-基础与进化/card-twin_studies|twin_studies]] 双生子研究 | 双生子研究 | 生物心理学 | 6 |
 
-### 3. [[03-cards/card-perceptual_organization|perceptual_organization]] 知觉组织（普通心理学）
-
-```
-听觉知觉 -- part-of --> 感觉与知觉
-深度知觉 -- part-of --> 感觉与知觉
-深度知觉 -- part-of --> 知觉组织
-错觉 -- part-of --> 感觉与知觉
-错觉 -- contrasts --> 知觉组织
-运动知觉 -- part-of --> 感觉与知觉
-运动知觉 -- part-of --> 知觉组织
-知觉恒常性 -- part-of --> 感觉与知觉
-知觉恒常性 -- part-of --> 知觉组织
-知觉组织 -- part-of --> 感觉与知觉
-心理物理学 -- part-of --> 感觉与知觉
-视觉知觉 -- part-of --> 感觉与知觉
-视觉知觉 -- correlates-with --> 知觉组织
-```
-
-| 成员 | 中文名 | 学科 | 簇内连接数 |
-|------|--------|------|-----------|
-| [[03-cards/card-perceptual_organization|perceptual_organization]] 知觉组织 | 知觉组织 | 普通心理学 | 10 |
-| [[03-cards/card-auditory_perception|auditory_perception]] 听觉知觉 | 听觉知觉 | 普通心理学 | 1 |
-| [[03-cards/card-depth_perception|depth_perception]] 深度知觉 | 深度知觉 | 普通心理学 | 3 |
-| [[03-cards/card-illusions|illusions]] 错觉 | 错觉 | 普通心理学 | 3 |
-| [[03-cards/card-motion_perception|motion_perception]] 运动知觉 | 运动知觉 | 普通心理学 | 3 |
-| [[03-cards/card-perceptual_constancy|perceptual_constancy]] 知觉恒常性 | 知觉恒常性 | 普通心理学 | 3 |
-| [[03-cards/card-psychophysics|psychophysics]] 心理物理学 | 心理物理学 | 普通心理学 | 1 |
-| [[03-cards/card-sensation_and_perception|sensation_and_perception]] 感觉与知觉 | 感觉与知觉 | 普通心理学 | 8 |
-| [[03-cards/card-visual_perception|visual_perception]] 视觉知觉 | 视觉知觉 | 普通心理学 | 2 |
-
-### 4. [[03-cards/90-实验心理学/card-experimental_design_basics|experimental_design_basics]] 实验设计基础（实验心理学）
+### 3. [[03-cards/90-实验心理学/card-experimental_design_basics|experimental_design_basics]] 实验设计基础（实验心理学）
 
 ```
 被试间设计 -- part-of --> 实验设计基础
@@ -1724,7 +1858,7 @@ REM 睡眠 -- part-of --> 睡眠阶段
 | [[03-cards/90-实验心理学/card-variables_in_experiments|variables_in_experiments]] 实验变量 | 实验变量 | 实验心理学 | 4 |
 | [[03-cards/90-实验心理学/card-within_subjects_design|within_subjects_design]] 被试内设计 | 被试内设计 | 实验心理学 | 6 |
 
-### 5. [[03-cards/card-needs-vs-tests-2026|需求与测试的边界]]（亲密关系 / 沟通心理学 / 依恋理论）
+### 4. [[03-cards/card-needs-vs-tests-2026|需求与测试的边界]]（亲密关系 / 沟通心理学 / 依恋理论）
 
 ```
 坚定选择测试陷阱 -- contrasts --> 需求与测试的边界
@@ -1743,7 +1877,7 @@ REM 睡眠 -- part-of --> 睡眠阶段
 | [[03-cards/card-loosening-structure-techniques-2026|松动结构的日常技术]] |  | 临床心理学 / 叙事治疗 / 接纳承诺治疗 / 亲密关系 | 2 |
 | [[03-cards/card-structure-expectation-loop-2026|结构-预期-自我实现循环]] |  | 社会心理学 / 依恋理论 / 家庭系统治疗 | 3 |
 
-### 6. [[03-cards/20-社会心理学/card-altruism|altruism]] 利他主义（社会心理学）
+### 5. [[03-cards/20-社会心理学/card-altruism|altruism]] 利他主义（社会心理学）
 
 ```
 利他主义 -- is-a --> 亲社会行为
@@ -1757,31 +1891,31 @@ REM 睡眠 -- part-of --> 睡眠阶段
 | [[03-cards/20-社会心理学/card-bystander_effect|bystander_effect]] 旁观者效应 | 旁观者效应 | 社会心理学 | 3 |
 | [[03-cards/card-prosocial_behavior|prosocial_behavior]] 亲社会行为 | 亲社会行为 | 社会心理学 | 2 |
 
-### 7. [[03-cards/card-evolutionary-mismatch|evolutionary_mismatch]]（evolutionary psychology）
+### 6. [[03-cards/card-evolutionary-mismatch|evolutionary_mismatch]]（evolutionary psychology）
 
 | 成员 | 中文名 | 学科 | 簇内连接数 |
 |------|--------|------|-----------|
 | [[03-cards/card-evolutionary-mismatch|evolutionary_mismatch]] |  | evolutionary psychology | 0 |
 
-### 8. [[03-cards/card-intelligence_theories|intelligence_theories]] 智力理论（普通心理学）
+### 7. [[03-cards/card-intelligence_theories|intelligence_theories]] 智力理论（普通心理学）
 
 | 成员 | 中文名 | 学科 | 簇内连接数 |
 |------|--------|------|-----------|
 | [[03-cards/card-intelligence_theories|intelligence_theories]] 智力理论 | 智力理论 | 普通心理学 | 0 |
 
-### 9. [[03-cards/card-obedience|obedience]] 服从（社会心理学）
+### 8. [[03-cards/card-obedience|obedience]] 服从（社会心理学）
 
 | 成员 | 中文名 | 学科 | 簇内连接数 |
 |------|--------|------|-----------|
 | [[03-cards/card-obedience|obedience]] 服从 | 服从 | 社会心理学 | 0 |
 
-### 10. [[03-cards/card-psychology-definition|psychology]]（general）
+### 9. [[03-cards/card-psychology-definition|psychology]]（general）
 
 | 成员 | 中文名 | 学科 | 簇内连接数 |
 |------|--------|------|-----------|
 | [[03-cards/card-psychology-definition|psychology]] |  | general | 0 |
 
-### 11. [[03-cards/60-发展心理学/card-test_hook_verification|test_hook_verification]] 测试钩子验证（发展心理学）
+### 10. [[03-cards/60-发展心理学/card-test_hook_verification|test_hook_verification]] 测试钩子验证（发展心理学）
 
 | 成员 | 中文名 | 学科 | 簇内连接数 |
 |------|--------|------|-----------|
@@ -1805,13 +1939,13 @@ REM 睡眠 -- part-of --> 睡眠阶段
 
 | 关系类型 | 数量 |
 |---------|------|
-| part-of | 374 |
-| correlates-with | 304 |
-| supports | 241 |
-| contrasts | 158 |
-| is-a | 148 |
-| applies-to | 146 |
-| extends | 89 |
+| part-of | 439 |
+| correlates-with | 352 |
+| supports | 255 |
+| contrasts | 163 |
+| applies-to | 153 |
+| is-a | 152 |
+| extends | 91 |
 | related-to | 30 |
-| causes | 21 |
+| causes | 22 |
 | requires | 2 |
