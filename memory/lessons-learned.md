@@ -1,10 +1,13 @@
 ---
 name: lessons-learned
-description: 使用过程中的经验教训与踩坑记录，持续更新
+description: 失败案例复盘库——只在同类错误已发生后按需读取，禁止作为任务前置参考
 metadata: 
   node_type: memory
   created: 2026-06-11
+  updated: 2026-07-07
   type: feedback
+  read_when: 当前任务已经明确踩到对应坑，需要复盘根因和改进措施
+  do_not_read_when: 作为批量任务、新任务或常规流程的“先读一遍”参考
   originSessionId: c794b212-8fb7-4879-aee3-b25dc32336a6
 ---
 

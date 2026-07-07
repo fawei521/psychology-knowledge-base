@@ -21,7 +21,7 @@
 - [执行指令无需反复确认](execute-without-confirm.md) — 听懂后直接执行，听不懂才问
 - [规则系统维护闭环](rule-maintenance-loop.md) — 修改规则文件时的标准流程（修改规则文件时 hook 自动提醒）
 - [用户档案](user-profile.md) — 用户提到身份/偏好时按需读取（信息已陈旧，参考价值有限）
-- [经验教训 / 错题本](lessons-learned.md) — 涉及编码/脚本/批量操作时如出现错误则按需读取
+- [经验教训 / 错题本](lessons-learned.md) — 涉及编码/脚本/批量操作时如出现错误则按需读取，当前操作已经明确失败后复盘用，禁止作为任务前置参考
 - [禁止重复失败操作](no-repetitive-failed-operations.md) — **严重错误记录**：失败后不得自动重试，禁用 subagent 做文件扫描
 - [工作区约定](workspace-setup.md) — 涉及磁盘/配置迁移时按需读取（迁移已完成，日常用不到）
 - [工作原则：系统性思维](work-principles-systemic-thinking.md) — 处理非琐碎任务、设计工作流或规则时按需读取
