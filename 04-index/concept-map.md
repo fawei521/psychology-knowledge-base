@@ -6,10 +6,10 @@
 
 ## 概览
 
-- 总卡片数：496
+- 总卡片数：502
 - 概念簇数：10
 - 孤立卡片数：0
-- 关系总数：1701
+- 关系总数：1728
 
 ## 概念簇
 
@@ -629,17 +629,37 @@ C群人格障碍 -- supports --> 强迫型人格障碍
 拔毛癖 -- is-a --> 强迫及相关障碍
 方差分析基础 -- is-a --> 假设检验
 方差分析基础 -- extends --> t检验
+经典测量理论 -- is-a --> 心理测量基础
+经典测量理论 -- supports --> 项目分析
+经典测量理论 -- supports --> 信度
+经典测量理论 -- supports --> 效度
+经典测量理论 -- supports --> 项目难度
+经典测量理论 -- supports --> 项目区分度
 置信区间 -- part-of --> 抽样与实验误差
 置信区间 -- part-of --> 标准误
 置信区间 -- correlates-with --> 假设检验
 置信区间 -- supports --> 抽样分布
 描述统计 -- part-of --> 心理测量基础
+选项分析 -- part-of --> 项目分析
+选项分析 -- correlates-with --> 项目难度
+选项分析 -- correlates-with --> 项目区分度
 效应量 -- part-of --> 抽样与实验误差
 效应量 -- correlates-with --> 统计检验力
 效应量 -- correlates-with --> 置信区间
 假设检验 -- is-a --> 推断统计
 推断统计 -- part-of --> 心理测量基础
 推断统计 -- extends --> 描述统计
+项目分析 -- is-a --> 心理测量基础
+项目分析 -- part-of --> 项目难度
+项目分析 -- part-of --> 项目区分度
+项目分析 -- supports --> 信度
+项目分析 -- supports --> 效度
+项目难度 -- correlates-with --> 项目区分度
+项目区分度 -- supports --> 信度
+项目区分度 -- supports --> 效度
+项目区分度 -- is-a --> 项目总分相关
+项目总分相关 -- part-of --> 项目分析
+项目总分相关 -- supports --> 信度
 测量水平 -- part-of --> 心理测量基础
 信度 -- part-of --> 心理测量基础
 信度 -- supports --> 效度
@@ -1424,6 +1444,7 @@ REM 睡眠 -- part-of --> 睡眠阶段
 | [[03-cards/100-生理心理学/card-cerebral_cortex|cerebral_cortex]] 大脑皮层 | 大脑皮层 | 生物心理学 | 5 |
 | [[03-cards/110-变态心理学/card-childhood_adolescent_psychopathology|childhood_adolescent_psychopathology]] 儿童青少年心理障碍 | 儿童青少年心理障碍 | 异常心理学 | 9 |
 | [[03-cards/80-学习心理学/card-classical_conditioning|classical_conditioning]] 经典条件作用 | 经典条件作用 | 普通心理学 | 7 |
+| [[03-cards/120-统计与测量/card-classical_test_theory|classical_test_theory]] 经典测量理论 | 经典测量理论 | psychometrics | 8 |
 | [[03-cards/50-临床与咨询/card-client_centered_therapy|client_centered_therapy]] 来访者中心疗法 | 来访者中心疗法 | 临床心理学 | 7 |
 | [[03-cards/110-变态心理学/card-cluster_a_personality_disorders|cluster_a_personality_disorders]] A群人格障碍 | A群人格障碍 | 异常心理学 | 9 |
 | [[03-cards/110-变态心理学/card-cluster_b_personality_disorders|cluster_b_personality_disorders]] B群人格障碍 | B群人格障碍 | 异常心理学 | 10 |
@@ -1476,6 +1497,7 @@ REM 睡眠 -- part-of --> 睡眠阶段
 | [[03-cards/110-变态心理学/card-dissociative_disorders|dissociative_disorders]] 分离障碍 | 分离障碍 | 异常心理学 | 11 |
 | [[03-cards/110-变态心理学/card-dissociative_identity_disorder|dissociative_identity_disorder]] 分离性身份障碍 | 分离性身份障碍 | 异常心理学 | 9 |
 | [[03-cards/20-社会心理学/card-distraction_conflict_theory|distraction_conflict_theory]] 分心-冲突理论 | 分心-冲突理论 | 社会心理学 | 2 |
+| [[03-cards/120-统计与测量/card-distractor_analysis|distractor_analysis]] 选项分析 | 选项分析 | psychometrics | 4 |
 | [[03-cards/10-普通心理学/card-divided_attention|divided_attention]] 分配性注意 | 分配性注意 | 普通心理学 | 3 |
 | [[03-cards/20-社会心理学/card-door_in_the_face_technique|door_in_the_face_technique]] 留面子效应 | 留面子效应 | 社会心理学 | 6 |
 | [[03-cards/110-变态心理学/card-dopamine_hypothesis|dopamine_hypothesis]] 多巴胺假说 | 多巴胺假说 | 异常心理学 | 8 |
@@ -1585,6 +1607,10 @@ REM 睡眠 -- part-of --> 睡眠阶段
 | [[03-cards/110-变态心理学/card-intolerance_of_uncertainty|intolerance_of_uncertainty]] 不确定性不耐受 | 不确定性不耐受 | 异常心理学 | 7 |
 | [[03-cards/10-普通心理学/card-intrinsic_motivation|intrinsic_motivation]] 内在动机 | 内在动机 | 普通心理学 | 6 |
 | [[03-cards/20-社会心理学/card-investment_model|investment_model]] 投资模型 | 投资模型 | 社会心理学 | 6 |
+| [[03-cards/120-统计与测量/card-item_analysis|item_analysis]] 项目分析 | 项目分析 | psychometrics | 12 |
+| [[03-cards/120-统计与测量/card-item_difficulty|item_difficulty]] 项目难度 | 项目难度 | psychometrics | 7 |
+| [[03-cards/120-统计与测量/card-item_discrimination|item_discrimination]] 项目区分度 | 项目区分度 | psychometrics | 10 |
+| [[03-cards/120-统计与测量/card-item_total_correlation|item_total_correlation]] 项目总分相关 | 项目总分相关 | psychometrics | 4 |
 | [[03-cards/10-普通心理学/card-james_lange_theory|james_lange_theory]] 詹姆斯-兰格情绪理论 | 詹姆斯-兰格情绪理论 | 普通心理学 | 8 |
 | [[03-cards/30-人格心理学/card-jung_analytical_psychology|jung_analytical_psychology]] 荣格分析心理学 | 荣格分析心理学 | 人格心理学 | 2 |
 | [[03-cards/20-社会心理学/card-kelley_covariation_model|kelley_covariation_model]] Kelley协变模型 | Kelley协变模型 | 社会心理学 | 3 |
@@ -1692,7 +1718,7 @@ REM 睡眠 -- part-of --> 睡眠阶段
 | [[03-cards/card-psychoactive_substances|psychoactive_substances]] 精神活性物质 | 精神活性物质 | 普通心理学 | 1 |
 | [[03-cards/30-人格心理学/card-psychoanalytic_personality_theory|psychoanalytic_personality_theory]] 精神分析人格理论 | 精神分析人格理论 | 人格心理学 | 19 |
 | [[03-cards/50-临床与咨询/card-psychoanalytic_therapy|psychoanalytic_therapy]] 精神分析治疗 | 精神分析治疗 | 临床心理学 | 11 |
-| [[03-cards/120-统计与测量/card-psychological_measurement_basics|psychological_measurement_basics]] 心理测量基础 | 心理测量基础 | 普通心理学 | 8 |
+| [[03-cards/120-统计与测量/card-psychological_measurement_basics|psychological_measurement_basics]] 心理测量基础 | 心理测量基础 | 普通心理学 | 10 |
 | [[03-cards/card-psychophysics|psychophysics]] 心理物理学 | 心理物理学 | 普通心理学 | 1 |
 | [[03-cards/30-人格心理学/card-psychosexual_stages|psychosexual_stages]] 心理性欲发展阶段 | 心理性欲发展阶段 | 人格心理学 | 5 |
 | [[03-cards/50-临床与咨询/card-psychotherapy_major_approaches|psychotherapy_major_approaches]] 心理治疗主要流派 | 心理治疗主要流派 | 临床心理学 | 14 |
@@ -1702,7 +1728,7 @@ REM 睡眠 -- part-of --> 睡眠阶段
 | [[03-cards/30-人格心理学/card-reciprocal_determinism|reciprocal_determinism]] 交互决定论 | 交互决定论 | 人格心理学 | 5 |
 | [[03-cards/110-变态心理学/card-relapse_prevention|relapse_prevention]] 复发预防 | 复发预防 | 临床心理学 | 6 |
 | [[03-cards/20-社会心理学/card-relationship_satisfaction|relationship_satisfaction]] 关系满意度 | 关系满意度 | 社会心理学 | 4 |
-| [[03-cards/120-统计与测量/card-reliability|reliability]] 信度 | 信度 | 普通心理学 | 3 |
+| [[03-cards/120-统计与测量/card-reliability|reliability]] 信度 | 信度 | 普通心理学 | 7 |
 | [[03-cards/card-rem_sleep|rem_sleep]] REM 睡眠 | REM 睡眠 | 普通心理学 | 7 |
 | [[03-cards/10-普通心理学/card-representativeness_heuristic|representativeness_heuristic]] 代表性启发 | 代表性启发 | 普通心理学 | 7 |
 | [[03-cards/60-发展心理学/card-retirement_adjustment|retirement_adjustment]] 退休适应 | 退休适应 | 发展心理学 | 4 |
@@ -1804,7 +1830,7 @@ REM 睡眠 -- part-of --> 睡眠阶段
 | [[03-cards/120-统计与测量/card-type_ii_error|type_ii_error]] II 型错误 | II 型错误 | psychometrics | 7 |
 | [[03-cards/20-社会心理学/card-ultimate_attribution_error|ultimate_attribution_error]] 终极归因错误 | 终极归因错误 | 社会心理学 | 6 |
 | [[03-cards/30-人格心理学/card-unconditional_positive_regard|unconditional_positive_regard]] 无条件积极关注 | 无条件积极关注 | 人格心理学 | 7 |
-| [[03-cards/120-统计与测量/card-validity|validity]] 效度 | 效度 | 普通心理学 | 4 |
+| [[03-cards/120-统计与测量/card-validity|validity]] 效度 | 效度 | 普通心理学 | 7 |
 | [[03-cards/60-发展心理学/card-violation_of_expectation|violation_of_expectation]] 违反预期范式 | 违反预期范式 | 发展心理学 | 7 |
 | [[03-cards/card-visual_perception|visual_perception]] 视觉知觉 | 视觉知觉 | 普通心理学 | 4 |
 | [[03-cards/100-生理心理学/card-visual_system|visual_system]] 视觉系统 | 视觉系统 | 生物心理学 | 6 |
@@ -1979,11 +2005,11 @@ REM 睡眠 -- part-of --> 睡眠阶段
 
 | 关系类型 | 数量 |
 |---------|------|
-| part-of | 457 |
-| correlates-with | 360 |
-| supports | 261 |
+| part-of | 464 |
+| correlates-with | 364 |
+| supports | 273 |
 | contrasts | 169 |
-| is-a | 155 |
+| is-a | 159 |
 | applies-to | 153 |
 | extends | 91 |
 | related-to | 30 |
