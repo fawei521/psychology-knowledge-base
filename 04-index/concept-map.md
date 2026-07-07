@@ -6,10 +6,10 @@
 
 ## 概览
 
-- 总卡片数：532
+- 总卡片数：541
 - 概念簇数：10
 - 孤立卡片数：0
-- 关系总数：1859
+- 关系总数：1911
 
 ## 概念簇
 
@@ -635,6 +635,10 @@ C群人格障碍 -- supports --> 强迫型人格障碍
 经典测量理论 -- supports --> 效度
 经典测量理论 -- supports --> 项目难度
 经典测量理论 -- supports --> 项目区分度
+决定系数 -- part-of --> 相关与回归基础
+决定系数 -- supports --> Pearson相关系数
+决定系数 -- supports --> 线性回归
+决定系数 -- supports --> 多元回归
 置信区间 -- part-of --> 抽样与实验误差
 置信区间 -- part-of --> 标准误
 置信区间 -- correlates-with --> 假设检验
@@ -648,6 +652,17 @@ C群人格障碍 -- supports --> 强迫型人格障碍
 构念效度 -- part-of --> 效度验证
 内容效度 -- is-a --> 效度
 内容效度 -- part-of --> 效度验证
+相关与回归基础 -- is-a --> 描述统计
+相关与回归基础 -- is-a --> 推断统计
+相关与回归基础 -- part-of --> Pearson相关系数
+相关与回归基础 -- part-of --> 协方差
+相关与回归基础 -- part-of --> 线性回归
+相关与回归基础 -- part-of --> 回归方程
+相关与回归基础 -- part-of --> 多元回归
+相关与回归基础 -- part-of --> 最小二乘法
+相关与回归基础 -- part-of --> 估计标准误差
+协方差 -- supports --> Pearson相关系数
+协方差 -- is-a --> 描述统计
 效标效度 -- is-a --> 效度
 效标效度 -- part-of --> 效度验证
 克龙巴赫α系数 -- is-a --> 内部一致性信度
@@ -708,7 +723,17 @@ IRT基本假设 -- supports --> 项目信息函数
 项目反应理论 -- part-of --> 三参数Logistic模型
 项目总分相关 -- part-of --> 项目分析
 项目总分相关 -- supports --> 信度
+最小二乘法 -- supports --> 线性回归
+最小二乘法 -- supports --> 多元回归
+最小二乘法 -- supports --> 回归方程
+最小二乘法 -- supports --> 估计标准误差
+线性回归 -- correlates-with --> Pearson相关系数
+线性回归 -- part-of --> 回归方程
+线性回归 -- supports --> 估计标准误差
+线性回归 -- extends --> 多元回归
 测量水平 -- part-of --> 心理测量基础
+多元回归 -- part-of --> 回归方程
+多元回归 -- supports --> 估计标准误差
 常模与导出分数 -- part-of --> 测验编制与标准化
 常模与导出分数 -- supports --> 测验标准化
 常模与导出分数 -- supports --> 分数解释
@@ -719,9 +744,12 @@ IRT基本假设 -- supports --> 项目信息函数
 复本信度 -- is-a --> 信度
 复本信度 -- correlates-with --> 重测信度
 复本信度 -- part-of --> 经典测量理论
+Pearson相关系数 -- is-a --> 协方差
+Pearson相关系数 -- is-a --> 描述统计
 Rasch模型 -- is-a --> 项目反应理论
 Rasch模型 -- applies-to --> 项目特征曲线
 Rasch模型 -- supports --> IRT基本假设
+回归方程 -- supports --> 估计标准误差
 信度 -- part-of --> 心理测量基础
 信度 -- supports --> 效度
 抽样与实验误差 -- is-a --> 推断统计
@@ -1547,6 +1575,7 @@ REM 睡眠 -- part-of --> 睡眠阶段
 | [[03-cards/110-变态心理学/card-cluster_a_personality_disorders|cluster_a_personality_disorders]] A群人格障碍 | A群人格障碍 | 异常心理学 | 9 |
 | [[03-cards/110-变态心理学/card-cluster_b_personality_disorders|cluster_b_personality_disorders]] B群人格障碍 | B群人格障碍 | 异常心理学 | 10 |
 | [[03-cards/110-变态心理学/card-cluster_c_personality_disorders|cluster_c_personality_disorders]] C群人格障碍 | C群人格障碍 | 异常心理学 | 8 |
+| [[03-cards/120-统计与测量/card-coefficient_of_determination|coefficient_of_determination]] 决定系数 | 决定系数 | psychometrics | 8 |
 | [[03-cards/60-发展心理学/card-cognitive_aging|cognitive_aging]] 认知老化 | 认知老化 | 发展心理学 | 5 |
 | [[03-cards/10-普通心理学/card-core-cognitive_bias_and_heuristics|cognitive_bias_and_heuristics]] 思维偏差与启发式 | 思维偏差与启发式 | 普通心理学 | 14 |
 | [[03-cards/60-发展心理学/card-cognitive_development|cognitive_development]] 认知发展 | 认知发展 | 发展心理学 | 10 |
@@ -1574,7 +1603,9 @@ REM 睡眠 -- part-of --> 睡眠阶段
 | [[03-cards/120-统计与测量/card-content_validity|content_validity]] 内容效度 | 内容效度 | psychometrics | 5 |
 | [[03-cards/10-普通心理学/card-coping_strategies|coping_strategies]] 应对方式 | 应对方式 | 普通心理学 | 6 |
 | [[03-cards/60-发展心理学/card-core_knowledge_theory|core_knowledge_theory]] 核心知识理论 | 核心知识理论 | 发展心理学 | 6 |
+| [[03-cards/120-统计与测量/card-correlation_and_regression|correlation_and_regression]] 相关与回归基础 | 相关与回归基础 | psychometrics | 18 |
 | [[03-cards/20-社会心理学/card-correspondence_bias|correspondence_bias]] 对应偏见 | 对应偏见 | 社会心理学 | 4 |
+| [[03-cards/120-统计与测量/card-covariance|covariance]] 协方差 | 协方差 | psychometrics | 5 |
 | [[03-cards/10-普通心理学/card-creativity|creativity]] 创造力 | 创造力 | 普通心理学 | 7 |
 | [[03-cards/120-统计与测量/card-criterion_validity|criterion_validity]] 效标效度 | 效标效度 | psychometrics | 6 |
 | [[03-cards/100-生理心理学/card-critical_period|critical_period]] 关键期 | 关键期 | 生物心理学 | 7 |
@@ -1593,7 +1624,7 @@ REM 睡眠 -- part-of --> 睡眠阶段
 | [[03-cards/110-变态心理学/card-depersonalization_derealization_disorder|depersonalization_derealization_disorder]] 人格解体/现实解体障碍 | 人格解体/现实解体障碍 | 异常心理学 | 7 |
 | [[03-cards/110-变态心理学/card-depressive_attributional_style|depressive_attributional_style]] 抑郁归因风格 | 抑郁归因风格 | 异常心理学 | 10 |
 | [[03-cards/card-depth_perception|depth_perception]] 深度知觉 | 深度知觉 | 普通心理学 | 3 |
-| [[03-cards/120-统计与测量/card-descriptive_statistics|descriptive_statistics]] 描述统计 | 描述统计 | 普通心理学 | 4 |
+| [[03-cards/120-统计与测量/card-descriptive_statistics|descriptive_statistics]] 描述统计 | 描述统计 | 普通心理学 | 7 |
 | [[03-cards/50-临床与咨询/card-dialectical_behavior_therapy|dialectical_behavior_therapy]] 辩证行为治疗 | 辩证行为治疗 | 临床心理学 | 5 |
 | [[03-cards/60-发展心理学/card-disorganized_attachment|disorganized_attachment]] 混乱型依恋 | 混乱型依恋 | 发展心理学 | 12 |
 | [[03-cards/110-变态心理学/card-dissociative_amnesia|dissociative_amnesia]] 分离性遗忘 | 分离性遗忘 | 异常心理学 | 7 |
@@ -1696,7 +1727,7 @@ REM 睡眠 -- part-of --> 睡眠阶段
 | [[03-cards/60-发展心理学/card-infant_number_sense|infant_number_sense]] 婴儿数感 | 婴儿数感 | 发展心理学 | 7 |
 | [[03-cards/60-发展心理学/card-infant_physical_reasoning|infant_physical_reasoning]] 婴儿物理推理 | 婴儿物理推理 | 发展心理学 | 9 |
 | [[03-cards/60-发展心理学/card-infant_statistical_learning|infant_statistical_learning]] 婴儿统计学习 | 婴儿统计学习 | 发展心理学 | 5 |
-| [[03-cards/120-统计与测量/card-inferential_statistics|inferential_statistics]] 推断统计 | 推断统计 | 普通心理学 | 4 |
+| [[03-cards/120-统计与测量/card-inferential_statistics|inferential_statistics]] 推断统计 | 推断统计 | 普通心理学 | 5 |
 | [[03-cards/20-社会心理学/card-informational_social_influence|informational_social_influence]] 信息性社会影响 | 信息性社会影响 | 社会心理学 | 7 |
 | [[03-cards/20-社会心理学/card-ingroup_favoritism|ingroup_favoritism]] 内群体偏好 | 内群体偏好 | 社会心理学 | 5 |
 | [[03-cards/70-教育心理学/card-instructional_design|instructional_design]] 教学设计 | 教学设计 | 教育心理学 | 1 |
@@ -1735,10 +1766,12 @@ REM 睡眠 -- part-of --> 睡眠阶段
 | [[03-cards/card-learned_helplessness|learned_helplessness]] 习得性无助 | 习得性无助 | 人格心理学 | 14 |
 | [[03-cards/70-教育心理学/card-learning_strategies|learning_strategies]] 学习策略 | 学习策略 | 教育心理学 | 1 |
 | [[03-cards/card-learning_theories|learning_theories]] 学习理论 | 学习理论 | 普通心理学 | 10 |
+| [[03-cards/120-统计与测量/card-least_squares_method|least_squares_method]] 最小二乘法 | 最小二乘法 | psychometrics | 10 |
 | [[03-cards/card-levels_of_processing|levels_of_processing]] 加工水平理论 | 加工水平理论 | 普通心理学 | 6 |
 | [[03-cards/30-人格心理学/card-life_events_and_personality_change|life_events_and_personality_change]] 生活事件与人格变化 | 生活事件与人格变化 | 人格心理学 | 5 |
 | [[03-cards/20-社会心理学/card-likert_scale|likert_scale]] Likert量表 | Likert量表 | 社会心理学 | 6 |
 | [[03-cards/100-生理心理学/card-limbic_system|limbic_system]] 边缘系统 | 边缘系统 | 生物心理学 | 5 |
+| [[03-cards/120-统计与测量/card-linear_regression|linear_regression]] 线性回归 | 线性回归 | psychometrics | 14 |
 | [[03-cards/100-生理心理学/card-lobes_of_the_brain|lobes_of_the_brain]] 大脑皮层分区 | 大脑皮层分区 | 生物心理学 | 3 |
 | [[03-cards/card-locus_of_control|locus_of_control]] 控制点 | 控制点 | 人格心理学 | 8 |
 | [[03-cards/10-普通心理学/card-long_term_memory_encoding|long_term_memory_encoding]] 长时记忆编码与存储 | 长时记忆编码与存储 | 普通心理学 | 5 |
@@ -1769,6 +1802,7 @@ REM 睡眠 -- part-of --> 睡眠阶段
 | [[03-cards/card-motion_perception|motion_perception]] 运动知觉 | 运动知觉 | 普通心理学 | 3 |
 | [[03-cards/70-教育心理学/card-motivation_in_education|motivation_in_education]] 教育中的动机 | 教育中的动机 | 教育心理学 | 1 |
 | [[03-cards/10-普通心理学/card-motivation_theories|motivation_theories]] 动机理论 | 动机理论 | 普通心理学 | 17 |
+| [[03-cards/120-统计与测量/card-multiple_regression|multiple_regression]] 多元回归 | 多元回归 | psychometrics | 12 |
 | [[03-cards/100-生理心理学/card-myelination|myelination]] 髓鞘化 | 髓鞘化 | 生物心理学 | 7 |
 | [[03-cards/110-变态心理学/card-narcissistic_personality_disorder|narcissistic_personality_disorder]] 自恋型人格障碍 | 自恋型人格障碍 | 异常心理学 | 6 |
 | [[03-cards/110-变态心理学/card-negative_symptoms|negative_symptoms]] 阴性症状 | 阴性症状 | 异常心理学 | 6 |
@@ -1802,6 +1836,7 @@ REM 睡眠 -- part-of --> 睡眠阶段
 | [[03-cards/60-发展心理学/card-parenting_styles|parenting_styles]] 教养方式 | 教养方式 | 发展心理学 | 7 |
 | [[03-cards/card-passionate_vs_companionate_love|passionate_vs_companionate_love]] 激情式爱情与伴侣式爱情 | 激情式爱情与伴侣式爱情 | 社会心理学 | 4 |
 | [[03-cards/30-人格心理学/card-peak_experience|peak_experience]] 高峰体验 | 高峰体验 | 人格心理学 | 4 |
+| [[03-cards/120-统计与测量/card-pearson_correlation_coefficient|pearson_correlation_coefficient]] Pearson相关系数 | Pearson相关系数 | psychometrics | 9 |
 | [[03-cards/60-发展心理学/card-peer_relationships|peer_relationships]] 同伴关系 | 同伴关系 | 发展心理学 | 8 |
 | [[03-cards/20-社会心理学/card-perceived_behavioral_control|perceived_behavioral_control]] 感知行为控制 | 感知行为控制 | 社会心理学 | 3 |
 | [[03-cards/card-perceptual_constancy|perceptual_constancy]] 知觉恒常性 | 知觉恒常性 | 普通心理学 | 3 |
@@ -1840,6 +1875,7 @@ REM 睡眠 -- part-of --> 睡眠阶段
 | [[03-cards/20-社会心理学/card-realistic_group_conflict_theory|realistic_group_conflict_theory]] 现实群体冲突理论 | 现实群体冲突理论 | 社会心理学 | 6 |
 | [[03-cards/10-普通心理学/card-reasoning_and_logic|reasoning_and_logic]] 推理与逻辑 | 推理与逻辑 | 认知心理学 | 10 |
 | [[03-cards/30-人格心理学/card-reciprocal_determinism|reciprocal_determinism]] 交互决定论 | 交互决定论 | 人格心理学 | 5 |
+| [[03-cards/120-统计与测量/card-regression_equation|regression_equation]] 回归方程 | 回归方程 | psychometrics | 10 |
 | [[03-cards/110-变态心理学/card-relapse_prevention|relapse_prevention]] 复发预防 | 复发预防 | 临床心理学 | 6 |
 | [[03-cards/20-社会心理学/card-relationship_satisfaction|relationship_satisfaction]] 关系满意度 | 关系满意度 | 社会心理学 | 4 |
 | [[03-cards/120-统计与测量/card-reliability|reliability]] 信度 | 信度 | 普通心理学 | 17 |
@@ -1905,6 +1941,7 @@ REM 睡眠 -- part-of --> 睡眠阶段
 | [[03-cards/120-统计与测量/card-split_half_reliability|split_half_reliability]] 分半信度 | 分半信度 | psychometrics | 7 |
 | [[03-cards/60-发展心理学/card-stages_of_language_development|stages_of_language_development]] 儿童语言发展阶段 | 儿童语言发展阶段 | 发展心理学 | 3 |
 | [[03-cards/120-统计与测量/card-standard_error|standard_error]] 标准误 | 标准误 | psychometrics | 9 |
+| [[03-cards/120-统计与测量/card-standard_error_of_estimate|standard_error_of_estimate]] 估计标准误差 | 估计标准误差 | psychometrics | 10 |
 | [[03-cards/120-统计与测量/card-standard_score|standard_score]] 标准分数 | 标准分数 | psychometrics | 5 |
 | [[03-cards/120-统计与测量/card-standardization_norms|standardization_norms]] 标准化与常模 | 标准化与常模 | 普通心理学 | 2 |
 | [[03-cards/120-统计与测量/card-statistical_power|statistical_power]] 统计检验力 | 统计检验力 | psychometrics | 7 |
@@ -2112,7 +2149,9 @@ REM 睡眠 -- part-of --> 睡眠阶段
 | 源卡片 | 关系 | 目标（待创建） |
 |--------|------|----------------|
 | [[03-cards/10-普通心理学/card-divided_attention|divided_attention]] 分配性注意 | supports | `kahneman_attention_resource_theory` |
+| [[03-cards/120-统计与测量/card-coefficient_of_determination|coefficient_of_determination]] 决定系数 | supports | `variance` |
 | [[03-cards/120-统计与测量/card-confidence_interval|confidence_interval]] 置信区间 | contrasts | `point_estimate` |
+| [[03-cards/120-统计与测量/card-covariance|covariance]] 协方差 | is-a | `variance` |
 | [[03-cards/120-统计与测量/card-effect_size|effect_size]] 效应量 | supports | `meta_analysis` |
 | [[03-cards/120-统计与测量/card-effect_size|effect_size]] 效应量 | contrasts | `p_value` |
 | [[03-cards/120-统计与测量/card-sampling_distribution|sampling_distribution]] 抽样分布 | is-a | `central_limit_theorem` |
@@ -2135,13 +2174,13 @@ REM 睡眠 -- part-of --> 睡眠阶段
 
 | 关系类型 | 数量 |
 |---------|------|
-| part-of | 495 |
-| correlates-with | 371 |
-| supports | 320 |
-| is-a | 183 |
+| part-of | 515 |
+| correlates-with | 373 |
+| supports | 342 |
+| is-a | 189 |
 | contrasts | 169 |
 | applies-to | 163 |
-| extends | 101 |
+| extends | 103 |
 | related-to | 30 |
 | causes | 25 |
 | requires | 2 |
