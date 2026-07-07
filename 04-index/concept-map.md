@@ -6,10 +6,10 @@
 
 ## 概览
 
-- 总卡片数：549
-- 概念簇数：10
+- 总卡片数：601
+- 概念簇数：18
 - 孤立卡片数：0
-- 关系总数：1941
+- 关系总数：2057
 
 ## 概念簇
 
@@ -2039,7 +2039,65 @@ REM 睡眠 -- part-of --> 睡眠阶段
 | [[03-cards/120-统计与测量/card-z_score|z_score]] Z分数 | Z分数 | psychometrics | 3 |
 | [[03-cards/60-发展心理学/card-zone_of_proximal_development|zone_of_proximal_development]] 最近发展区 | 最近发展区 | 发展心理学 | 5 |
 
-### 2. [[03-cards/130-基础与进化/card-behavioral_genetics|behavioral_genetics]] 行为遗传学（生物心理学）
+### 2. [[03-cards/90-实验心理学/card-experimental_design_basics|experimental_design_basics]] 实验设计基础（实验心理学）
+
+```
+相加因素法 -- part-of --> 反应时法
+相加因素法 -- contrasts --> 减法法
+相加因素法 -- extends --> 开窗实验
+实验设计高级 -- extends --> 实验控制
+实验设计高级 -- correlates-with --> 实验变量
+被试间设计 -- part-of --> 实验设计基础
+被试间设计 -- contrasts --> 被试内设计
+被试间设计 -- extends --> 混合设计
+生态效度 -- part-of --> 实验设计高级
+生态效度 -- applies-to --> 准实验设计
+生态效度 -- applies-to --> 单被试设计
+实验控制 -- part-of --> 实验设计基础
+实验控制 -- applies-to --> 实验变量
+实验设计基础 -- part-of --> 实验变量
+实验设计基础 -- part-of --> 实验效度
+实验设计基础 -- part-of --> 实验信度
+实验设计基础 -- part-of --> 被试内设计
+实验设计基础 -- part-of --> 混合设计
+中介与调节 -- part-of --> 实验设计高级
+混合设计 -- extends --> 被试内设计
+开窗实验 -- part-of --> 反应时法
+开窗实验 -- extends --> 减法法
+准实验设计 -- part-of --> 实验设计高级
+准实验设计 -- contrasts --> 单被试设计
+准实验设计 -- correlates-with --> 生态效度
+反应时法 -- part-of --> 减法法
+反应时法 -- correlates-with --> 速度-准确率权衡
+反应时法 -- applies-to --> 实验控制
+实验信度 -- correlates-with --> 实验效度
+单被试设计 -- part-of --> 实验设计高级
+单被试设计 -- correlates-with --> 生态效度
+速度-准确率权衡 -- applies-to --> 相加因素法
+```
+
+| 成员 | 中文名 | 学科 | 簇内连接数 |
+|------|--------|------|-----------|
+| [[03-cards/90-实验心理学/card-experimental_design_basics|experimental_design_basics]] 实验设计基础 | 实验设计基础 | 实验心理学 | 14 |
+| [[03-cards/90-实验心理学/card-additive_factors_method|additive_factors_method]] 相加因素法 | 相加因素法 | 实验心理学 | 7 |
+| [[03-cards/90-实验心理学/card-advanced_experimental_design|advanced_experimental_design]] 实验设计高级 | 实验设计高级 | 实验心理学 | 6 |
+| [[03-cards/90-实验心理学/card-between_subjects_design|between_subjects_design]] 被试间设计 | 被试间设计 | 实验心理学 | 6 |
+| [[03-cards/90-实验心理学/card-ecological_validity|ecological_validity]] 生态效度 | 生态效度 | 实验心理学 | 5 |
+| [[03-cards/90-实验心理学/card-experimental_control|experimental_control]] 实验控制 | 实验控制 | 实验心理学 | 6 |
+| [[03-cards/90-实验心理学/card-mediation_and_moderation|mediation_and_moderation]] 中介与调节 | 中介与调节 | 实验心理学 | 1 |
+| [[03-cards/90-实验心理学/card-mixed_design|mixed_design]] 混合设计 | 混合设计 | 实验心理学 | 6 |
+| [[03-cards/90-实验心理学/card-open_window_experiment|open_window_experiment]] 开窗实验 | 开窗实验 | 实验心理学 | 6 |
+| [[03-cards/90-实验心理学/card-quasi_experimental_design|quasi_experimental_design]] 准实验设计 | 准实验设计 | 实验心理学 | 5 |
+| [[03-cards/90-实验心理学/card-reaction_time_methods|reaction_time_methods]] 反应时法 | 反应时法 | 实验心理学 | 9 |
+| [[03-cards/90-实验心理学/card-reliability_in_experiments|reliability_in_experiments]] 实验信度 | 实验信度 | 实验心理学 | 4 |
+| [[03-cards/90-实验心理学/card-single_subject_design|single_subject_design]] 单被试设计 | 单被试设计 | 实验心理学 | 5 |
+| [[03-cards/90-实验心理学/card-speed_accuracy_tradeoff|speed_accuracy_tradeoff]] 速度-准确率权衡 | 速度-准确率权衡 | 实验心理学 | 3 |
+| [[03-cards/90-实验心理学/card-subtractive_method|subtractive_method]] 减法法 | 减法法 | 实验心理学 | 6 |
+| [[03-cards/90-实验心理学/card-validity_in_experiments|validity_in_experiments]] 实验效度 | 实验效度 | 实验心理学 | 4 |
+| [[03-cards/90-实验心理学/card-variables_in_experiments|variables_in_experiments]] 实验变量 | 实验变量 | 实验心理学 | 5 |
+| [[03-cards/90-实验心理学/card-within_subjects_design|within_subjects_design]] 被试内设计 | 被试内设计 | 实验心理学 | 6 |
+
+### 3. [[03-cards/130-基础与进化/card-behavioral_genetics|behavioral_genetics]] 行为遗传学（生物心理学）
 
 ```
 收养研究 -- is-a --> 行为遗传学
@@ -2085,35 +2143,185 @@ REM 睡眠 -- part-of --> 睡眠阶段
 | [[03-cards/130-基础与进化/card-shared_environment|shared_environment]] 共享环境 | 共享环境 | 生物心理学 | 8 |
 | [[03-cards/130-基础与进化/card-twin_studies|twin_studies]] 双生子研究 | 双生子研究 | 生物心理学 | 6 |
 
-### 3. [[03-cards/90-实验心理学/card-experimental_design_basics|experimental_design_basics]] 实验设计基础（实验心理学）
+### 4. [[03-cards/90-实验心理学/card-psychophysical_methods|psychophysical_methods]] 心理物理学方法（实验心理学）
 
 ```
-被试间设计 -- part-of --> 实验设计基础
-被试间设计 -- contrasts --> 被试内设计
-被试间设计 -- extends --> 混合设计
-实验控制 -- part-of --> 实验设计基础
-实验控制 -- applies-to --> 实验变量
-实验设计基础 -- part-of --> 实验变量
-实验设计基础 -- part-of --> 实验效度
-实验设计基础 -- part-of --> 实验信度
-实验设计基础 -- part-of --> 被试内设计
-实验设计基础 -- part-of --> 混合设计
-混合设计 -- extends --> 被试内设计
-实验信度 -- correlates-with --> 实验效度
+调整法 -- part-of --> 心理物理学方法
+调整法 -- contrasts --> 极限法
+调整法 -- contrasts --> 恒定刺激法
+恒定刺激法 -- part-of --> 心理物理学方法
+恒定刺激法 -- contrasts --> 极限法
+极限法 -- part-of --> 心理物理学方法
+心理物理学方法 -- extends --> 信号检测论
+心理物理学方法 -- correlates-with --> 韦伯-费希纳定律
+信号检测论 -- contrasts --> 极限法
+信号检测论 -- contrasts --> 调整法
+信号检测论 -- contrasts --> 恒定刺激法
+Stevens幂定律 -- part-of --> 心理物理学方法
+Stevens幂定律 -- contrasts --> 韦伯-费希纳定律
+韦伯-费希纳定律 -- part-of --> 心理物理学方法
+韦伯-费希纳定律 -- applies-to --> 极限法
+韦伯-费希纳定律 -- applies-to --> 恒定刺激法
 ```
 
 | 成员 | 中文名 | 学科 | 簇内连接数 |
 |------|--------|------|-----------|
-| [[03-cards/90-实验心理学/card-experimental_design_basics|experimental_design_basics]] 实验设计基础 | 实验设计基础 | 实验心理学 | 14 |
-| [[03-cards/90-实验心理学/card-between_subjects_design|between_subjects_design]] 被试间设计 | 被试间设计 | 实验心理学 | 6 |
-| [[03-cards/90-实验心理学/card-experimental_control|experimental_control]] 实验控制 | 实验控制 | 实验心理学 | 4 |
-| [[03-cards/90-实验心理学/card-mixed_design|mixed_design]] 混合设计 | 混合设计 | 实验心理学 | 6 |
-| [[03-cards/90-实验心理学/card-reliability_in_experiments|reliability_in_experiments]] 实验信度 | 实验信度 | 实验心理学 | 4 |
-| [[03-cards/90-实验心理学/card-validity_in_experiments|validity_in_experiments]] 实验效度 | 实验效度 | 实验心理学 | 4 |
-| [[03-cards/90-实验心理学/card-variables_in_experiments|variables_in_experiments]] 实验变量 | 实验变量 | 实验心理学 | 4 |
-| [[03-cards/90-实验心理学/card-within_subjects_design|within_subjects_design]] 被试内设计 | 被试内设计 | 实验心理学 | 6 |
+| [[03-cards/90-实验心理学/card-psychophysical_methods|psychophysical_methods]] 心理物理学方法 | 心理物理学方法 | 实验心理学 | 11 |
+| [[03-cards/90-实验心理学/card-method_of_adjustment|method_of_adjustment]] 调整法 | 调整法 | 实验心理学 | 7 |
+| [[03-cards/90-实验心理学/card-method_of_constant_stimuli|method_of_constant_stimuli]] 恒定刺激法 | 恒定刺激法 | 实验心理学 | 8 |
+| [[03-cards/90-实验心理学/card-method_of_limits|method_of_limits]] 极限法 | 极限法 | 实验心理学 | 8 |
+| [[03-cards/90-实验心理学/card-signal_detection_theory|signal_detection_theory]] 信号检测论 | 信号检测论 | 实验心理学 | 5 |
+| [[03-cards/90-实验心理学/card-stevens_power_law|stevens_power_law]] Stevens幂定律 | Stevens幂定律 | 实验心理学 | 3 |
+| [[03-cards/90-实验心理学/card-weber_fechner_law|weber_fechner_law]] 韦伯-费希纳定律 | 韦伯-费希纳定律 | 实验心理学 | 6 |
 
-### 4. [[03-cards/card-needs-vs-tests-2026|需求与测试的边界]]（亲密关系 / 沟通心理学 / 依恋理论）
+### 5. [[03-cards/70-教育心理学/card-classroom_climate|classroom_climate]] 课堂氛围（教育心理学）
+
+```
+归因训练 -- part-of --> 课堂动机与管理
+归因训练 -- correlates-with --> 目标结构
+归因训练 -- applies-to --> 课堂氛围
+课堂氛围 -- part-of --> 课堂动机与管理
+课堂氛围 -- correlates-with --> 目标结构
+课堂氛围 -- correlates-with --> 纪律管理
+纪律管理 -- part-of --> 课堂动机与管理
+目标结构 -- part-of --> 课堂动机与管理
+```
+
+| 成员 | 中文名 | 学科 | 簇内连接数 |
+|------|--------|------|-----------|
+| [[03-cards/70-教育心理学/card-classroom_climate|classroom_climate]] 课堂氛围 | 课堂氛围 | 教育心理学 | 6 |
+| [[03-cards/70-教育心理学/card-attribution_training|attribution_training]] 归因训练 | 归因训练 | 教育心理学 | 4 |
+| [[03-cards/70-教育心理学/card-classroom_discipline|classroom_discipline]] 纪律管理 | 纪律管理 | 教育心理学 | 3 |
+| [[03-cards/70-教育心理学/card-classroom_motivation_and_management|classroom_motivation_and_management]] 课堂动机与管理 | 课堂动机与管理 | 教育心理学 | 4 |
+| [[03-cards/70-教育心理学/card-goal_structures|goal_structures]] 目标结构 | 目标结构 | 教育心理学 | 5 |
+
+### 6. [[03-cards/70-教育心理学/card-blooms_taxonomy|blooms_taxonomy]] 布鲁姆教育目标分类（教育心理学）
+
+```
+布鲁姆教育目标分类 -- part-of --> 教学设计原理
+布鲁姆教育目标分类 -- contrasts --> 加涅学习结果
+布鲁姆教育目标分类 -- applies-to --> 直接教学
+布鲁姆教育目标分类 -- applies-to --> 发现教学
+直接教学 -- part-of --> 教学设计原理
+直接教学 -- contrasts --> 发现教学
+发现教学 -- part-of --> 教学设计原理
+加涅学习结果 -- part-of --> 教学设计原理
+加涅学习结果 -- applies-to --> 直接教学
+```
+
+| 成员 | 中文名 | 学科 | 簇内连接数 |
+|------|--------|------|-----------|
+| [[03-cards/70-教育心理学/card-blooms_taxonomy|blooms_taxonomy]] 布鲁姆教育目标分类 | 布鲁姆教育目标分类 | 教育心理学 | 7 |
+| [[03-cards/70-教育心理学/card-direct_instruction|direct_instruction]] 直接教学 | 直接教学 | 教育心理学 | 6 |
+| [[03-cards/70-教育心理学/card-discovery_learning|discovery_learning]] 发现教学 | 发现教学 | 教育心理学 | 5 |
+| [[03-cards/70-教育心理学/card-gagne_learning_outcomes|gagne_learning_outcomes]] 加涅学习结果 | 加涅学习结果 | 教育心理学 | 4 |
+| [[03-cards/70-教育心理学/card-instructional_design_principles|instructional_design_principles]] 教学设计原理 | 教学设计原理 | 教育心理学 | 4 |
+
+### 7. [[03-cards/80-学习心理学/card-positive_emotion_and_gratitude|positive_emotion_and_gratitude]] 积极情绪与感恩（积极心理学）
+
+```
+拓展-建构理论 -- part-of --> 积极情绪与感恩
+感恩干预 -- part-of --> 积极情绪与感恩
+感恩干预 -- applies-to --> 拓展-建构理论
+积极情绪外溢 -- part-of --> 积极情绪与感恩
+积极情绪外溢 -- extends --> 拓展-建构理论
+福祉干预 -- part-of --> 积极情绪与感恩
+福祉干预 -- part-of --> 感恩干预
+```
+
+| 成员 | 中文名 | 学科 | 簇内连接数 |
+|------|--------|------|-----------|
+| [[03-cards/80-学习心理学/card-positive_emotion_and_gratitude|positive_emotion_and_gratitude]] 积极情绪与感恩 | 积极情绪与感恩 | 积极心理学 | 4 |
+| [[03-cards/80-学习心理学/card-broaden_and_build_theory|broaden_and_build_theory]] 拓展-建构理论 | 拓展-建构理论 | 积极心理学 | 3 |
+| [[03-cards/80-学习心理学/card-gratitude_interventions|gratitude_interventions]] 感恩干预 | 感恩干预 | 积极心理学 | 3 |
+| [[03-cards/80-学习心理学/card-positive_affect_spillover|positive_affect_spillover]] 积极情绪外溢 | 积极情绪外溢 | 积极心理学 | 2 |
+| [[03-cards/80-学习心理学/card-well_being_interventions|well_being_interventions]] 福祉干预 | 福祉干预 | 积极心理学 | 2 |
+
+### 8. [[03-cards/70-教育心理学/card-declarative_and_procedural_knowledge|declarative_and_procedural_knowledge]] 陈述性与程序性知识（教育心理学）
+
+```
+概念图 -- part-of --> 知识表征与学习
+概念图 -- applies-to --> 陈述性与程序性知识
+陈述性与程序性知识 -- part-of --> 知识表征与学习
+专家-新手差异 -- part-of --> 知识表征与学习
+专家-新手差异 -- correlates-with --> 图式理论
+专家-新手差异 -- extends --> 陈述性与程序性知识
+图式理论 -- part-of --> 知识表征与学习
+图式理论 -- applies-to --> 陈述性与程序性知识
+```
+
+| 成员 | 中文名 | 学科 | 簇内连接数 |
+|------|--------|------|-----------|
+| [[03-cards/70-教育心理学/card-declarative_and_procedural_knowledge|declarative_and_procedural_knowledge]] 陈述性与程序性知识 | 陈述性与程序性知识 | 教育心理学 | 4 |
+| [[03-cards/70-教育心理学/card-concept_map|concept_map]] 概念图 | 概念图 | 教育心理学 | 2 |
+| [[03-cards/70-教育心理学/card-expert_novice_differences|expert_novice_differences]] 专家-新手差异 | 专家-新手差异 | 教育心理学 | 3 |
+| [[03-cards/70-教育心理学/card-knowledge_representation_and_learning|knowledge_representation_and_learning]] 知识表征与学习 | 知识表征与学习 | 教育心理学 | 4 |
+| [[03-cards/70-教育心理学/card-schema_theory|schema_theory]] 图式理论 | 图式理论 | 教育心理学 | 3 |
+
+### 9. [[03-cards/80-学习心理学/card-flow_experience|flow_experience]] 心流体验（积极心理学）
+
+```
+心流条件 -- part-of --> 心流体验
+心流与教育 -- part-of --> 心流体验
+心流与教育 -- applies-to --> 心流条件
+心流与工作 -- part-of --> 心流体验
+心流与工作 -- applies-to --> 心流条件
+心流测量 -- part-of --> 心流体验
+```
+
+| 成员 | 中文名 | 学科 | 簇内连接数 |
+|------|--------|------|-----------|
+| [[03-cards/80-学习心理学/card-flow_experience|flow_experience]] 心流体验 | 心流体验 | 积极心理学 | 4 |
+| [[03-cards/80-学习心理学/card-flow_conditions|flow_conditions]] 心流条件 | 心流条件 | 积极心理学 | 3 |
+| [[03-cards/80-学习心理学/card-flow_in_education|flow_in_education]] 心流与教育 | 心流与教育 | 积极心理学 | 2 |
+| [[03-cards/80-学习心理学/card-flow_in_work|flow_in_work]] 心流与工作 | 心流与工作 | 积极心理学 | 2 |
+| [[03-cards/80-学习心理学/card-flow_measurement|flow_measurement]] 心流测量 | 心流测量 | 积极心理学 | 1 |
+
+### 10. [[03-cards/80-学习心理学/card-life_satisfaction|life_satisfaction]] 生活满意度（积极心理学）
+
+```
+生活满意度 -- part-of --> 主观幸福感
+生活满意度 -- correlates-with --> 积极与消极情感
+积极与消极情感 -- part-of --> 主观幸福感
+SWB影响因素 -- part-of --> 主观幸福感
+SWB影响因素 -- causes --> 生活满意度
+SWB影响因素 -- causes --> 积极与消极情感
+SWB测量 -- part-of --> 主观幸福感
+SWB测量 -- applies-to --> 生活满意度
+SWB测量 -- applies-to --> 积极与消极情感
+```
+
+| 成员 | 中文名 | 学科 | 簇内连接数 |
+|------|--------|------|-----------|
+| [[03-cards/80-学习心理学/card-life_satisfaction|life_satisfaction]] 生活满意度 | 生活满意度 | 积极心理学 | 5 |
+| [[03-cards/80-学习心理学/card-positive_and_negative_affect|positive_and_negative_affect]] 积极与消极情感 | 积极与消极情感 | 积极心理学 | 5 |
+| [[03-cards/80-学习心理学/card-subjective_well_being|subjective_well_being]] 主观幸福感 | 主观幸福感 | 积极心理学 | 4 |
+| [[03-cards/80-学习心理学/card-swb_influencing_factors|swb_influencing_factors]] SWB影响因素 | SWB影响因素 | 积极心理学 | 3 |
+| [[03-cards/80-学习心理学/card-swb_measurement|swb_measurement]] SWB测量 | SWB测量 | 积极心理学 | 3 |
+
+### 11. [[03-cards/80-学习心理学/card-psychological_resilience|psychological_resilience]] 心理韧性（积极心理学）
+
+```
+创伤后成长 -- part-of --> 心理韧性与创伤后成长
+创伤后成长 -- correlates-with --> 心理韧性
+保护因素 -- part-of --> 心理韧性与创伤后成长
+保护因素 -- causes --> 心理韧性
+心理韧性 -- part-of --> 心理韧性与创伤后成长
+心理韧性 -- correlates-with --> 保护因素
+韧性干预 -- part-of --> 心理韧性与创伤后成长
+韧性干预 -- applies-to --> 心理韧性
+韧性干预 -- applies-to --> 创伤后成长
+```
+
+| 成员 | 中文名 | 学科 | 簇内连接数 |
+|------|--------|------|-----------|
+| [[03-cards/80-学习心理学/card-psychological_resilience|psychological_resilience]] 心理韧性 | 心理韧性 | 积极心理学 | 5 |
+| [[03-cards/80-学习心理学/card-posttraumatic_growth|posttraumatic_growth]] 创伤后成长 | 创伤后成长 | 积极心理学 | 3 |
+| [[03-cards/80-学习心理学/card-protective_factors|protective_factors]] 保护因素 | 保护因素 | 积极心理学 | 3 |
+| [[03-cards/80-学习心理学/card-resilience_and_posttraumatic_growth|resilience_and_posttraumatic_growth]] 心理韧性与创伤后成长 | 心理韧性与创伤后成长 | 积极心理学 | 4 |
+| [[03-cards/80-学习心理学/card-resilience_interventions|resilience_interventions]] 韧性干预 | 韧性干预 | 积极心理学 | 3 |
+
+### 12. [[03-cards/card-needs-vs-tests-2026|需求与测试的边界]]（亲密关系 / 沟通心理学 / 依恋理论）
 
 ```
 坚定选择测试陷阱 -- contrasts --> 需求与测试的边界
@@ -2132,7 +2340,7 @@ REM 睡眠 -- part-of --> 睡眠阶段
 | [[03-cards/card-loosening-structure-techniques-2026|松动结构的日常技术]] |  | 临床心理学 / 叙事治疗 / 接纳承诺治疗 / 亲密关系 | 2 |
 | [[03-cards/card-structure-expectation-loop-2026|结构-预期-自我实现循环]] |  | 社会心理学 / 依恋理论 / 家庭系统治疗 | 3 |
 
-### 5. [[03-cards/20-社会心理学/card-altruism|altruism]] 利他主义（社会心理学）
+### 13. [[03-cards/20-社会心理学/card-altruism|altruism]] 利他主义（社会心理学）
 
 ```
 利他主义 -- is-a --> 亲社会行为
@@ -2146,31 +2354,31 @@ REM 睡眠 -- part-of --> 睡眠阶段
 | [[03-cards/20-社会心理学/card-bystander_effect|bystander_effect]] 旁观者效应 | 旁观者效应 | 社会心理学 | 3 |
 | [[03-cards/card-prosocial_behavior|prosocial_behavior]] 亲社会行为 | 亲社会行为 | 社会心理学 | 2 |
 
-### 6. [[03-cards/card-evolutionary-mismatch|evolutionary_mismatch]]（evolutionary psychology）
+### 14. [[03-cards/card-evolutionary-mismatch|evolutionary_mismatch]]（evolutionary psychology）
 
 | 成员 | 中文名 | 学科 | 簇内连接数 |
 |------|--------|------|-----------|
 | [[03-cards/card-evolutionary-mismatch|evolutionary_mismatch]] |  | evolutionary psychology | 0 |
 
-### 7. [[03-cards/card-intelligence_theories|intelligence_theories]] 智力理论（普通心理学）
+### 15. [[03-cards/card-intelligence_theories|intelligence_theories]] 智力理论（普通心理学）
 
 | 成员 | 中文名 | 学科 | 簇内连接数 |
 |------|--------|------|-----------|
 | [[03-cards/card-intelligence_theories|intelligence_theories]] 智力理论 | 智力理论 | 普通心理学 | 0 |
 
-### 8. [[03-cards/card-obedience|obedience]] 服从（社会心理学）
+### 16. [[03-cards/card-obedience|obedience]] 服从（社会心理学）
 
 | 成员 | 中文名 | 学科 | 簇内连接数 |
 |------|--------|------|-----------|
 | [[03-cards/card-obedience|obedience]] 服从 | 服从 | 社会心理学 | 0 |
 
-### 9. [[03-cards/card-psychology-definition|psychology]]（general）
+### 17. [[03-cards/card-psychology-definition|psychology]]（general）
 
 | 成员 | 中文名 | 学科 | 簇内连接数 |
 |------|--------|------|-----------|
 | [[03-cards/card-psychology-definition|psychology]] |  | general | 0 |
 
-### 10. [[03-cards/60-发展心理学/card-test_hook_verification|test_hook_verification]] 测试钩子验证（发展心理学）
+### 18. [[03-cards/60-发展心理学/card-test_hook_verification|test_hook_verification]] 测试钩子验证（发展心理学）
 
 | 成员 | 中文名 | 学科 | 簇内连接数 |
 |------|--------|------|-----------|
@@ -2209,13 +2417,13 @@ REM 睡眠 -- part-of --> 睡眠阶段
 
 | 关系类型 | 数量 |
 |---------|------|
-| part-of | 519 |
-| correlates-with | 373 |
+| part-of | 566 |
+| correlates-with | 390 |
 | supports | 342 |
 | is-a | 204 |
-| contrasts | 176 |
-| applies-to | 163 |
-| extends | 107 |
+| contrasts | 195 |
+| applies-to | 184 |
+| extends | 116 |
 | related-to | 30 |
-| causes | 25 |
+| causes | 28 |
 | requires | 2 |
