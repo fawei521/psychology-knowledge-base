@@ -14,6 +14,8 @@ relations:
     type: part-of
   - target: decision_making_and_judgment
     type: is-a
+  - target: reasoning_and_logic
+    type: is-a
   - target: belief_perseverance
     type: contrasts
 ---

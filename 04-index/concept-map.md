@@ -6,10 +6,10 @@
 
 ## 概览
 
-- 总卡片数：452
+- 总卡片数：459
 - 概念簇数：11
 - 孤立卡片数：0
-- 关系总数：1495
+- 关系总数：1513
 
 ## 概念簇
 
@@ -34,6 +34,8 @@
 语言习得的行为主义理论 -- part-of --> 语言
 语言习得的行为主义理论 -- contrasts --> 语言习得装置
 语言习得的行为主义理论 -- contrasts --> 关键期假设
+信念偏差 -- is-a --> 推理与逻辑
+信念偏差 -- applies-to --> 三段论推理
 信念坚持 -- part-of --> 思维偏差与启发式
 信念坚持 -- contrasts --> 确认偏误
 坎农-巴德情绪理论 -- part-of --> 情绪理论
@@ -41,6 +43,7 @@
 坎农-巴德情绪理论 -- contrasts --> 拉扎勒斯认知评价情绪理论
 确认偏误 -- part-of --> 思维偏差与启发式
 确认偏误 -- is-a --> 决策与判断
+确认偏误 -- is-a --> 推理与逻辑
 合取谬误 -- part-of --> 思维偏差与启发式
 合取谬误 -- correlates-with --> 代表性启发
 应对方式 -- part-of --> 应激与应对
@@ -63,8 +66,13 @@
 决策与判断 -- applies-to --> 确认偏误
 决策与判断 -- applies-to --> 框架效应
 决策与判断 -- applies-to --> 思维偏差与启发式
+演绎推理 -- is-a --> 推理与逻辑
+演绎推理 -- supports --> 三段论推理
 分配性注意 -- is-a --> 注意
 分配性注意 -- contrasts --> 选择性注意
+双系统推理理论 -- supports --> 推理与逻辑
+双系统推理理论 -- correlates-with --> 思维偏差与启发式
+双系统推理理论 -- supports --> 信念偏差
 自我损耗 -- part-of --> 动机理论
 自我损耗 -- part-of --> 自我调节
 自我损耗 -- correlates-with --> 自我效能感
@@ -111,6 +119,8 @@
 内隐记忆 -- is-a --> 内隐记忆与外显记忆
 酝酿效应 -- part-of --> 思维与问题解决
 酝酿效应 -- contrasts --> 心理定势
+归纳推理 -- is-a --> 推理与逻辑
+归纳推理 -- correlates-with --> 确认偏误
 内在动机 -- part-of --> 动机理论
 内在动机 -- part-of --> 自我决定理论
 詹姆斯-兰格情绪理论 -- part-of --> 情绪理论
@@ -134,6 +144,9 @@
 损失厌恶 -- part-of --> 前景理论
 损失厌恶 -- causes --> 禀赋效应
 损失厌恶 -- correlates-with --> 框架效应
+心理模型理论 -- supports --> 推理与逻辑
+心理模型理论 -- applies-to --> 三段论推理
+心理模型理论 -- supports --> 信念偏差
 心理旋转 -- part-of --> 思维与问题解决
 心理旋转 -- correlates-with --> 工作记忆模型
 心理旋转 -- supports --> 创造力
@@ -158,6 +171,10 @@
 前瞻记忆 -- is-a --> 长时记忆的分类
 前瞻记忆 -- correlates-with --> 工作记忆模型
 前瞻记忆 -- correlates-with --> 执行功能
+推理与逻辑 -- is-a --> 思维与问题解决
+推理与逻辑 -- supports --> 演绎推理
+推理与逻辑 -- supports --> 归纳推理
+推理与逻辑 -- correlates-with --> 思维偏差与启发式
 代表性启发 -- part-of --> 思维偏差与启发式
 代表性启发 -- is-a --> 决策与判断
 代表性启发 -- causes --> 基础比率忽视
@@ -187,6 +204,7 @@
 Stroop 效应 -- part-of --> 注意
 Stroop 效应 -- supports --> 选择性注意
 Stroop 效应 -- correlates-with --> 执行功能
+三段论推理 -- is-a --> 演绎推理
 工作记忆模型 -- extends --> 记忆的三级模型
 工作记忆模型 -- extends --> 短时记忆
 工作记忆模型 -- correlates-with --> 执行功能
@@ -1230,6 +1248,7 @@ REM 睡眠 -- part-of --> 睡眠阶段
 | [[03-cards/20-社会心理学/card-behavioral_intention|behavioral_intention]] 行为意向 | 行为意向 | 社会心理学 | 4 |
 | [[03-cards/30-人格心理学/card-behavioral_personality_theory|behavioral_personality_theory]] 行为主义人格理论 | 行为主义人格理论 | 人格心理学 | 10 |
 | [[03-cards/10-普通心理学/card-behavioral_theory_of_language_acquisition|behavioral_theory_of_language_acquisition]] 语言习得的行为主义理论 | 语言习得的行为主义理论 | 普通心理学 | 5 |
+| [[03-cards/10-普通心理学/card-belief_bias|belief_bias]] 信念偏差 | 信念偏差 | 认知心理学 | 4 |
 | [[03-cards/20-社会心理学/card-belief_in_a_just_world|belief_in_a_just_world]] 公正世界信念 | 公正世界信念 | 社会心理学 | 4 |
 | [[03-cards/10-普通心理学/card-belief_perseverance|belief_perseverance]] 信念坚持 | 信念坚持 | 普通心理学 | 3 |
 | [[03-cards/card-big-five-personality|big_five_personality]] |  | personality psychology | 9 |
@@ -1256,7 +1275,7 @@ REM 睡眠 -- part-of --> 睡眠阶段
 | [[03-cards/110-变态心理学/card-cluster_b_personality_disorders|cluster_b_personality_disorders]] B群人格障碍 | B群人格障碍 | 异常心理学 | 10 |
 | [[03-cards/110-变态心理学/card-cluster_c_personality_disorders|cluster_c_personality_disorders]] C群人格障碍 | C群人格障碍 | 异常心理学 | 8 |
 | [[03-cards/60-发展心理学/card-cognitive_aging|cognitive_aging]] 认知老化 | 认知老化 | 发展心理学 | 5 |
-| [[03-cards/10-普通心理学/card-core-cognitive_bias_and_heuristics|cognitive_bias_and_heuristics]] 思维偏差与启发式 | 思维偏差与启发式 | 普通心理学 | 12 |
+| [[03-cards/10-普通心理学/card-core-cognitive_bias_and_heuristics|cognitive_bias_and_heuristics]] 思维偏差与启发式 | 思维偏差与启发式 | 普通心理学 | 14 |
 | [[03-cards/60-发展心理学/card-cognitive_development|cognitive_development]] 认知发展 | 认知发展 | 发展心理学 | 8 |
 | [[03-cards/card-cognitive_dissonance|cognitive_dissonance]] 认知失调 | 认知失调 | 社会心理学 | 6 |
 | [[03-cards/80-学习心理学/card-cognitive_learning_theory|cognitive_learning_theory]] 认知学习理论 | 认知学习理论 | 普通心理学 | 8 |
@@ -1269,7 +1288,7 @@ REM 睡眠 -- part-of --> 睡眠阶段
 | [[03-cards/110-变态心理学/card-complex_posttraumatic_stress_disorder|complex_posttraumatic_stress_disorder]] 复杂性创伤后应激障碍 | 复杂性创伤后应激障碍 | 异常心理学 | 4 |
 | [[03-cards/30-人格心理学/card-conditions_of_worth|conditions_of_worth]] 价值条件化 | 价值条件化 | 人格心理学 | 4 |
 | [[03-cards/110-变态心理学/card-conduct_disorder|conduct_disorder]] 品行障碍 | 品行障碍 | 异常心理学 | 8 |
-| [[03-cards/10-普通心理学/card-confirmation_bias|confirmation_bias]] 确认偏误 | 确认偏误 | 普通心理学 | 5 |
+| [[03-cards/10-普通心理学/card-confirmation_bias|confirmation_bias]] 确认偏误 | 确认偏误 | 普通心理学 | 7 |
 | [[03-cards/20-社会心理学/card-conflict_resolution|conflict_resolution]] 冲突解决 | 冲突解决 | 社会心理学 | 8 |
 | [[03-cards/card-conformity|conformity]] 从众 | 从众 | 社会心理学 | 4 |
 | [[03-cards/10-普通心理学/card-conjunction_fallacy|conjunction_fallacy]] 合取谬误 | 合取谬误 | 普通心理学 | 3 |
@@ -1282,6 +1301,7 @@ REM 睡眠 -- part-of --> 睡眠阶段
 | [[03-cards/10-普通心理学/card-critical_period_hypothesis|critical_period_hypothesis]] 关键期假设 | 关键期假设 | 普通心理学 | 6 |
 | [[03-cards/20-社会心理学/card-culture_and_cognition|culture_and_cognition]] 文化对认知的影响 | 文化对认知的影响 | 社会心理学 | 4 |
 | [[03-cards/10-普通心理学/card-decision_making_and_judgment|decision_making_and_judgment]] 决策与判断 | 决策与判断 | 普通心理学 | 19 |
+| [[03-cards/10-普通心理学/card-deductive_reasoning|deductive_reasoning]] 演绎推理 | 演绎推理 | 认知心理学 | 4 |
 | [[03-cards/30-人格心理学/card-defense_mechanisms|defense_mechanisms]] 防御机制 | 防御机制 | 人格心理学 | 5 |
 | [[03-cards/20-社会心理学/card-defensive_attribution_hypothesis|defensive_attribution_hypothesis]] 防御性归因假设 | 防御性归因假设 | 社会心理学 | 4 |
 | [[03-cards/60-发展心理学/card-deferred_imitation|deferred_imitation]] 延迟模仿 | 延迟模仿 | 发展心理学 | 3 |
@@ -1303,6 +1323,7 @@ REM 睡眠 -- part-of --> 睡眠阶段
 | [[03-cards/110-变态心理学/card-dopamine_hypothesis|dopamine_hypothesis]] 多巴胺假说 | 多巴胺假说 | 异常心理学 | 8 |
 | [[03-cards/100-生理心理学/card-double_dissociation|double_dissociation]] 双分离 | 双分离 | 认知心理学 | 5 |
 | [[03-cards/card-dreams|dreams]] 梦 | 梦 | 普通心理学 | 3 |
+| [[03-cards/10-普通心理学/card-dual_process_reasoning|dual_process_reasoning]] 双系统推理理论 | 双系统推理理论 | 认知心理学 | 3 |
 | [[03-cards/60-发展心理学/card-dual_systems_model|dual_systems_model]] 双系统模型 | 双系统模型 | 发展心理学 | 5 |
 | [[03-cards/110-变态心理学/card-eating_disorders|eating_disorders]] 进食障碍 | 进食障碍 | 异常心理学 | 13 |
 | [[03-cards/100-生理心理学/card-eeg|eeg]] 脑电图 | 脑电图 | 生物心理学 | 7 |
@@ -1375,6 +1396,7 @@ REM 睡眠 -- part-of --> 睡眠阶段
 | [[03-cards/10-普通心理学/card-incubation_effect|incubation_effect]] 酝酿效应 | 酝酿效应 | 普通心理学 | 4 |
 | [[03-cards/20-社会心理学/card-independent_self|independent_self]] 独立自我 | 独立自我 | 社会心理学 | 6 |
 | [[03-cards/20-社会心理学/card-individualism_collectivism|individualism_collectivism]] 个人主义与集体主义 | 个人主义与集体主义 | 社会心理学 | 6 |
+| [[03-cards/10-普通心理学/card-inductive_reasoning|inductive_reasoning]] 归纳推理 | 归纳推理 | 认知心理学 | 3 |
 | [[03-cards/60-发展心理学/card-infant_categorization|infant_categorization]] 婴儿分类 | 婴儿分类 | 发展心理学 | 5 |
 | [[03-cards/60-发展心理学/card-infant_cognitive_development|infant_cognitive_development]] 婴儿期认知发展 | 婴儿期认知发展 | 发展心理学 | 22 |
 | [[03-cards/60-发展心理学/card-infant_number_sense|infant_number_sense]] 婴儿数感 | 婴儿数感 | 发展心理学 | 7 |
@@ -1429,6 +1451,7 @@ REM 睡眠 -- part-of --> 睡眠阶段
 | [[03-cards/card-memory_consolidation|memory_consolidation]] 记忆巩固 | 记忆巩固 | 普通心理学 | 4 |
 | [[03-cards/card-memory_retrieval|memory_retrieval]] 记忆提取 | 记忆提取 | 普通心理学 | 8 |
 | [[03-cards/card-memory_strategies|memory_strategies]] 记忆策略与记忆术 | 记忆策略与记忆术 | 普通心理学 | 6 |
+| [[03-cards/10-普通心理学/card-mental_models_theory|mental_models_theory]] 心理模型理论 | 心理模型理论 | 认知心理学 | 3 |
 | [[03-cards/10-普通心理学/card-mental_rotation|mental_rotation]] 心理旋转 | 心理旋转 | 普通心理学 | 3 |
 | [[03-cards/10-普通心理学/card-mental_set|mental_set]] 心理定势 | 心理定势 | 普通心理学 | 6 |
 | [[03-cards/10-普通心理学/card-metamemory|metamemory]] 元记忆 | 元记忆 | 普通心理学 | 3 |
@@ -1496,6 +1519,7 @@ REM 睡眠 -- part-of --> 睡眠阶段
 | [[03-cards/50-临床与咨询/card-psychotherapy_major_approaches|psychotherapy_major_approaches]] 心理治疗主要流派 | 心理治疗主要流派 | 临床心理学 | 14 |
 | [[03-cards/30-人格心理学/card-rank_order_stability|rank_order_stability]] 等级秩序稳定性 | 等级秩序稳定性 | 人格心理学 | 6 |
 | [[03-cards/20-社会心理学/card-realistic_group_conflict_theory|realistic_group_conflict_theory]] 现实群体冲突理论 | 现实群体冲突理论 | 社会心理学 | 6 |
+| [[03-cards/10-普通心理学/card-reasoning_and_logic|reasoning_and_logic]] 推理与逻辑 | 推理与逻辑 | 认知心理学 | 10 |
 | [[03-cards/30-人格心理学/card-reciprocal_determinism|reciprocal_determinism]] 交互决定论 | 交互决定论 | 人格心理学 | 5 |
 | [[03-cards/110-变态心理学/card-relapse_prevention|relapse_prevention]] 复发预防 | 复发预防 | 临床心理学 | 6 |
 | [[03-cards/20-社会心理学/card-relationship_satisfaction|relationship_satisfaction]] 关系满意度 | 关系满意度 | 社会心理学 | 4 |
@@ -1563,6 +1587,7 @@ REM 睡眠 -- part-of --> 睡眠阶段
 | [[03-cards/20-社会心理学/card-subjective_norm|subjective_norm]] 主观规范 | 主观规范 | 社会心理学 | 3 |
 | [[03-cards/110-变态心理学/card-substance_use_disorders|substance_use_disorders]] 物质使用障碍 | 物质使用障碍 | 异常心理学 | 10 |
 | [[03-cards/20-社会心理学/card-sucker_effect|sucker_effect]] 傻瓜效应 | 傻瓜效应 | 社会心理学 | 3 |
+| [[03-cards/10-普通心理学/card-syllogistic_reasoning|syllogistic_reasoning]] 三段论推理 | 三段论推理 | 认知心理学 | 4 |
 | [[03-cards/60-发展心理学/card-symbolic_pretend_play|symbolic_pretend_play]] 象征性假装游戏 | 象征性假装游戏 | 发展心理学 | 7 |
 | [[03-cards/20-社会心理学/card-symbolic_racism|symbolic_racism]] 象征性种族主义 | 象征性种族主义 | 社会心理学 | 4 |
 | [[03-cards/100-生理心理学/card-synaptic_transmission|synaptic_transmission]] 突触传递 | 突触传递 | 生物心理学 | 7 |
@@ -1572,7 +1597,7 @@ REM 睡眠 -- part-of --> 睡眠阶段
 | [[03-cards/30-人格心理学/card-temperament_types|temperament_types]] 气质类型 | 气质类型 | 人格心理学 | 5 |
 | [[03-cards/20-社会心理学/card-theory_of_planned_behavior|theory_of_planned_behavior]] 计划行为理论 | 计划行为理论 | 社会心理学 | 10 |
 | [[03-cards/20-社会心理学/card-theory_of_reasoned_action|theory_of_reasoned_action]] 理性行为理论 | 理性行为理论 | 社会心理学 | 5 |
-| [[03-cards/card-thinking_and_problem_solving|thinking_and_problem_solving]] 思维与问题解决 | 思维与问题解决 | 普通心理学 | 7 |
+| [[03-cards/card-thinking_and_problem_solving|thinking_and_problem_solving]] 思维与问题解决 | 思维与问题解决 | 普通心理学 | 8 |
 | [[03-cards/50-临床与咨询/card-third_wave_cbt|third_wave_cbt]] 第三波认知行为治疗 | 第三波认知行为治疗 | 临床心理学 | 5 |
 | [[03-cards/card-three_stage_memory_model|three_stage_memory_model]] 记忆的三级模型 | 记忆的三级模型 | 普通心理学 | 14 |
 | [[03-cards/20-社会心理学/card-thurstone_scale|thurstone_scale]] Thurstone量表 | Thurstone量表 | 社会心理学 | 2 |
@@ -1781,11 +1806,11 @@ REM 睡眠 -- part-of --> 睡眠阶段
 | 关系类型 | 数量 |
 |---------|------|
 | part-of | 374 |
-| correlates-with | 301 |
-| supports | 234 |
+| correlates-with | 304 |
+| supports | 241 |
 | contrasts | 158 |
-| applies-to | 144 |
-| is-a | 142 |
+| is-a | 148 |
+| applies-to | 146 |
 | extends | 89 |
 | related-to | 30 |
 | causes | 21 |
