@@ -337,3 +337,41 @@ Get-Item "路径" | Select-Object Attributes, Target
 - 配置：`git config --global core.hooksPath C:/Users/乏味/.git-hooks`
 
 这能拦截"空 amend"这类最明显的错误，但不能替代人工 diff 检查。
+
+---
+
+## 十五、批量填充知识库违规案例（2026-07-07）
+
+### 事件
+
+用户要求开始批量填充心理学知识库概念卡片。我加载了相关规则，却未按规范执行：
+
+1. 反复索要参数，违反 `execute-without-confirm.md`。
+2. 未读 `topic-backlog.md`，自选已饱和主题“认知发展”。
+3. 未扫描 `03-cards/60-发展心理学/`，生成与 `piaget_cognitive_stages.md`、`assimilation_accommodation.md` 大量重复的卡片。
+4. 新卡片关系目标指向不存在的 `piaget_cognitive_development_theory`，会导致数据库关系解析失败。
+5. 未打 checkpoint commit 就批量写入。
+6. 未写样本卡测试，直接批量生成 8 张后才发现重复并删除。
+
+### 根因
+
+**规则读了不等于执行了。** 把 `spec-kb-fill-workflow.md` 当成参考而非必须执行的脚本，凭经验跳跃步骤。
+
+### 教训
+
+批量任务必须按规范逐条执行：
+
+1. `git status` + checkpoint commit。
+2. 读 `topic-backlog.md` / `CURRENT_STATE.md`。
+3. 扫描 `03-cards/` 确认覆盖情况。
+4. 选真正缺失的概念簇。
+5. 输出层级规划清单并确认。
+6. 写 1 张样本卡 → `import_md.py` 验证 → 再批量写。
+7. 同步、打标签、验证关系、更新 backlog、commit。
+
+### 相关
+
+- [[no-repetitive-failed-operations]] — 失败后不得自动重试
+- [[rule-toolbox]] — 规则触发地图
+- [[psychology-kb-toolstack-plan]] — 心理学知识库项目规范
+
