@@ -4,15 +4,12 @@
 > 如需调整概念簇划分或关系，请修改卡片 YAML frontmatter 中的 `relations` 字段，然后重新运行脚本。
 > 人工修正可写入 `04-index/concept-map-override.md`，下次生成时会自动追加到末尾。
 
-> [WARNING] 检测到以下 concept 对应多个文件，已自动选择内容更完整的版本：
-> - `double_dissociation`: 03-cards/100-生理心理学/card-double_dissociation.md, 03-cards/90-实验心理学/card-double_dissociation.md
-
 ## 概览
 
 - 总卡片数：452
 - 概念簇数：11
 - 孤立卡片数：0
-- 关系总数：1494
+- 关系总数：1495
 
 ## 概念簇
 
@@ -229,6 +226,7 @@ Yerkes-Dodson 定律 -- applies-to --> 情绪调节
 认知神经科学 -- supports --> 脑功能定位
 认知神经科学 -- supports --> 大脑半球特化
 双分离 -- is-a --> 认知神经科学
+双分离 -- supports --> 脑功能定位
 脑电图 -- is-a --> 脑成像技术
 脑电图 -- supports --> 事件相关电位
 脑电图 -- contrasts --> 功能性磁共振成像
@@ -1303,7 +1301,7 @@ REM 睡眠 -- part-of --> 睡眠阶段
 | [[03-cards/10-普通心理学/card-divided_attention|divided_attention]] 分配性注意 | 分配性注意 | 普通心理学 | 3 |
 | [[03-cards/20-社会心理学/card-door_in_the_face_technique|door_in_the_face_technique]] 留面子效应 | 留面子效应 | 社会心理学 | 6 |
 | [[03-cards/110-变态心理学/card-dopamine_hypothesis|dopamine_hypothesis]] 多巴胺假说 | 多巴胺假说 | 异常心理学 | 8 |
-| [[03-cards/90-实验心理学/card-double_dissociation|double_dissociation]] 双分离 | 双分离 | 认知心理学 | 4 |
+| [[03-cards/100-生理心理学/card-double_dissociation|double_dissociation]] 双分离 | 双分离 | 认知心理学 | 5 |
 | [[03-cards/card-dreams|dreams]] 梦 | 梦 | 普通心理学 | 3 |
 | [[03-cards/60-发展心理学/card-dual_systems_model|dual_systems_model]] 双系统模型 | 双系统模型 | 发展心理学 | 5 |
 | [[03-cards/110-变态心理学/card-eating_disorders|eating_disorders]] 进食障碍 | 进食障碍 | 异常心理学 | 13 |
@@ -1342,7 +1340,7 @@ REM 睡眠 -- part-of --> 睡眠阶段
 | [[03-cards/20-社会心理学/card-free_rider_effect|free_rider_effect]] 搭便车效应 | 搭便车效应 | 社会心理学 | 5 |
 | [[03-cards/30-人格心理学/card-fully_functioning_person|fully_functioning_person]] 充分发挥功能的人 | 充分发挥功能的人 | 人格心理学 | 5 |
 | [[03-cards/10-普通心理学/card-functional_fixedness|functional_fixedness]] 功能固着 | 功能固着 | 普通心理学 | 5 |
-| [[03-cards/90-实验心理学/card-functional_localization|functional_localization]] 脑功能定位 | 脑功能定位 | 认知心理学 | 5 |
+| [[03-cards/90-实验心理学/card-functional_localization|functional_localization]] 脑功能定位 | 脑功能定位 | 认知心理学 | 6 |
 | [[03-cards/20-社会心理学/card-fundamental_attribution_error|fundamental_attribution_error]] 基本归因错误 | 基本归因错误 | 社会心理学 | 14 |
 | [[03-cards/10-普通心理学/card-general_adaptation_syndrome|general_adaptation_syndrome]] 一般适应症候群 | 一般适应症候群 | 普通心理学 | 4 |
 | [[03-cards/110-变态心理学/card-generalized_anxiety_disorder|generalized_anxiety_disorder]] 广泛性焦虑障碍 | 广泛性焦虑障碍 | 异常心理学 | 9 |
@@ -1784,7 +1782,7 @@ REM 睡眠 -- part-of --> 睡眠阶段
 |---------|------|
 | part-of | 374 |
 | correlates-with | 301 |
-| supports | 233 |
+| supports | 234 |
 | contrasts | 158 |
 | applies-to | 144 |
 | is-a | 142 |
