@@ -14,6 +14,8 @@ citekeys: []
 relations:
   - target: cognitive_bias_and_heuristics
     type: part-of
+  - target: decision_making_and_judgment
+    type: is-a
   - target: thinking_and_problem_solving
     type: applies-to
 ---

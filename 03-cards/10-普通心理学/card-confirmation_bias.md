@@ -12,6 +12,8 @@ citekeys: []
 relations:
   - target: cognitive_bias_and_heuristics
     type: part-of
+  - target: decision_making_and_judgment
+    type: is-a
   - target: belief_perseverance
     type: contrasts
 ---

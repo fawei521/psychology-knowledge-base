@@ -17,14 +17,14 @@ metadata:
 
 | 内分泌系统与行为 | biological_psychology | 中频 | 待填充 | 下丘脑-垂体-肾上腺轴、应激激素、性激素与行为。 |
 | 遗传与行为遗传学 | biological_psychology | 中高频 | 待填充 | 双生子研究、收养研究、遗传率、基因-环境交互。 |
-| 脑成像技术 | biological_psychology | 中高频 | 待填充 | EEG、fMRI、PET、TMS 原理与应用。 |
+| 脑成像技术 | biological_psychology | 中高频 | 已完成 | EEG、fMRI、PET、TMS 原理与应用。 |
 | 神经系统发育 | biological_psychology | 中频 | 待填充 | 神经发生、突触发生、髓鞘化、关键期与可塑性。 |
 | 感觉神经系统 | biological_psychology | 中频 | 待填充 | 视觉通路、听觉通路、体感系统、感觉编码。 |
 
 | 精神分析治疗 | clinical_psychology | 中频 | 待填充 | 自由联想、移情、防御、现代短程动力治疗。 |
 | 人本主义治疗 | clinical_psychology | 中频 | 待填充 | 来访者中心疗法、共情、真诚一致、无条件积极关注。 |
 | 认知神经科学基础 | cognitive_psychology | 中高频 | 待填充 | 双分离、脑损伤研究、神经心理学方法。 |
-| 决策与判断 | cognitive_psychology | 高频 | 待填充 | 期望效用理论、前景理论、损失厌恶、禀赋效应。 |
+| 决策与判断 | cognitive_psychology | 高频 | 已完成 | 期望效用理论、前景理论、损失厌恶、禀赋效应，关联已有启发/偏差卡片。 |
 | 推理与逻辑 | cognitive_psychology | 中频 | 待填充 | 演绎推理、归纳推理、信念偏差、三段论。 |
 | 心理表象与空间认知 | cognitive_psychology | 中频 | 待填充 | 心理旋转、表象扫描、认知地图。 |
 | 阅读与语言理解 | cognitive_psychology | 中频 | 待填充 | 词汇识别、句法加工、语篇理解、阅读模型。 |
