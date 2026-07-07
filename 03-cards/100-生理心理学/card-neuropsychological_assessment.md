@@ -13,7 +13,7 @@ tags:
 citekeys: []
 relations:
   - target: cognitive_neuroscience
-    type: applies-to
+    type: is-a
 ---
 
 # 神经心理学评估 / Neuropsychological Assessment

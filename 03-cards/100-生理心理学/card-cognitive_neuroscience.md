@@ -24,9 +24,15 @@ relations:
     type: supports
   - target: neuropsychological_assessment
     type: supports
-  - target: transcranial_magnetic_stimulation
+  - target: tms
     type: supports
   - target: attention
+    type: supports
+  - target: brain_plasticity
+    type: supports
+  - target: functional_localization
+    type: supports
+  - target: hemispheric_specialization
     type: supports
 ---
 

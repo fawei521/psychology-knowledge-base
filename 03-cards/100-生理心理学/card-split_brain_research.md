@@ -12,8 +12,10 @@ tags:
 citekeys: []
 relations:
   - target: cognitive_neuroscience
-    type: applies-to
+    type: is-a
   - target: brain_structure_and_function
+    type: supports
+  - target: hemispheric_specialization
     type: supports
 ---
 

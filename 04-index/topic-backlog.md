@@ -23,7 +23,7 @@ metadata:
 
 | 精神分析治疗 | clinical_psychology | 中频 | 待填充 | 自由联想、移情、防御、现代短程动力治疗。 |
 | 人本主义治疗 | clinical_psychology | 中频 | 待填充 | 来访者中心疗法、共情、真诚一致、无条件积极关注。 |
-| 认知神经科学基础 | cognitive_psychology | 中高频 | 待填充 | 双分离、脑损伤研究、神经心理学方法。 |
+| 认知神经科学基础 | cognitive_psychology | 中高频 | 已完成 | 双分离、脑损伤研究、神经心理学方法、脑可塑性、功能定位、半球特化。 |
 | 决策与判断 | cognitive_psychology | 高频 | 已完成 | 期望效用理论、前景理论、损失厌恶、禀赋效应，关联已有启发/偏差卡片。 |
 | 推理与逻辑 | cognitive_psychology | 中频 | 待填充 | 演绎推理、归纳推理、信念偏差、三段论。 |
 | 心理表象与空间认知 | cognitive_psychology | 中频 | 待填充 | 心理旋转、表象扫描、认知地图。 |

@@ -12,8 +12,10 @@ tags:
 citekeys: []
 relations:
   - target: cognitive_neuroscience
-    type: applies-to
+    type: is-a
   - target: double_dissociation
+    type: supports
+  - target: functional_localization
     type: supports
 ---
 
