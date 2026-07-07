@@ -14,6 +14,12 @@ citekeys: []
 relations:
   - target: personality_disorders
     type: is-a
+  - target: avoidant_personality_disorder
+    type: supports
+  - target: dependent_personality_disorder
+    type: supports
+  - target: obsessive_compulsive_personality_disorder
+    type: supports
 ---
 
 # C群人格障碍 / Cluster C Personality Disorders

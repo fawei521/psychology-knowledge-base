@@ -16,6 +16,10 @@ relations:
     type: is-a
   - target: schizotypal_personality_disorder
     type: supports
+  - target: paranoid_personality_disorder
+    type: supports
+  - target: schizoid_personality_disorder
+    type: supports
   - target: schizophrenia_spectrum
     type: correlates-with
 ---

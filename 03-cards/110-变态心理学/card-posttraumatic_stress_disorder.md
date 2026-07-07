@@ -13,6 +13,12 @@ relations:
     type: "correlates-with"
   - target: "major_depressive_disorder"
     type: "correlates-with"
+  - target: "dissociative_disorders"
+    type: "correlates-with"
+  - target: "dissociative_amnesia"
+    type: "correlates-with"
+  - target: "dissociative_identity_disorder"
+    type: "correlates-with"
 ---
 
 # 创伤后应激障碍 / Posttraumatic Stress Disorder

@@ -25,6 +25,18 @@ relations:
     type: supports
   - target: schizotypal_personality_disorder
     type: supports
+  - target: paranoid_personality_disorder
+    type: supports
+  - target: schizoid_personality_disorder
+    type: supports
+  - target: histrionic_personality_disorder
+    type: supports
+  - target: avoidant_personality_disorder
+    type: supports
+  - target: dependent_personality_disorder
+    type: supports
+  - target: obsessive_compulsive_personality_disorder
+    type: supports
   - target: schizophrenia_spectrum
     type: correlates-with
 ---

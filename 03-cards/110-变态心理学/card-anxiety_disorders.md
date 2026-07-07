@@ -18,6 +18,10 @@ relations:
     type: part-of
   - target: social_anxiety_disorder
     type: part-of
+  - target: anxiety_cognitive_model
+    type: supports
+  - target: attentional_bias_threat
+    type: supports
 ---
 
 # 焦虑障碍 / Anxiety Disorders

@@ -11,6 +11,8 @@ relations:
     type: "is-a"
   - target: "obsessive_compulsive_disorder"
     type: "contrasts"
+  - target: "obsessive_compulsive_related_disorders"
+    type: "contrasts"
 ---
 
 # 强迫型人格障碍 / Obsessive-Compulsive Personality Disorder

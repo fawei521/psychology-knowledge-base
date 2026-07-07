@@ -20,6 +20,22 @@ relations:
     type: supports
   - target: emotion_regulation
     type: supports
+  - target: cognitive_restructuring
+    type: supports
+  - target: behavioral_activation
+    type: supports
+  - target: exposure_therapy
+    type: supports
+  - target: third_wave_cbt
+    type: supports
+  - target: beck_cognitive_triad
+    type: applies-to
+  - target: anxiety_disorders
+    type: applies-to
+  - target: major_depressive_disorder
+    type: applies-to
+  - target: eating_disorders
+    type: applies-to
 ---
 
 # 认知行为治疗 / Cognitive Behavioral Therapy

@@ -13,6 +13,12 @@ citekeys: []
 relations:
   - target: anxiety_disorders
     type: part-of
+  - target: anxiety_cognitive_model
+    type: supports
+  - target: attentional_bias_threat
+    type: supports
+  - target: catastrophizing
+    type: correlates-with
 ---
 
 # 社交焦虑障碍 / Social Anxiety Disorder

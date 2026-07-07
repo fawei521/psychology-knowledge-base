@@ -9,6 +9,14 @@ relations:
     type: part-of
   - target: self_efficacy
     type: contrasts
+  - target: depressive_attributional_style
+    type: extends
+  - target: hopelessness_theory_depression
+    type: extends
+  - target: rumination
+    type: correlates-with
+  - target: beck_cognitive_triad
+    type: correlates-with
 ---
 
 # 习得性无助 / Learned Helplessness

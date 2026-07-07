@@ -13,6 +13,14 @@ citekeys: []
 relations:
   - target: anxiety_disorders
     type: part-of
+  - target: anxiety_cognitive_model
+    type: supports
+  - target: intolerance_of_uncertainty
+    type: supports
+  - target: catastrophizing
+    type: correlates-with
+  - target: attentional_bias_threat
+    type: correlates-with
 ---
 
 # 广泛性焦虑障碍 / Generalized Anxiety Disorder (GAD)

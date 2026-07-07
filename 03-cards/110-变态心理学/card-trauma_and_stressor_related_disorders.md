@@ -17,6 +17,10 @@ relations:
     type: "includes"
   - target: "anxiety_disorders"
     type: "contrasts"
+  - target: "dissociative_disorders"
+    type: "correlates-with"
+  - target: "dissociative_identity_disorder"
+    type: "correlates-with"
 ---
 
 # 创伤与应激相关障碍 / Trauma- and Stressor-Related Disorders

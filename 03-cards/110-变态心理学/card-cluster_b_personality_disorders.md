@@ -21,6 +21,8 @@ relations:
     type: supports
   - target: narcissistic_personality_disorder
     type: supports
+  - target: histrionic_personality_disorder
+    type: supports
 ---
 
 # B群人格障碍 / Cluster B Personality Disorders

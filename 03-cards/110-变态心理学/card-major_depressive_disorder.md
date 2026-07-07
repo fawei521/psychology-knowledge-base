@@ -15,6 +15,16 @@ relations:
     type: part-of
   - target: bipolar_disorder
     type: contrasts
+  - target: beck_cognitive_triad
+    type: supports
+  - target: hopelessness_theory_depression
+    type: supports
+  - target: rumination
+    type: correlates-with
+  - target: depressive_attributional_style
+    type: correlates-with
+  - target: learned_helplessness
+    type: correlates-with
 ---
 
 # 重性抑郁障碍 / Major Depressive Disorder (MDD)

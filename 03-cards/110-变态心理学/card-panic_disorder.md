@@ -13,6 +13,14 @@ citekeys: []
 relations:
   - target: anxiety_disorders
     type: part-of
+  - target: anxiety_cognitive_model
+    type: supports
+  - target: anxiety_sensitivity
+    type: supports
+  - target: catastrophizing
+    type: supports
+  - target: attentional_bias_threat
+    type: correlates-with
 ---
 
 # 惊恐障碍 / Panic Disorder

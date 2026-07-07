@@ -99,26 +99,29 @@ metadata:
 
 | 概念点 | 所属学科 | 考研关联 | 状态 | 说明 |
 |---|---|---|---|---|
+| 强迫及相关障碍 | abnormal_psychology | 高频 | 已完成 | OCD、囤积障碍、拔毛癖、躯体变形障碍、强迫认知模型。 |
+| 创伤与应激相关障碍 | abnormal_psychology | 高频 | 已完成 | PTSD、急性应激障碍、适应障碍、延长哀伤障碍。 |
+| 抑郁认知理论 | abnormal_psychology | 高频 | 已完成 | Beck 认知三联征、习得性无助/归因风格、无望理论、反刍。 |
+| 焦虑认知模型 | abnormal_psychology | 高频 | 已完成 | 焦虑敏感性、不确定性不耐受、灾难化、威胁注意偏向。 |
+| 分离障碍 | abnormal_psychology | 中频 | 已完成 | 分离性身份障碍、分离性遗忘、人格解体/现实解体。 |
+| 人格障碍谱系 | abnormal_psychology | 高频 | 已完成 | A/B/C 群人格障碍、DSM-5 诊断、病因与治疗。 |
+| 进食障碍 | abnormal_psychology | 中高频 | 已完成 | 神经性厌食、神经性贪食、暴食障碍、身体意象。 |
+| 物质使用障碍 | abnormal_psychology | 中频 | 已完成 | 成瘾循环、耐受、戒断、生物心理社会病因。 |
+| 儿童青少年心理障碍 | abnormal_psychology | 中频 | 已完成 | ADHD、自闭症谱系、品行障碍、对立违抗障碍。 |
+| 抑郁认知理论 | abnormal_psychology | 高频 | 已完成 | Beck 认知三联征、习得性无助、无望理论、反刍。 |
+| 焦虑认知模型 | abnormal_psychology | 高频 | 已完成 | 焦虑敏感性、灾难化、注意偏向、intolerance of uncertainty。 |
+| 心理治疗主要流派 | clinical_psychology | 高频 | 已完成 | CBT、精神分析、人本主义、行为治疗、家庭治疗概述。 |
+| 认知行为治疗 | clinical_psychology | 高频 | 已完成 | 认知重构、行为激活、暴露疗法、第三波 CBT。 |
+
 ### 生物心理学
 
 | 概念点 | 所属学科 | 考研关联 | 状态 | 说明 |
 |---|---|---|---|---|
-| 内分泌系统与行为 | biological_psychology | 中频 | 待填充 | 下丘脑-垂体-肾上腺轴、应激激素、性激素与行为。 |
-| 遗传与行为遗传学 | biological_psychology | 中高频 | 待填充 | 双生子研究、收养研究、遗传率、基因-环境交互。 |
-| 脑成像技术 | biological_psychology | 中高频 | 待填充 | EEG、fMRI、PET、TMS 原理与应用。 |
-| 神经系统发育 | biological_psychology | 中频 | 待填充 | 神经发生、突触发生、髓鞘化、关键期与可塑性。 |
-| 感觉神经系统 | biological_psychology | 中频 | 待填充 | 视觉通路、听觉通路、体感系统、感觉编码。 |
 
 ### 认知心理学
 
 | 概念点 | 所属学科 | 考研关联 | 状态 | 说明 |
 |---|---|---|---|---|
-| 认知神经科学基础 | cognitive_psychology | 中高频 | 待填充 | 双分离、脑损伤研究、神经心理学方法。 |
-| 决策与判断 | cognitive_psychology | 高频 | 待填充 | 期望效用理论、前景理论、损失厌恶、禀赋效应。 |
-| 推理与逻辑 | cognitive_psychology | 中频 | 待填充 | 演绎推理、归纳推理、信念偏差、三段论。 |
-| 心理表象与空间认知 | cognitive_psychology | 中频 | 待填充 | 心理旋转、表象扫描、认知地图。 |
-| 阅读与语言理解 | cognitive_psychology | 中频 | 待填充 | 词汇识别、句法加工、语篇理解、阅读模型。 |
-| 认知老化 | cognitive_psychology | 中频 | 待填充 | 加工速度理论、抑制缺陷、工作记忆老化、补偿机制。 |
 
 ### 统计与测量
 

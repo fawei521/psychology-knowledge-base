@@ -6,14 +6,14 @@
 
 ## 概览
 
-- 总卡片数：399
+- 总卡片数：435
 - 概念簇数：12
 - 孤立卡片数：0
-- 关系总数：1186
+- 关系总数：1414
 
 ## 概念簇
 
-### 1. [[03-cards/60-发展心理学/card-attachment_theory|attachment_theory]] 依恋理论（发展心理学）
+### 1. [[03-cards/50-临床与咨询/card-cognitive_behavioral_therapy|cognitive_behavioral_therapy]] 认知行为治疗（临床心理学）
 
 ```
 成就目标理论 -- part-of --> 动机理论
@@ -194,8 +194,19 @@ Yerkes-Dodson 定律 -- applies-to --> 情绪调节
 经颅磁刺激 -- correlates-with --> 脑成像技术
 急性应激障碍 -- is-a --> 创伤与应激相关障碍
 急性应激障碍 -- related-to --> 创伤后应激障碍
+成瘾循环 -- part-of --> 物质使用障碍
+成瘾循环 -- supports --> 多巴胺假说
+成瘾循环 -- part-of --> 耐受与戒断
+成瘾循环 -- correlates-with --> 复发预防
+成瘾循环 -- applies-to --> 生物-心理-社会模型
 适应障碍 -- is-a --> 创伤与应激相关障碍
 适应障碍 -- contrasts --> 创伤后应激障碍
+神经性厌食 -- part-of --> 进食障碍
+神经性厌食 -- correlates-with --> 身体意象障碍
+神经性厌食 -- correlates-with --> 强迫型人格障碍
+神经性厌食 -- correlates-with --> 重性抑郁障碍
+神经性厌食 -- correlates-with --> 神经性贪食
+神经性厌食 -- supports --> 认知行为治疗
 抗精神病药物 -- applies-to --> 精神分裂症谱系
 抗精神病药物 -- applies-to --> 精神分裂症
 抗精神病药物 -- supports --> 多巴胺假说
@@ -206,32 +217,155 @@ Yerkes-Dodson 定律 -- applies-to --> 情绪调节
 焦虑与心境障碍 -- part-of --> 重性抑郁障碍
 焦虑与心境障碍 -- part-of --> 双相障碍
 焦虑与心境障碍 -- applies-to --> 生物-心理-社会模型
+焦虑认知模型 -- applies-to --> 焦虑障碍
+焦虑认知模型 -- applies-to --> 惊恐障碍
+焦虑认知模型 -- applies-to --> 广泛性焦虑障碍
+焦虑认知模型 -- applies-to --> 社交焦虑障碍
+焦虑认知模型 -- supports --> 认知行为治疗
+焦虑认知模型 -- part-of --> 焦虑敏感性
+焦虑认知模型 -- part-of --> 不确定性不耐受
+焦虑认知模型 -- part-of --> 灾难化
+焦虑认知模型 -- part-of --> 威胁注意偏向
 焦虑障碍 -- part-of --> 惊恐障碍
 焦虑障碍 -- part-of --> 广泛性焦虑障碍
 焦虑障碍 -- part-of --> 社交焦虑障碍
+焦虑障碍 -- supports --> 焦虑认知模型
+焦虑障碍 -- supports --> 威胁注意偏向
+焦虑敏感性 -- applies-to --> 惊恐障碍
+焦虑敏感性 -- correlates-with --> 灾难化
+焦虑敏感性 -- correlates-with --> 广泛性焦虑障碍
+注意缺陷多动障碍 -- part-of --> 儿童青少年心理障碍
+注意缺陷多动障碍 -- correlates-with --> 执行功能
+注意缺陷多动障碍 -- correlates-with --> 品行障碍
+注意缺陷多动障碍 -- correlates-with --> 对立违抗障碍
+注意缺陷多动障碍 -- supports --> 认知行为治疗
+威胁注意偏向 -- applies-to --> 焦虑障碍
+威胁注意偏向 -- extends --> 选择性注意
+威胁注意偏向 -- correlates-with --> Stroop 效应
+自闭症谱系障碍 -- part-of --> 儿童青少年心理障碍
+自闭症谱系障碍 -- correlates-with --> 执行功能
+自闭症谱系障碍 -- correlates-with --> 社会认知理论
+回避型人格障碍 -- part-of --> C群人格障碍
+回避型人格障碍 -- part-of --> 人格障碍
+回避型人格障碍 -- correlates-with --> 社交焦虑障碍
+回避型人格障碍 -- correlates-with --> 依赖型人格障碍
+回避型人格障碍 -- contrasts --> 分裂样型人格障碍
+Beck 认知三联征 -- applies-to --> 重性抑郁障碍
+Beck 认知三联征 -- supports --> 认知行为治疗
+Beck 认知三联征 -- correlates-with --> 抑郁归因风格
+Beck 认知三联征 -- correlates-with --> 抑郁无望理论
+Beck 认知三联征 -- correlates-with --> 反刍
+Beck 认知三联征 -- applies-to --> 自我概念
+暴食障碍 -- part-of --> 进食障碍
+暴食障碍 -- correlates-with --> 神经性贪食
+暴食障碍 -- correlates-with --> 重性抑郁障碍
+暴食障碍 -- correlates-with --> 焦虑障碍
+暴食障碍 -- supports --> 认知行为治疗
 双相障碍 -- contrasts --> 重性抑郁障碍
 躯体变形障碍 -- is-a --> 强迫及相关障碍
 躯体变形障碍 -- correlates-with --> 强迫症
 躯体变形障碍 -- correlates-with --> 社交焦虑障碍
+身体意象障碍 -- part-of --> 进食障碍
+身体意象障碍 -- correlates-with --> 神经性贪食
+身体意象障碍 -- correlates-with --> 暴食障碍
+身体意象障碍 -- contrasts --> 躯体变形障碍
+身体意象障碍 -- correlates-with --> 自我概念
 边缘型人格障碍 -- is-a --> B群人格障碍
 边缘型人格障碍 -- is-a --> 人格障碍
 边缘型人格障碍 -- correlates-with --> 情绪调节
+神经性贪食 -- part-of --> 进食障碍
+神经性贪食 -- correlates-with --> 重性抑郁障碍
+神经性贪食 -- supports --> 认知行为治疗
+灾难化 -- applies-to --> 惊恐障碍
+灾难化 -- correlates-with --> Beck 认知三联征
+灾难化 -- correlates-with --> 重性抑郁障碍
+儿童青少年心理障碍 -- supports --> 注意缺陷多动障碍
+儿童青少年心理障碍 -- supports --> 自闭症谱系障碍
+儿童青少年心理障碍 -- supports --> 品行障碍
+儿童青少年心理障碍 -- supports --> 对立违抗障碍
+儿童青少年心理障碍 -- applies-to --> 生物-心理-社会模型
 A群人格障碍 -- is-a --> 人格障碍
 A群人格障碍 -- supports --> 分裂型人格障碍
+A群人格障碍 -- supports --> 偏执型人格障碍
+A群人格障碍 -- supports --> 分裂样型人格障碍
 A群人格障碍 -- correlates-with --> 精神分裂症谱系
 B群人格障碍 -- is-a --> 人格障碍
 B群人格障碍 -- supports --> 边缘型人格障碍
 B群人格障碍 -- supports --> 反社会型人格障碍
 B群人格障碍 -- supports --> 自恋型人格障碍
+B群人格障碍 -- supports --> 表演型人格障碍
 C群人格障碍 -- is-a --> 人格障碍
+C群人格障碍 -- supports --> 回避型人格障碍
+C群人格障碍 -- supports --> 依赖型人格障碍
+C群人格障碍 -- supports --> 强迫型人格障碍
 复杂性创伤后应激障碍 -- extends --> 创伤后应激障碍
 复杂性创伤后应激障碍 -- contrasts --> 边缘型人格障碍
+品行障碍 -- part-of --> 儿童青少年心理障碍
+品行障碍 -- extends --> 对立违抗障碍
+品行障碍 -- extends --> 反社会型人格障碍
+品行障碍 -- correlates-with --> 物质使用障碍
+依赖型人格障碍 -- part-of --> C群人格障碍
+依赖型人格障碍 -- part-of --> 人格障碍
+依赖型人格障碍 -- correlates-with --> 表演型人格障碍
+依赖型人格障碍 -- correlates-with --> 边缘型人格障碍
+人格解体/现实解体障碍 -- part-of --> 分离障碍
+人格解体/现实解体障碍 -- correlates-with --> 焦虑障碍
+人格解体/现实解体障碍 -- correlates-with --> 惊恐障碍
+人格解体/现实解体障碍 -- correlates-with --> 创伤后应激障碍
+人格解体/现实解体障碍 -- correlates-with --> 冥想
+抑郁归因风格 -- extends --> 习得性无助
+抑郁归因风格 -- extends --> Weiner归因理论
+抑郁归因风格 -- related-to --> 抑郁无望理论
+抑郁归因风格 -- correlates-with --> 自尊
+分离性遗忘 -- part-of --> 分离障碍
+分离性遗忘 -- correlates-with --> 创伤后应激障碍
+分离性遗忘 -- correlates-with --> 创伤与应激相关障碍
+分离性遗忘 -- correlates-with --> 分离性身份障碍
+分离障碍 -- supports --> 分离性身份障碍
+分离障碍 -- supports --> 分离性遗忘
+分离障碍 -- supports --> 人格解体/现实解体障碍
+分离障碍 -- correlates-with --> 创伤与应激相关障碍
+分离障碍 -- correlates-with --> 创伤后应激障碍
+分离障碍 -- applies-to --> 生物-心理-社会模型
+分离性身份障碍 -- part-of --> 分离障碍
+分离性身份障碍 -- correlates-with --> 创伤与应激相关障碍
+分离性身份障碍 -- correlates-with --> 创伤后应激障碍
+分离性身份障碍 -- correlates-with --> 人格解体/现实解体障碍
 多巴胺假说 -- applies-to --> 精神分裂症谱系
 多巴胺假说 -- applies-to --> 精神分裂症
+进食障碍 -- supports --> 神经性厌食
+进食障碍 -- supports --> 神经性贪食
+进食障碍 -- supports --> 暴食障碍
+进食障碍 -- supports --> 身体意象障碍
+进食障碍 -- correlates-with --> 强迫型人格障碍
+进食障碍 -- correlates-with --> 重性抑郁障碍
+进食障碍 -- supports --> 认知行为治疗
+进食障碍 -- applies-to --> 生物-心理-社会模型
 皮肤搔抓障碍 -- is-a --> 强迫及相关障碍
 皮肤搔抓障碍 -- correlates-with --> 拔毛癖
+广泛性焦虑障碍 -- supports --> 焦虑认知模型
+广泛性焦虑障碍 -- supports --> 不确定性不耐受
+广泛性焦虑障碍 -- correlates-with --> 灾难化
+广泛性焦虑障碍 -- correlates-with --> 威胁注意偏向
+表演型人格障碍 -- part-of --> B群人格障碍
+表演型人格障碍 -- part-of --> 人格障碍
+表演型人格障碍 -- contrasts --> 自恋型人格障碍
+表演型人格障碍 -- contrasts --> 边缘型人格障碍
 囤积障碍 -- is-a --> 强迫及相关障碍
 囤积障碍 -- contrasts --> 强迫症
+抑郁无望理论 -- extends --> Beck 认知三联征
+抑郁无望理论 -- requires --> 抑郁归因风格
+抑郁无望理论 -- extends --> 习得性无助
+抑郁无望理论 -- applies-to --> 重性抑郁障碍
+不确定性不耐受 -- applies-to --> 广泛性焦虑障碍
+不确定性不耐受 -- correlates-with --> 反刍
+不确定性不耐受 -- correlates-with --> 焦虑障碍
+不确定性不耐受 -- correlates-with --> 重性抑郁障碍
+重性抑郁障碍 -- supports --> Beck 认知三联征
+重性抑郁障碍 -- supports --> 抑郁无望理论
+重性抑郁障碍 -- correlates-with --> 反刍
+重性抑郁障碍 -- correlates-with --> 抑郁归因风格
+重性抑郁障碍 -- correlates-with --> 习得性无助
 自恋型人格障碍 -- is-a --> B群人格障碍
 自恋型人格障碍 -- is-a --> 人格障碍
 自恋型人格障碍 -- correlates-with --> 自我概念
@@ -247,12 +381,22 @@ C群人格障碍 -- is-a --> 人格障碍
 强迫型人格障碍 -- is-a --> 人格障碍
 强迫型人格障碍 -- is-a --> C群人格障碍
 强迫型人格障碍 -- contrasts --> 强迫症
+强迫型人格障碍 -- contrasts --> 强迫及相关障碍
 强迫及相关障碍 -- related-to --> 强迫症
 强迫及相关障碍 -- related-to --> 囤积障碍
 强迫及相关障碍 -- related-to --> 拔毛癖
 强迫及相关障碍 -- related-to --> 皮肤搔抓障碍
 强迫及相关障碍 -- related-to --> 躯体变形障碍
-强迫及相关障碍 -- contrasts --> 强迫型人格障碍
+对立违抗障碍 -- part-of --> 儿童青少年心理障碍
+对立违抗障碍 -- correlates-with --> 情绪调节
+惊恐障碍 -- supports --> 焦虑认知模型
+惊恐障碍 -- supports --> 焦虑敏感性
+惊恐障碍 -- supports --> 灾难化
+惊恐障碍 -- correlates-with --> 威胁注意偏向
+偏执型人格障碍 -- part-of --> A群人格障碍
+偏执型人格障碍 -- part-of --> 人格障碍
+偏执型人格障碍 -- correlates-with --> 精神分裂症谱系
+偏执型人格障碍 -- correlates-with --> 分裂型人格障碍
 人格障碍 -- supports --> A群人格障碍
 人格障碍 -- supports --> B群人格障碍
 人格障碍 -- supports --> C群人格障碍
@@ -260,6 +404,12 @@ C群人格障碍 -- is-a --> 人格障碍
 人格障碍 -- supports --> 反社会型人格障碍
 人格障碍 -- supports --> 自恋型人格障碍
 人格障碍 -- supports --> 分裂型人格障碍
+人格障碍 -- supports --> 偏执型人格障碍
+人格障碍 -- supports --> 分裂样型人格障碍
+人格障碍 -- supports --> 表演型人格障碍
+人格障碍 -- supports --> 回避型人格障碍
+人格障碍 -- supports --> 依赖型人格障碍
+人格障碍 -- supports --> 强迫型人格障碍
 人格障碍 -- correlates-with --> 精神分裂症谱系
 阳性症状 -- part-of --> 精神分裂症谱系
 阳性症状 -- part-of --> 精神分裂症
@@ -270,10 +420,33 @@ C群人格障碍 -- is-a --> 人格障碍
 延长哀伤障碍 -- is-a --> 创伤与应激相关障碍
 延长哀伤障碍 -- contrasts --> 重性抑郁障碍
 延长哀伤障碍 -- contrasts --> 创伤后应激障碍
+复发预防 -- supports --> 物质使用障碍
+复发预防 -- extends --> 认知行为治疗
+复发预防 -- applies-to --> 成瘾循环
+复发预防 -- supports --> 自我效能感
+反刍 -- correlates-with --> 习得性无助
+反刍 -- correlates-with --> 抑郁无望理论
+反刍 -- contrasts --> 情绪调节
+反刍 -- applies-to --> 重性抑郁障碍
+反刍 -- correlates-with --> 焦虑障碍
+分裂样型人格障碍 -- part-of --> A群人格障碍
+分裂样型人格障碍 -- part-of --> 人格障碍
+分裂样型人格障碍 -- contrasts --> 分裂型人格障碍
 精神分裂症 -- part-of --> 精神分裂症谱系
 分裂型人格障碍 -- is-a --> A群人格障碍
 分裂型人格障碍 -- is-a --> 人格障碍
 分裂型人格障碍 -- correlates-with --> 精神分裂症谱系
+社交焦虑障碍 -- supports --> 焦虑认知模型
+社交焦虑障碍 -- supports --> 威胁注意偏向
+社交焦虑障碍 -- correlates-with --> 灾难化
+物质使用障碍 -- supports --> 成瘾循环
+物质使用障碍 -- supports --> 耐受与戒断
+物质使用障碍 -- applies-to --> 生物-心理-社会模型
+物质使用障碍 -- correlates-with --> 多巴胺假说
+物质使用障碍 -- supports --> 认知行为治疗
+耐受与戒断 -- part-of --> 物质使用障碍
+耐受与戒断 -- extends --> 经典条件作用
+耐受与戒断 -- extends --> 操作性条件作用
 创伤与应激相关障碍 -- related-to --> 创伤后应激障碍
 创伤与应激相关障碍 -- related-to --> 急性应激障碍
 创伤与应激相关障碍 -- related-to --> 适应障碍
@@ -615,15 +788,36 @@ Rotter控制点理论 -- correlates-with --> 归因理论
 行为治疗 -- is-a --> 心理治疗主要流派
 行为治疗 -- supports --> 认知行为治疗
 行为治疗 -- is-a --> 学习理论
+行为激活 -- part-of --> 认知行为治疗
+行为激活 -- applies-to --> 重性抑郁障碍
+行为激活 -- applies-to --> 习得性无助
 认知行为治疗 -- is-a --> 心理治疗主要流派
 认知行为治疗 -- extends --> 行为治疗
 认知行为治疗 -- supports --> 思维偏差与启发式
 认知行为治疗 -- supports --> 情绪调节
+认知行为治疗 -- supports --> 认知重构
+认知行为治疗 -- supports --> 行为激活
+认知行为治疗 -- supports --> 暴露疗法
+认知行为治疗 -- supports --> 第三波认知行为治疗
+认知行为治疗 -- applies-to --> Beck 认知三联征
+认知行为治疗 -- applies-to --> 焦虑障碍
+认知行为治疗 -- applies-to --> 重性抑郁障碍
+认知行为治疗 -- applies-to --> 进食障碍
+认知重构 -- part-of --> 认知行为治疗
+认知重构 -- applies-to --> Beck 认知三联征
+认知重构 -- applies-to --> 灾难化
+认知重构 -- applies-to --> 抑郁归因风格
 辩证行为治疗 -- is-a --> 心理治疗主要流派
 辩证行为治疗 -- extends --> 认知行为治疗
 辩证行为治疗 -- supports --> 情绪调节
 暴露与反应阻止 -- is-a --> 认知行为治疗
 暴露与反应阻止 -- applies-to --> 强迫症
+暴露疗法 -- part-of --> 认知行为治疗
+暴露疗法 -- applies-to --> 焦虑障碍
+暴露疗法 -- applies-to --> 惊恐障碍
+暴露疗法 -- applies-to --> 强迫症
+暴露疗法 -- applies-to --> 创伤后应激障碍
+暴露疗法 -- part-of --> 暴露与反应阻止
 家庭系统治疗 -- is-a --> 心理治疗主要流派
 人本主义治疗 -- is-a --> 心理治疗主要流派
 人本主义治疗 -- extends --> 罗杰斯以人为中心理论
@@ -641,6 +835,10 @@ Rotter控制点理论 -- correlates-with --> 归因理论
 心理治疗主要流派 -- supports --> 家庭系统治疗
 心理治疗主要流派 -- supports --> 辩证行为治疗
 心理治疗主要流派 -- supports --> 正念基础治疗
+第三波认知行为治疗 -- extends --> 认知行为治疗
+第三波认知行为治疗 -- supports --> 正念基础治疗
+第三波认知行为治疗 -- supports --> 辩证行为治疗
+第三波认知行为治疗 -- supports --> 情绪调节
 青少年自我中心主义 -- part-of --> 青少年社会情绪发展
 青少年自我中心主义 -- extends --> 皮亚杰认知发展阶段论
 青少年自我中心主义 -- correlates-with --> 社会发展
@@ -874,6 +1072,7 @@ big_five_personality -- correlates-with --> 依恋理论
 相互依赖理论 -- is-a --> 浪漫爱情
 习得性无助 -- part-of --> 人格与个体差异
 习得性无助 -- contrasts --> 自我效能感
+习得性无助 -- correlates-with --> Beck 认知三联征
 加工水平理论 -- applies-to --> 记忆的三级模型
 加工水平理论 -- supports --> 记忆策略与记忆术
 控制点 -- part-of --> 人格与个体差异
@@ -914,11 +1113,12 @@ REM 睡眠 -- part-of --> 睡眠阶段
 
 | 成员 | 中文名 | 学科 | 簇内连接数 |
 |------|--------|------|-----------|
-| [[03-cards/60-发展心理学/card-attachment_theory|attachment_theory]] 依恋理论 | 依恋理论 | 发展心理学 | 28 |
+| [[03-cards/50-临床与咨询/card-cognitive_behavioral_therapy|cognitive_behavioral_therapy]] 认知行为治疗 | 认知行为治疗 | 临床心理学 | 31 |
 | [[03-cards/10-普通心理学/card-achievement_goal_theory|achievement_goal_theory]] 成就目标理论 | 成就目标理论 | 普通心理学 | 5 |
 | [[03-cards/10-普通心理学/card-achievement_motivation_theory|achievement_motivation_theory]] 成就动机理论 | 成就动机理论 | 普通心理学 | 5 |
 | [[03-cards/20-社会心理学/card-actor_observer_bias|actor_observer_bias]] 行动者-观察者偏差 | 行动者-观察者偏差 | 社会心理学 | 6 |
 | [[03-cards/110-变态心理学/card-acute_stress_disorder|acute_stress_disorder]] 急性应激障碍 | 急性应激障碍 | 异常心理学 | 4 |
+| [[03-cards/110-变态心理学/card-addiction_cycle|addiction_cycle]] 成瘾循环 | 成瘾循环 | 异常心理学 | 8 |
 | [[03-cards/110-变态心理学/card-adjustment_disorder|adjustment_disorder]] 适应障碍 | 适应障碍 | 异常心理学 | 3 |
 | [[03-cards/30-人格心理学/card-adler_individual_psychology|adler_individual_psychology]] 阿德勒个体心理学 | 阿德勒个体心理学 | 人格心理学 | 2 |
 | [[03-cards/60-发展心理学/card-adolescent_egocentrism|adolescent_egocentrism]] 青少年自我中心主义 | 青少年自我中心主义 | 发展心理学 | 4 |
@@ -929,58 +1129,74 @@ REM 睡眠 -- part-of --> 睡眠阶段
 | [[03-cards/60-发展心理学/card-adulthood_and_aging_development|adulthood_and_aging_development]] 成年期与老年发展 | 成年期与老年发展 | 发展心理学 | 12 |
 | [[03-cards/card-aggression|aggression]] 攻击行为 | 攻击行为 | 社会心理学 | 2 |
 | [[03-cards/10-普通心理学/card-anchoring_effect|anchoring_effect]] 锚定效应 | 锚定效应 | 普通心理学 | 1 |
+| [[03-cards/110-变态心理学/card-anorexia_nervosa|anorexia_nervosa]] 神经性厌食 | 神经性厌食 | 异常心理学 | 9 |
 | [[03-cards/120-统计与测量/card-anova_basics|anova_basics]] 方差分析基础 | 方差分析基础 | 普通心理学 | 3 |
 | [[03-cards/110-变态心理学/card-antipsychotic_medications|antipsychotic_medications]] 抗精神病药物 | 抗精神病药物 | 异常心理学 | 6 |
-| [[03-cards/110-变态心理学/card-antisocial_personality_disorder|antisocial_personality_disorder]] 反社会型人格障碍 | 反社会型人格障碍 | 异常心理学 | 5 |
+| [[03-cards/110-变态心理学/card-antisocial_personality_disorder|antisocial_personality_disorder]] 反社会型人格障碍 | 反社会型人格障碍 | 异常心理学 | 6 |
 | [[03-cards/110-变态心理学/card-anxiety_and_mood_disorders|anxiety_and_mood_disorders]] 焦虑与心境障碍 | 焦虑与心境障碍 | 异常心理学 | 8 |
-| [[03-cards/110-变态心理学/card-anxiety_disorders|anxiety_disorders]] 焦虑障碍 | 焦虑障碍 | 异常心理学 | 10 |
+| [[03-cards/110-变态心理学/card-anxiety_cognitive_model|anxiety_cognitive_model]] 焦虑认知模型 | 焦虑认知模型 | 异常心理学 | 17 |
+| [[03-cards/110-变态心理学/card-anxiety_disorders|anxiety_disorders]] 焦虑障碍 | 焦虑障碍 | 异常心理学 | 20 |
+| [[03-cards/110-变态心理学/card-anxiety_sensitivity|anxiety_sensitivity]] 焦虑敏感性 | 焦虑敏感性 | 异常心理学 | 7 |
 | [[03-cards/60-发展心理学/card-anxious_ambivalent_attachment|anxious_ambivalent_attachment]] 焦虑-矛盾型依恋 | 焦虑-矛盾型依恋 | 发展心理学 | 12 |
 | [[03-cards/60-发展心理学/card-assimilation_accommodation|assimilation_accommodation]] 同化与顺应 | 同化与顺应 | 发展心理学 | 5 |
+| [[03-cards/60-发展心理学/card-attachment_theory|attachment_theory]] 依恋理论 | 依恋理论 | 发展心理学 | 28 |
 | [[03-cards/card-attention|attention]] 注意 | 注意 | 普通心理学 | 9 |
+| [[03-cards/110-变态心理学/card-attention_deficit_hyperactivity_disorder|attention_deficit_hyperactivity_disorder]] 注意缺陷多动障碍 | 注意缺陷多动障碍 | 异常心理学 | 8 |
+| [[03-cards/110-变态心理学/card-attentional_bias_threat|attentional_bias_threat]] 威胁注意偏向 | 威胁注意偏向 | 异常心理学 | 9 |
 | [[03-cards/10-普通心理学/card-attenuation_model|attenuation_model]] 衰减模型 | 衰减模型 | 普通心理学 | 7 |
 | [[03-cards/20-社会心理学/card-attitude_behavior_consistency|attitude_behavior_consistency]] 态度-行为一致性 | 态度-行为一致性 | 社会心理学 | 3 |
 | [[03-cards/card-attitude_formation_and_change|attitude_formation_and_change]] 态度形成与改变 | 态度形成与改变 | 社会心理学 | 21 |
 | [[03-cards/card-attribution_theory|attribution_theory]] 归因理论 | 归因理论 | 社会心理学 | 15 |
 | [[03-cards/30-人格心理学/card-authentic_self|authentic_self]] 真实自我 | 真实自我 | 人格心理学 | 6 |
+| [[03-cards/110-变态心理学/card-autism_spectrum_disorder|autism_spectrum_disorder]] 自闭症谱系障碍 | 自闭症谱系障碍 | 异常心理学 | 4 |
 | [[03-cards/10-普通心理学/card-availability_heuristic|availability_heuristic]] 可得性启发 | 可得性启发 | 普通心理学 | 1 |
 | [[03-cards/20-社会心理学/card-aversive_racism|aversive_racism]] 厌恶型种族主义 | 厌恶型种族主义 | 社会心理学 | 6 |
 | [[03-cards/60-发展心理学/card-avoidant_attachment|avoidant_attachment]] 回避型依恋 | 回避型依恋 | 发展心理学 | 12 |
+| [[03-cards/110-变态心理学/card-avoidant_personality_disorder|avoidant_personality_disorder]] 回避型人格障碍 | 回避型人格障碍 | 异常心理学 | 9 |
 | [[03-cards/10-普通心理学/card-base_rate_neglect|base_rate_neglect]] 基础比率忽视 | 基础比率忽视 | 普通心理学 | 3 |
+| [[03-cards/110-变态心理学/card-beck_cognitive_triad|beck_cognitive_triad]] Beck 认知三联征 | Beck 认知三联征 | 异常心理学 | 14 |
 | [[03-cards/50-临床与咨询/card-behavior_therapy|behavior_therapy]] 行为治疗 | 行为治疗 | 临床心理学 | 5 |
+| [[03-cards/50-临床与咨询/card-behavioral_activation|behavioral_activation]] 行为激活 | 行为激活 | 临床心理学 | 4 |
 | [[03-cards/20-社会心理学/card-behavioral_intention|behavioral_intention]] 行为意向 | 行为意向 | 社会心理学 | 4 |
 | [[03-cards/30-人格心理学/card-behavioral_personality_theory|behavioral_personality_theory]] 行为主义人格理论 | 行为主义人格理论 | 人格心理学 | 10 |
 | [[03-cards/10-普通心理学/card-behavioral_theory_of_language_acquisition|behavioral_theory_of_language_acquisition]] 语言习得的行为主义理论 | 语言习得的行为主义理论 | 普通心理学 | 5 |
 | [[03-cards/20-社会心理学/card-belief_in_a_just_world|belief_in_a_just_world]] 公正世界信念 | 公正世界信念 | 社会心理学 | 4 |
 | [[03-cards/10-普通心理学/card-belief_perseverance|belief_perseverance]] 信念坚持 | 信念坚持 | 普通心理学 | 3 |
 | [[03-cards/card-big-five-personality|big_five_personality]] |  | personality psychology | 9 |
-| [[03-cards/110-变态心理学/card-biopsychosocial_model|biopsychosocial_model]] 生物-心理-社会模型 | 生物-心理-社会模型 | 异常心理学 | 2 |
+| [[03-cards/110-变态心理学/card-binge_eating_disorder|binge_eating_disorder]] 暴食障碍 | 暴食障碍 | 异常心理学 | 8 |
+| [[03-cards/110-变态心理学/card-biopsychosocial_model|biopsychosocial_model]] 生物-心理-社会模型 | 生物-心理-社会模型 | 异常心理学 | 7 |
 | [[03-cards/110-变态心理学/card-bipolar_disorder|bipolar_disorder]] 双相障碍 | 双相障碍 | 异常心理学 | 4 |
-| [[03-cards/110-变态心理学/card-body_dysmorphic_disorder|body_dysmorphic_disorder]] 躯体变形障碍 | 躯体变形障碍 | 异常心理学 | 4 |
-| [[03-cards/110-变态心理学/card-borderline_personality_disorder|borderline_personality_disorder]] 边缘型人格障碍 | 边缘型人格障碍 | 异常心理学 | 6 |
+| [[03-cards/110-变态心理学/card-body_dysmorphic_disorder|body_dysmorphic_disorder]] 躯体变形障碍 | 躯体变形障碍 | 异常心理学 | 5 |
+| [[03-cards/110-变态心理学/card-body_image_disturbance|body_image_disturbance]] 身体意象障碍 | 身体意象障碍 | 异常心理学 | 9 |
+| [[03-cards/110-变态心理学/card-borderline_personality_disorder|borderline_personality_disorder]] 边缘型人格障碍 | 边缘型人格障碍 | 异常心理学 | 8 |
 | [[03-cards/100-生理心理学/card-brain_imaging_techniques|brain_imaging_techniques]] 脑成像技术 | 脑成像技术 | 生物心理学 | 5 |
 | [[03-cards/100-生理心理学/card-brain_lesion_studies|brain_lesion_studies]] 脑损伤研究 | 脑损伤研究 | 认知心理学 | 4 |
 | [[03-cards/100-生理心理学/card-brain_structure_and_function|brain_structure_and_function]] 脑结构与功能 | 脑结构与功能 | 生物心理学 | 9 |
+| [[03-cards/110-变态心理学/card-bulimia_nervosa|bulimia_nervosa]] 神经性贪食 | 神经性贪食 | 异常心理学 | 10 |
 | [[03-cards/10-普通心理学/card-cannon_bard_theory|cannon_bard_theory]] 坎农-巴德情绪理论 | 坎农-巴德情绪理论 | 普通心理学 | 5 |
+| [[03-cards/110-变态心理学/card-catastrophizing|catastrophizing]] 灾难化 | 灾难化 | 异常心理学 | 11 |
 | [[03-cards/100-生理心理学/card-central_nervous_system|central_nervous_system]] 中枢神经系统 | 中枢神经系统 | 生物心理学 | 6 |
 | [[03-cards/20-社会心理学/card-central_vs_peripheral_route|central_vs_peripheral_route]] 中心路径与边缘路径 | 中心路径与边缘路径 | 社会心理学 | 6 |
 | [[03-cards/100-生理心理学/card-cerebral_cortex|cerebral_cortex]] 大脑皮层 | 大脑皮层 | 生物心理学 | 5 |
-| [[03-cards/80-学习心理学/card-classical_conditioning|classical_conditioning]] 经典条件作用 | 经典条件作用 | 普通心理学 | 6 |
-| [[03-cards/110-变态心理学/card-cluster_a_personality_disorders|cluster_a_personality_disorders]] A群人格障碍 | A群人格障碍 | 异常心理学 | 5 |
-| [[03-cards/110-变态心理学/card-cluster_b_personality_disorders|cluster_b_personality_disorders]] B群人格障碍 | B群人格障碍 | 异常心理学 | 8 |
-| [[03-cards/110-变态心理学/card-cluster_c_personality_disorders|cluster_c_personality_disorders]] C群人格障碍 | C群人格障碍 | 异常心理学 | 3 |
+| [[03-cards/110-变态心理学/card-childhood_adolescent_psychopathology|childhood_adolescent_psychopathology]] 儿童青少年心理障碍 | 儿童青少年心理障碍 | 异常心理学 | 9 |
+| [[03-cards/80-学习心理学/card-classical_conditioning|classical_conditioning]] 经典条件作用 | 经典条件作用 | 普通心理学 | 7 |
+| [[03-cards/110-变态心理学/card-cluster_a_personality_disorders|cluster_a_personality_disorders]] A群人格障碍 | A群人格障碍 | 异常心理学 | 9 |
+| [[03-cards/110-变态心理学/card-cluster_b_personality_disorders|cluster_b_personality_disorders]] B群人格障碍 | B群人格障碍 | 异常心理学 | 10 |
+| [[03-cards/110-变态心理学/card-cluster_c_personality_disorders|cluster_c_personality_disorders]] C群人格障碍 | C群人格障碍 | 异常心理学 | 8 |
 | [[03-cards/60-发展心理学/card-cognitive_aging|cognitive_aging]] 认知老化 | 认知老化 | 发展心理学 | 5 |
-| [[03-cards/50-临床与咨询/card-cognitive_behavioral_therapy|cognitive_behavioral_therapy]] 认知行为治疗 | 认知行为治疗 | 临床心理学 | 10 |
 | [[03-cards/10-普通心理学/card-core-cognitive_bias_and_heuristics|cognitive_bias_and_heuristics]] 思维偏差与启发式 | 思维偏差与启发式 | 普通心理学 | 11 |
 | [[03-cards/60-发展心理学/card-cognitive_development|cognitive_development]] 认知发展 | 认知发展 | 发展心理学 | 8 |
 | [[03-cards/card-cognitive_dissonance|cognitive_dissonance]] 认知失调 | 认知失调 | 社会心理学 | 6 |
 | [[03-cards/80-学习心理学/card-cognitive_learning_theory|cognitive_learning_theory]] 认知学习理论 | 认知学习理论 | 普通心理学 | 8 |
 | [[03-cards/100-生理心理学/card-cognitive_neuroscience|cognitive_neuroscience]] 认知神经科学 | 认知神经科学 | 认知心理学 | 14 |
 | [[03-cards/30-人格心理学/card-cognitive_personality_theory|cognitive_personality_theory]] 认知人格理论 | 认知人格理论 | 人格心理学 | 9 |
+| [[03-cards/50-临床与咨询/card-cognitive_restructuring|cognitive_restructuring]] 认知重构 | 认知重构 | 临床心理学 | 5 |
 | [[03-cards/card-cognitive_styles|cognitive_styles]] 认知风格 | 认知风格 | 普通心理学 | 1 |
 | [[03-cards/20-社会心理学/card-common_ingroup_identity_model|common_ingroup_identity_model]] 共同内群体认同模型 | 共同内群体认同模型 | 社会心理学 | 3 |
 | [[03-cards/20-社会心理学/card-communication_patterns_in_intimate_relationships|communication_patterns_in_intimate_relationships]] 亲密关系中的沟通模式 | 亲密关系中的沟通模式 | 社会心理学 | 4 |
 | [[03-cards/110-变态心理学/card-complex_posttraumatic_stress_disorder|complex_posttraumatic_stress_disorder]] 复杂性创伤后应激障碍 | 复杂性创伤后应激障碍 | 异常心理学 | 4 |
 | [[03-cards/30-人格心理学/card-conditions_of_worth|conditions_of_worth]] 价值条件化 | 价值条件化 | 人格心理学 | 4 |
+| [[03-cards/110-变态心理学/card-conduct_disorder|conduct_disorder]] 品行障碍 | 品行障碍 | 异常心理学 | 8 |
 | [[03-cards/10-普通心理学/card-confirmation_bias|confirmation_bias]] 确认偏误 | 确认偏误 | 普通心理学 | 3 |
 | [[03-cards/20-社会心理学/card-conflict_resolution|conflict_resolution]] 冲突解决 | 冲突解决 | 社会心理学 | 8 |
 | [[03-cards/card-conformity|conformity]] 从众 | 从众 | 社会心理学 | 4 |
@@ -999,21 +1215,28 @@ REM 睡眠 -- part-of --> 睡眠阶段
 | [[03-cards/20-社会心理学/card-dehumanization|dehumanization]] 去人性化 | 去人性化 | 社会心理学 | 3 |
 | [[03-cards/20-社会心理学/card-deindividuation|deindividuation]] 去个性化 | 去个性化 | 社会心理学 | 3 |
 | [[03-cards/60-发展心理学/card-delay_of_gratification|delay_of_gratification]] 延迟满足 | 延迟满足 | 发展心理学 | 6 |
+| [[03-cards/110-变态心理学/card-dependent_personality_disorder|dependent_personality_disorder]] 依赖型人格障碍 | 依赖型人格障碍 | 异常心理学 | 9 |
+| [[03-cards/110-变态心理学/card-depersonalization_derealization_disorder|depersonalization_derealization_disorder]] 人格解体/现实解体障碍 | 人格解体/现实解体障碍 | 异常心理学 | 7 |
+| [[03-cards/110-变态心理学/card-depressive_attributional_style|depressive_attributional_style]] 抑郁归因风格 | 抑郁归因风格 | 异常心理学 | 10 |
 | [[03-cards/120-统计与测量/card-descriptive_statistics|descriptive_statistics]] 描述统计 | 描述统计 | 普通心理学 | 2 |
-| [[03-cards/50-临床与咨询/card-dialectical_behavior_therapy|dialectical_behavior_therapy]] 辩证行为治疗 | 辩证行为治疗 | 临床心理学 | 4 |
+| [[03-cards/50-临床与咨询/card-dialectical_behavior_therapy|dialectical_behavior_therapy]] 辩证行为治疗 | 辩证行为治疗 | 临床心理学 | 5 |
 | [[03-cards/60-发展心理学/card-disorganized_attachment|disorganized_attachment]] 混乱型依恋 | 混乱型依恋 | 发展心理学 | 12 |
+| [[03-cards/110-变态心理学/card-dissociative_amnesia|dissociative_amnesia]] 分离性遗忘 | 分离性遗忘 | 异常心理学 | 7 |
+| [[03-cards/110-变态心理学/card-dissociative_disorders|dissociative_disorders]] 分离障碍 | 分离障碍 | 异常心理学 | 11 |
+| [[03-cards/110-变态心理学/card-dissociative_identity_disorder|dissociative_identity_disorder]] 分离性身份障碍 | 分离性身份障碍 | 异常心理学 | 9 |
 | [[03-cards/20-社会心理学/card-distraction_conflict_theory|distraction_conflict_theory]] 分心-冲突理论 | 分心-冲突理论 | 社会心理学 | 2 |
 | [[03-cards/10-普通心理学/card-divided_attention|divided_attention]] 分配性注意 | 分配性注意 | 普通心理学 | 3 |
 | [[03-cards/20-社会心理学/card-door_in_the_face_technique|door_in_the_face_technique]] 留面子效应 | 留面子效应 | 社会心理学 | 6 |
-| [[03-cards/110-变态心理学/card-dopamine_hypothesis|dopamine_hypothesis]] 多巴胺假说 | 多巴胺假说 | 异常心理学 | 6 |
+| [[03-cards/110-变态心理学/card-dopamine_hypothesis|dopamine_hypothesis]] 多巴胺假说 | 多巴胺假说 | 异常心理学 | 8 |
 | [[03-cards/100-生理心理学/card-double_dissociation|double_dissociation]] 双分离 | 双分离 | 认知心理学 | 4 |
 | [[03-cards/card-dreams|dreams]] 梦 | 梦 | 普通心理学 | 3 |
 | [[03-cards/60-发展心理学/card-dual_systems_model|dual_systems_model]] 双系统模型 | 双系统模型 | 发展心理学 | 5 |
+| [[03-cards/110-变态心理学/card-eating_disorders|eating_disorders]] 进食障碍 | 进食障碍 | 异常心理学 | 13 |
 | [[03-cards/60-发展心理学/card-effortful_control|effortful_control]] 努力控制 | 努力控制 | 发展心理学 | 8 |
 | [[03-cards/10-普通心理学/card-ego_depletion|ego_depletion]] 自我损耗 | 自我损耗 | 普通心理学 | 5 |
 | [[03-cards/60-发展心理学/card-egocentrism|egocentrism]] 自我中心主义 | 自我中心主义 | 发展心理学 | 2 |
 | [[03-cards/20-社会心理学/card-elaboration_likelihood_model|elaboration_likelihood_model]] 精细加工可能性模型 | 精细加工可能性模型 | 社会心理学 | 5 |
-| [[03-cards/card-emotion_regulation|emotion_regulation]] 情绪调节 | 情绪调节 | 普通心理学 | 12 |
+| [[03-cards/card-emotion_regulation|emotion_regulation]] 情绪调节 | 情绪调节 | 普通心理学 | 15 |
 | [[03-cards/10-普通心理学/card-emotion_regulation_strategies|emotion_regulation_strategies]] 情绪调节策略 | 情绪调节策略 | 普通心理学 | 3 |
 | [[03-cards/10-普通心理学/card-emotion_theories|emotion_theories]] 情绪理论 | 情绪理论 | 普通心理学 | 9 |
 | [[03-cards/card-encoding_specificity|encoding_specificity]] 编码特异性原则 | 编码特异性原则 | 普通心理学 | 5 |
@@ -1021,9 +1244,10 @@ REM 睡眠 -- part-of --> 睡眠阶段
 | [[03-cards/60-发展心理学/card-erikson_psychosocial_development|erikson_psychosocial_development]] 埃里克森心理社会发展理论 | 埃里克森心理社会发展理论 | 发展心理学 | 13 |
 | [[03-cards/20-社会心理学/card-evaluation_apprehension|evaluation_apprehension]] 评价忧虑 | 评价忧虑 | 社会心理学 | 3 |
 | [[03-cards/110-变态心理学/card-excoriation_disorder|excoriation_disorder]] 皮肤搔抓障碍 | 皮肤搔抓障碍 | 异常心理学 | 4 |
-| [[03-cards/60-发展心理学/card-executive_function|executive_function]] 执行功能 | 执行功能 | 发展心理学 | 9 |
+| [[03-cards/60-发展心理学/card-executive_function|executive_function]] 执行功能 | 执行功能 | 发展心理学 | 11 |
 | [[03-cards/10-普通心理学/card-explicit_memory|explicit_memory]] 外显记忆 | 外显记忆 | 普通心理学 | 7 |
-| [[03-cards/50-临床与咨询/card-exposure_response_prevention|exposure_response_prevention]] 暴露与反应阻止 | 暴露与反应阻止 | 临床心理学 | 4 |
+| [[03-cards/50-临床与咨询/card-exposure_response_prevention|exposure_response_prevention]] 暴露与反应阻止 | 暴露与反应阻止 | 临床心理学 | 5 |
+| [[03-cards/50-临床与咨询/card-exposure_therapy|exposure_therapy]] 暴露疗法 | 暴露疗法 | 临床心理学 | 7 |
 | [[03-cards/10-普通心理学/card-extrinsic_motivation|extrinsic_motivation]] 外在动机 | 外在动机 | 普通心理学 | 6 |
 | [[03-cards/20-社会心理学/card-false_consensus_effect|false_consensus_effect]] 虚假共识效应 | 虚假共识效应 | 社会心理学 | 4 |
 | [[03-cards/20-社会心理学/card-false_uniqueness_effect|false_uniqueness_effect]] 虚假独特效应 | 虚假独特效应 | 社会心理学 | 3 |
@@ -1040,7 +1264,7 @@ REM 睡眠 -- part-of --> 睡眠阶段
 | [[03-cards/10-普通心理学/card-functional_fixedness|functional_fixedness]] 功能固着 | 功能固着 | 普通心理学 | 5 |
 | [[03-cards/20-社会心理学/card-fundamental_attribution_error|fundamental_attribution_error]] 基本归因错误 | 基本归因错误 | 社会心理学 | 14 |
 | [[03-cards/10-普通心理学/card-general_adaptation_syndrome|general_adaptation_syndrome]] 一般适应症候群 | 一般适应症候群 | 普通心理学 | 4 |
-| [[03-cards/110-变态心理学/card-generalized_anxiety_disorder|generalized_anxiety_disorder]] 广泛性焦虑障碍 | 广泛性焦虑障碍 | 异常心理学 | 2 |
+| [[03-cards/110-变态心理学/card-generalized_anxiety_disorder|generalized_anxiety_disorder]] 广泛性焦虑障碍 | 广泛性焦虑障碍 | 异常心理学 | 9 |
 | [[03-cards/60-发展心理学/card-generativity_vs_stagnation|generativity_vs_stagnation]] 繁衍对停滞 | 繁衍对停滞 | 发展心理学 | 6 |
 | [[03-cards/60-发展心理学/card-gilligan_ethics_of_care|gilligan_ethics_of_care]] 吉利根关怀伦理 | 吉利根关怀伦理 | 发展心理学 | 6 |
 | [[03-cards/30-人格心理学/card-goodness_of_fit|goodness_of_fit]] 良好匹配度 | 良好匹配度 | 人格心理学 | 5 |
@@ -1051,7 +1275,9 @@ REM 睡眠 -- part-of --> 睡眠阶段
 | [[03-cards/60-发展心理学/card-habituation_and_dishabituation|habituation_and_dishabituation]] 习惯化与去习惯化 | 习惯化与去习惯化 | 发展心理学 | 11 |
 | [[03-cards/20-社会心理学/card-heuristic_systematic_model|heuristic_systematic_model]] 启发式-系统模型 | 启发式-系统模型 | 社会心理学 | 2 |
 | [[03-cards/10-普通心理学/card-hindsight_bias|hindsight_bias]] 后见之明偏差 | 后见之明偏差 | 普通心理学 | 3 |
+| [[03-cards/110-变态心理学/card-histrionic_personality_disorder|histrionic_personality_disorder]] 表演型人格障碍 | 表演型人格障碍 | 异常心理学 | 8 |
 | [[03-cards/110-变态心理学/card-hoarding_disorder|hoarding_disorder]] 囤积障碍 | 囤积障碍 | 异常心理学 | 3 |
+| [[03-cards/110-变态心理学/card-hopelessness_theory_depression|hopelessness_theory_depression]] 抑郁无望理论 | 抑郁无望理论 | 异常心理学 | 9 |
 | [[03-cards/card-humanistic_personality|humanistic_personality]] 人本主义人格 | 人本主义人格 | 普通心理学 | 1 |
 | [[03-cards/30-人格心理学/card-humanistic_personality_theory|humanistic_personality_theory]] 人本主义人格理论 | 人本主义人格理论 | 人格心理学 | 17 |
 | [[03-cards/50-临床与咨询/card-humanistic_therapy|humanistic_therapy]] 人本主义治疗 | 人本主义治疗 | 临床心理学 | 4 |
@@ -1086,6 +1312,7 @@ REM 睡眠 -- part-of --> 睡眠阶段
 | [[03-cards/20-社会心理学/card-intergroup_contact_hypothesis|intergroup_contact_hypothesis]] 群际接触假说 | 群际接触假说 | 社会心理学 | 6 |
 | [[03-cards/60-发展心理学/card-internal_working_model|internal_working_model]] 内部工作模型 | 内部工作模型 | 发展心理学 | 10 |
 | [[03-cards/card-interpersonal_attraction|interpersonal_attraction]] 人际吸引 | 人际吸引 | 社会心理学 | 2 |
+| [[03-cards/110-变态心理学/card-intolerance_of_uncertainty|intolerance_of_uncertainty]] 不确定性不耐受 | 不确定性不耐受 | 异常心理学 | 7 |
 | [[03-cards/10-普通心理学/card-intrinsic_motivation|intrinsic_motivation]] 内在动机 | 内在动机 | 普通心理学 | 6 |
 | [[03-cards/20-社会心理学/card-investment_model|investment_model]] 投资模型 | 投资模型 | 社会心理学 | 6 |
 | [[03-cards/10-普通心理学/card-james_lange_theory|james_lange_theory]] 詹姆斯-兰格情绪理论 | 詹姆斯-兰格情绪理论 | 普通心理学 | 8 |
@@ -1099,7 +1326,7 @@ REM 睡眠 -- part-of --> 睡眠阶段
 | [[03-cards/10-普通心理学/card-language_comprehension|language_comprehension]] 语言理解过程 | 语言理解过程 | 普通心理学 | 4 |
 | [[03-cards/10-普通心理学/card-late_selection_model|late_selection_model]] 晚期选择模型 | 晚期选择模型 | 普通心理学 | 6 |
 | [[03-cards/10-普通心理学/card-lazarus_cognitive_appraisal_theory|lazarus_cognitive_appraisal_theory]] 拉扎勒斯认知评价情绪理论 | 拉扎勒斯认知评价情绪理论 | 普通心理学 | 9 |
-| [[03-cards/card-learned_helplessness|learned_helplessness]] 习得性无助 | 习得性无助 | 人格心理学 | 5 |
+| [[03-cards/card-learned_helplessness|learned_helplessness]] 习得性无助 | 习得性无助 | 人格心理学 | 14 |
 | [[03-cards/70-教育心理学/card-learning_strategies|learning_strategies]] 学习策略 | 学习策略 | 教育心理学 | 1 |
 | [[03-cards/card-learning_theories|learning_theories]] 学习理论 | 学习理论 | 普通心理学 | 10 |
 | [[03-cards/card-levels_of_processing|levels_of_processing]] 加工水平理论 | 加工水平理论 | 普通心理学 | 6 |
@@ -1111,20 +1338,20 @@ REM 睡眠 -- part-of --> 睡眠阶段
 | [[03-cards/10-普通心理学/card-long_term_memory_encoding|long_term_memory_encoding]] 长时记忆编码与存储 | 长时记忆编码与存储 | 普通心理学 | 5 |
 | [[03-cards/card-long_term_memory_types|long_term_memory_types]] 长时记忆的分类 | 长时记忆的分类 | 普通心理学 | 12 |
 | [[03-cards/card-love_styles|love_styles]] 爱情风格 | 爱情风格 | 社会心理学 | 3 |
-| [[03-cards/110-变态心理学/card-major_depressive_disorder|major_depressive_disorder]] 重性抑郁障碍 | 重性抑郁障碍 | 异常心理学 | 7 |
+| [[03-cards/110-变态心理学/card-major_depressive_disorder|major_depressive_disorder]] 重性抑郁障碍 | 重性抑郁障碍 | 异常心理学 | 23 |
 | [[03-cards/60-发展心理学/card-marcia_identity_statuses|marcia_identity_statuses]] Marcia 同一性状态 | Marcia 同一性状态 | 发展心理学 | 4 |
 | [[03-cards/30-人格心理学/card-maslow_hierarchy_of_needs|maslow_hierarchy_of_needs]] 马斯洛需要层次理论 | 马斯洛需要层次理论 | 人格心理学 | 7 |
 | [[03-cards/30-人格心理学/card-maslow_self_actualization|maslow_self_actualization]] 马斯洛自我实现 | 马斯洛自我实现 | 人格心理学 | 5 |
 | [[03-cards/30-人格心理学/card-mean_level_change|mean_level_change]] 平均水平变化 | 平均水平变化 | 人格心理学 | 6 |
 | [[03-cards/120-统计与测量/card-measurement_levels|measurement_levels]] 测量水平 | 测量水平 | 普通心理学 | 1 |
-| [[03-cards/card-meditation|meditation]] 冥想 | 冥想 | 普通心理学 | 3 |
+| [[03-cards/card-meditation|meditation]] 冥想 | 冥想 | 普通心理学 | 4 |
 | [[03-cards/card-memory_consolidation|memory_consolidation]] 记忆巩固 | 记忆巩固 | 普通心理学 | 4 |
 | [[03-cards/card-memory_retrieval|memory_retrieval]] 记忆提取 | 记忆提取 | 普通心理学 | 8 |
 | [[03-cards/card-memory_strategies|memory_strategies]] 记忆策略与记忆术 | 记忆策略与记忆术 | 普通心理学 | 6 |
 | [[03-cards/10-普通心理学/card-mental_rotation|mental_rotation]] 心理旋转 | 心理旋转 | 普通心理学 | 3 |
 | [[03-cards/10-普通心理学/card-mental_set|mental_set]] 心理定势 | 心理定势 | 普通心理学 | 6 |
 | [[03-cards/10-普通心理学/card-metamemory|metamemory]] 元记忆 | 元记忆 | 普通心理学 | 3 |
-| [[03-cards/50-临床与咨询/card-mindfulness_based_therapies|mindfulness_based_therapies]] 正念基础治疗 | 正念基础治疗 | 临床心理学 | 4 |
+| [[03-cards/50-临床与咨询/card-mindfulness_based_therapies|mindfulness_based_therapies]] 正念基础治疗 | 正念基础治疗 | 临床心理学 | 5 |
 | [[03-cards/20-社会心理学/card-minimal_group_paradigm|minimal_group_paradigm]] 最小群体范式 | 最小群体范式 | 社会心理学 | 3 |
 | [[03-cards/30-人格心理学/card-mischel_cognitive_affective_personality_system|mischel_cognitive_affective_personality_system]] Mischel认知-情感人格系统 | Mischel认知-情感人格系统 | 人格心理学 | 5 |
 | [[03-cards/30-人格心理学/card-mmpi|mmpi]] 明尼苏达多相人格调查表 | 明尼苏达多相人格调查表 | 人格心理学 | 6 |
@@ -1132,7 +1359,7 @@ REM 睡眠 -- part-of --> 睡眠阶段
 | [[03-cards/60-发展心理学/card-moral_development|moral_development]] 道德发展 | 道德发展 | 发展心理学 | 10 |
 | [[03-cards/70-教育心理学/card-motivation_in_education|motivation_in_education]] 教育中的动机 | 教育中的动机 | 教育心理学 | 1 |
 | [[03-cards/10-普通心理学/card-motivation_theories|motivation_theories]] 动机理论 | 动机理论 | 普通心理学 | 17 |
-| [[03-cards/110-变态心理学/card-narcissistic_personality_disorder|narcissistic_personality_disorder]] 自恋型人格障碍 | 自恋型人格障碍 | 异常心理学 | 5 |
+| [[03-cards/110-变态心理学/card-narcissistic_personality_disorder|narcissistic_personality_disorder]] 自恋型人格障碍 | 自恋型人格障碍 | 异常心理学 | 6 |
 | [[03-cards/110-变态心理学/card-negative_symptoms|negative_symptoms]] 阴性症状 | 阴性症状 | 异常心理学 | 6 |
 | [[03-cards/20-社会心理学/card-negotiation_strategies|negotiation_strategies]] 谈判策略 | 谈判策略 | 社会心理学 | 5 |
 | [[03-cards/30-人格心理学/card-neo_pi|neo_pi]] NEO人格量表 | NEO人格量表 | 人格心理学 | 5 |
@@ -1142,12 +1369,14 @@ REM 睡眠 -- part-of --> 睡眠阶段
 | [[03-cards/60-发展心理学/card-object_permanence|object_permanence]] 客体永久性 | 客体永久性 | 发展心理学 | 10 |
 | [[03-cards/80-学习心理学/card-observational_learning|observational_learning]] 观察学习 | 观察学习 | 普通心理学 | 8 |
 | [[03-cards/110-变态心理学/card-obsessive_compulsive_cognitive_model|obsessive_compulsive_cognitive_model]] 强迫认知模型 | 强迫认知模型 | 异常心理学 | 5 |
-| [[03-cards/110-变态心理学/card-obsessive_compulsive_disorder|obsessive_compulsive_disorder]] 强迫症 | 强迫症 | 异常心理学 | 10 |
-| [[03-cards/110-变态心理学/card-obsessive_compulsive_personality_disorder|obsessive_compulsive_personality_disorder]] 强迫型人格障碍 | 强迫型人格障碍 | 异常心理学 | 4 |
-| [[03-cards/110-变态心理学/card-obsessive_compulsive_related_disorders|obsessive_compulsive_related_disorders]] 强迫及相关障碍 | 强迫及相关障碍 | 异常心理学 | 11 |
-| [[03-cards/80-学习心理学/card-operant_conditioning|operant_conditioning]] 操作性条件作用 | 操作性条件作用 | 普通心理学 | 10 |
+| [[03-cards/110-变态心理学/card-obsessive_compulsive_disorder|obsessive_compulsive_disorder]] 强迫症 | 强迫症 | 异常心理学 | 11 |
+| [[03-cards/110-变态心理学/card-obsessive_compulsive_personality_disorder|obsessive_compulsive_personality_disorder]] 强迫型人格障碍 | 强迫型人格障碍 | 异常心理学 | 9 |
+| [[03-cards/110-变态心理学/card-obsessive_compulsive_related_disorders|obsessive_compulsive_related_disorders]] 强迫及相关障碍 | 强迫及相关障碍 | 异常心理学 | 12 |
+| [[03-cards/80-学习心理学/card-operant_conditioning|operant_conditioning]] 操作性条件作用 | 操作性条件作用 | 普通心理学 | 11 |
+| [[03-cards/110-变态心理学/card-oppositional_defiant_disorder|oppositional_defiant_disorder]] 对立违抗障碍 | 对立违抗障碍 | 异常心理学 | 7 |
 | [[03-cards/card-out_group_homogeneity|out_group_homogeneity]] 外群体同质性 | 外群体同质性 | 社会心理学 | 4 |
-| [[03-cards/110-变态心理学/card-panic_disorder|panic_disorder]] 惊恐障碍 | 惊恐障碍 | 异常心理学 | 2 |
+| [[03-cards/110-变态心理学/card-panic_disorder|panic_disorder]] 惊恐障碍 | 惊恐障碍 | 异常心理学 | 11 |
+| [[03-cards/110-变态心理学/card-paranoid_personality_disorder|paranoid_personality_disorder]] 偏执型人格障碍 | 偏执型人格障碍 | 异常心理学 | 6 |
 | [[03-cards/60-发展心理学/card-parenting_styles|parenting_styles]] 教养方式 | 教养方式 | 发展心理学 | 7 |
 | [[03-cards/card-passionate_vs_companionate_love|passionate_vs_companionate_love]] 激情式爱情与伴侣式爱情 | 激情式爱情与伴侣式爱情 | 社会心理学 | 4 |
 | [[03-cards/30-人格心理学/card-peak_experience|peak_experience]] 高峰体验 | 高峰体验 | 人格心理学 | 4 |
@@ -1155,7 +1384,7 @@ REM 睡眠 -- part-of --> 睡眠阶段
 | [[03-cards/20-社会心理学/card-perceived_behavioral_control|perceived_behavioral_control]] 感知行为控制 | 感知行为控制 | 社会心理学 | 3 |
 | [[03-cards/card-personality_and_individual_differences|personality_and_individual_differences]] 人格与个体差异 | 人格与个体差异 | 人格心理学 | 21 |
 | [[03-cards/30-人格心理学/card-personality_assessment|personality_assessment]] 人格测量 | 人格测量 | 人格心理学 | 10 |
-| [[03-cards/110-变态心理学/card-personality_disorders|personality_disorders]] 人格障碍 | 人格障碍 | 异常心理学 | 17 |
+| [[03-cards/110-变态心理学/card-personality_disorders|personality_disorders]] 人格障碍 | 人格障碍 | 异常心理学 | 28 |
 | [[03-cards/card-personality_dynamic_theories|personality_dynamic_theories]] 人格动力理论 | 人格动力理论 | 普通心理学 | 1 |
 | [[03-cards/30-人格心理学/card-personality_stability_and_change|personality_stability_and_change]] 人格稳定性与变化 | 人格稳定性与变化 | 人格心理学 | 8 |
 | [[03-cards/card-personality_trait_theories|personality_trait_theories]] 人格特质理论 | 人格特质理论 | 普通心理学 | 3 |
@@ -1163,7 +1392,7 @@ REM 睡眠 -- part-of --> 睡眠阶段
 | [[03-cards/60-发展心理学/card-piaget_play_stages|piaget_play_stages]] 皮亚杰游戏阶段 | 皮亚杰游戏阶段 | 发展心理学 | 5 |
 | [[03-cards/60-发展心理学/card-play_and_cognitive_development|play_and_cognitive_development]] 游戏与认知发展 | 游戏与认知发展 | 发展心理学 | 11 |
 | [[03-cards/110-变态心理学/card-positive_symptoms|positive_symptoms]] 阳性症状 | 阳性症状 | 异常心理学 | 6 |
-| [[03-cards/110-变态心理学/card-posttraumatic_stress_disorder|posttraumatic_stress_disorder]] 创伤后应激障碍 | 创伤后应激障碍 | 异常心理学 | 9 |
+| [[03-cards/110-变态心理学/card-posttraumatic_stress_disorder|posttraumatic_stress_disorder]] 创伤后应激障碍 | 创伤后应激障碍 | 异常心理学 | 17 |
 | [[03-cards/60-发展心理学/card-preferential_looking|preferential_looking]] 偏好注视 | 偏好注视 | 发展心理学 | 4 |
 | [[03-cards/card-prejudice_and_discrimination|prejudice_and_discrimination]] 偏见与歧视 | 偏见与歧视 | 社会心理学 | 13 |
 | [[03-cards/20-社会心理学/card-prisoners_dilemma|prisoners_dilemma]] 囚徒困境 | 囚徒困境 | 社会心理学 | 5 |
@@ -1181,6 +1410,7 @@ REM 睡眠 -- part-of --> 睡眠阶段
 | [[03-cards/30-人格心理学/card-rank_order_stability|rank_order_stability]] 等级秩序稳定性 | 等级秩序稳定性 | 人格心理学 | 6 |
 | [[03-cards/20-社会心理学/card-realistic_group_conflict_theory|realistic_group_conflict_theory]] 现实群体冲突理论 | 现实群体冲突理论 | 社会心理学 | 6 |
 | [[03-cards/30-人格心理学/card-reciprocal_determinism|reciprocal_determinism]] 交互决定论 | 交互决定论 | 人格心理学 | 5 |
+| [[03-cards/110-变态心理学/card-relapse_prevention|relapse_prevention]] 复发预防 | 复发预防 | 临床心理学 | 6 |
 | [[03-cards/20-社会心理学/card-relationship_satisfaction|relationship_satisfaction]] 关系满意度 | 关系满意度 | 社会心理学 | 4 |
 | [[03-cards/120-统计与测量/card-reliability|reliability]] 信度 | 信度 | 普通心理学 | 3 |
 | [[03-cards/card-rem_sleep|rem_sleep]] REM 睡眠 | REM 睡眠 | 普通心理学 | 7 |
@@ -1190,20 +1420,22 @@ REM 睡眠 -- part-of --> 睡眠阶段
 | [[03-cards/30-人格心理学/card-rogers_person_centered_theory|rogers_person_centered_theory]] 罗杰斯以人为中心理论 | 罗杰斯以人为中心理论 | 人格心理学 | 13 |
 | [[03-cards/card-romantic_love|romantic_love]] 浪漫爱情 | 浪漫爱情 | 社会心理学 | 8 |
 | [[03-cards/30-人格心理学/card-rotter_locus_of_control|rotter_locus_of_control]] Rotter控制点理论 | Rotter控制点理论 | 人格心理学 | 5 |
+| [[03-cards/110-变态心理学/card-rumination|rumination]] 反刍 | 反刍 | 异常心理学 | 10 |
 | [[03-cards/60-发展心理学/card-scaffolding|scaffolding]] 支架式教学 | 支架式教学 | 发展心理学 | 4 |
 | [[03-cards/10-普通心理学/card-schachter_singer_theory|schachter_singer_theory]] 沙赫特-辛格二因素情绪理论 | 沙赫特-辛格二因素情绪理论 | 普通心理学 | 5 |
 | [[03-cards/60-发展心理学/card-schema|schema]] 图式 | 图式 | 发展心理学 | 8 |
+| [[03-cards/110-变态心理学/card-schizoid_personality_disorder|schizoid_personality_disorder]] 分裂样型人格障碍 | 分裂样型人格障碍 | 异常心理学 | 7 |
 | [[03-cards/110-变态心理学/card-schizophrenia|schizophrenia]] 精神分裂症 | 精神分裂症 | 异常心理学 | 10 |
-| [[03-cards/110-变态心理学/card-schizophrenia_spectrum|schizophrenia_spectrum]] 精神分裂症谱系 | 精神分裂症谱系 | 异常心理学 | 13 |
-| [[03-cards/110-变态心理学/card-schizotypal_personality_disorder|schizotypal_personality_disorder]] 分裂型人格障碍 | 分裂型人格障碍 | 异常心理学 | 5 |
+| [[03-cards/110-变态心理学/card-schizophrenia_spectrum|schizophrenia_spectrum]] 精神分裂症谱系 | 精神分裂症谱系 | 异常心理学 | 14 |
+| [[03-cards/110-变态心理学/card-schizotypal_personality_disorder|schizotypal_personality_disorder]] 分裂型人格障碍 | 分裂型人格障碍 | 异常心理学 | 7 |
 | [[03-cards/60-发展心理学/card-secure_attachment|secure_attachment]] 安全型依恋 | 安全型依恋 | 发展心理学 | 15 |
 | [[03-cards/60-发展心理学/card-secure_base|secure_base]] 安全基地与避风港 | 安全基地与避风港 | 发展心理学 | 4 |
-| [[03-cards/10-普通心理学/card-selective_attention|selective_attention]] 选择性注意 | 选择性注意 | 普通心理学 | 9 |
+| [[03-cards/10-普通心理学/card-selective_attention|selective_attention]] 选择性注意 | 选择性注意 | 普通心理学 | 10 |
 | [[03-cards/30-人格心理学/card-self_actualization|self_actualization]] 自我实现 | 自我实现 | 人格心理学 | 6 |
-| [[03-cards/card-self_concept|self_concept]] 自我概念 | 自我概念 | general_psychology, social_psychology | 25 |
+| [[03-cards/card-self_concept|self_concept]] 自我概念 | 自我概念 | general_psychology, social_psychology | 27 |
 | [[03-cards/10-普通心理学/card-self_determination_theory|self_determination_theory]] 自我决定理论 | 自我决定理论 | 普通心理学 | 6 |
-| [[03-cards/card-self_efficacy|self_efficacy]] 自我效能感 | 自我效能感 | 人格心理学 | 15 |
-| [[03-cards/20-社会心理学/card-self_esteem|self_esteem]] 自尊 | 自尊 | 社会心理学 | 3 |
+| [[03-cards/card-self_efficacy|self_efficacy]] 自我效能感 | 自我效能感 | 人格心理学 | 16 |
+| [[03-cards/20-社会心理学/card-self_esteem|self_esteem]] 自尊 | 自尊 | 社会心理学 | 4 |
 | [[03-cards/20-社会心理学/card-self_fulfilling_prophecy|self_fulfilling_prophecy]] 自我实现预言 | 自我实现预言 | 社会心理学 | 4 |
 | [[03-cards/20-社会心理学/card-self_handicapping|self_handicapping]] 自我妨碍 | 自我妨碍 | 社会心理学 | 3 |
 | [[03-cards/10-普通心理学/card-self_regulation|self_regulation]] 自我调节 | 自我调节 | 普通心理学 | 7 |
@@ -1216,10 +1448,10 @@ REM 睡眠 -- part-of --> 睡眠阶段
 | [[03-cards/10-普通心理学/card-short_term_memory|short_term_memory]] 短时记忆 | 短时记忆 | 普通心理学 | 6 |
 | [[03-cards/30-人格心理学/card-skinner_operant_behaviorism_personality|skinner_operant_behaviorism_personality]] 斯金纳操作性行为主义人格观 | 斯金纳操作性行为主义人格观 | 人格心理学 | 5 |
 | [[03-cards/card-sleep_stages|sleep_stages]] 睡眠阶段 | 睡眠阶段 | 普通心理学 | 5 |
-| [[03-cards/110-变态心理学/card-social_anxiety_disorder|social_anxiety_disorder]] 社交焦虑障碍 | 社交焦虑障碍 | 异常心理学 | 3 |
+| [[03-cards/110-变态心理学/card-social_anxiety_disorder|social_anxiety_disorder]] 社交焦虑障碍 | 社交焦虑障碍 | 异常心理学 | 8 |
 | [[03-cards/20-社会心理学/card-social_cognitive_bias|social_cognitive_bias]] 社会认知偏差 | 社会认知偏差 | 社会心理学 | 17 |
 | [[03-cards/30-人格心理学/card-social_cognitive_personality_theory|social_cognitive_personality_theory]] 社会认知人格理论 | 社会认知人格理论 | 人格心理学 | 11 |
-| [[03-cards/card-social_cognitive_theory|social_cognitive_theory]] 社会认知理论 | 社会认知理论 | 普通心理学 | 1 |
+| [[03-cards/card-social_cognitive_theory|social_cognitive_theory]] 社会认知理论 | 社会认知理论 | 普通心理学 | 2 |
 | [[03-cards/60-发展心理学/card-social_development|social_development]] 社会发展 | 社会发展 | 发展心理学 | 19 |
 | [[03-cards/20-社会心理学/card-social_dilemma|social_dilemma]] 社会困境 | 社会困境 | 社会心理学 | 5 |
 | [[03-cards/20-社会心理学/card-social_facilitation|social_facilitation]] 社会助长 | 社会助长 | 社会心理学 | 7 |
@@ -1240,8 +1472,9 @@ REM 睡眠 -- part-of --> 睡眠阶段
 | [[03-cards/60-发展心理学/card-strange_situation|strange_situation]] 陌生情境实验 | 陌生情境实验 | 发展心理学 | 7 |
 | [[03-cards/card-stress_and_coping|stress_and_coping]] 应激与应对 | 应激与应对 | 普通心理学 | 7 |
 | [[03-cards/10-普通心理学/card-stress_and_immunity|stress_and_immunity]] 应激与免疫 | 应激与免疫 | 普通心理学 | 4 |
-| [[03-cards/10-普通心理学/card-stroop_effect|stroop_effect]] Stroop 效应 | Stroop 效应 | 普通心理学 | 3 |
+| [[03-cards/10-普通心理学/card-stroop_effect|stroop_effect]] Stroop 效应 | Stroop 效应 | 普通心理学 | 4 |
 | [[03-cards/20-社会心理学/card-subjective_norm|subjective_norm]] 主观规范 | 主观规范 | 社会心理学 | 3 |
+| [[03-cards/110-变态心理学/card-substance_use_disorders|substance_use_disorders]] 物质使用障碍 | 物质使用障碍 | 异常心理学 | 10 |
 | [[03-cards/20-社会心理学/card-sucker_effect|sucker_effect]] 傻瓜效应 | 傻瓜效应 | 社会心理学 | 3 |
 | [[03-cards/60-发展心理学/card-symbolic_pretend_play|symbolic_pretend_play]] 象征性假装游戏 | 象征性假装游戏 | 发展心理学 | 7 |
 | [[03-cards/20-社会心理学/card-symbolic_racism|symbolic_racism]] 象征性种族主义 | 象征性种族主义 | 社会心理学 | 4 |
@@ -1252,11 +1485,13 @@ REM 睡眠 -- part-of --> 睡眠阶段
 | [[03-cards/20-社会心理学/card-theory_of_planned_behavior|theory_of_planned_behavior]] 计划行为理论 | 计划行为理论 | 社会心理学 | 10 |
 | [[03-cards/20-社会心理学/card-theory_of_reasoned_action|theory_of_reasoned_action]] 理性行为理论 | 理性行为理论 | 社会心理学 | 5 |
 | [[03-cards/card-thinking_and_problem_solving|thinking_and_problem_solving]] 思维与问题解决 | 思维与问题解决 | 普通心理学 | 7 |
+| [[03-cards/50-临床与咨询/card-third_wave_cbt|third_wave_cbt]] 第三波认知行为治疗 | 第三波认知行为治疗 | 临床心理学 | 5 |
 | [[03-cards/card-three_stage_memory_model|three_stage_memory_model]] 记忆的三级模型 | 记忆的三级模型 | 普通心理学 | 14 |
 | [[03-cards/20-社会心理学/card-thurstone_scale|thurstone_scale]] Thurstone量表 | Thurstone量表 | 社会心理学 | 2 |
+| [[03-cards/110-变态心理学/card-tolerance_withdrawal|tolerance_withdrawal]] 耐受与戒断 | 耐受与戒断 | 异常心理学 | 6 |
 | [[03-cards/100-生理心理学/card-transcranial_magnetic_stimulation|transcranial_magnetic_stimulation]] 经颅磁刺激 | 经颅磁刺激 | 认知心理学 | 3 |
 | [[03-cards/70-教育心理学/card-transfer_of_learning|transfer_of_learning]] 学习迁移 | 学习迁移 | 教育心理学 | 6 |
-| [[03-cards/110-变态心理学/card-trauma_and_stressor_related_disorders|trauma_and_stressor_related_disorders]] 创伤与应激相关障碍 | 创伤与应激相关障碍 | 异常心理学 | 10 |
+| [[03-cards/110-变态心理学/card-trauma_and_stressor_related_disorders|trauma_and_stressor_related_disorders]] 创伤与应激相关障碍 | 创伤与应激相关障碍 | 异常心理学 | 15 |
 | [[03-cards/card-triangular_theory_of_love|triangular_theory_of_love]] 爱情三元理论 | 爱情三元理论 | 社会心理学 | 6 |
 | [[03-cards/110-变态心理学/card-trichotillomania|trichotillomania]] 拔毛癖 | 拔毛癖 | 异常心理学 | 4 |
 | [[03-cards/20-社会心理学/card-ultimate_attribution_error|ultimate_attribution_error]] 终极归因错误 | 终极归因错误 | 社会心理学 | 6 |
@@ -1265,7 +1500,7 @@ REM 睡眠 -- part-of --> 睡眠阶段
 | [[03-cards/60-发展心理学/card-violation_of_expectation|violation_of_expectation]] 违反预期范式 | 违反预期范式 | 发展心理学 | 7 |
 | [[03-cards/60-发展心理学/card-vygotsky_play_theory|vygotsky_play_theory]] 维果茨基游戏理论 | 维果茨基游戏理论 | 发展心理学 | 6 |
 | [[03-cards/60-发展心理学/card-vygotsky_sociocultural_theory|vygotsky_sociocultural_theory]] 维果茨基社会文化理论 | 维果茨基社会文化理论 | 发展心理学 | 11 |
-| [[03-cards/20-社会心理学/card-weiner_attribution_theory|weiner_attribution_theory]] Weiner归因理论 | Weiner归因理论 | 社会心理学 | 4 |
+| [[03-cards/20-社会心理学/card-weiner_attribution_theory|weiner_attribution_theory]] Weiner归因理论 | Weiner归因理论 | 社会心理学 | 5 |
 | [[03-cards/card-working_memory|working_memory]] 工作记忆 | 工作记忆 | 普通心理学 | 2 |
 | [[03-cards/10-普通心理学/card-working_memory_model|working_memory_model]] 工作记忆模型 | 工作记忆模型 | 普通心理学 | 8 |
 | [[03-cards/10-普通心理学/card-yerkes_dodson_law|yerkes_dodson_law]] Yerkes-Dodson 定律 | Yerkes-Dodson 定律 | 普通心理学 | 3 |
@@ -1467,13 +1702,13 @@ REM 睡眠 -- part-of --> 睡眠阶段
 
 | 关系类型 | 数量 |
 |---------|------|
-| part-of | 334 |
-| correlates-with | 214 |
-| supports | 162 |
-| contrasts | 137 |
+| part-of | 371 |
+| correlates-with | 295 |
+| supports | 217 |
+| contrasts | 145 |
+| applies-to | 130 |
 | is-a | 112 |
-| applies-to | 99 |
-| extends | 78 |
-| related-to | 29 |
+| extends | 92 |
+| related-to | 30 |
 | causes | 20 |
-| requires | 1 |
+| requires | 2 |
