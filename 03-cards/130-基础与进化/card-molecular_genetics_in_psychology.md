@@ -13,7 +13,7 @@ tags:
 citekeys: []
 relations:
   - target: behavioral_genetics
-    type: extends
+    type: is-a
 ---
 
 # 心理学中的分子遗传学 / Molecular Genetics in Psychology

@@ -16,7 +16,7 @@ metadata:
 ## 当前冲刺（待填充）
 
 | 内分泌系统与行为 | biological_psychology | 中频 | 待填充 | 下丘脑-垂体-肾上腺轴、应激激素、性激素与行为。 |
-| 遗传与行为遗传学 | biological_psychology | 中高频 | 待填充 | 双生子研究、收养研究、遗传率、基因-环境交互。 |
+| 遗传与行为遗传学 | biological_psychology | 中高频 | 已完成 | 双生子研究、收养研究、遗传率、基因-环境交互、共享/非共享环境。 |
 | 脑成像技术 | biological_psychology | 中高频 | 已完成 | EEG、fMRI、PET、TMS 原理与应用。 |
 | 神经系统发育 | biological_psychology | 中频 | 待填充 | 神经发生、突触发生、髓鞘化、关键期与可塑性。 |
 | 感觉神经系统 | biological_psychology | 中频 | 待填充 | 视觉通路、听觉通路、体感系统、感觉编码。 |

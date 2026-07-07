@@ -12,8 +12,10 @@ tags:
 citekeys: []
 relations:
   - target: behavioral_genetics
-    type: extends
+    type: is-a
   - target: epigenetics
+    type: supports
+  - target: gene_environment_correlation
     type: correlates-with
 ---
 

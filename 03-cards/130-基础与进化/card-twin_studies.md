@@ -13,8 +13,12 @@ tags:
 citekeys: []
 relations:
   - target: behavioral_genetics
-    type: applies-to
+    type: is-a
   - target: heritability
+    type: supports
+  - target: shared_environment
+    type: supports
+  - target: nonshared_environment
     type: supports
 ---
 

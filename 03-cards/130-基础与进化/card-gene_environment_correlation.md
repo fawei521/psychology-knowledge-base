@@ -14,7 +14,7 @@ tags:
 citekeys: []
 relations:
   - target: behavioral_genetics
-    type: extends
+    type: is-a
   - target: gene_environment_interaction
     type: correlates-with
 ---

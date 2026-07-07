@@ -12,9 +12,13 @@ tags:
 citekeys: []
 relations:
   - target: behavioral_genetics
-    type: part-of
+    type: is-a
   - target: twin_studies
     type: supports
+  - target: shared_environment
+    type: correlates-with
+  - target: nonshared_environment
+    type: correlates-with
 ---
 
 # 遗传率 / Heritability

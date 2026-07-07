@@ -26,6 +26,10 @@ relations:
     type: supports
   - target: epigenetics
     type: supports
+  - target: shared_environment
+    type: applies-to
+  - target: nonshared_environment
+    type: applies-to
 ---
 
 # 行为遗传学 / Behavioral Genetics

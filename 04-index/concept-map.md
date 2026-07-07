@@ -6,10 +6,10 @@
 
 ## 概览
 
-- 总卡片数：447
+- 总卡片数：449
 - 概念簇数：12
 - 孤立卡片数：0
-- 关系总数：1467
+- 关系总数：1481
 
 ## 概念簇
 
@@ -1566,7 +1566,53 @@ REM 睡眠 -- part-of --> 睡眠阶段
 | [[03-cards/10-普通心理学/card-yerkes_dodson_law|yerkes_dodson_law]] Yerkes-Dodson 定律 | Yerkes-Dodson 定律 | 普通心理学 | 3 |
 | [[03-cards/60-发展心理学/card-zone_of_proximal_development|zone_of_proximal_development]] 最近发展区 | 最近发展区 | 发展心理学 | 5 |
 
-### 2. [[03-cards/card-perceptual_organization|perceptual_organization]] 知觉组织（普通心理学）
+### 2. [[03-cards/130-基础与进化/card-behavioral_genetics|behavioral_genetics]] 行为遗传学（生物心理学）
+
+```
+收养研究 -- is-a --> 行为遗传学
+收养研究 -- supports --> 遗传率
+收养研究 -- supports --> 共享环境
+行为遗传学 -- supports --> 遗传率
+行为遗传学 -- supports --> 双生子研究
+行为遗传学 -- supports --> 收养研究
+行为遗传学 -- supports --> 基因-环境交互作用
+行为遗传学 -- supports --> 基因-环境相关
+行为遗传学 -- supports --> 心理学中的分子遗传学
+行为遗传学 -- supports --> 表观遗传学
+行为遗传学 -- applies-to --> 共享环境
+行为遗传学 -- applies-to --> 非共享环境
+表观遗传学 -- is-a --> 行为遗传学
+表观遗传学 -- supports --> 基因-环境交互作用
+基因-环境相关 -- is-a --> 行为遗传学
+基因-环境相关 -- correlates-with --> 基因-环境交互作用
+基因-环境交互作用 -- is-a --> 行为遗传学
+遗传率 -- is-a --> 行为遗传学
+遗传率 -- supports --> 双生子研究
+遗传率 -- correlates-with --> 共享环境
+遗传率 -- correlates-with --> 非共享环境
+心理学中的分子遗传学 -- is-a --> 行为遗传学
+非共享环境 -- is-a --> 行为遗传学
+非共享环境 -- contrasts --> 共享环境
+共享环境 -- is-a --> 行为遗传学
+双生子研究 -- is-a --> 行为遗传学
+双生子研究 -- supports --> 共享环境
+双生子研究 -- supports --> 非共享环境
+```
+
+| 成员 | 中文名 | 学科 | 簇内连接数 |
+|------|--------|------|-----------|
+| [[03-cards/130-基础与进化/card-behavioral_genetics|behavioral_genetics]] 行为遗传学 | 行为遗传学 | 生物心理学 | 18 |
+| [[03-cards/130-基础与进化/card-adoption_studies|adoption_studies]] 收养研究 | 收养研究 | 生物心理学 | 4 |
+| [[03-cards/130-基础与进化/card-epigenetics|epigenetics]] 表观遗传学 | 表观遗传学 | 生物心理学 | 4 |
+| [[03-cards/130-基础与进化/card-gene_environment_correlation|gene_environment_correlation]] 基因-环境相关 | 基因-环境相关 | 生物心理学 | 4 |
+| [[03-cards/130-基础与进化/card-gene_environment_interaction|gene_environment_interaction]] 基因-环境交互作用 | 基因-环境交互作用 | 生物心理学 | 6 |
+| [[03-cards/130-基础与进化/card-heritability|heritability]] 遗传率 | 遗传率 | 生物心理学 | 9 |
+| [[03-cards/130-基础与进化/card-molecular_genetics_in_psychology|molecular_genetics_in_psychology]] 心理学中的分子遗传学 | 心理学中的分子遗传学 | 生物心理学 | 2 |
+| [[03-cards/130-基础与进化/card-nonshared_environment|nonshared_environment]] 非共享环境 | 非共享环境 | 生物心理学 | 7 |
+| [[03-cards/130-基础与进化/card-shared_environment|shared_environment]] 共享环境 | 共享环境 | 生物心理学 | 8 |
+| [[03-cards/130-基础与进化/card-twin_studies|twin_studies]] 双生子研究 | 双生子研究 | 生物心理学 | 6 |
+
+### 3. [[03-cards/card-perceptual_organization|perceptual_organization]] 知觉组织（普通心理学）
 
 ```
 听觉知觉 -- part-of --> 感觉与知觉
@@ -1595,41 +1641,6 @@ REM 睡眠 -- part-of --> 睡眠阶段
 | [[03-cards/card-psychophysics|psychophysics]] 心理物理学 | 心理物理学 | 普通心理学 | 1 |
 | [[03-cards/card-sensation_and_perception|sensation_and_perception]] 感觉与知觉 | 感觉与知觉 | 普通心理学 | 8 |
 | [[03-cards/card-visual_perception|visual_perception]] 视觉知觉 | 视觉知觉 | 普通心理学 | 2 |
-
-### 3. [[03-cards/130-基础与进化/card-behavioral_genetics|behavioral_genetics]] 行为遗传学（生物心理学）
-
-```
-收养研究 -- applies-to --> 行为遗传学
-收养研究 -- supports --> 遗传率
-行为遗传学 -- supports --> 遗传率
-行为遗传学 -- supports --> 双生子研究
-行为遗传学 -- supports --> 收养研究
-行为遗传学 -- supports --> 基因-环境交互作用
-行为遗传学 -- supports --> 基因-环境相关
-行为遗传学 -- supports --> 心理学中的分子遗传学
-行为遗传学 -- supports --> 表观遗传学
-表观遗传学 -- extends --> 行为遗传学
-表观遗传学 -- supports --> 基因-环境交互作用
-基因-环境相关 -- extends --> 行为遗传学
-基因-环境相关 -- correlates-with --> 基因-环境交互作用
-基因-环境交互作用 -- extends --> 行为遗传学
-基因-环境交互作用 -- correlates-with --> 表观遗传学
-遗传率 -- part-of --> 行为遗传学
-遗传率 -- supports --> 双生子研究
-心理学中的分子遗传学 -- extends --> 行为遗传学
-双生子研究 -- applies-to --> 行为遗传学
-```
-
-| 成员 | 中文名 | 学科 | 簇内连接数 |
-|------|--------|------|-----------|
-| [[03-cards/130-基础与进化/card-behavioral_genetics|behavioral_genetics]] 行为遗传学 | 行为遗传学 | 生物心理学 | 14 |
-| [[03-cards/130-基础与进化/card-adoption_studies|adoption_studies]] 收养研究 | 收养研究 | 生物心理学 | 3 |
-| [[03-cards/130-基础与进化/card-epigenetics|epigenetics]] 表观遗传学 | 表观遗传学 | 生物心理学 | 4 |
-| [[03-cards/130-基础与进化/card-gene_environment_correlation|gene_environment_correlation]] 基因-环境相关 | 基因-环境相关 | 生物心理学 | 3 |
-| [[03-cards/130-基础与进化/card-gene_environment_interaction|gene_environment_interaction]] 基因-环境交互作用 | 基因-环境交互作用 | 生物心理学 | 5 |
-| [[03-cards/130-基础与进化/card-heritability|heritability]] 遗传率 | 遗传率 | 生物心理学 | 5 |
-| [[03-cards/130-基础与进化/card-molecular_genetics_in_psychology|molecular_genetics_in_psychology]] 心理学中的分子遗传学 | 心理学中的分子遗传学 | 生物心理学 | 2 |
-| [[03-cards/130-基础与进化/card-twin_studies|twin_studies]] 双生子研究 | 双生子研究 | 生物心理学 | 4 |
 
 ### 4. [[03-cards/90-实验心理学/card-experimental_design_basics|experimental_design_basics]] 实验设计基础（实验心理学）
 
@@ -1762,13 +1773,13 @@ REM 睡眠 -- part-of --> 睡眠阶段
 
 | 关系类型 | 数量 |
 |---------|------|
-| part-of | 375 |
-| correlates-with | 296 |
-| supports | 220 |
-| contrasts | 156 |
+| part-of | 374 |
+| correlates-with | 300 |
+| supports | 224 |
+| contrasts | 158 |
 | applies-to | 148 |
-| is-a | 126 |
-| extends | 93 |
+| is-a | 135 |
+| extends | 89 |
 | related-to | 30 |
 | causes | 21 |
 | requires | 2 |
