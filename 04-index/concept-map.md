@@ -6,10 +6,10 @@
 
 ## 概览
 
-- 总卡片数：541
+- 总卡片数：549
 - 概念簇数：10
 - 孤立卡片数：0
-- 关系总数：1911
+- 关系总数：1941
 
 ## 概念簇
 
@@ -629,6 +629,16 @@ C群人格障碍 -- supports --> 强迫型人格障碍
 拔毛癖 -- is-a --> 强迫及相关障碍
 方差分析基础 -- is-a --> 假设检验
 方差分析基础 -- extends --> t检验
+卡方拟合优度检验 -- is-a --> 卡方检验
+卡方拟合优度检验 -- is-a --> 非参数检验
+卡方拟合优度检验 -- is-a --> 假设检验
+卡方检验 -- is-a --> 非参数检验
+卡方检验 -- extends --> 卡方拟合优度检验
+卡方检验 -- extends --> 卡方独立性检验
+卡方检验 -- is-a --> 假设检验
+卡方独立性检验 -- is-a --> 卡方检验
+卡方独立性检验 -- is-a --> 非参数检验
+卡方独立性检验 -- is-a --> 假设检验
 经典测量理论 -- is-a --> 心理测量基础
 经典测量理论 -- supports --> 项目分析
 经典测量理论 -- supports --> 信度
@@ -723,6 +733,8 @@ IRT基本假设 -- supports --> 项目信息函数
 项目反应理论 -- part-of --> 三参数Logistic模型
 项目总分相关 -- part-of --> 项目分析
 项目总分相关 -- supports --> 信度
+Kruskal-Wallis H检验 -- is-a --> 非参数检验
+Kruskal-Wallis H检验 -- extends --> Mann-Whitney U检验
 最小二乘法 -- supports --> 线性回归
 最小二乘法 -- supports --> 多元回归
 最小二乘法 -- supports --> 回归方程
@@ -731,9 +743,18 @@ IRT基本假设 -- supports --> 项目信息函数
 线性回归 -- part-of --> 回归方程
 线性回归 -- supports --> 估计标准误差
 线性回归 -- extends --> 多元回归
+Mann-Whitney U检验 -- is-a --> 非参数检验
+Mann-Whitney U检验 -- contrasts --> Wilcoxon符号秩检验
 测量水平 -- part-of --> 心理测量基础
 多元回归 -- part-of --> 回归方程
 多元回归 -- supports --> 估计标准误差
+非参数检验 -- is-a --> 假设检验
+非参数检验 -- is-a --> 推断统计
+非参数检验 -- part-of --> 卡方检验
+非参数检验 -- part-of --> Mann-Whitney U检验
+非参数检验 -- part-of --> Wilcoxon符号秩检验
+非参数检验 -- part-of --> Kruskal-Wallis H检验
+非参数检验 -- contrasts --> 参数检验
 常模与导出分数 -- part-of --> 测验编制与标准化
 常模与导出分数 -- supports --> 测验标准化
 常模与导出分数 -- supports --> 分数解释
@@ -744,6 +765,8 @@ IRT基本假设 -- supports --> 项目信息函数
 复本信度 -- is-a --> 信度
 复本信度 -- correlates-with --> 重测信度
 复本信度 -- part-of --> 经典测量理论
+参数检验 -- is-a --> 假设检验
+参数检验 -- is-a --> 推断统计
 Pearson相关系数 -- is-a --> 协方差
 Pearson相关系数 -- is-a --> 描述统计
 Rasch模型 -- is-a --> 项目反应理论
@@ -811,6 +834,7 @@ II 型错误 -- correlates-with --> 统计检验力
 效度验证 -- supports --> 构念效度
 效度验证 -- supports --> 后果效度
 效度验证 -- supports --> 信度
+Wilcoxon符号秩检验 -- is-a --> 非参数检验
 Z分数 -- is-a --> 描述统计
 行动者-观察者偏差 -- is-a --> 归因理论
 行动者-观察者偏差 -- part-of --> 社会认知偏差
@@ -1568,6 +1592,9 @@ REM 睡眠 -- part-of --> 睡眠阶段
 | [[03-cards/100-生理心理学/card-central_nervous_system|central_nervous_system]] 中枢神经系统 | 中枢神经系统 | 生物心理学 | 20 |
 | [[03-cards/20-社会心理学/card-central_vs_peripheral_route|central_vs_peripheral_route]] 中心路径与边缘路径 | 中心路径与边缘路径 | 社会心理学 | 6 |
 | [[03-cards/100-生理心理学/card-cerebral_cortex|cerebral_cortex]] 大脑皮层 | 大脑皮层 | 生物心理学 | 5 |
+| [[03-cards/120-统计与测量/card-chi_square_goodness_of_fit|chi_square_goodness_of_fit]] 卡方拟合优度检验 | 卡方拟合优度检验 | psychometrics | 4 |
+| [[03-cards/120-统计与测量/card-chi_square_test|chi_square_test]] 卡方检验 | 卡方检验 | psychometrics | 7 |
+| [[03-cards/120-统计与测量/card-chi_square_test_of_independence|chi_square_test_of_independence]] 卡方独立性检验 | 卡方独立性检验 | psychometrics | 4 |
 | [[03-cards/110-变态心理学/card-childhood_adolescent_psychopathology|childhood_adolescent_psychopathology]] 儿童青少年心理障碍 | 儿童青少年心理障碍 | 异常心理学 | 9 |
 | [[03-cards/80-学习心理学/card-classical_conditioning|classical_conditioning]] 经典条件作用 | 经典条件作用 | 普通心理学 | 7 |
 | [[03-cards/120-统计与测量/card-classical_test_theory|classical_test_theory]] 经典测量理论 | 经典测量理论 | psychometrics | 15 |
@@ -1707,7 +1734,7 @@ REM 睡眠 -- part-of --> 睡眠阶段
 | [[03-cards/30-人格心理学/card-humanistic_personality_theory|humanistic_personality_theory]] 人本主义人格理论 | 人本主义人格理论 | 人格心理学 | 17 |
 | [[03-cards/50-临床与咨询/card-humanistic_therapy|humanistic_therapy]] 人本主义治疗 | 人本主义治疗 | 临床心理学 | 12 |
 | [[03-cards/card-hypnosis|hypnosis]] 催眠 | 催眠 | 普通心理学 | 2 |
-| [[03-cards/120-统计与测量/card-hypothesis_testing|hypothesis_testing]] 假设检验 | 假设检验 | 普通心理学 | 8 |
+| [[03-cards/120-统计与测量/card-hypothesis_testing|hypothesis_testing]] 假设检验 | 假设检验 | 普通心理学 | 13 |
 | [[03-cards/30-人格心理学/card-id_ego_superego|id_ego_superego]] 本我、自我与超我 | 本我、自我与超我 | 人格心理学 | 4 |
 | [[03-cards/30-人格心理学/card-ideal_self|ideal_self]] 理想自我 | 理想自我 | 人格心理学 | 6 |
 | [[03-cards/60-发展心理学/card-identity_formation|identity_formation]] 身份认同形成 | 身份认同形成 | 发展心理学 | 7 |
@@ -1727,7 +1754,7 @@ REM 睡眠 -- part-of --> 睡眠阶段
 | [[03-cards/60-发展心理学/card-infant_number_sense|infant_number_sense]] 婴儿数感 | 婴儿数感 | 发展心理学 | 7 |
 | [[03-cards/60-发展心理学/card-infant_physical_reasoning|infant_physical_reasoning]] 婴儿物理推理 | 婴儿物理推理 | 发展心理学 | 9 |
 | [[03-cards/60-发展心理学/card-infant_statistical_learning|infant_statistical_learning]] 婴儿统计学习 | 婴儿统计学习 | 发展心理学 | 5 |
-| [[03-cards/120-统计与测量/card-inferential_statistics|inferential_statistics]] 推断统计 | 推断统计 | 普通心理学 | 5 |
+| [[03-cards/120-统计与测量/card-inferential_statistics|inferential_statistics]] 推断统计 | 推断统计 | 普通心理学 | 7 |
 | [[03-cards/20-社会心理学/card-informational_social_influence|informational_social_influence]] 信息性社会影响 | 信息性社会影响 | 社会心理学 | 7 |
 | [[03-cards/20-社会心理学/card-ingroup_favoritism|ingroup_favoritism]] 内群体偏好 | 内群体偏好 | 社会心理学 | 5 |
 | [[03-cards/70-教育心理学/card-instructional_design|instructional_design]] 教学设计 | 教学设计 | 教育心理学 | 1 |
@@ -1758,6 +1785,7 @@ REM 睡眠 -- part-of --> 睡眠阶段
 | [[03-cards/30-人格心理学/card-kelly_personal_construct_theory|kelly_personal_construct_theory]] Kelly个人构念理论 | Kelly个人构念理论 | 人格心理学 | 4 |
 | [[03-cards/70-教育心理学/card-knowledge_representation|knowledge_representation]] 知识表征 | 知识表征 | 教育心理学 | 1 |
 | [[03-cards/60-发展心理学/card-kohlberg_moral_stages|kohlberg_moral_stages]] 科尔伯格道德发展阶段 | 科尔伯格道德发展阶段 | 发展心理学 | 6 |
+| [[03-cards/120-统计与测量/card-kruskal_wallis_h_test|kruskal_wallis_h_test]] Kruskal-Wallis H检验 | Kruskal-Wallis H检验 | psychometrics | 4 |
 | [[03-cards/card-language|language]] 语言 | 语言 | 普通心理学 | 8 |
 | [[03-cards/10-普通心理学/card-language_acquisition_device|language_acquisition_device]] 语言习得装置 | 语言习得装置 | 普通心理学 | 7 |
 | [[03-cards/10-普通心理学/card-language_comprehension|language_comprehension]] 语言理解过程 | 语言理解过程 | 普通心理学 | 4 |
@@ -1779,6 +1807,7 @@ REM 睡眠 -- part-of --> 睡眠阶段
 | [[03-cards/10-普通心理学/card-loss_aversion|loss_aversion]] 损失厌恶 | 损失厌恶 | 普通心理学 | 7 |
 | [[03-cards/card-love_styles|love_styles]] 爱情风格 | 爱情风格 | 社会心理学 | 3 |
 | [[03-cards/110-变态心理学/card-major_depressive_disorder|major_depressive_disorder]] 重性抑郁障碍 | 重性抑郁障碍 | 异常心理学 | 23 |
+| [[03-cards/120-统计与测量/card-mann_whitney_u_test|mann_whitney_u_test]] Mann-Whitney U检验 | Mann-Whitney U检验 | psychometrics | 6 |
 | [[03-cards/60-发展心理学/card-marcia_identity_statuses|marcia_identity_statuses]] Marcia 同一性状态 | Marcia 同一性状态 | 发展心理学 | 4 |
 | [[03-cards/30-人格心理学/card-maslow_hierarchy_of_needs|maslow_hierarchy_of_needs]] 马斯洛需要层次理论 | 马斯洛需要层次理论 | 人格心理学 | 7 |
 | [[03-cards/30-人格心理学/card-maslow_self_actualization|maslow_self_actualization]] 马斯洛自我实现 | 马斯洛自我实现 | 人格心理学 | 5 |
@@ -1815,6 +1844,7 @@ REM 睡眠 -- part-of --> 睡眠阶段
 | [[03-cards/100-生理心理学/card-neuron_structure|neuron_structure]] 神经元结构 | 神经元结构 | 生物心理学 | 5 |
 | [[03-cards/100-生理心理学/card-neuropsychological_assessment|neuropsychological_assessment]] 神经心理学评估 | 神经心理学评估 | 认知心理学 | 2 |
 | [[03-cards/100-生理心理学/card-neurotransmitters|neurotransmitters]] 神经递质 | 神经递质 | 生物心理学 | 5 |
+| [[03-cards/120-统计与测量/card-nonparametric_tests|nonparametric_tests]] 非参数检验 | 非参数检验 | psychometrics | 14 |
 | [[03-cards/120-统计与测量/card-norm_referenced_score|norm_referenced_score]] 常模与导出分数 | 常模与导出分数 | psychometrics | 9 |
 | [[03-cards/20-社会心理学/card-normative_social_influence|normative_social_influence]] 规范性社会影响 | 规范性社会影响 | 社会心理学 | 9 |
 | [[03-cards/card-nrem_sleep|nrem_sleep]] NREM 睡眠 | NREM 睡眠 | 普通心理学 | 5 |
@@ -1832,6 +1862,7 @@ REM 睡眠 -- part-of --> 睡眠阶段
 | [[03-cards/100-生理心理学/card-pain_perception|pain_perception]] 痛觉知觉 | 痛觉知觉 | 生物心理学 | 5 |
 | [[03-cards/110-变态心理学/card-panic_disorder|panic_disorder]] 惊恐障碍 | 惊恐障碍 | 异常心理学 | 11 |
 | [[03-cards/120-统计与测量/card-parallel_forms_reliability|parallel_forms_reliability]] 复本信度 | 复本信度 | psychometrics | 5 |
+| [[03-cards/120-统计与测量/card-parametric_tests|parametric_tests]] 参数检验 | 参数检验 | psychometrics | 4 |
 | [[03-cards/110-变态心理学/card-paranoid_personality_disorder|paranoid_personality_disorder]] 偏执型人格障碍 | 偏执型人格障碍 | 异常心理学 | 6 |
 | [[03-cards/60-发展心理学/card-parenting_styles|parenting_styles]] 教养方式 | 教养方式 | 发展心理学 | 7 |
 | [[03-cards/card-passionate_vs_companionate_love|passionate_vs_companionate_love]] 激情式爱情与伴侣式爱情 | 激情式爱情与伴侣式爱情 | 社会心理学 | 4 |
@@ -2001,6 +2032,7 @@ REM 睡眠 -- part-of --> 睡眠阶段
 | [[03-cards/60-发展心理学/card-vygotsky_play_theory|vygotsky_play_theory]] 维果茨基游戏理论 | 维果茨基游戏理论 | 发展心理学 | 6 |
 | [[03-cards/60-发展心理学/card-vygotsky_sociocultural_theory|vygotsky_sociocultural_theory]] 维果茨基社会文化理论 | 维果茨基社会文化理论 | 发展心理学 | 11 |
 | [[03-cards/20-社会心理学/card-weiner_attribution_theory|weiner_attribution_theory]] Weiner归因理论 | Weiner归因理论 | 社会心理学 | 5 |
+| [[03-cards/120-统计与测量/card-wilcoxon_signed_rank_test|wilcoxon_signed_rank_test]] Wilcoxon符号秩检验 | Wilcoxon符号秩检验 | psychometrics | 4 |
 | [[03-cards/card-working_memory|working_memory]] 工作记忆 | 工作记忆 | 普通心理学 | 2 |
 | [[03-cards/10-普通心理学/card-working_memory_model|working_memory_model]] 工作记忆模型 | 工作记忆模型 | 普通心理学 | 8 |
 | [[03-cards/10-普通心理学/card-yerkes_dodson_law|yerkes_dodson_law]] Yerkes-Dodson 定律 | Yerkes-Dodson 定律 | 普通心理学 | 3 |
@@ -2154,11 +2186,14 @@ REM 睡眠 -- part-of --> 睡眠阶段
 | [[03-cards/120-统计与测量/card-covariance|covariance]] 协方差 | is-a | `variance` |
 | [[03-cards/120-统计与测量/card-effect_size|effect_size]] 效应量 | supports | `meta_analysis` |
 | [[03-cards/120-统计与测量/card-effect_size|effect_size]] 效应量 | contrasts | `p_value` |
+| [[03-cards/120-统计与测量/card-kruskal_wallis_h_test|kruskal_wallis_h_test]] Kruskal-Wallis H检验 | contrasts | `one_way_anova` |
+| [[03-cards/120-统计与测量/card-mann_whitney_u_test|mann_whitney_u_test]] Mann-Whitney U检验 | contrasts | `independent_samples_t_test` |
 | [[03-cards/120-统计与测量/card-sampling_distribution|sampling_distribution]] 抽样分布 | is-a | `central_limit_theorem` |
 | [[03-cards/120-统计与测量/card-standard_error|standard_error]] 标准误 | contrasts | `standard_deviation` |
 | [[03-cards/120-统计与测量/card-statistical_power|statistical_power]] 统计检验力 | correlates-with | `sample_size` |
 | [[03-cards/120-统计与测量/card-statistical_power|statistical_power]] 统计检验力 | correlates-with | `significance_level` |
 | [[03-cards/120-统计与测量/card-type_i_error|type_i_error]] I 型错误 | is-a | `significance_level` |
+| [[03-cards/120-统计与测量/card-wilcoxon_signed_rank_test|wilcoxon_signed_rank_test]] Wilcoxon符号秩检验 | contrasts | `paired_samples_t_test` |
 | [[03-cards/120-统计与测量/card-z_score|z_score]] Z分数 | supports | `standard_deviation` |
 | [[03-cards/120-统计与测量/card-z_score|z_score]] Z分数 | supports | `normal_distribution` |
 | [[03-cards/20-社会心理学/card-relationship_satisfaction|relationship_satisfaction]] 关系满意度 | correlates-with | `commitment` |
@@ -2174,13 +2209,13 @@ REM 睡眠 -- part-of --> 睡眠阶段
 
 | 关系类型 | 数量 |
 |---------|------|
-| part-of | 515 |
+| part-of | 519 |
 | correlates-with | 373 |
 | supports | 342 |
-| is-a | 189 |
-| contrasts | 169 |
+| is-a | 204 |
+| contrasts | 176 |
 | applies-to | 163 |
-| extends | 103 |
+| extends | 107 |
 | related-to | 30 |
 | causes | 25 |
 | requires | 2 |
