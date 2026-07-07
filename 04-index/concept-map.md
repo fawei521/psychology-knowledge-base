@@ -6,10 +6,10 @@
 
 ## 概览
 
-- 总卡片数：510
+- 总卡片数：515
 - 概念簇数：10
 - 孤立卡片数：0
-- 关系总数：1757
+- 关系总数：1777
 
 ## 概念簇
 
@@ -639,6 +639,17 @@ C群人格障碍 -- supports --> 强迫型人格障碍
 置信区间 -- part-of --> 标准误
 置信区间 -- correlates-with --> 假设检验
 置信区间 -- supports --> 抽样分布
+后果效度 -- is-a --> 效度
+后果效度 -- supports --> 构念效度
+后果效度 -- part-of --> 效度验证
+构念效度 -- is-a --> 效度
+构念效度 -- supports --> 内容效度
+构念效度 -- supports --> 效标效度
+构念效度 -- part-of --> 效度验证
+内容效度 -- is-a --> 效度
+内容效度 -- part-of --> 效度验证
+效标效度 -- is-a --> 效度
+效标效度 -- part-of --> 效度验证
 克龙巴赫α系数 -- is-a --> 内部一致性信度
 克龙巴赫α系数 -- is-a --> 信度
 克龙巴赫α系数 -- extends --> 分半信度
@@ -712,6 +723,12 @@ II 型错误 -- part-of --> 假设检验
 II 型错误 -- correlates-with --> 统计检验力
 效度 -- part-of --> 心理测量基础
 效度 -- requires --> 信度
+效度验证 -- supports --> 效度
+效度验证 -- supports --> 内容效度
+效度验证 -- supports --> 效标效度
+效度验证 -- supports --> 构念效度
+效度验证 -- supports --> 后果效度
+效度验证 -- supports --> 信度
 行动者-观察者偏差 -- is-a --> 归因理论
 行动者-观察者偏差 -- part-of --> 社会认知偏差
 行动者-观察者偏差 -- correlates-with --> 基本归因错误
@@ -1496,11 +1513,15 @@ REM 睡眠 -- part-of --> 睡眠阶段
 | [[03-cards/50-临床与咨询/card-congruence|congruence]] 真诚一致 | 真诚一致 | 临床心理学 | 4 |
 | [[03-cards/10-普通心理学/card-conjunction_fallacy|conjunction_fallacy]] 合取谬误 | 合取谬误 | 普通心理学 | 3 |
 | [[03-cards/card-consciousness_and_sleep|consciousness_and_sleep]] 意识与睡眠 | 意识与睡眠 | 普通心理学 | 7 |
+| [[03-cards/120-统计与测量/card-consequential_validity|consequential_validity]] 后果效度 | 后果效度 | psychometrics | 5 |
 | [[03-cards/60-发展心理学/card-conservation|conservation]] 守恒 | 守恒 | 发展心理学 | 2 |
+| [[03-cards/120-统计与测量/card-construct_validity|construct_validity]] 构念效度 | 构念效度 | psychometrics | 9 |
+| [[03-cards/120-统计与测量/card-content_validity|content_validity]] 内容效度 | 内容效度 | psychometrics | 5 |
 | [[03-cards/10-普通心理学/card-coping_strategies|coping_strategies]] 应对方式 | 应对方式 | 普通心理学 | 6 |
 | [[03-cards/60-发展心理学/card-core_knowledge_theory|core_knowledge_theory]] 核心知识理论 | 核心知识理论 | 发展心理学 | 6 |
 | [[03-cards/20-社会心理学/card-correspondence_bias|correspondence_bias]] 对应偏见 | 对应偏见 | 社会心理学 | 4 |
 | [[03-cards/10-普通心理学/card-creativity|creativity]] 创造力 | 创造力 | 普通心理学 | 7 |
+| [[03-cards/120-统计与测量/card-criterion_validity|criterion_validity]] 效标效度 | 效标效度 | psychometrics | 5 |
 | [[03-cards/100-生理心理学/card-critical_period|critical_period]] 关键期 | 关键期 | 生物心理学 | 7 |
 | [[03-cards/10-普通心理学/card-critical_period_hypothesis|critical_period_hypothesis]] 关键期假设 | 关键期假设 | 普通心理学 | 6 |
 | [[03-cards/120-统计与测量/card-cronbachs_alpha|cronbachs_alpha]] 克龙巴赫α系数 | 克龙巴赫α系数 | psychometrics | 5 |
@@ -1759,7 +1780,7 @@ REM 睡眠 -- part-of --> 睡眠阶段
 | [[03-cards/30-人格心理学/card-reciprocal_determinism|reciprocal_determinism]] 交互决定论 | 交互决定论 | 人格心理学 | 5 |
 | [[03-cards/110-变态心理学/card-relapse_prevention|relapse_prevention]] 复发预防 | 复发预防 | 临床心理学 | 6 |
 | [[03-cards/20-社会心理学/card-relationship_satisfaction|relationship_satisfaction]] 关系满意度 | 关系满意度 | 社会心理学 | 4 |
-| [[03-cards/120-统计与测量/card-reliability|reliability]] 信度 | 信度 | 普通心理学 | 15 |
+| [[03-cards/120-统计与测量/card-reliability|reliability]] 信度 | 信度 | 普通心理学 | 16 |
 | [[03-cards/card-rem_sleep|rem_sleep]] REM 睡眠 | REM 睡眠 | 普通心理学 | 7 |
 | [[03-cards/10-普通心理学/card-representativeness_heuristic|representativeness_heuristic]] 代表性启发 | 代表性启发 | 普通心理学 | 7 |
 | [[03-cards/60-发展心理学/card-retirement_adjustment|retirement_adjustment]] 退休适应 | 退休适应 | 发展心理学 | 4 |
@@ -1864,7 +1885,8 @@ REM 睡眠 -- part-of --> 睡眠阶段
 | [[03-cards/120-统计与测量/card-type_ii_error|type_ii_error]] II 型错误 | II 型错误 | psychometrics | 7 |
 | [[03-cards/20-社会心理学/card-ultimate_attribution_error|ultimate_attribution_error]] 终极归因错误 | 终极归因错误 | 社会心理学 | 6 |
 | [[03-cards/30-人格心理学/card-unconditional_positive_regard|unconditional_positive_regard]] 无条件积极关注 | 无条件积极关注 | 人格心理学 | 7 |
-| [[03-cards/120-统计与测量/card-validity|validity]] 效度 | 效度 | 普通心理学 | 7 |
+| [[03-cards/120-统计与测量/card-validity|validity]] 效度 | 效度 | 普通心理学 | 12 |
+| [[03-cards/120-统计与测量/card-validity_validation|validity_validation]] 效度验证 | 效度验证 | psychometrics | 10 |
 | [[03-cards/60-发展心理学/card-violation_of_expectation|violation_of_expectation]] 违反预期范式 | 违反预期范式 | 发展心理学 | 7 |
 | [[03-cards/card-visual_perception|visual_perception]] 视觉知觉 | 视觉知觉 | 普通心理学 | 4 |
 | [[03-cards/100-生理心理学/card-visual_system|visual_system]] 视觉系统 | 视觉系统 | 生物心理学 | 6 |
@@ -2039,11 +2061,11 @@ REM 睡眠 -- part-of --> 睡眠阶段
 
 | 关系类型 | 数量 |
 |---------|------|
-| part-of | 469 |
+| part-of | 473 |
 | correlates-with | 367 |
-| supports | 281 |
+| supports | 293 |
+| is-a | 171 |
 | contrasts | 169 |
-| is-a | 167 |
 | applies-to | 153 |
 | extends | 96 |
 | related-to | 30 |
