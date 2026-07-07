@@ -6,10 +6,10 @@
 
 ## 概览
 
-- 总卡片数：523
+- 总卡片数：532
 - 概念簇数：10
 - 孤立卡片数：0
-- 关系总数：1808
+- 关系总数：1859
 
 ## 概念簇
 
@@ -675,15 +675,37 @@ C群人格障碍 -- supports --> 强迫型人格障碍
 内部一致性信度 -- part-of --> 经典测量理论
 内部一致性信度 -- supports --> 克龙巴赫α系数
 内部一致性信度 -- supports --> 项目区分度
+IRT基本假设 -- part-of --> 项目反应理论
+IRT基本假设 -- supports --> 项目特征曲线
+IRT基本假设 -- supports --> 单参数Logistic模型
+IRT基本假设 -- supports --> 双参数Logistic模型
+IRT基本假设 -- supports --> 三参数Logistic模型
+IRT基本假设 -- supports --> 项目信息函数
 项目分析 -- is-a --> 心理测量基础
 项目分析 -- part-of --> 项目难度
 项目分析 -- part-of --> 项目区分度
 项目分析 -- supports --> 信度
 项目分析 -- supports --> 效度
+项目特征曲线 -- part-of --> 项目反应理论
+项目特征曲线 -- applies-to --> 单参数Logistic模型
+项目特征曲线 -- applies-to --> 双参数Logistic模型
+项目特征曲线 -- applies-to --> 三参数Logistic模型
+项目特征曲线 -- supports --> 项目信息函数
 项目难度 -- correlates-with --> 项目区分度
 项目区分度 -- supports --> 信度
 项目区分度 -- supports --> 效度
 项目区分度 -- is-a --> 项目总分相关
+项目信息函数 -- part-of --> 项目反应理论
+项目信息函数 -- part-of --> 测验信息函数
+项目信息函数 -- applies-to --> 单参数Logistic模型
+项目信息函数 -- applies-to --> 双参数Logistic模型
+项目信息函数 -- applies-to --> 三参数Logistic模型
+项目信息函数 -- correlates-with --> 标准误
+项目反应理论 -- extends --> 经典测量理论
+项目反应理论 -- part-of --> 测验信息函数
+项目反应理论 -- part-of --> 单参数Logistic模型
+项目反应理论 -- part-of --> 双参数Logistic模型
+项目反应理论 -- part-of --> 三参数Logistic模型
 项目总分相关 -- part-of --> 项目分析
 项目总分相关 -- supports --> 信度
 测量水平 -- part-of --> 心理测量基础
@@ -691,9 +713,15 @@ C群人格障碍 -- supports --> 强迫型人格障碍
 常模与导出分数 -- supports --> 测验标准化
 常模与导出分数 -- supports --> 分数解释
 常模与导出分数 -- is-a --> 标准分数
+单参数Logistic模型 -- is-a --> 项目反应理论
+单参数Logistic模型 -- extends --> 双参数Logistic模型
+单参数Logistic模型 -- correlates-with --> Rasch模型
 复本信度 -- is-a --> 信度
 复本信度 -- correlates-with --> 重测信度
 复本信度 -- part-of --> 经典测量理论
+Rasch模型 -- is-a --> 项目反应理论
+Rasch模型 -- applies-to --> 项目特征曲线
+Rasch模型 -- supports --> IRT基本假设
 信度 -- part-of --> 心理测量基础
 信度 -- supports --> 效度
 抽样与实验误差 -- is-a --> 推断统计
@@ -731,9 +759,17 @@ t检验 -- contrasts --> 方差分析基础
 测验开发流程 -- supports --> 效度验证
 测验等值 -- supports --> 常模与导出分数
 测验等值 -- supports --> 复本信度
+测验信息函数 -- is-a --> 项目信息函数
+测验信息函数 -- correlates-with --> 标准误
+测验信息函数 -- supports --> 测验等值
 重测信度 -- is-a --> 信度
 重测信度 -- part-of --> 经典测量理论
 测验标准化 -- supports --> 信度
+三参数Logistic模型 -- is-a --> 项目反应理论
+三参数Logistic模型 -- extends --> 双参数Logistic模型
+三参数Logistic模型 -- supports --> 项目信息函数
+双参数Logistic模型 -- is-a --> 项目反应理论
+双参数Logistic模型 -- supports --> 项目信息函数
 I 型错误 -- part-of --> 假设检验
 I 型错误 -- contrasts --> II 型错误
 I 型错误 -- correlates-with --> 统计检验力
@@ -1506,7 +1542,7 @@ REM 睡眠 -- part-of --> 睡眠阶段
 | [[03-cards/100-生理心理学/card-cerebral_cortex|cerebral_cortex]] 大脑皮层 | 大脑皮层 | 生物心理学 | 5 |
 | [[03-cards/110-变态心理学/card-childhood_adolescent_psychopathology|childhood_adolescent_psychopathology]] 儿童青少年心理障碍 | 儿童青少年心理障碍 | 异常心理学 | 9 |
 | [[03-cards/80-学习心理学/card-classical_conditioning|classical_conditioning]] 经典条件作用 | 经典条件作用 | 普通心理学 | 7 |
-| [[03-cards/120-统计与测量/card-classical_test_theory|classical_test_theory]] 经典测量理论 | 经典测量理论 | psychometrics | 14 |
+| [[03-cards/120-统计与测量/card-classical_test_theory|classical_test_theory]] 经典测量理论 | 经典测量理论 | psychometrics | 15 |
 | [[03-cards/50-临床与咨询/card-client_centered_therapy|client_centered_therapy]] 来访者中心疗法 | 来访者中心疗法 | 临床心理学 | 7 |
 | [[03-cards/110-变态心理学/card-cluster_a_personality_disorders|cluster_a_personality_disorders]] A群人格障碍 | A群人格障碍 | 异常心理学 | 9 |
 | [[03-cards/110-变态心理学/card-cluster_b_personality_disorders|cluster_b_personality_disorders]] B群人格障碍 | B群人格障碍 | 异常心理学 | 10 |
@@ -1677,9 +1713,13 @@ REM 睡眠 -- part-of --> 睡眠阶段
 | [[03-cards/110-变态心理学/card-intolerance_of_uncertainty|intolerance_of_uncertainty]] 不确定性不耐受 | 不确定性不耐受 | 异常心理学 | 7 |
 | [[03-cards/10-普通心理学/card-intrinsic_motivation|intrinsic_motivation]] 内在动机 | 内在动机 | 普通心理学 | 6 |
 | [[03-cards/20-社会心理学/card-investment_model|investment_model]] 投资模型 | 投资模型 | 社会心理学 | 6 |
+| [[03-cards/120-统计与测量/card-irt_assumptions|irt_assumptions]] IRT基本假设 | IRT基本假设 | psychometrics | 12 |
 | [[03-cards/120-统计与测量/card-item_analysis|item_analysis]] 项目分析 | 项目分析 | psychometrics | 13 |
+| [[03-cards/120-统计与测量/card-item_characteristic_curve|item_characteristic_curve]] 项目特征曲线 | 项目特征曲线 | psychometrics | 13 |
 | [[03-cards/120-统计与测量/card-item_difficulty|item_difficulty]] 项目难度 | 项目难度 | psychometrics | 7 |
 | [[03-cards/120-统计与测量/card-item_discrimination|item_discrimination]] 项目区分度 | 项目区分度 | psychometrics | 11 |
+| [[03-cards/120-统计与测量/card-item_information_function|item_information_function]] 项目信息函数 | 项目信息函数 | psychometrics | 13 |
+| [[03-cards/120-统计与测量/card-item_response_theory|item_response_theory]] 项目反应理论 | 项目反应理论 | psychometrics | 16 |
 | [[03-cards/120-统计与测量/card-item_total_correlation|item_total_correlation]] 项目总分相关 | 项目总分相关 | psychometrics | 5 |
 | [[03-cards/10-普通心理学/card-james_lange_theory|james_lange_theory]] 詹姆斯-兰格情绪理论 | 詹姆斯-兰格情绪理论 | 普通心理学 | 8 |
 | [[03-cards/30-人格心理学/card-jung_analytical_psychology|jung_analytical_psychology]] 荣格分析心理学 | 荣格分析心理学 | 人格心理学 | 2 |
@@ -1751,6 +1791,7 @@ REM 睡眠 -- part-of --> 睡眠阶段
 | [[03-cards/110-变态心理学/card-obsessive_compulsive_personality_disorder|obsessive_compulsive_personality_disorder]] 强迫型人格障碍 | 强迫型人格障碍 | 异常心理学 | 9 |
 | [[03-cards/110-变态心理学/card-obsessive_compulsive_related_disorders|obsessive_compulsive_related_disorders]] 强迫及相关障碍 | 强迫及相关障碍 | 异常心理学 | 12 |
 | [[03-cards/100-生理心理学/card-olfactory_system|olfactory_system]] 嗅觉系统 | 嗅觉系统 | 生物心理学 | 7 |
+| [[03-cards/120-统计与测量/card-one_parameter_logistic_model|one_parameter_logistic_model]] 单参数Logistic模型 | 单参数Logistic模型 | psychometrics | 11 |
 | [[03-cards/80-学习心理学/card-operant_conditioning|operant_conditioning]] 操作性条件作用 | 操作性条件作用 | 普通心理学 | 11 |
 | [[03-cards/110-变态心理学/card-oppositional_defiant_disorder|oppositional_defiant_disorder]] 对立违抗障碍 | 对立违抗障碍 | 异常心理学 | 7 |
 | [[03-cards/card-out_group_homogeneity|out_group_homogeneity]] 外群体同质性 | 外群体同质性 | 社会心理学 | 4 |
@@ -1795,6 +1836,7 @@ REM 睡眠 -- part-of --> 睡眠阶段
 | [[03-cards/30-人格心理学/card-psychosexual_stages|psychosexual_stages]] 心理性欲发展阶段 | 心理性欲发展阶段 | 人格心理学 | 5 |
 | [[03-cards/50-临床与咨询/card-psychotherapy_major_approaches|psychotherapy_major_approaches]] 心理治疗主要流派 | 心理治疗主要流派 | 临床心理学 | 14 |
 | [[03-cards/30-人格心理学/card-rank_order_stability|rank_order_stability]] 等级秩序稳定性 | 等级秩序稳定性 | 人格心理学 | 6 |
+| [[03-cards/120-统计与测量/card-rasch_model|rasch_model]] Rasch模型 | Rasch模型 | psychometrics | 5 |
 | [[03-cards/20-社会心理学/card-realistic_group_conflict_theory|realistic_group_conflict_theory]] 现实群体冲突理论 | 现实群体冲突理论 | 社会心理学 | 6 |
 | [[03-cards/10-普通心理学/card-reasoning_and_logic|reasoning_and_logic]] 推理与逻辑 | 推理与逻辑 | 认知心理学 | 10 |
 | [[03-cards/30-人格心理学/card-reciprocal_determinism|reciprocal_determinism]] 交互决定论 | 交互决定论 | 人格心理学 | 5 |
@@ -1862,7 +1904,7 @@ REM 睡眠 -- part-of --> 睡眠阶段
 | [[03-cards/100-生理心理学/card-split_brain_research|split_brain_research]] 裂脑研究 | 裂脑研究 | 认知心理学 | 5 |
 | [[03-cards/120-统计与测量/card-split_half_reliability|split_half_reliability]] 分半信度 | 分半信度 | psychometrics | 7 |
 | [[03-cards/60-发展心理学/card-stages_of_language_development|stages_of_language_development]] 儿童语言发展阶段 | 儿童语言发展阶段 | 发展心理学 | 3 |
-| [[03-cards/120-统计与测量/card-standard_error|standard_error]] 标准误 | 标准误 | psychometrics | 7 |
+| [[03-cards/120-统计与测量/card-standard_error|standard_error]] 标准误 | 标准误 | psychometrics | 9 |
 | [[03-cards/120-统计与测量/card-standard_score|standard_score]] 标准分数 | 标准分数 | psychometrics | 5 |
 | [[03-cards/120-统计与测量/card-standardization_norms|standardization_norms]] 标准化与常模 | 标准化与常模 | 普通心理学 | 2 |
 | [[03-cards/120-统计与测量/card-statistical_power|statistical_power]] 统计检验力 | 统计检验力 | psychometrics | 7 |
@@ -1889,13 +1931,15 @@ REM 睡眠 -- part-of --> 睡眠阶段
 | [[03-cards/30-人格心理学/card-temperament_types|temperament_types]] 气质类型 | 气质类型 | 人格心理学 | 5 |
 | [[03-cards/120-统计与测量/card-test_construction_and_standardization|test_construction_and_standardization]] 测验编制与标准化 | 测验编制与标准化 | psychometrics | 11 |
 | [[03-cards/120-统计与测量/card-test_development_process|test_development_process]] 测验开发流程 | 测验开发流程 | psychometrics | 6 |
-| [[03-cards/120-统计与测量/card-test_equating|test_equating]] 测验等值 | 测验等值 | psychometrics | 4 |
+| [[03-cards/120-统计与测量/card-test_equating|test_equating]] 测验等值 | 测验等值 | psychometrics | 5 |
+| [[03-cards/120-统计与测量/card-test_information_function|test_information_function]] 测验信息函数 | 测验信息函数 | psychometrics | 6 |
 | [[03-cards/120-统计与测量/card-test_retest_reliability|test_retest_reliability]] 重测信度 | 重测信度 | psychometrics | 4 |
 | [[03-cards/120-统计与测量/card-test_standardization|test_standardization]] 测验标准化 | 测验标准化 | psychometrics | 7 |
 | [[03-cards/20-社会心理学/card-theory_of_planned_behavior|theory_of_planned_behavior]] 计划行为理论 | 计划行为理论 | 社会心理学 | 10 |
 | [[03-cards/20-社会心理学/card-theory_of_reasoned_action|theory_of_reasoned_action]] 理性行为理论 | 理性行为理论 | 社会心理学 | 5 |
 | [[03-cards/card-thinking_and_problem_solving|thinking_and_problem_solving]] 思维与问题解决 | 思维与问题解决 | 普通心理学 | 8 |
 | [[03-cards/50-临床与咨询/card-third_wave_cbt|third_wave_cbt]] 第三波认知行为治疗 | 第三波认知行为治疗 | 临床心理学 | 5 |
+| [[03-cards/120-统计与测量/card-three_parameter_logistic_model|three_parameter_logistic_model]] 三参数Logistic模型 | 三参数Logistic模型 | psychometrics | 10 |
 | [[03-cards/card-three_stage_memory_model|three_stage_memory_model]] 记忆的三级模型 | 记忆的三级模型 | 普通心理学 | 14 |
 | [[03-cards/20-社会心理学/card-thurstone_scale|thurstone_scale]] Thurstone量表 | Thurstone量表 | 社会心理学 | 2 |
 | [[03-cards/100-生理心理学/card-thyroid_hormones_and_behavior|thyroid_hormones_and_behavior]] 甲状腺激素与行为 | 甲状腺激素与行为 | 生物心理学 | 5 |
@@ -1907,6 +1951,7 @@ REM 睡眠 -- part-of --> 睡眠阶段
 | [[03-cards/110-变态心理学/card-trauma_and_stressor_related_disorders|trauma_and_stressor_related_disorders]] 创伤与应激相关障碍 | 创伤与应激相关障碍 | 异常心理学 | 15 |
 | [[03-cards/card-triangular_theory_of_love|triangular_theory_of_love]] 爱情三元理论 | 爱情三元理论 | 社会心理学 | 6 |
 | [[03-cards/110-变态心理学/card-trichotillomania|trichotillomania]] 拔毛癖 | 拔毛癖 | 异常心理学 | 4 |
+| [[03-cards/120-统计与测量/card-two_parameter_logistic_model|two_parameter_logistic_model]] 双参数Logistic模型 | 双参数Logistic模型 | psychometrics | 12 |
 | [[03-cards/120-统计与测量/card-type_i_error|type_i_error]] I 型错误 | I 型错误 | psychometrics | 6 |
 | [[03-cards/120-统计与测量/card-type_ii_error|type_ii_error]] II 型错误 | II 型错误 | psychometrics | 7 |
 | [[03-cards/20-社会心理学/card-ultimate_attribution_error|ultimate_attribution_error]] 终极归因错误 | 终极归因错误 | 社会心理学 | 6 |
@@ -2090,13 +2135,13 @@ REM 睡眠 -- part-of --> 睡眠阶段
 
 | 关系类型 | 数量 |
 |---------|------|
-| part-of | 483 |
-| correlates-with | 367 |
-| supports | 305 |
-| is-a | 178 |
+| part-of | 495 |
+| correlates-with | 371 |
+| supports | 320 |
+| is-a | 183 |
 | contrasts | 169 |
-| applies-to | 153 |
-| extends | 96 |
+| applies-to | 163 |
+| extends | 101 |
 | related-to | 30 |
 | causes | 25 |
 | requires | 2 |
